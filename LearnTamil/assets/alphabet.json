@@ -1,0 +1,1578 @@
+{
+    "vowels": [
+        {
+            "pseudo": "a",
+            "letter": "\u0b85"
+        },
+        {
+            "pseudo": "aa",
+            "letter": "\u0b86"
+        },
+        {
+            "pseudo": "i",
+            "letter": "\u0b87"
+        },
+        {
+            "pseudo": "ii",
+            "letter": "\u0b88"
+        },
+        {
+            "pseudo": "u",
+            "letter": "\u0b89"
+        },
+        {
+            "pseudo": "uu",
+            "letter": "\u0b8a"
+        },
+        {
+            "pseudo": "e",
+            "letter": "\u0b8e"
+        },
+        {
+            "pseudo": "ae",
+            "letter": "\u0b8f"
+        },
+        {
+            "pseudo": "ai",
+            "letter": "\u0b90"
+        },
+        {
+            "pseudo": "o",
+            "letter": "\u0b92"
+        },
+        {
+            "pseudo": "oa",
+            "letter": "\u0b93"
+        },
+        {
+            "pseudo": "ow",
+            "letter": "\u0b94"
+        }
+    ],
+    "nonGridConsonant": {
+        "pseudo": "q",
+        "letter": "\u0b83"
+    },
+    "consonants": [
+        {
+            "pseudo": "k",
+            "letter": "\u0b95\u0bcd"
+        },
+        {
+            "pseudo": "nG",
+            "letter": "\u0b99\u0bcd"
+        },
+        {
+            "pseudo": "ch",
+            "letter": "\u0b9a\u0bcd"
+        },
+        {
+            "pseudo": "Gn",
+            "letter": "\u0b9e\u0bcd"
+        },
+        {
+            "pseudo": "t",
+            "letter": "\u0b9f\u0bcd"
+        },
+        {
+            "pseudo": "N",
+            "letter": "\u0ba3\u0bcd"
+        },
+        {
+            "pseudo": "th",
+            "letter": "\u0ba4\u0bcd"
+        },
+        {
+            "pseudo": "nh",
+            "letter": "\u0ba8\u0bcd"
+        },
+        {
+            "pseudo": "p",
+            "letter": "\u0baa\u0bcd"
+        },
+        {
+            "pseudo": "m",
+            "letter": "\u0bae\u0bcd"
+        },
+        {
+            "pseudo": "y",
+            "letter": "\u0baf\u0bcd"
+        },
+        {
+            "pseudo": "r",
+            "letter": "\u0bb0\u0bcd"
+        },
+        {
+            "pseudo": "l",
+            "letter": "\u0bb2\u0bcd"
+        },
+        {
+            "pseudo": "v",
+            "letter": "\u0bb5\u0bcd"
+        },
+        {
+            "pseudo": "zh",
+            "letter": "\u0bb4\u0bcd"
+        },
+        {
+            "pseudo": "L",
+            "letter": "\u0bb3\u0bcd"
+        },
+        {
+            "pseudo": "R",
+            "letter": "\u0bb1\u0bcd"
+        },
+        {
+            "pseudo": "n",
+            "letter": "\u0ba9\u0bcd"
+        },
+        {
+            "pseudo": "j",
+            "letter": "\u0b9c\u0bcd"
+        },
+        {
+            "pseudo": "sh",
+            "letter": "\u0bb7\u0bcd"
+        },
+        {
+            "pseudo": "s",
+            "letter": "\u0bb8\u0bcd"
+        },
+        {
+            "pseudo": "h",
+            "letter": "\u0bb9\u0bcd"
+        },
+        {
+            "pseudo": "ksh",
+            "letter": "\u0b95\u0bcd\u0bb7\u0bcd"
+        }
+    ],
+    "alphabet": [
+        [
+            {
+                "letter": "\u0b95",
+                "vowel": "a",
+                "consonant": "k"
+            },
+            {
+                "letter": "\u0b95\u0bbe",
+                "vowel": "aa",
+                "consonant": "k"
+            },
+            {
+                "letter": "\u0b95\u0bbf",
+                "vowel": "i",
+                "consonant": "k"
+            },
+            {
+                "letter": "\u0b95\u0bc0",
+                "vowel": "ii",
+                "consonant": "k"
+            },
+            {
+                "letter": "\u0b95\u0bc1",
+                "vowel": "u",
+                "consonant": "k"
+            },
+            {
+                "letter": "\u0b95\u0bc2",
+                "vowel": "uu",
+                "consonant": "k"
+            },
+            {
+                "letter": "\u0b95\u0bc6",
+                "vowel": "e",
+                "consonant": "k"
+            },
+            {
+                "letter": "\u0b95\u0bc7",
+                "vowel": "ae",
+                "consonant": "k"
+            },
+            {
+                "letter": "\u0b95\u0bc8",
+                "vowel": "ai",
+                "consonant": "k"
+            },
+            {
+                "letter": "\u0b95\u0bc6\u0bbe",
+                "vowel": "o",
+                "consonant": "k"
+            },
+            {
+                "letter": "\u0b95\u0bc7\u0bbe",
+                "vowel": "oa",
+                "consonant": "k"
+            },
+            {
+                "letter": "\u0b95\u0bc6\u0bd7",
+                "vowel": "ow",
+                "consonant": "k"
+            }
+        ],
+        [
+            {
+                "letter": "\u0b99",
+                "vowel": "a",
+                "consonant": "nG"
+            },
+            {
+                "letter": "\u0b99\u0bbe",
+                "vowel": "aa",
+                "consonant": "nG"
+            },
+            {
+                "letter": "\u0b99\u0bbf",
+                "vowel": "i",
+                "consonant": "nG"
+            },
+            {
+                "letter": "\u0b99\u0bc0",
+                "vowel": "ii",
+                "consonant": "nG"
+            },
+            {
+                "letter": "\u0b99\u0bc1",
+                "vowel": "u",
+                "consonant": "nG"
+            },
+            {
+                "letter": "\u0b99\u0bc2",
+                "vowel": "uu",
+                "consonant": "nG"
+            },
+            {
+                "letter": "\u0b99\u0bc6",
+                "vowel": "e",
+                "consonant": "nG"
+            },
+            {
+                "letter": "\u0b99\u0bc7",
+                "vowel": "ae",
+                "consonant": "nG"
+            },
+            {
+                "letter": "\u0b99\u0bc8",
+                "vowel": "ai",
+                "consonant": "nG"
+            },
+            {
+                "letter": "\u0b99\u0bc6\u0bbe",
+                "vowel": "o",
+                "consonant": "nG"
+            },
+            {
+                "letter": "\u0b99\u0bc7\u0bbe",
+                "vowel": "oa",
+                "consonant": "nG"
+            },
+            {
+                "letter": "\u0b99\u0bc6\u0bd7",
+                "vowel": "ow",
+                "consonant": "nG"
+            }
+        ],
+        [
+            {
+                "letter": "\u0b9a",
+                "vowel": "a",
+                "consonant": "ch"
+            },
+            {
+                "letter": "\u0b9a\u0bbe",
+                "vowel": "aa",
+                "consonant": "ch"
+            },
+            {
+                "letter": "\u0b9a\u0bbf",
+                "vowel": "i",
+                "consonant": "ch"
+            },
+            {
+                "letter": "\u0b9a\u0bc0",
+                "vowel": "ii",
+                "consonant": "ch"
+            },
+            {
+                "letter": "\u0b9a\u0bc1",
+                "vowel": "u",
+                "consonant": "ch"
+            },
+            {
+                "letter": "\u0b9a\u0bc2",
+                "vowel": "uu",
+                "consonant": "ch"
+            },
+            {
+                "letter": "\u0b9a\u0bc6",
+                "vowel": "e",
+                "consonant": "ch"
+            },
+            {
+                "letter": "\u0b9a\u0bc7",
+                "vowel": "ae",
+                "consonant": "ch"
+            },
+            {
+                "letter": "\u0b9a\u0bc8",
+                "vowel": "ai",
+                "consonant": "ch"
+            },
+            {
+                "letter": "\u0b9a\u0bc6\u0bbe",
+                "vowel": "o",
+                "consonant": "ch"
+            },
+            {
+                "letter": "\u0b9a\u0bc7\u0bbe",
+                "vowel": "oa",
+                "consonant": "ch"
+            },
+            {
+                "letter": "\u0b9a\u0bc6\u0bd7",
+                "vowel": "ow",
+                "consonant": "ch"
+            }
+        ],
+        [
+            {
+                "letter": "\u0b9e",
+                "vowel": "a",
+                "consonant": "Gn"
+            },
+            {
+                "letter": "\u0b9e\u0bbe",
+                "vowel": "aa",
+                "consonant": "Gn"
+            },
+            {
+                "letter": "\u0b9e\u0bbf",
+                "vowel": "i",
+                "consonant": "Gn"
+            },
+            {
+                "letter": "\u0b9e\u0bc0",
+                "vowel": "ii",
+                "consonant": "Gn"
+            },
+            {
+                "letter": "\u0b9e\u0bc1",
+                "vowel": "u",
+                "consonant": "Gn"
+            },
+            {
+                "letter": "\u0b9e\u0bc2",
+                "vowel": "uu",
+                "consonant": "Gn"
+            },
+            {
+                "letter": "\u0b9e\u0bc6",
+                "vowel": "e",
+                "consonant": "Gn"
+            },
+            {
+                "letter": "\u0b9e\u0bc7",
+                "vowel": "ae",
+                "consonant": "Gn"
+            },
+            {
+                "letter": "\u0b9e\u0bc8",
+                "vowel": "ai",
+                "consonant": "Gn"
+            },
+            {
+                "letter": "\u0b9e\u0bc6\u0bbe",
+                "vowel": "o",
+                "consonant": "Gn"
+            },
+            {
+                "letter": "\u0b9e\u0bc7\u0bbe",
+                "vowel": "oa",
+                "consonant": "Gn"
+            },
+            {
+                "letter": "\u0b9e\u0bc6\u0bd7",
+                "vowel": "ow",
+                "consonant": "Gn"
+            }
+        ],
+        [
+            {
+                "letter": "\u0b9f",
+                "vowel": "a",
+                "consonant": "t"
+            },
+            {
+                "letter": "\u0b9f\u0bbe",
+                "vowel": "aa",
+                "consonant": "t"
+            },
+            {
+                "letter": "\u0b9f\u0bbf",
+                "vowel": "i",
+                "consonant": "t"
+            },
+            {
+                "letter": "\u0b9f\u0bc0",
+                "vowel": "ii",
+                "consonant": "t"
+            },
+            {
+                "letter": "\u0b9f\u0bc1",
+                "vowel": "u",
+                "consonant": "t"
+            },
+            {
+                "letter": "\u0b9f\u0bc2",
+                "vowel": "uu",
+                "consonant": "t"
+            },
+            {
+                "letter": "\u0b9f\u0bc6",
+                "vowel": "e",
+                "consonant": "t"
+            },
+            {
+                "letter": "\u0b9f\u0bc7",
+                "vowel": "ae",
+                "consonant": "t"
+            },
+            {
+                "letter": "\u0b9f\u0bc8",
+                "vowel": "ai",
+                "consonant": "t"
+            },
+            {
+                "letter": "\u0b9f\u0bc6\u0bbe",
+                "vowel": "o",
+                "consonant": "t"
+            },
+            {
+                "letter": "\u0b9f\u0bc7\u0bbe",
+                "vowel": "oa",
+                "consonant": "t"
+            },
+            {
+                "letter": "\u0b9f\u0bc6\u0bd7",
+                "vowel": "ow",
+                "consonant": "t"
+            }
+        ],
+        [
+            {
+                "letter": "\u0ba3",
+                "vowel": "a",
+                "consonant": "N"
+            },
+            {
+                "letter": "\u0ba3\u0bbe",
+                "vowel": "aa",
+                "consonant": "N"
+            },
+            {
+                "letter": "\u0ba3\u0bbf",
+                "vowel": "i",
+                "consonant": "N"
+            },
+            {
+                "letter": "\u0ba3\u0bc0",
+                "vowel": "ii",
+                "consonant": "N"
+            },
+            {
+                "letter": "\u0ba3\u0bc1",
+                "vowel": "u",
+                "consonant": "N"
+            },
+            {
+                "letter": "\u0ba3\u0bc2",
+                "vowel": "uu",
+                "consonant": "N"
+            },
+            {
+                "letter": "\u0ba3\u0bc6",
+                "vowel": "e",
+                "consonant": "N"
+            },
+            {
+                "letter": "\u0ba3\u0bc7",
+                "vowel": "ae",
+                "consonant": "N"
+            },
+            {
+                "letter": "\u0ba3\u0bc8",
+                "vowel": "ai",
+                "consonant": "N"
+            },
+            {
+                "letter": "\u0ba3\u0bc6\u0bbe",
+                "vowel": "o",
+                "consonant": "N"
+            },
+            {
+                "letter": "\u0ba3\u0bc7\u0bbe",
+                "vowel": "oa",
+                "consonant": "N"
+            },
+            {
+                "letter": "\u0ba3\u0bc6\u0bd7",
+                "vowel": "ow",
+                "consonant": "N"
+            }
+        ],
+        [
+            {
+                "letter": "\u0ba4",
+                "vowel": "a",
+                "consonant": "th"
+            },
+            {
+                "letter": "\u0ba4\u0bbe",
+                "vowel": "aa",
+                "consonant": "th"
+            },
+            {
+                "letter": "\u0ba4\u0bbf",
+                "vowel": "i",
+                "consonant": "th"
+            },
+            {
+                "letter": "\u0ba4\u0bc0",
+                "vowel": "ii",
+                "consonant": "th"
+            },
+            {
+                "letter": "\u0ba4\u0bc1",
+                "vowel": "u",
+                "consonant": "th"
+            },
+            {
+                "letter": "\u0ba4\u0bc2",
+                "vowel": "uu",
+                "consonant": "th"
+            },
+            {
+                "letter": "\u0ba4\u0bc6",
+                "vowel": "e",
+                "consonant": "th"
+            },
+            {
+                "letter": "\u0ba4\u0bc7",
+                "vowel": "ae",
+                "consonant": "th"
+            },
+            {
+                "letter": "\u0ba4\u0bc8",
+                "vowel": "ai",
+                "consonant": "th"
+            },
+            {
+                "letter": "\u0ba4\u0bc6\u0bbe",
+                "vowel": "o",
+                "consonant": "th"
+            },
+            {
+                "letter": "\u0ba4\u0bc7\u0bbe",
+                "vowel": "oa",
+                "consonant": "th"
+            },
+            {
+                "letter": "\u0ba4\u0bc6\u0bd7",
+                "vowel": "ow",
+                "consonant": "th"
+            }
+        ],
+        [
+            {
+                "letter": "\u0ba8",
+                "vowel": "a",
+                "consonant": "nh"
+            },
+            {
+                "letter": "\u0ba8\u0bbe",
+                "vowel": "aa",
+                "consonant": "nh"
+            },
+            {
+                "letter": "\u0ba8\u0bbf",
+                "vowel": "i",
+                "consonant": "nh"
+            },
+            {
+                "letter": "\u0ba8\u0bc0",
+                "vowel": "ii",
+                "consonant": "nh"
+            },
+            {
+                "letter": "\u0ba8\u0bc1",
+                "vowel": "u",
+                "consonant": "nh"
+            },
+            {
+                "letter": "\u0ba8\u0bc2",
+                "vowel": "uu",
+                "consonant": "nh"
+            },
+            {
+                "letter": "\u0ba8\u0bc6",
+                "vowel": "e",
+                "consonant": "nh"
+            },
+            {
+                "letter": "\u0ba8\u0bc7",
+                "vowel": "ae",
+                "consonant": "nh"
+            },
+            {
+                "letter": "\u0ba8\u0bc8",
+                "vowel": "ai",
+                "consonant": "nh"
+            },
+            {
+                "letter": "\u0ba8\u0bc6\u0bbe",
+                "vowel": "o",
+                "consonant": "nh"
+            },
+            {
+                "letter": "\u0ba8\u0bc7\u0bbe",
+                "vowel": "oa",
+                "consonant": "nh"
+            },
+            {
+                "letter": "\u0ba8\u0bc6\u0bd7",
+                "vowel": "ow",
+                "consonant": "nh"
+            }
+        ],
+        [
+            {
+                "letter": "\u0baa",
+                "vowel": "a",
+                "consonant": "p"
+            },
+            {
+                "letter": "\u0baa\u0bbe",
+                "vowel": "aa",
+                "consonant": "p"
+            },
+            {
+                "letter": "\u0baa\u0bbf",
+                "vowel": "i",
+                "consonant": "p"
+            },
+            {
+                "letter": "\u0baa\u0bc0",
+                "vowel": "ii",
+                "consonant": "p"
+            },
+            {
+                "letter": "\u0baa\u0bc1",
+                "vowel": "u",
+                "consonant": "p"
+            },
+            {
+                "letter": "\u0baa\u0bc2",
+                "vowel": "uu",
+                "consonant": "p"
+            },
+            {
+                "letter": "\u0baa\u0bc6",
+                "vowel": "e",
+                "consonant": "p"
+            },
+            {
+                "letter": "\u0baa\u0bc7",
+                "vowel": "ae",
+                "consonant": "p"
+            },
+            {
+                "letter": "\u0baa\u0bc8",
+                "vowel": "ai",
+                "consonant": "p"
+            },
+            {
+                "letter": "\u0baa\u0bc6\u0bbe",
+                "vowel": "o",
+                "consonant": "p"
+            },
+            {
+                "letter": "\u0baa\u0bc7\u0bbe",
+                "vowel": "oa",
+                "consonant": "p"
+            },
+            {
+                "letter": "\u0baa\u0bc6\u0bd7",
+                "vowel": "ow",
+                "consonant": "p"
+            }
+        ],
+        [
+            {
+                "letter": "\u0bae",
+                "vowel": "a",
+                "consonant": "m"
+            },
+            {
+                "letter": "\u0bae\u0bbe",
+                "vowel": "aa",
+                "consonant": "m"
+            },
+            {
+                "letter": "\u0bae\u0bbf",
+                "vowel": "i",
+                "consonant": "m"
+            },
+            {
+                "letter": "\u0bae\u0bc0",
+                "vowel": "ii",
+                "consonant": "m"
+            },
+            {
+                "letter": "\u0bae\u0bc1",
+                "vowel": "u",
+                "consonant": "m"
+            },
+            {
+                "letter": "\u0bae\u0bc2",
+                "vowel": "uu",
+                "consonant": "m"
+            },
+            {
+                "letter": "\u0bae\u0bc6",
+                "vowel": "e",
+                "consonant": "m"
+            },
+            {
+                "letter": "\u0bae\u0bc7",
+                "vowel": "ae",
+                "consonant": "m"
+            },
+            {
+                "letter": "\u0bae\u0bc8",
+                "vowel": "ai",
+                "consonant": "m"
+            },
+            {
+                "letter": "\u0bae\u0bc6\u0bbe",
+                "vowel": "o",
+                "consonant": "m"
+            },
+            {
+                "letter": "\u0bae\u0bc7\u0bbe",
+                "vowel": "oa",
+                "consonant": "m"
+            },
+            {
+                "letter": "\u0bae\u0bc6\u0bd7",
+                "vowel": "ow",
+                "consonant": "m"
+            }
+        ],
+        [
+            {
+                "letter": "\u0baf",
+                "vowel": "a",
+                "consonant": "y"
+            },
+            {
+                "letter": "\u0baf\u0bbe",
+                "vowel": "aa",
+                "consonant": "y"
+            },
+            {
+                "letter": "\u0baf\u0bbf",
+                "vowel": "i",
+                "consonant": "y"
+            },
+            {
+                "letter": "\u0baf\u0bc0",
+                "vowel": "ii",
+                "consonant": "y"
+            },
+            {
+                "letter": "\u0baf\u0bc1",
+                "vowel": "u",
+                "consonant": "y"
+            },
+            {
+                "letter": "\u0baf\u0bc2",
+                "vowel": "uu",
+                "consonant": "y"
+            },
+            {
+                "letter": "\u0baf\u0bc6",
+                "vowel": "e",
+                "consonant": "y"
+            },
+            {
+                "letter": "\u0baf\u0bc7",
+                "vowel": "ae",
+                "consonant": "y"
+            },
+            {
+                "letter": "\u0baf\u0bc8",
+                "vowel": "ai",
+                "consonant": "y"
+            },
+            {
+                "letter": "\u0baf\u0bc6\u0bbe",
+                "vowel": "o",
+                "consonant": "y"
+            },
+            {
+                "letter": "\u0baf\u0bc7\u0bbe",
+                "vowel": "oa",
+                "consonant": "y"
+            },
+            {
+                "letter": "\u0baf\u0bc6\u0bd7",
+                "vowel": "ow",
+                "consonant": "y"
+            }
+        ],
+        [
+            {
+                "letter": "\u0bb0",
+                "vowel": "a",
+                "consonant": "r"
+            },
+            {
+                "letter": "\u0bb0\u0bbe",
+                "vowel": "aa",
+                "consonant": "r"
+            },
+            {
+                "letter": "\u0bb0\u0bbf",
+                "vowel": "i",
+                "consonant": "r"
+            },
+            {
+                "letter": "\u0bb0\u0bc0",
+                "vowel": "ii",
+                "consonant": "r"
+            },
+            {
+                "letter": "\u0bb0\u0bc1",
+                "vowel": "u",
+                "consonant": "r"
+            },
+            {
+                "letter": "\u0bb0\u0bc2",
+                "vowel": "uu",
+                "consonant": "r"
+            },
+            {
+                "letter": "\u0bb0\u0bc6",
+                "vowel": "e",
+                "consonant": "r"
+            },
+            {
+                "letter": "\u0bb0\u0bc7",
+                "vowel": "ae",
+                "consonant": "r"
+            },
+            {
+                "letter": "\u0bb0\u0bc8",
+                "vowel": "ai",
+                "consonant": "r"
+            },
+            {
+                "letter": "\u0bb0\u0bc6\u0bbe",
+                "vowel": "o",
+                "consonant": "r"
+            },
+            {
+                "letter": "\u0bb0\u0bc7\u0bbe",
+                "vowel": "oa",
+                "consonant": "r"
+            },
+            {
+                "letter": "\u0bb0\u0bc6\u0bd7",
+                "vowel": "ow",
+                "consonant": "r"
+            }
+        ],
+        [
+            {
+                "letter": "\u0bb2",
+                "vowel": "a",
+                "consonant": "l"
+            },
+            {
+                "letter": "\u0bb2\u0bbe",
+                "vowel": "aa",
+                "consonant": "l"
+            },
+            {
+                "letter": "\u0bb2\u0bbf",
+                "vowel": "i",
+                "consonant": "l"
+            },
+            {
+                "letter": "\u0bb2\u0bc0",
+                "vowel": "ii",
+                "consonant": "l"
+            },
+            {
+                "letter": "\u0bb2\u0bc1",
+                "vowel": "u",
+                "consonant": "l"
+            },
+            {
+                "letter": "\u0bb2\u0bc2",
+                "vowel": "uu",
+                "consonant": "l"
+            },
+            {
+                "letter": "\u0bb2\u0bc6",
+                "vowel": "e",
+                "consonant": "l"
+            },
+            {
+                "letter": "\u0bb2\u0bc7",
+                "vowel": "ae",
+                "consonant": "l"
+            },
+            {
+                "letter": "\u0bb2\u0bc8",
+                "vowel": "ai",
+                "consonant": "l"
+            },
+            {
+                "letter": "\u0bb2\u0bc6\u0bbe",
+                "vowel": "o",
+                "consonant": "l"
+            },
+            {
+                "letter": "\u0bb2\u0bc7\u0bbe",
+                "vowel": "oa",
+                "consonant": "l"
+            },
+            {
+                "letter": "\u0bb2\u0bc6\u0bd7",
+                "vowel": "ow",
+                "consonant": "l"
+            }
+        ],
+        [
+            {
+                "letter": "\u0bb5",
+                "vowel": "a",
+                "consonant": "v"
+            },
+            {
+                "letter": "\u0bb5\u0bbe",
+                "vowel": "aa",
+                "consonant": "v"
+            },
+            {
+                "letter": "\u0bb5\u0bbf",
+                "vowel": "i",
+                "consonant": "v"
+            },
+            {
+                "letter": "\u0bb5\u0bc0",
+                "vowel": "ii",
+                "consonant": "v"
+            },
+            {
+                "letter": "\u0bb5\u0bc1",
+                "vowel": "u",
+                "consonant": "v"
+            },
+            {
+                "letter": "\u0bb5\u0bc2",
+                "vowel": "uu",
+                "consonant": "v"
+            },
+            {
+                "letter": "\u0bb5\u0bc6",
+                "vowel": "e",
+                "consonant": "v"
+            },
+            {
+                "letter": "\u0bb5\u0bc7",
+                "vowel": "ae",
+                "consonant": "v"
+            },
+            {
+                "letter": "\u0bb5\u0bc8",
+                "vowel": "ai",
+                "consonant": "v"
+            },
+            {
+                "letter": "\u0bb5\u0bc6\u0bbe",
+                "vowel": "o",
+                "consonant": "v"
+            },
+            {
+                "letter": "\u0bb5\u0bc7\u0bbe",
+                "vowel": "oa",
+                "consonant": "v"
+            },
+            {
+                "letter": "\u0bb5\u0bc6\u0bd7",
+                "vowel": "ow",
+                "consonant": "v"
+            }
+        ],
+        [
+            {
+                "letter": "\u0bb4",
+                "vowel": "a",
+                "consonant": "zh"
+            },
+            {
+                "letter": "\u0bb4\u0bbe",
+                "vowel": "aa",
+                "consonant": "zh"
+            },
+            {
+                "letter": "\u0bb4\u0bbf",
+                "vowel": "i",
+                "consonant": "zh"
+            },
+            {
+                "letter": "\u0bb4\u0bc0",
+                "vowel": "ii",
+                "consonant": "zh"
+            },
+            {
+                "letter": "\u0bb4\u0bc1",
+                "vowel": "u",
+                "consonant": "zh"
+            },
+            {
+                "letter": "\u0bb4\u0bc2",
+                "vowel": "uu",
+                "consonant": "zh"
+            },
+            {
+                "letter": "\u0bb4\u0bc6",
+                "vowel": "e",
+                "consonant": "zh"
+            },
+            {
+                "letter": "\u0bb4\u0bc7",
+                "vowel": "ae",
+                "consonant": "zh"
+            },
+            {
+                "letter": "\u0bb4\u0bc8",
+                "vowel": "ai",
+                "consonant": "zh"
+            },
+            {
+                "letter": "\u0bb4\u0bc6\u0bbe",
+                "vowel": "o",
+                "consonant": "zh"
+            },
+            {
+                "letter": "\u0bb4\u0bc7\u0bbe",
+                "vowel": "oa",
+                "consonant": "zh"
+            },
+            {
+                "letter": "\u0bb4\u0bc6\u0bd7",
+                "vowel": "ow",
+                "consonant": "zh"
+            }
+        ],
+        [
+            {
+                "letter": "\u0bb3",
+                "vowel": "a",
+                "consonant": "L"
+            },
+            {
+                "letter": "\u0bb3\u0bbe",
+                "vowel": "aa",
+                "consonant": "L"
+            },
+            {
+                "letter": "\u0bb3\u0bbf",
+                "vowel": "i",
+                "consonant": "L"
+            },
+            {
+                "letter": "\u0bb3\u0bc0",
+                "vowel": "ii",
+                "consonant": "L"
+            },
+            {
+                "letter": "\u0bb3\u0bc1",
+                "vowel": "u",
+                "consonant": "L"
+            },
+            {
+                "letter": "\u0bb3\u0bc2",
+                "vowel": "uu",
+                "consonant": "L"
+            },
+            {
+                "letter": "\u0bb3\u0bc6",
+                "vowel": "e",
+                "consonant": "L"
+            },
+            {
+                "letter": "\u0bb3\u0bc7",
+                "vowel": "ae",
+                "consonant": "L"
+            },
+            {
+                "letter": "\u0bb3\u0bc8",
+                "vowel": "ai",
+                "consonant": "L"
+            },
+            {
+                "letter": "\u0bb3\u0bc6\u0bbe",
+                "vowel": "o",
+                "consonant": "L"
+            },
+            {
+                "letter": "\u0bb3\u0bc7\u0bbe",
+                "vowel": "oa",
+                "consonant": "L"
+            },
+            {
+                "letter": "\u0bb3\u0bc6\u0bd7",
+                "vowel": "ow",
+                "consonant": "L"
+            }
+        ],
+        [
+            {
+                "letter": "\u0bb1",
+                "vowel": "a",
+                "consonant": "R"
+            },
+            {
+                "letter": "\u0bb1\u0bbe",
+                "vowel": "aa",
+                "consonant": "R"
+            },
+            {
+                "letter": "\u0bb1\u0bbf",
+                "vowel": "i",
+                "consonant": "R"
+            },
+            {
+                "letter": "\u0bb1\u0bc0",
+                "vowel": "ii",
+                "consonant": "R"
+            },
+            {
+                "letter": "\u0bb1\u0bc1",
+                "vowel": "u",
+                "consonant": "R"
+            },
+            {
+                "letter": "\u0bb1\u0bc2",
+                "vowel": "uu",
+                "consonant": "R"
+            },
+            {
+                "letter": "\u0bb1\u0bc6",
+                "vowel": "e",
+                "consonant": "R"
+            },
+            {
+                "letter": "\u0bb1\u0bc7",
+                "vowel": "ae",
+                "consonant": "R"
+            },
+            {
+                "letter": "\u0bb1\u0bc8",
+                "vowel": "ai",
+                "consonant": "R"
+            },
+            {
+                "letter": "\u0bb1\u0bc6\u0bbe",
+                "vowel": "o",
+                "consonant": "R"
+            },
+            {
+                "letter": "\u0bb1\u0bc7\u0bbe",
+                "vowel": "oa",
+                "consonant": "R"
+            },
+            {
+                "letter": "\u0bb1\u0bc6\u0bd7",
+                "vowel": "ow",
+                "consonant": "R"
+            }
+        ],
+        [
+            {
+                "letter": "\u0ba9",
+                "vowel": "a",
+                "consonant": "n"
+            },
+            {
+                "letter": "\u0ba9\u0bbe",
+                "vowel": "aa",
+                "consonant": "n"
+            },
+            {
+                "letter": "\u0ba9\u0bbf",
+                "vowel": "i",
+                "consonant": "n"
+            },
+            {
+                "letter": "\u0ba9\u0bc0",
+                "vowel": "ii",
+                "consonant": "n"
+            },
+            {
+                "letter": "\u0ba9\u0bc1",
+                "vowel": "u",
+                "consonant": "n"
+            },
+            {
+                "letter": "\u0ba9\u0bc2",
+                "vowel": "uu",
+                "consonant": "n"
+            },
+            {
+                "letter": "\u0ba9\u0bc6",
+                "vowel": "e",
+                "consonant": "n"
+            },
+            {
+                "letter": "\u0ba9\u0bc7",
+                "vowel": "ae",
+                "consonant": "n"
+            },
+            {
+                "letter": "\u0ba9\u0bc8",
+                "vowel": "ai",
+                "consonant": "n"
+            },
+            {
+                "letter": "\u0ba9\u0bc6\u0bbe",
+                "vowel": "o",
+                "consonant": "n"
+            },
+            {
+                "letter": "\u0ba9\u0bc7\u0bbe",
+                "vowel": "oa",
+                "consonant": "n"
+            },
+            {
+                "letter": "\u0ba9\u0bc6\u0bd7",
+                "vowel": "ow",
+                "consonant": "n"
+            }
+        ],
+        [
+            {
+                "letter": "\u0b9c",
+                "vowel": "a",
+                "consonant": "j"
+            },
+            {
+                "letter": "\u0b9c\u0bbe",
+                "vowel": "aa",
+                "consonant": "j"
+            },
+            {
+                "letter": "\u0b9c\u0bbf",
+                "vowel": "i",
+                "consonant": "j"
+            },
+            {
+                "letter": "\u0b9c\u0bc0",
+                "vowel": "ii",
+                "consonant": "j"
+            },
+            {
+                "letter": "\u0b9c\u0bc1",
+                "vowel": "u",
+                "consonant": "j"
+            },
+            {
+                "letter": "\u0b9c\u0bc2",
+                "vowel": "uu",
+                "consonant": "j"
+            },
+            {
+                "letter": "\u0b9c\u0bc6",
+                "vowel": "e",
+                "consonant": "j"
+            },
+            {
+                "letter": "\u0b9c\u0bc7",
+                "vowel": "ae",
+                "consonant": "j"
+            },
+            {
+                "letter": "\u0b9c\u0bc8",
+                "vowel": "ai",
+                "consonant": "j"
+            },
+            {
+                "letter": "\u0b9c\u0bc6\u0bbe",
+                "vowel": "o",
+                "consonant": "j"
+            },
+            {
+                "letter": "\u0b9c\u0bc7\u0bbe",
+                "vowel": "oa",
+                "consonant": "j"
+            },
+            {
+                "letter": "\u0b9c\u0bc6\u0bd7",
+                "vowel": "ow",
+                "consonant": "j"
+            }
+        ],
+        [
+            {
+                "letter": "\u0bb7",
+                "vowel": "a",
+                "consonant": "sh"
+            },
+            {
+                "letter": "\u0bb7\u0bbe",
+                "vowel": "aa",
+                "consonant": "sh"
+            },
+            {
+                "letter": "\u0bb7\u0bbf",
+                "vowel": "i",
+                "consonant": "sh"
+            },
+            {
+                "letter": "\u0bb7\u0bc0",
+                "vowel": "ii",
+                "consonant": "sh"
+            },
+            {
+                "letter": "\u0bb7\u0bc1",
+                "vowel": "u",
+                "consonant": "sh"
+            },
+            {
+                "letter": "\u0bb7\u0bc2",
+                "vowel": "uu",
+                "consonant": "sh"
+            },
+            {
+                "letter": "\u0bb7\u0bc6",
+                "vowel": "e",
+                "consonant": "sh"
+            },
+            {
+                "letter": "\u0bb7\u0bc7",
+                "vowel": "ae",
+                "consonant": "sh"
+            },
+            {
+                "letter": "\u0bb7\u0bc8",
+                "vowel": "ai",
+                "consonant": "sh"
+            },
+            {
+                "letter": "\u0bb7\u0bc6\u0bbe",
+                "vowel": "o",
+                "consonant": "sh"
+            },
+            {
+                "letter": "\u0bb7\u0bc7\u0bbe",
+                "vowel": "oa",
+                "consonant": "sh"
+            },
+            {
+                "letter": "\u0bb7\u0bc6\u0bd7",
+                "vowel": "ow",
+                "consonant": "sh"
+            }
+        ],
+        [
+            {
+                "letter": "\u0bb8",
+                "vowel": "a",
+                "consonant": "s"
+            },
+            {
+                "letter": "\u0bb8\u0bbe",
+                "vowel": "aa",
+                "consonant": "s"
+            },
+            {
+                "letter": "\u0bb8\u0bbf",
+                "vowel": "i",
+                "consonant": "s"
+            },
+            {
+                "letter": "\u0bb8\u0bc0",
+                "vowel": "ii",
+                "consonant": "s"
+            },
+            {
+                "letter": "\u0bb8\u0bc1",
+                "vowel": "u",
+                "consonant": "s"
+            },
+            {
+                "letter": "\u0bb8\u0bc2",
+                "vowel": "uu",
+                "consonant": "s"
+            },
+            {
+                "letter": "\u0bb8\u0bc6",
+                "vowel": "e",
+                "consonant": "s"
+            },
+            {
+                "letter": "\u0bb8\u0bc7",
+                "vowel": "ae",
+                "consonant": "s"
+            },
+            {
+                "letter": "\u0bb8\u0bc8",
+                "vowel": "ai",
+                "consonant": "s"
+            },
+            {
+                "letter": "\u0bb8\u0bc6\u0bbe",
+                "vowel": "o",
+                "consonant": "s"
+            },
+            {
+                "letter": "\u0bb8\u0bc7\u0bbe",
+                "vowel": "oa",
+                "consonant": "s"
+            },
+            {
+                "letter": "\u0bb8\u0bc6\u0bd7",
+                "vowel": "ow",
+                "consonant": "s"
+            }
+        ],
+        [
+            {
+                "letter": "\u0bb9",
+                "vowel": "a",
+                "consonant": "h"
+            },
+            {
+                "letter": "\u0bb9\u0bbe",
+                "vowel": "aa",
+                "consonant": "h"
+            },
+            {
+                "letter": "\u0bb9\u0bbf",
+                "vowel": "i",
+                "consonant": "h"
+            },
+            {
+                "letter": "\u0bb9\u0bc0",
+                "vowel": "ii",
+                "consonant": "h"
+            },
+            {
+                "letter": "\u0bb9\u0bc1",
+                "vowel": "u",
+                "consonant": "h"
+            },
+            {
+                "letter": "\u0bb9\u0bc2",
+                "vowel": "uu",
+                "consonant": "h"
+            },
+            {
+                "letter": "\u0bb9\u0bc6",
+                "vowel": "e",
+                "consonant": "h"
+            },
+            {
+                "letter": "\u0bb9\u0bc7",
+                "vowel": "ae",
+                "consonant": "h"
+            },
+            {
+                "letter": "\u0bb9\u0bc8",
+                "vowel": "ai",
+                "consonant": "h"
+            },
+            {
+                "letter": "\u0bb9\u0bc6\u0bbe",
+                "vowel": "o",
+                "consonant": "h"
+            },
+            {
+                "letter": "\u0bb9\u0bc7\u0bbe",
+                "vowel": "oa",
+                "consonant": "h"
+            },
+            {
+                "letter": "\u0bb9\u0bc6\u0bd7",
+                "vowel": "ow",
+                "consonant": "h"
+            }
+        ],
+        [
+            {
+                "letter": "\u0b95\u0bcd\u0bb7",
+                "vowel": "a",
+                "consonant": "ksh"
+            },
+            {
+                "letter": "\u0b95\u0bcd\u0bb7\u0bbe",
+                "vowel": "aa",
+                "consonant": "ksh"
+            },
+            {
+                "letter": "\u0b95\u0bcd\u0bb7\u0bbf",
+                "vowel": "i",
+                "consonant": "ksh"
+            },
+            {
+                "letter": "\u0b95\u0bcd\u0bb7\u0bc0",
+                "vowel": "ii",
+                "consonant": "ksh"
+            },
+            {
+                "letter": "\u0b95\u0bcd\u0bb7\u0bc1",
+                "vowel": "u",
+                "consonant": "ksh"
+            },
+            {
+                "letter": "\u0b95\u0bcd\u0bb7\u0bc2",
+                "vowel": "uu",
+                "consonant": "ksh"
+            },
+            {
+                "letter": "\u0b95\u0bcd\u0bb7\u0bc6",
+                "vowel": "e",
+                "consonant": "ksh"
+            },
+            {
+                "letter": "\u0b95\u0bcd\u0bb7\u0bc7",
+                "vowel": "ae",
+                "consonant": "ksh"
+            },
+            {
+                "letter": "\u0b95\u0bcd\u0bb7\u0bc8",
+                "vowel": "ai",
+                "consonant": "ksh"
+            },
+            {
+                "letter": "\u0b95\u0bcd\u0bb7\u0bc6\u0bbe",
+                "vowel": "o",
+                "consonant": "ksh"
+            },
+            {
+                "letter": "\u0b95\u0bcd\u0bb7\u0bc7\u0bbe",
+                "vowel": "oa",
+                "consonant": "ksh"
+            },
+            {
+                "letter": "\u0b95\u0bcd\u0bb7\u0bc6\u0bd7",
+                "vowel": "ow",
+                "consonant": "ksh"
+            }
+        ]
+    ]
+}

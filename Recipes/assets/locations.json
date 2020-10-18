@@ -1,0 +1,348 @@
+[
+    {
+        "id": 29,
+        "coords": {
+            "x": 1,
+            "y": 0,
+            "z": 1
+        },
+        "description": "Medicine & Vitamins"
+    },
+    {
+        "id": 30,
+        "coords": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+        },
+        "description": "Dental Care"
+    },
+    {
+        "id": 31,
+        "coords": {
+            "x": 1,
+            "y": 2,
+            "z": 1
+        },
+        "description": "Shampoo"
+    },
+    {
+        "id": 33,
+        "coords": {
+            "x": 11,
+            "y": 2,
+            "z": 1
+        },
+        "description": "Stationery"
+    },
+    {
+        "id": 1,
+        "coords": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+        },
+        "description": "Parties & Celebrations"
+    },
+    {
+        "id": 2,
+        "coords": {
+            "x": 1,
+            "y": 0,
+            "z": 0
+        },
+        "description": "Sandwiches & Magazines",
+        "aisle_number": 1
+    },
+    {
+        "id": 27,
+        "coords": {
+            "x": 1,
+            "y": 1,
+            "z": 0
+        },
+        "description": "Dairy",
+        "aisle_number": 27,
+        "associated_categories": [
+            5
+        ]
+    },
+    {
+        "id": 28,
+        "coords": {
+            "x": 1,
+            "y": 2,
+            "z": 0
+        },
+        "description": "Cheese",
+        "associated_categories": [
+            6
+        ]
+    },
+    {
+        "id": 26,
+        "coords": {
+            "x": 2,
+            "y": 1,
+            "z": 0
+        },
+        "description": "Juice, Pastries, Pies",
+        "aisle_number": 26
+    },
+    {
+        "id": 3,
+        "coords": {
+            "x": 2,
+            "y": 0,
+            "z": 0
+        },
+        "description": "Salad, Fruit & Veg",
+        "aisle_number": 2,
+        "associated_categories": [
+            1,
+            4
+        ]
+    },
+    {
+        "id": 4,
+        "coords": {
+            "x": 3,
+            "y": 0,
+            "z": 0
+        },
+        "description": "Fruit, Veg & Fresh Herbs",
+        "aisle_number": 3,
+        "associated_categories": [
+            1,
+            4
+        ]
+    },
+    {
+        "id": 25,
+        "coords": {
+            "x": 3,
+            "y": 1,
+            "z": 0
+        },
+        "description": "Ready Meals & Seafood",
+        "aisle_number": 25
+    },
+    {
+        "id": 24,
+        "coords": {
+            "x": 4,
+            "y": 1,
+            "z": 0
+        },
+        "description": "Meat, Poultry, Herbs & Pasta",
+        "aisle_number": 24,
+        "associated_categories": [
+            2
+        ]
+    },
+    {
+        "id": 5,
+        "coords": {
+            "x": 4,
+            "y": 0,
+            "z": 0
+        },
+        "description": "Vegetables & Stir Fry",
+        "aisle_number": 4,
+        "associated_categories": [
+            1
+        ]
+    },
+    {
+        "id": 6,
+        "coords": {
+            "x": 5,
+            "y": 0,
+            "z": 0
+        },
+        "description": "Vegetables",
+        "aisle_number": 5,
+        "associated_categories": [
+            1
+        ]
+    },
+    {
+        "id": 23,
+        "coords": {
+            "x": 5,
+            "y": 1,
+            "z": 0
+        },
+        "description": "Pasta & Italian Sauces",
+        "aisle_number": 23
+    },
+    {
+        "id": 22,
+        "coords": {
+            "x": 6,
+            "y": 1,
+            "z": 0
+        },
+        "description": "Rice, East Asian & Carribean",
+        "aisle_number": 22
+    },
+    {
+        "id": 7,
+        "coords": {
+            "x": 6,
+            "y": 0,
+            "z": 0
+        },
+        "description": "Pets",
+        "aisle_number": 6
+    },
+    {
+        "id": 8,
+        "coords": {
+            "x": 7,
+            "y": 0,
+            "z": 0
+        },
+        "description": "Detergent & Washing Up Liquid",
+        "aisle_number": 7
+    },
+    {
+        "id": 21,
+        "coords": {
+            "x": 7,
+            "y": 1,
+            "z": 0
+        },
+        "description": "South Asian & Canned Food",
+        "aisle_number": 21
+    },
+    {
+        "id": 20,
+        "coords": {
+            "x": 8,
+            "y": 1,
+            "z": 0
+        },
+        "description": "Canned Food",
+        "aisle_number": 20
+    },
+    {
+        "id": 9,
+        "coords": {
+            "x": 8,
+            "y": 0,
+            "z": 0
+        },
+        "description": "Kitchen Roll & Laundry",
+        "aisle_number": 8
+    },
+    {
+        "id": 10,
+        "coords": {
+            "x": 9,
+            "y": 0,
+            "z": 0
+        },
+        "description": "Toilet Paper, Tea & Coffee",
+        "aisle_number": 9
+    },
+    {
+        "id": 19,
+        "coords": {
+            "x": 9,
+            "y": 1,
+            "z": 0
+        },
+        "description": "Cereal & Biscuits",
+        "aisle_number": 19
+    },
+    {
+        "id": 18,
+        "coords": {
+            "x": 10,
+            "y": 1,
+            "z": 0
+        },
+        "description": "Snacks & Nuts",
+        "aisle_number": 18
+    },
+    {
+        "id": 11,
+        "coords": {
+            "x": 10,
+            "y": 0,
+            "z": 0
+        },
+        "description": "Frozen: Veg & Chips",
+        "aisle_number": 10
+    },
+    {
+        "id": 12,
+        "coords": {
+            "x": 11,
+            "y": 0,
+            "z": 0
+        },
+        "description": "Frozen: Desserts & Ready Meals",
+        "aisle_number": 11
+    },
+    {
+        "id": 17,
+        "coords": {
+            "x": 11,
+            "y": 1,
+            "z": 0
+        },
+        "description": "Soft Drinks",
+        "aisle_number": 16
+    },
+    {
+        "id": 16,
+        "coords": {
+            "x": 12,
+            "y": 2,
+            "z": 0
+        },
+        "description": "Fresh Bread"
+    },
+    {
+        "id": 15,
+        "coords": {
+            "x": 12,
+            "y": 1,
+            "z": 0
+        },
+        "description": "Bread & Baking",
+        "aisle_number": 15
+    },
+    {
+        "id": 13,
+        "coords": {
+            "x": 12,
+            "y": 0,
+            "z": 0
+        },
+        "description": "Beer & Spirits",
+        "aisle_number": 12
+    },
+    {
+        "id": 32,
+        "coords": {
+            "x": 13,
+            "y": 0,
+            "z": 0
+        },
+        "description": "Wine",
+        "aisle_number": 13
+    },
+    {
+        "id": 14,
+        "coords": {
+            "x": 13,
+            "y": 1,
+            "z": 0
+        },
+        "description": "Eggs, Baking & Cakes",
+        "aisle_number": 14
+    }
+]

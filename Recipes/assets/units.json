@@ -1,0 +1,42 @@
+{
+  "conversions": {
+    "4-1": 4.2,
+    "5-1": 14.3,
+    "6-1": 250
+  },
+  "units": [
+    {
+      "id": 1,
+      "unit": "grams",
+      "display": "g"
+    },
+    {
+      "id": 2,
+      "unit": "amount",
+      "display": ""
+    },
+    {
+      "id": 3,
+      "unit": "length_in",
+      "display": " inch",
+      "plural": " inches"
+    },
+    {
+      "id": 4,
+      "unit": "teaspoon",
+      "display": " tsp"
+    },
+    {
+      "id": 5,
+      "unit": "tablespoon",
+      "display": " tblsp"
+    },
+    {
+      "id": 6,
+      "unit": "cup",
+      "display": " cup",
+      "plural": " cups"
+    }
+  ]
+}
+

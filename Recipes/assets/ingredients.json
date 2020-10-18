@@ -1,0 +1,161 @@
+{
+    "categories": [
+        {
+            "id": 1,
+            "name": "Vegetables"
+        },
+        {
+            "id": 2,
+            "name": "Herbs & Spices"
+        },
+        {
+            "id": 3,
+            "name": "Sauces & Pastes"
+        },
+        {
+            "id": 4,
+            "name": "Fruit"
+        },
+        {
+            "id": 5,
+            "name": "Dairy"
+        },
+        {
+            "id": 6,
+            "name": "Cheese"
+        }
+    ],
+    "ingredients": [
+        {
+            "id": 1,
+            "name": "Baby Corn",
+            "unit_size": 130,
+            "unit_id": 1,
+            "category_id": 1,
+            "api_id": 10011168,
+            "image_url": "https://spoonacular.com/cdn/ingredients_500x500/baby-corn.jpg",
+            "image_aspect_ratio": 1.5015015015015014,
+            "location_id": 5
+        },
+        {
+            "id": 12,
+            "name": "Coriander Leaves",
+            "unit_size": 100,
+            "unit_id": 1,
+            "category_id": 2,
+            "image_url": "https://spoonacular.com/cdn/ingredients_500x500/cilantro.png",
+            "api_id": 11165,
+            "image_aspect_ratio": 2.1459227467811157,
+            "location_id": 4
+        },
+        {
+            "id": 8,
+            "name": "Cumin Seeds/Jeera",
+            "unit_size": 9,
+            "unit_id": 4,
+            "category_id": 2,
+            "image_url": "https://spoonacular.com/cdn/ingredients_500x500/ground-cumin.jpg",
+            "api_id": 2014,
+            "image_aspect_ratio": 1.466275659824047,
+            "location_id": 24
+        },
+        {
+            "id": 4,
+            "name": "Fine Beans",
+            "unit_size": 200,
+            "unit_id": 1,
+            "category_id": 1,
+            "image_url": "https://digitalcontent.api.tesco.com/v2/media/ghs/b88693dc-60d9-4312-a654-ceea53a4d983/snapshotimagehandler_2007761069.jpeg?h=500&w=500",
+            "api_id": 16033,
+            "location_id": 5
+        },
+        {
+            "id": 10,
+            "name": "Garam Masala",
+            "unit_size": 7,
+            "unit_id": 4,
+            "category_id": 2,
+            "image_url": "https://spoonacular.com/cdn/ingredients_500x500/garam-masala.jpg",
+            "api_id": 93663,
+            "image_aspect_ratio": 1.7605633802816902,
+            "location_id": 24
+        },
+        {
+            "id": 7,
+            "name": "Garlic Cloves",
+            "unit_size": 6,
+            "unit_id": 2,
+            "category_id": 1,
+            "image_url": "https://spoonacular.com/cdn/ingredients_500x500/garlic.jpg",
+            "api_id": 10211215,
+            "image_aspect_ratio": 1.5015015015015014,
+            "location_id": 4
+        },
+        {
+            "id": 6,
+            "name": "Ginger",
+            "unit_size": 1,
+            "unit_id": 3,
+            "category_id": 1,
+            "image_url": "https://spoonacular.com/cdn/ingredients_500x500/ginger.png",
+            "api_id": 11216,
+            "image_aspect_ratio": 1.7667844522968197,
+            "location_id": 4
+        },
+        {
+            "id": 3,
+            "name": "Green Capsicum",
+            "plural": "Green Capsicums",
+            "unit_size": 1,
+            "unit_id": 2,
+            "category_id": 1,
+            "image_url": "https://digitalcontent.api.tesco.com/v2/media/ghs/61ad2a29-f43e-407f-b49c-5d8a161143ab/snapshotimagehandler_308214006.jpeg?h=500&w=500",
+            "api_id": 11333,
+            "location_id": 3
+        },
+        {
+            "id": 2,
+            "name": "Mushrooms",
+            "unit_size": 300,
+            "unit_id": 1,
+            "category_id": 1,
+            "image_url": "https://spoonacular.com/cdn/ingredients_500x500/mushrooms.png",
+            "api_id": 11260,
+            "image_aspect_ratio": 1.2755102040816326,
+            "location_id": 6
+        },
+        {
+            "id": 5,
+            "name": "Onion",
+            "plural": "Onions",
+            "unit_size": 1,
+            "unit_id": 2,
+            "category_id": 1,
+            "image_url": "https://spoonacular.com/cdn/ingredients_500x500/brown-onion.png",
+            "api_id": 11282,
+            "image_aspect_ratio": 1.1286681715575622,
+            "location_id": 5
+        },
+        {
+            "id": 11,
+            "name": "Red Pesto (Vg)",
+            "unit_size": 190,
+            "unit_id": 1,
+            "category_id": 3,
+            "image_url": "https://digitalcontent.api.tesco.com/v2/media/ghs/8e3bd467-e372-48aa-a199-1eb054b3b3d5/snapshotimagehandler_1205882675.jpeg?h=540&w=540",
+            "api_id": 93697,
+            "location_id": 20
+        },
+        {
+            "id": 9,
+            "name": "Tomato Puree",
+            "unit_size": 200,
+            "unit_id": 1,
+            "category_id": 3,
+            "image_url": "https://spoonacular.com/cdn/ingredients_500x500/tomato-paste.jpg",
+            "api_id": 11547,
+            "image_aspect_ratio": 1.524390243902439,
+            "location_id": 24
+        }
+    ]
+}

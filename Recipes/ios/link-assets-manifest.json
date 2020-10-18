@@ -1,0 +1,21 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "assets/fonts/JosefinSans-Bold.ttf",
+      "sha1": "b1b440257fcb021f25f1e845b3091e41189695c4"
+    },
+    {
+      "path": "assets/fonts/JosefinSans-Regular.ttf",
+      "sha1": "1320915dbd19243be53f5458f1b6f2881efc7e67"
+    },
+    {
+      "path": "assets/fonts/LobsterTwo-Bold.ttf",
+      "sha1": "9e4f99ec445d5a9bd36ef34c8812f963d0865eee"
+    },
+    {
+      "path": "assets/audio/alarm.mp3",
+      "sha1": "28a26c9021a1a4ddca5492eda74ad1e49503756c"
+    }
+  ]
+}

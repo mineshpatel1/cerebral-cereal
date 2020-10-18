@@ -1,0 +1,3268 @@
+{
+    "categories": [
+        {
+            "id": 1,
+            "name": "Greetings",
+            "icon": "handshake"
+        },
+        {
+            "id": 2,
+            "name": "Family",
+            "icon": "baby"
+        },
+        {
+            "id": 3,
+            "name": "Simple Words",
+            "icon": "book"
+        },
+        {
+            "id": 4,
+            "name": "Q & A",
+            "icon": "question"
+        },
+        {
+            "id": 5,
+            "name": "Numbers",
+            "icon": "sort-numeric-up"
+        },
+        {
+            "id": 6,
+            "name": "Daily Activities",
+            "icon": "coffee"
+        },
+        {
+            "id": 7,
+            "name": "Food & Cooking",
+            "icon": "utensils"
+        },
+        {
+            "id": 8,
+            "name": "Travel & Directions",
+            "icon": "plane"
+        },
+        {
+            "id": 9,
+            "name": "School & Work",
+            "icon": "graduation-cap"
+        },
+        {
+            "id": 10,
+            "name": "Body Parts",
+            "icon": "lungs"
+        },
+        {
+            "id": 11,
+            "name": "Animals",
+            "icon": "paw"
+        },
+        {
+            "id": 12,
+            "name": "Feelings",
+            "icon": "heart"
+        }
+    ],
+    "phrases": {
+        "1": [
+            {
+                "id": 125,
+                "original": "Goodbye",
+                "translation": "Poyittu varain",
+                "categoryId": 1,
+                "script": "\u0baa\u0bcb\u0baf\u0bbf\u0b9f\u0bcd\u0b9f\u0bc1 \u0bb5\u0bb0\u0bc7\u0ba9\u0bcd"
+            },
+            {
+                "id": 1,
+                "original": "Hello",
+                "translation": "VaNakkam",
+                "categoryId": 1,
+                "script": "\u0bb5\u0ba3\u0b95\u0bcd\u0b95\u0bae\u0bcd"
+            },
+            {
+                "id": 5,
+                "original": "How are you? [f]",
+                "translation": "Yepdi irukeenga",
+                "categoryId": 1,
+                "script": "\u0b8e\u0baa\u0bcd\u0baa\u0b9f\u0bbf \u0b87\u0bb0\u0bc1\u0b95\u0bc0\u0b99\u0bcd\u0b95"
+            },
+            {
+                "id": 45,
+                "original": "How are you? [i]",
+                "translation": "Yepdi irukey",
+                "categoryId": 1,
+                "script": "\u0b8e\u0baa\u0bcd\u0baa\u0b9f\u0bbf \u0b87\u0bb0\u0bc1\u0b95\u0bc7"
+            },
+            {
+                "id": 6,
+                "original": "I'm fine",
+                "translation": "Nalla irukkain",
+                "categoryId": 1,
+                "script": "\u0ba8\u0bb2\u0bcd\u0bb2\u0bbe \u0b87\u0bb0\u0bc1\u0b95\u0bcd\u0b95\u0bc7\u0ba9\u0bcd"
+            },
+            {
+                "id": 8,
+                "original": "It's been a while since seeing you",
+                "translation": "Romba naal aachu paathu",
+                "categoryId": 1,
+                "script": "\u0bb0\u0bca\u0bae\u0bcd\u0baa \u0ba8\u0bbe\u0bb3\u0bcd \u0b86\u0b9a\u0bcd\u0b9a\u0bc1 \u0baa\u0bbe\u0ba4\u0bcd\u0ba4\u0bc1"
+            },
+            {
+                "id": 7,
+                "original": "It's been a while since we spoke",
+                "translation": "Romba naal aachu pesi",
+                "categoryId": 1,
+                "script": "\u0bb0\u0bca\u0bae\u0bcd\u0baa \u0ba8\u0bbe\u0bb3\u0bcd \u0b86\u0b9a\u0bcd\u0b9a\u0bc1 \u0baa\u0bc7\u0b9a\u0bbf"
+            },
+            {
+                "id": 3,
+                "original": "Please come inside [f]",
+                "translation": "Ulla vaanga",
+                "categoryId": 1,
+                "script": "\u0b89\u0bb3\u0bcd\u0bb3 \u0bb5\u0bbe\u0b99\u0bcd\u0b95"
+            },
+            {
+                "id": 44,
+                "original": "Please come inside [i]",
+                "translation": "Ulla vaa",
+                "categoryId": 1,
+                "script": "\u0b89\u0bb3\u0bcd\u0bb3 \u0bb5\u0bbe"
+            },
+            {
+                "id": 2,
+                "original": "See you later",
+                "translation": "Aprama paakalaam",
+                "categoryId": 1,
+                "script": "\u0b85\u0baa\u0bcd\u0baa\u0bc1\u0bb1\u0bae\u0bbe \u0baa\u0bbe\u200c\u0b95\u0bcd\u0b95\u0bb2\u0bbe\u0bae\u0bcd"
+            },
+            {
+                "id": 4,
+                "original": "Thank you",
+                "translation": "Nandri",
+                "categoryId": 1,
+                "script": "\u0ba8\u0ba9\u0bcd\u0bb1\u0bbf"
+            }
+        ],
+        "2": [
+            {
+                "id": 43,
+                "original": "Baby",
+                "translation": "Paapa",
+                "categoryId": 2,
+                "script": "\u0baa\u0bbe\u0baa\u0bcd\u0baa\u0bbe"
+            },
+            {
+                "id": 17,
+                "original": "Daughter",
+                "translation": "MagaL",
+                "categoryId": 2,
+                "script": "\u0bae\u0b95\u0bb3\u0bcd"
+            },
+            {
+                "id": 10,
+                "original": "Father",
+                "translation": "Appa",
+                "categoryId": 2,
+                "script": "\u0b85\u0baa\u0bcd\u0baa\u0bbe"
+            },
+            {
+                "id": 16,
+                "original": "Grandfather",
+                "translation": "Thaatha",
+                "categoryId": 2,
+                "script": "\u0ba4\u0bbe\u0ba4\u0bcd\u0ba4\u0bbe"
+            },
+            {
+                "id": 15,
+                "original": "Grandmother",
+                "translation": "Paati",
+                "categoryId": 2,
+                "script": "\u0baa\u0bbe\u0b9f\u0bcd\u0b9f\u0bbf"
+            },
+            {
+                "id": 9,
+                "original": "Mother",
+                "translation": "Amma",
+                "categoryId": 2,
+                "script": "\u0b85\u0bae\u0bcd\u0bae\u0bbe"
+            },
+            {
+                "id": 37,
+                "original": "Mr.",
+                "translation": "Thiru",
+                "categoryId": 2,
+                "script": "\u0ba4\u0bbf\u0bb0\u0bc1"
+            },
+            {
+                "id": 38,
+                "original": "Mrs.",
+                "translation": "Thirumathi",
+                "categoryId": 2,
+                "script": "\u0ba4\u0bbf\u0bb0\u0bc1\u0bae\u0ba4\u0bbf"
+            },
+            {
+                "id": 13,
+                "original": "Older brother",
+                "translation": "ANNa",
+                "categoryId": 2,
+                "script": "\u0b85\u0ba3\u0bcd\u0ba3\u0bbe"
+            },
+            {
+                "id": 11,
+                "original": "Older sister",
+                "translation": "Akka",
+                "categoryId": 2,
+                "script": "\u0b85\u0b95\u0bcd\u0b95\u0bbe"
+            },
+            {
+                "id": 39,
+                "original": "Sir",
+                "translation": "Ayya",
+                "categoryId": 2,
+                "script": "\u0b85\u0baf\u0bcd\u0baf\u0bbe"
+            },
+            {
+                "id": 18,
+                "original": "Son",
+                "translation": "MagaN",
+                "categoryId": 2,
+                "script": "\u0bae\u0b95\u0ba9\u0bcd"
+            },
+            {
+                "id": 20,
+                "original": "Young boy",
+                "translation": "Payan",
+                "categoryId": 2,
+                "script": "\u0baa\u0bc8\u0baf\u0bcd\u0baf\u200c\u200c\u0ba9\u0bcd"
+            },
+            {
+                "id": 19,
+                "original": "Young girl",
+                "translation": "Ponnu",
+                "categoryId": 2,
+                "script": "\u0baa\u0bca\u0ba3\u0bcd\u0ba3\u0bc1"
+            },
+            {
+                "id": 42,
+                "original": "Young lady",
+                "translation": "Kumaari",
+                "categoryId": 2,
+                "script": "\u0b95\u0bc1\u0bae\u0bbe\u0bb0\u0bbf"
+            },
+            {
+                "id": 41,
+                "original": "Young man",
+                "translation": "Kumaaran",
+                "categoryId": 2,
+                "script": "\u0b95\u0bc1\u0bae\u0bbe\u0bb0\u0ba9\u0bcd"
+            },
+            {
+                "id": 14,
+                "original": "Younger brother",
+                "translation": "Thambi",
+                "categoryId": 2,
+                "script": "\u0ba4\u0bae\u0bcd\u0baa\u0bbf"
+            },
+            {
+                "id": 12,
+                "original": "Younger sister",
+                "translation": "Thangachi",
+                "categoryId": 2,
+                "script": "\u0ba4\u0b99\u0bcd\u0b95\u0b9a\u0bcd\u0b9a\u0bbf"
+            }
+        ],
+        "3": [
+            {
+                "id": 298,
+                "original": "Bad",
+                "translation": "Kettadhu",
+                "categoryId": 3,
+                "script": "\u0b95\u0bc6\u0b9f\u0bcd\u0b9f\u0ba4\u0bc1"
+            },
+            {
+                "id": 305,
+                "original": "Beautiful",
+                "translation": "Azhagu",
+                "categoryId": 3,
+                "script": "\u0b85\u0bb4\u0b95\u0bc1"
+            },
+            {
+                "id": 330,
+                "original": "Big",
+                "translation": "Perusu",
+                "categoryId": 3,
+                "script": "\u0baa\u0bc6\u0bb0\u0bc1\u0b9a\u0bc2"
+            },
+            {
+                "id": 258,
+                "original": "Book",
+                "translation": "Pusthagam",
+                "categoryId": 3,
+                "script": "\u0baa\u0bc1\u0ba4\u0bcd\u0ba4\u0b95\u0bae\u0bcd"
+            },
+            {
+                "id": 301,
+                "original": "Bright",
+                "translation": "Velicham",
+                "categoryId": 3,
+                "script": "\u0bb5\u0bc6\u0bb3\u0bbf\u0b9a\u0bcd\u0b9a\u0bae\u0bcd"
+            },
+            {
+                "id": 316,
+                "original": "Clean",
+                "translation": "Sutham",
+                "categoryId": 3,
+                "script": "\u0b9a\u0bc1\u0ba4\u0bcd\u0ba4\u0bae\u0bcd"
+            },
+            {
+                "id": 324,
+                "original": "Close",
+                "translation": "Moodu",
+                "categoryId": 3,
+                "script": "\u0bae\u0bc2\u0b9f\u0bc1"
+            },
+            {
+                "id": 28,
+                "original": "Cold",
+                "translation": "Kulir",
+                "categoryId": 3,
+                "script": "\u0b95\u0bc1\u0bb3\u0bbf\u0bb0\u0bcd"
+            },
+            {
+                "id": 257,
+                "original": "Competition",
+                "translation": "POti",
+                "categoryId": 3,
+                "script": "\u0baa\u0bcb\u0b9f\u0bcd\u0b9f\u0bbf"
+            },
+            {
+                "id": 302,
+                "original": "Dark",
+                "translation": "Iruttu",
+                "categoryId": 3,
+                "script": "\u0b87\u0bb0\u0bc1\u0b9f\u0bcd\u0b9f\u0bc1"
+            },
+            {
+                "id": 255,
+                "original": "Difficult",
+                "translation": "Kashtam",
+                "categoryId": 3,
+                "script": "\u0b95\u0bb7\u0bcd\u0b9f\u0bae\u0bcd"
+            },
+            {
+                "id": 317,
+                "original": "Dirty",
+                "translation": "Azhukku",
+                "categoryId": 3,
+                "script": "\u0b85\u0bb4\u0bc1\u0b95\u0bcd\u0b95\u0bc1"
+            },
+            {
+                "id": 314,
+                "original": "Down",
+                "translation": "Keezha",
+                "categoryId": 3,
+                "script": "\u0b95\u0bc0\u0bb4\u0bc7"
+            },
+            {
+                "id": 318,
+                "original": "Easy",
+                "translation": "Sulabam",
+                "categoryId": 3,
+                "script": "\u0b9a\u0bc1\u0bb2\u0baa\u0bae\u0bcd"
+            },
+            {
+                "id": 285,
+                "original": "Evening",
+                "translation": "Saayungaalam",
+                "categoryId": 3,
+                "script": "\u0b9a\u0bbe\u0baf\u0b99\u0bcd\u0b95\u0bbe\u0bb2\u0bae\u0bcd"
+            },
+            {
+                "id": 134,
+                "original": "Everybody",
+                "translation": "Yellarum",
+                "categoryId": 3,
+                "script": "\u0b8e\u0bb2\u0bcd\u0bb2\u0bbe\u0bb0\u0bc1\u0bae\u0bcd"
+            },
+            {
+                "id": 36,
+                "original": "Everyday",
+                "translation": "Dinamum",
+                "categoryId": 3,
+                "script": "\u0ba4\u0bbf\u0ba9\u0bae\u0bc1\u0bae\u0bcd"
+            },
+            {
+                "id": 135,
+                "original": "Everything",
+                "translation": "Yellam",
+                "categoryId": 3,
+                "script": "\u0b8e\u0bb2\u0bcd\u0bb2\u0bbe\u0bae\u0bcd"
+            },
+            {
+                "id": 300,
+                "original": "Far",
+                "translation": "Dhooram",
+                "categoryId": 3,
+                "script": "\u0ba4\u0bc2\u0bb0\u0bae\u0bcd"
+            },
+            {
+                "id": 327,
+                "original": "Fast",
+                "translation": "Vegam",
+                "categoryId": 3,
+                "script": "\u0bb5\u0bc7\u0b95\u0bae\u0bcd"
+            },
+            {
+                "id": 335,
+                "original": "Fat",
+                "translation": "Gundu",
+                "categoryId": 3,
+                "script": "\u0b95\u0bc1\u0ba9\u0bcd\u0b9f\u0bc1"
+            },
+            {
+                "id": 297,
+                "original": "Good",
+                "translation": "Nalladhu",
+                "categoryId": 3,
+                "script": "\u0ba8\u0bb2\u0bcd\u0bb2\u0ba4\u0bc1"
+            },
+            {
+                "id": 312,
+                "original": "Happy",
+                "translation": "Sandhosham",
+                "categoryId": 3,
+                "script": "\u0b9a\u0ba8\u0bcd\u0ba4\u0bcb\u0bb7\u0bae\u0bcd"
+            },
+            {
+                "id": 137,
+                "original": "Her",
+                "translation": "Aval",
+                "categoryId": 3,
+                "script": "\u0b85\u0bb5\u0bb3\u0bcd"
+            },
+            {
+                "id": 144,
+                "original": "Here",
+                "translation": "Ingey",
+                "categoryId": 3,
+                "script": "\u0b87\u0b99\u0bcd\u0b95\u0bc7"
+            },
+            {
+                "id": 136,
+                "original": "Him",
+                "translation": "Avan",
+                "categoryId": 3,
+                "script": "\u0b85\u0bb5\u0ba9\u0bcd"
+            },
+            {
+                "id": 307,
+                "original": "Hot",
+                "translation": "Soodu",
+                "categoryId": 3,
+                "script": "\u0b9a\u0bc2\u0b9f\u0bc1"
+            },
+            {
+                "id": 27,
+                "original": "Hot weather",
+                "translation": "Veyil",
+                "categoryId": 3,
+                "script": "\u0bb5\u0bc6\u0baf\u0bbf\u0bb2\u0bcd"
+            },
+            {
+                "id": 23,
+                "original": "Inside",
+                "translation": "Ulla",
+                "categoryId": 3,
+                "script": "\u0b89\u0bb3\u0bcd\u0bb3"
+            },
+            {
+                "id": 165,
+                "original": "Knowledge",
+                "translation": "Nyanam",
+                "categoryId": 3,
+                "script": "\u0b9e\u0bbe\u0ba9\u0bae\u0bcd"
+            },
+            {
+                "id": 319,
+                "original": "Less",
+                "translation": "Koncham",
+                "categoryId": 3,
+                "script": "\u0b95\u0bca\u0b9e\u0bcd\u0b9a\u0bae\u0bcd"
+            },
+            {
+                "id": 333,
+                "original": "Long",
+                "translation": "NeeLam",
+                "categoryId": 3,
+                "script": "\u0ba8\u0bc0\u0bb3\u0bae\u0bcd"
+            },
+            {
+                "id": 138,
+                "original": "Me",
+                "translation": "Naan",
+                "categoryId": 3,
+                "script": "\u0ba8\u0bbe\u0ba9\u0bcd"
+            },
+            {
+                "id": 102,
+                "original": "Minutes",
+                "translation": "Nimidam",
+                "categoryId": 3,
+                "script": "\u0ba8\u0bbf\u0bae\u0bbf\u0b9f\u0bae\u0bcd"
+            },
+            {
+                "id": 32,
+                "original": "Moon",
+                "translation": "Vennila",
+                "categoryId": 3,
+                "script": "\u0bb5\u0bc6\u0ba3\u0bcd\u0ba3\u0bbf\u0bb2\u0bbe"
+            },
+            {
+                "id": 320,
+                "original": "More",
+                "translation": "Adhigam",
+                "categoryId": 3,
+                "script": "\u0b85\u0ba4\u0bbf\u0b95\u0bae\u0bcd"
+            },
+            {
+                "id": 29,
+                "original": "Morning",
+                "translation": "Kaalai",
+                "categoryId": 3,
+                "script": "\u0b95\u0bbe\u0bb2\u0bc8"
+            },
+            {
+                "id": 299,
+                "original": "Near",
+                "translation": "Kitte",
+                "categoryId": 3,
+                "script": "\u0b95\u0bbf\u0b9f\u0bcd\u0b9f"
+            },
+            {
+                "id": 322,
+                "original": "New",
+                "translation": "Pudhu",
+                "categoryId": 3,
+                "script": "\u0baa\u0bc1\u0ba4\u0bc1"
+            },
+            {
+                "id": 30,
+                "original": "Night",
+                "translation": "Raathri",
+                "categoryId": 3,
+                "script": "\u0bb0\u0bbe\u0ba4\u0bcd\u0ba4\u0bbf\u0bb0\u0bbf"
+            },
+            {
+                "id": 26,
+                "original": "No",
+                "translation": "Illai",
+                "categoryId": 3,
+                "script": "\u0b87\u0bb2\u0bcd\u0bb2\u0bc8"
+            },
+            {
+                "id": 336,
+                "original": "Noisy",
+                "translation": "Satham",
+                "categoryId": 3,
+                "script": "\u0b9a\u0ba4\u0bcd\u0ba4\u0bae\u0bcd"
+            },
+            {
+                "id": 321,
+                "original": "Old",
+                "translation": "Pazhasu",
+                "categoryId": 3,
+                "script": "\u0baa\u0bb4\u0b9a\u0bc1"
+            },
+            {
+                "id": 323,
+                "original": "Open",
+                "translation": "Thiranthu",
+                "categoryId": 3,
+                "script": "\u0ba4\u0bbf\u0bb1\u0ba8\u0bcd\u0ba4\u0bc1"
+            },
+            {
+                "id": 142,
+                "original": "Ours",
+                "translation": "Namma",
+                "categoryId": 3,
+                "script": "\u0ba8\u0bae\u0bcd\u0bae"
+            },
+            {
+                "id": 24,
+                "original": "Outside",
+                "translation": "Velile",
+                "categoryId": 3,
+                "script": "\u0bb5\u0bc6\u0bb3\u0bbf\u0bb2"
+            },
+            {
+                "id": 304,
+                "original": "Poor",
+                "translation": "Ezhai",
+                "categoryId": 3,
+                "script": "\u0b8f\u0bb4\u0bc8"
+            },
+            {
+                "id": 337,
+                "original": "Quiet",
+                "translation": "Amaidhi",
+                "categoryId": 3,
+                "script": "\u0b85\u0bae\u0bc8\u0ba4\u0bbf"
+            },
+            {
+                "id": 303,
+                "original": "Rich",
+                "translation": "PaNakaran",
+                "categoryId": 3,
+                "script": "\u0baa\u0ba9\u0b95\u0bcd\u0b95\u0bbe\u0bb0\u0ba9\u0bcd"
+            },
+            {
+                "id": 325,
+                "original": "Right",
+                "translation": "Sari",
+                "categoryId": 3,
+                "script": "\u0b9a\u0bb0\u0bbf "
+            },
+            {
+                "id": 313,
+                "original": "Sad",
+                "translation": "Sogam",
+                "categoryId": 3,
+                "script": "\u0b9a\u0bcb\u0b95\u0bae\u0bcd "
+            },
+            {
+                "id": 168,
+                "original": "Say",
+                "translation": "Sollu",
+                "categoryId": 3,
+                "script": "\u0b9a\u0bca\u0bb2\u0bcd\u0bb2\u0bc1 "
+            },
+            {
+                "id": 332,
+                "original": "Short",
+                "translation": "Kuttai",
+                "categoryId": 3,
+                "script": "\u0b95\u0bc1\u0b9f\u0bcd\u0b9f\u0bc8"
+            },
+            {
+                "id": 328,
+                "original": "Slow",
+                "translation": "Mellam",
+                "categoryId": 3,
+                "script": "\u0bae\u0bc6\u0bb2\u0bcd\u0bb2\u0bae\u0bcd"
+            },
+            {
+                "id": 329,
+                "original": "Small",
+                "translation": "Kutti",
+                "categoryId": 3,
+                "script": "\u0b95\u0bc1\u0b9f\u0bcd\u0b9f\u0bbf "
+            },
+            {
+                "id": 133,
+                "original": "Somebody",
+                "translation": "Yaaro",
+                "categoryId": 3,
+                "script": "\u0baf\u0bbe\u0bb0\u0bcb "
+            },
+            {
+                "id": 31,
+                "original": "Sun",
+                "translation": "Sooriyan",
+                "categoryId": 3,
+                "script": "\u0b9a\u0bc2\u0bb0\u0bbf\u0baf\u0ba9\u0bcd "
+            },
+            {
+                "id": 331,
+                "original": "Tall",
+                "translation": "Uyaram",
+                "categoryId": 3,
+                "script": "\u0b89\u0baf\u0bb0\u0bae\u0bcd"
+            },
+            {
+                "id": 143,
+                "original": "That",
+                "translation": "Adhu",
+                "categoryId": 3,
+                "script": "\u0b85\u0ba4\u0bc1"
+            },
+            {
+                "id": 139,
+                "original": "Them (or him/her [f])",
+                "translation": "Avanga",
+                "categoryId": 3,
+                "script": "\u0b85\u0bb5\u0b99\u0bcd\u0b95"
+            },
+            {
+                "id": 145,
+                "original": "There",
+                "translation": "Angey",
+                "categoryId": 3,
+                "script": "\u0b85\u0b99\u0bcd\u0b95\u0bc7"
+            },
+            {
+                "id": 334,
+                "original": "Thin",
+                "translation": "Mellisu",
+                "categoryId": 3,
+                "script": "\u0bae\u0bc6\u0bb2\u0bcd\u0bb2\u0bbf\u0b9a\u0bc1"
+            },
+            {
+                "id": 107,
+                "original": "This",
+                "translation": "Idhu",
+                "categoryId": 3,
+                "script": "\u0b87\u0ba4\u0bc1"
+            },
+            {
+                "id": 69,
+                "original": "Time",
+                "translation": "Neram",
+                "categoryId": 3,
+                "script": "\u0ba8\u0bc7\u0bb0\u0bae\u0bcd"
+            },
+            {
+                "id": 447,
+                "original": "To sleep",
+                "translation": "Thoongu",
+                "categoryId": 3,
+                "script": "\u0ba4\u0bc2\u0b99\u0bcd\u0b95\u0bc1"
+            },
+            {
+                "id": 33,
+                "original": "Today",
+                "translation": "Innaikku",
+                "categoryId": 3,
+                "script": "\u0b87\u0ba9\u0bcd\u0ba9\u0bc8\u0b95\u0bcd\u0b95\u0bc1"
+            },
+            {
+                "id": 34,
+                "original": "Tomorrow",
+                "translation": "Naalaikku",
+                "categoryId": 3,
+                "script": "\u0ba8\u0bbe\u0bb3\u0bc8\u0b95\u0bcd\u0b95\u0bc1"
+            },
+            {
+                "id": 306,
+                "original": "Ugly",
+                "translation": "Asingam",
+                "categoryId": 3,
+                "script": "\u0b85\u0b9a\u0bbf\u0b99\u0bcd\u0b95\u0bae\u0bcd"
+            },
+            {
+                "id": 315,
+                "original": "Up",
+                "translation": "Mele",
+                "categoryId": 3,
+                "script": "\u0bae\u0bc7\u0bb2\u0bc8"
+            },
+            {
+                "id": 140,
+                "original": "Us",
+                "translation": "Naanga",
+                "categoryId": 3,
+                "script": "\u0ba8\u0bbe\u0b99\u0bcd\u0b95"
+            },
+            {
+                "id": 70,
+                "original": "Wedding",
+                "translation": "Kalyaanam",
+                "categoryId": 3,
+                "script": "\u0b95\u0bb2\u0bcd\u0baf\u0bbe\u0ba3\u0bae\u0bcd"
+            },
+            {
+                "id": 308,
+                "original": "Wet",
+                "translation": "Eeram",
+                "categoryId": 3,
+                "script": "\u0b88\u0bb0\u0bae\u0bcd"
+            },
+            {
+                "id": 326,
+                "original": "Wrong",
+                "translation": "Thappu",
+                "categoryId": 3,
+                "script": "\u0ba4\u0baa\u0bcd\u0baa\u0bc1"
+            },
+            {
+                "id": 25,
+                "original": "Yes",
+                "translation": "Aama",
+                "categoryId": 3,
+                "script": "\u0b86\u0bae\u0bbe"
+            },
+            {
+                "id": 35,
+                "original": "Yesterday",
+                "translation": "Nethu",
+                "categoryId": 3,
+                "script": "\u0ba8\u0bc7\u0ba4\u0bcd\u0ba4\u0bc1"
+            }
+        ],
+        "4": [
+            {
+                "id": 55,
+                "original": "Are [f]",
+                "translation": "Irukeenga",
+                "categoryId": 4,
+                "script": "\u0b87\u0bb0\u0bc1\u0b95\u0bcd\u0b95\u0bc0\u0b99\u0bcd\u0b95"
+            },
+            {
+                "id": 56,
+                "original": "Are [i]",
+                "translation": "Irukke",
+                "categoryId": 4,
+                "script": "\u0b87\u0bb0\u0bc1\u0b95\u0bcd\u0b95"
+            },
+            {
+                "id": 57,
+                "original": "Come [f]",
+                "translation": "Vaanga",
+                "categoryId": 4,
+                "script": "\u0bb5\u0bbe\u0b99\u0bcd\u0b95"
+            },
+            {
+                "id": 58,
+                "original": "Come [i]",
+                "translation": "Vaa",
+                "categoryId": 4,
+                "script": "\u0bb5\u0bbe"
+            },
+            {
+                "id": 59,
+                "original": "Go [f]",
+                "translation": "POnga",
+                "categoryId": 4,
+                "script": "\u0baa\u0bcb\u0b99\u0bcd\u0b95"
+            },
+            {
+                "id": 60,
+                "original": "Go [i]",
+                "translation": "Po",
+                "categoryId": 4,
+                "script": "\u0baa\u0bcb"
+            },
+            {
+                "id": 128,
+                "original": "Have you eaten? [f]",
+                "translation": "Saapteengala?",
+                "categoryId": 4,
+                "script": "\u0b9a\u0bbe\u0baa\u0bbf\u0b9f\u0bcd\u0b9f\u0bc0\u0b99\u0bcd\u0b95\u0bb3\u0bbe"
+            },
+            {
+                "id": 129,
+                "original": "Have you eaten? [i]",
+                "translation": "Saaptiya?",
+                "categoryId": 4,
+                "script": "\u0b9a\u0bbe\u0baa\u0bcd\u0baa\u0bbf\u0b9f\u0bcd\u0b9f\u0bc0\u0baf\u0bbe"
+            },
+            {
+                "id": 67,
+                "original": "How did this happen?",
+                "translation": "Idhu yeppidi aachu?",
+                "categoryId": 4,
+                "script": "\u0b87\u0ba4\u0bc1 \u0b8e\u0baa\u0bcd\u0baa\u0b9f\u0bbf \u0b86\u0b9a\u0bcd\u0b9a\u0bc1"
+            },
+            {
+                "id": 146,
+                "original": "How is it?",
+                "translation": "Yeppidi irrukku?",
+                "categoryId": 4,
+                "script": "\u0b8e\u0baa\u0bcd\u0baa\u0b9f\u0bbf \u0b87\u0bb0\u0bc1\u0b95\u0bcd\u0b95\u0bc1"
+            },
+            {
+                "id": 65,
+                "original": "How long?",
+                "translation": "Yevulovu neram?",
+                "categoryId": 4,
+                "script": "\u200c\u0b8e\u0bb5\u0bcd\u0bb5\u0bb3\u0bb5\u0bc1 \u0ba8\u0bc7\u0bb0\u0bae\u0bcd"
+            },
+            {
+                "id": 106,
+                "original": "How much does this cost?",
+                "translation": "Idhu yevulovu?",
+                "categoryId": 4,
+                "script": "\u0b87\u0ba4\u0bc1 \u0b8e\u0bb5\u0bcd\u0bb5\u0bb3\u0bb5\u0bc1"
+            },
+            {
+                "id": 103,
+                "original": "How old are you? [f]",
+                "translation": "Unga vayassu enna?",
+                "categoryId": 4,
+                "script": "\u0b89\u0b99\u0bcd\u0b95 \u0bb5\u0baf\u0b9a\u0bc1 \u0b8e\u0ba9\u0bcd\u0ba9"
+            },
+            {
+                "id": 104,
+                "original": "How old are you? [i]",
+                "translation": "Un vayassu enna?",
+                "categoryId": 4,
+                "script": "\u0b89\u0ba9\u0bcd \u0bb5\u0baf\u0b9a\u0bc1 \u0b8e\u0ba9\u0bcd\u0ba9"
+            },
+            {
+                "id": 149,
+                "original": "How was it?",
+                "translation": "Yeppidi irunthuthu?",
+                "categoryId": 4,
+                "script": "\u0b8e\u0baa\u0bcd\u0baa\u0b9f\u0bbf \u0b87\u0bb0\u0bc1\u0ba8\u0bcd\u0ba4\u0ba4\u0bc1"
+            },
+            {
+                "id": 151,
+                "original": "How will it be?",
+                "translation": "Yeppidi irrukapoguthu?",
+                "categoryId": 4,
+                "script": "\u0b8e\u0baa\u0bcd\u0baa\u0b9f\u0bbf \u0b87\u0bb0\u0bc1\u0b95\u0bcd\u0b95\u0baa\u0bcb\u0b95\u0bc1\u0ba4\u0bc1"
+            },
+            {
+                "id": 127,
+                "original": "How's work? [f]",
+                "translation": "Unga velai yeppidi irrukku?",
+                "categoryId": 4,
+                "script": "\u0b89\u0b99\u0bcd\u0b95 \u0bb5\u0bc7\u0bb2\u0bc8 \u0b8e\u0baa\u0bcd\u0baa\u0b9f\u0bbf \u0b87\u0bb0\u0bc1\u0b95\u0bcd\u0b95\u0bc1"
+            },
+            {
+                "id": 126,
+                "original": "How's work? [i]",
+                "translation": "Un velai yeppidi irrukku?",
+                "categoryId": 4,
+                "script": "\u0b89\u0ba9\u0bcd \u0bb5\u0bc7\u0bb2\u0bc8 \u0b8e\u0baa\u0bcd\u0baa\u0b9f\u0bbf \u0b87\u0bb0\u0bc1\u0b95\u0bcd\u0b95\u0bc1"
+            },
+            {
+                "id": 50,
+                "original": "How?",
+                "translation": "Yeppidi",
+                "categoryId": 4,
+                "script": "\u0b8e\u0baa\u0bcd\u0baa\u0b9f\u0bbf"
+            },
+            {
+                "id": 105,
+                "original": "I am 25 years old",
+                "translation": "Yenakku iruvathi-anju vayasu aavadhu",
+                "categoryId": 4,
+                "script": "\u0b8e\u0ba9\u0b95\u0bcd\u0b95\u0bc1 \u0b87\u0bb0\u0bc1\u0bb5\u0ba4\u0bcd\u0ba4\u0bc1 \u0b90\u0ba8\u0bcd\u0ba4\u0bc1 \u0bb5\u0baf\u0b9a\u0bc1 \u0b86\u0bb5\u0ba4\u0bc1"
+            },
+            {
+                "id": 74,
+                "original": "I am studying",
+                "translation": "Naan padichitu irruken",
+                "categoryId": 4,
+                "script": "\u0ba8\u0bbe\u0ba9\u0bcd \u0baa\u0b9f\u0bbf\u0b9a\u0bcd\u0b9a\u0bbf\u0b9f\u0bcd\u0b9f\u0bc1 \u0b87\u0bb0\u0bc1\u0b95\u0bcd\u0b95\u0bc7\u0ba9\u0bcd"
+            },
+            {
+                "id": 77,
+                "original": "I stay in Madras",
+                "translation": "Naan Madras-le irrukain",
+                "categoryId": 4,
+                "script": "\u0ba8\u0bbe\u0ba9\u0bcd \u0bae\u0bc6\u0b9f\u0bcd\u0bb0\u0bbe\u0bb8\u0bcd \u0bb2 \u0b87\u0bb0\u0bc1\u0b95\u0bcd\u0b95\u0bc7\u0ba9\u0bcd"
+            },
+            {
+                "id": 148,
+                "original": "It is bad/it was bad",
+                "translation": "Nalla illai",
+                "categoryId": 4,
+                "script": "\u0ba8\u0bb2\u0bcd\u0bb2\u0bbe \u0b87\u0bb2\u0bcd\u0bb2"
+            },
+            {
+                "id": 147,
+                "original": "It is good",
+                "translation": "Nalla irrukku",
+                "categoryId": 4,
+                "script": "\u0ba8\u0bb2\u0bcd\u0bb2\u0bbe \u0b87\u0bb0\u0bc1\u0b95\u0bcd\u0b95\u0bc1"
+            },
+            {
+                "id": 150,
+                "original": "It was good",
+                "translation": "Nalla irrunthuthu",
+                "categoryId": 4,
+                "script": "\u0ba8\u0bb2\u0bcd\u0bb2\u0bbe \u0b87\u0bb0\u0bc1\u0ba8\u0bcd\u0ba4\u0ba4\u0bc1"
+            },
+            {
+                "id": 153,
+                "original": "It will be bad",
+                "translation": "Nalla irrukaadhu",
+                "categoryId": 4,
+                "script": "\u0ba8\u0bb2\u0bcd\u0bb2\u0bbe \u0b87\u0bb0\u0bc1\u0b95\u0bcd\u0b95\u0bbe\u0ba4\u0bc1"
+            },
+            {
+                "id": 152,
+                "original": "It will be good",
+                "translation": "Nalla irrukum",
+                "categoryId": 4,
+                "script": "\u0ba8\u0bb2\u0bcd\u0bb2\u0bbe \u0b87\u0bb0\u0bc1\u0b95\u0bcd\u0b95\u0bc1\u0bae\u0bcd"
+            },
+            {
+                "id": 110,
+                "original": "That's cheap",
+                "translation": "Romba kammi-ya-irrukku",
+                "categoryId": 4,
+                "script": "\u0bb0\u0bca\u0bae\u0bcd\u0baa \u0b95\u0bae\u0bcd\u0bae\u0bbf\u0baf\u0bbe \u0b87\u0bb0\u0bc1\u0b95\u0bcd\u0b95\u0bc1\u0ba4\u0bc1"
+            },
+            {
+                "id": 109,
+                "original": "That's expensive",
+                "translation": "Romba velai-ya-irrukku",
+                "categoryId": 4,
+                "script": "\u0bb0\u0bca\u0bae\u0bcd\u0baa \u0bb5\u0bc6\u0bb2\u0bc8\u0baf\u0bbe \u0b87\u0bb0\u0bc1\u0b95\u0bcd\u0b95\u0bc1\u0ba4\u0bc1"
+            },
+            {
+                "id": 108,
+                "original": "This costs 250",
+                "translation": "Idhu irunoothi-ambadu rooba",
+                "categoryId": 4,
+                "script": "\u0b87\u0ba4\u0bc1 \u0b87\u0bb0\u0ba8\u0bc2\u0ba4\u0bcd\u0ba4\u0bbf \u0b85\u0bae\u0bcd\u0baa\u0ba4\u0bc1 \u0bb0\u0bc2\u0baa\u0bbe"
+            },
+            {
+                "id": 161,
+                "original": "This is Sonia's",
+                "translation": "Idhu Sonia-odathu",
+                "categoryId": 4,
+                "script": "\u0b87\u0ba4\u0bc1 Sonia \u0b93\u0b9f\u0ba4\u0bc1"
+            },
+            {
+                "id": 159,
+                "original": "This is hers",
+                "translation": "Idhu avalodadhu",
+                "categoryId": 4,
+                "script": "\u0b87\u0ba4\u0bc1 \u0b85\u0bb5\u0bb3\u0bcb\u0b9f\u0ba4\u0bc1"
+            },
+            {
+                "id": 160,
+                "original": "This is his",
+                "translation": "Idhu avanodadhu",
+                "categoryId": 4,
+                "script": "\u0b87\u0ba4\u0bc1 \u0b85\u0bb5\u0ba9\u0bcb\u0b9f\u0ba4\u0bc1"
+            },
+            {
+                "id": 155,
+                "original": "This is mine",
+                "translation": "Idhu yennodadhu",
+                "categoryId": 4,
+                "script": "\u0b87\u0ba4\u0bc1 \u0b8e\u0ba9\u0bcd\u0ba9\u0bcb\u0b9f\u0ba4\u0bc1"
+            },
+            {
+                "id": 157,
+                "original": "This is ours",
+                "translation": "Idhu yengaLudhu",
+                "categoryId": 4,
+                "script": "\u0b87\u0ba4\u0bc1 \u0b8e\u0b99\u0bcd\u0b95\u0bb3\u0ba4\u0bc1"
+            },
+            {
+                "id": 162,
+                "original": "This is theirs",
+                "translation": "Idhu avangaladhu",
+                "categoryId": 4,
+                "script": "\u0b87\u0ba4\u0bc1 \u0b85\u0bb5\u0b99\u0bcd\u0b95\u0bb3\u0ba4\u0bc1"
+            },
+            {
+                "id": 156,
+                "original": "This isn't mine",
+                "translation": "Idhu yennodadhu illai",
+                "categoryId": 4,
+                "script": "\u0b87\u0ba4\u0bc1 \u0b8e\u0ba9\u0bcd\u0ba9\u0bcb\u0b9f\u0ba4\u0bc1 \u0b87\u0bb2\u0bcd\u0bb2"
+            },
+            {
+                "id": 158,
+                "original": "This isn't ours",
+                "translation": "Idhu yengaLudhu illai",
+                "categoryId": 4,
+                "script": "\u0b87\u0ba4\u0bc1 \u0b8e\u0b99\u0bcd\u0b95\u0bb3\u0ba4\u0bc1 \u0b87\u0bb2\u0bcd\u0bb2"
+            },
+            {
+                "id": 72,
+                "original": "What are you doing? [f]",
+                "translation": "Neenga yenna pannitirukeenga?",
+                "categoryId": 4,
+                "script": "\u0ba8\u0bc0\u0b99\u0bcd\u0b95 \u0b8e\u0ba9\u0bcd\u0ba9 \u0baa\u0ba3\u0bcd\u0ba3\u0bbf\u0b9f\u0bcd\u0b9f\u0bc1\u0bb0\u0bc1\u0b95\u0bcd\u0b95\u0bc0\u0b99\u0bcd\u0b95"
+            },
+            {
+                "id": 73,
+                "original": "What are you doing? [i]",
+                "translation": "Nee yenna pannitirukke?",
+                "categoryId": 4,
+                "script": "\u0ba8\u0bc0 \u0b8e\u0ba9\u0bcd\u0ba9 \u0baa\u0ba3\u0bcd\u0ba3\u0bbf\u0b9f\u0bcd\u0b9f\u0bc1\u0bb0\u0bc1\u0b95\u0bcd\u0b95"
+            },
+            {
+                "id": 130,
+                "original": "What did you eat? [f]",
+                "translation": "Enna saapteenga?",
+                "categoryId": 4,
+                "script": "\u0b8e\u0ba9\u0bcd\u0ba9 \u0b9a\u0bbe\u0baa\u0bcd\u0b9f\u0bc0\u0b99\u0bcd\u0b95"
+            },
+            {
+                "id": 131,
+                "original": "What did you eat? [i]",
+                "translation": "Enna saapte?",
+                "categoryId": 4,
+                "script": "\u0b8e\u0ba9\u0bcd\u0ba9 \u0b9a\u0bbe\u0baa\u0bcd\u0b9f"
+            },
+            {
+                "id": 64,
+                "original": "What happened?",
+                "translation": "Enna aachu?",
+                "categoryId": 4,
+                "script": "\u0b8e\u0ba9\u0bcd\u0ba9 \u0b86\u0b9a\u0bcd\u0b9a\u0bc1"
+            },
+            {
+                "id": 71,
+                "original": "What is your name? [f]",
+                "translation": "Unga peyar enna?",
+                "categoryId": 4,
+                "script": "\u0b89\u0b99\u0bcd\u0b95 \u0baa\u0bc6\u0baf\u0bb0\u0bcd \u0b8e\u0ba9\u0bcd\u0ba9"
+            },
+            {
+                "id": 98,
+                "original": "What's the time?",
+                "translation": "MaNi yenna?",
+                "categoryId": 4,
+                "script": "\u0bae\u0ba3\u0bbf \u0b8e\u0ba9\u0bcd\u0ba9"
+            },
+            {
+                "id": 61,
+                "original": "What's your name? [i]",
+                "translation": "Un peyar enna",
+                "categoryId": 4,
+                "script": "\u0b89\u0ba9\u0bcd \u0baa\u0bc6\u0baf\u0bb0\u0bcd \u0b8e\u0ba9\u0bcd\u0ba9"
+            },
+            {
+                "id": 47,
+                "original": "What?",
+                "translation": "Enna",
+                "categoryId": 4,
+                "script": "\u0b8e\u0ba9\u0bcd\u0ba9"
+            },
+            {
+                "id": 68,
+                "original": "When is the wedding?",
+                "translation": "Kalyanaam yeppo?",
+                "categoryId": 4,
+                "script": "\u0b95\u0bb2\u0bcd\u0baf\u0bbe\u0ba3\u0bae\u0bcd \u0b8e\u0baa\u0bcd\u0baa\u0bcb"
+            },
+            {
+                "id": 48,
+                "original": "When?",
+                "translation": "Yeppo",
+                "categoryId": 4,
+                "script": "\u0b8e\u0baa\u0bcd\u0baa\u0bcb"
+            },
+            {
+                "id": 63,
+                "original": "Where are you? [f]",
+                "translation": "Yenge irukeenga?",
+                "categoryId": 4,
+                "script": "\u0b8e\u0b99\u0bcd\u0b95\u0bc7 \u0b87\u0bb0\u0bc1\u0b95\u0bcd\u0b95\u0bc0\u0b99\u0bcd\u0b95"
+            },
+            {
+                "id": 62,
+                "original": "Where are you? [i]",
+                "translation": "Yenge irukke?",
+                "categoryId": 4,
+                "script": "\u0b8e\u0b99\u0bcd\u0b95\u0bc7 \u0b87\u0bb0\u0bc1\u0b95\u0bcd\u0b95"
+            },
+            {
+                "id": 76,
+                "original": "Where do you stay [i]",
+                "translation": "Nee enge thangara?",
+                "categoryId": 4,
+                "script": "\u0ba8\u0bc0 \u0b8e\u0b99\u0bcd\u0b95\u0bc7 \u0ba4\u0b99\u0bcd\u0b95\u0bb1"
+            },
+            {
+                "id": 75,
+                "original": "Where do you stay? [f]",
+                "translation": "Neenga enga thangareenga?",
+                "categoryId": 4,
+                "script": "\u0ba8\u0bc0\u0b99\u0bcd\u0b95 \u0b8e\u0b99\u0bcd\u0b95\u0bc7 \u0ba4\u0b99\u0bcd\u0b95\u0bb1\u0bc0\u0b99\u0bcd\u0b95"
+            },
+            {
+                "id": 46,
+                "original": "Where?",
+                "translation": "Yenge",
+                "categoryId": 4,
+                "script": "\u0b8e\u0b99\u0bcd\u0b95\u0bc7"
+            },
+            {
+                "id": 154,
+                "original": "Whose is this?",
+                "translation": "Idhu yaarodadhu?",
+                "categoryId": 4,
+                "script": "\u0b87\u0ba4\u0bc1 \u0baf\u0bbe\u0bb0\u0bcb\u0b9f\u0ba4\u0bc1"
+            },
+            {
+                "id": 66,
+                "original": "Why did this happen?",
+                "translation": "Idhu yedhukku aachu?",
+                "categoryId": 4,
+                "script": "\u0b87\u0ba4\u0bc1 \u0b8e\u0ba4\u0ba9\u0bbe\u0bb2 \u0b86\u0b9a\u0bcd\u0b9a\u0bc1"
+            },
+            {
+                "id": 49,
+                "original": "Why?",
+                "translation": "Yedhukku",
+                "categoryId": 4,
+                "script": "\u0b8f\u0ba9\u0bcd"
+            },
+            {
+                "id": 51,
+                "original": "You [f]",
+                "translation": "Neenga",
+                "categoryId": 4,
+                "script": "\u0ba8\u0bc0\u0b99\u0bcd\u0b95"
+            },
+            {
+                "id": 52,
+                "original": "You [i]",
+                "translation": "Nee",
+                "categoryId": 4,
+                "script": "\u0ba8\u0bc0"
+            },
+            {
+                "id": 53,
+                "original": "Yours [f]",
+                "translation": "Unga",
+                "categoryId": 4,
+                "script": "\u0b89\u0b99\u0bcd\u0b95"
+            },
+            {
+                "id": 54,
+                "original": "Yours [i]",
+                "translation": "Un",
+                "categoryId": 4,
+                "script": "\u0b89\u0ba9\u0bcd"
+            }
+        ],
+        "5": [
+            {
+                "id": 78,
+                "original": "1",
+                "translation": "Onnu",
+                "categoryId": 5,
+                "script": "\u0b92\u0ba9\u0bcd\u0ba9\u0bc1"
+            },
+            {
+                "id": 79,
+                "original": "2",
+                "translation": "Rendu",
+                "categoryId": 5,
+                "script": "\u0bb0\u0bc6\u0ba3\u0bcd\u0b9f\u0bc1"
+            },
+            {
+                "id": 80,
+                "original": "3",
+                "translation": "MooNu",
+                "categoryId": 5,
+                "script": "\u0bae\u0bc2\u0ba9\u0bc1"
+            },
+            {
+                "id": 81,
+                "original": "4",
+                "translation": "Naalu",
+                "categoryId": 5,
+                "script": "\u0ba8\u0bbe\u0bb2\u0bc1"
+            },
+            {
+                "id": 82,
+                "original": "5",
+                "translation": "Anchu",
+                "categoryId": 5,
+                "script": "\u0b85\u0b9e\u0bcd\u0b9a\u0bc1"
+            },
+            {
+                "id": 83,
+                "original": "6",
+                "translation": "Aaru",
+                "categoryId": 5,
+                "script": "\u0b86\u0bb1\u0bc1"
+            },
+            {
+                "id": 84,
+                "original": "7",
+                "translation": "Yezhu",
+                "categoryId": 5,
+                "script": "\u0b8f\u0bb4\u0bc1"
+            },
+            {
+                "id": 85,
+                "original": "8",
+                "translation": "Yettu",
+                "categoryId": 5,
+                "script": "\u0b8e\u0b9f\u0bcd\u0b9f\u0bc1"
+            },
+            {
+                "id": 86,
+                "original": "9",
+                "translation": "Ombodu",
+                "categoryId": 5,
+                "script": "\u0b92\u0bae\u0bcd\u0baa\u0bcb\u0ba4\u0bc1"
+            },
+            {
+                "id": 87,
+                "original": "10",
+                "translation": "Pathu",
+                "categoryId": 5,
+                "script": "\u0baa\u0ba4\u0bcd\u0ba4\u0bc1"
+            },
+            {
+                "id": 88,
+                "original": "20",
+                "translation": "Iruvadhu",
+                "categoryId": 5,
+                "script": "\u0b87\u0bb0\u0bc1\u0bb5\u0ba4\u0bc1"
+            },
+            {
+                "id": 89,
+                "original": "30",
+                "translation": "Muppadhu",
+                "categoryId": 5,
+                "script": "\u0bae\u0bc1\u0baa\u0bcd\u0baa\u0ba4\u0bc1"
+            },
+            {
+                "id": 90,
+                "original": "40",
+                "translation": "Naappadhu",
+                "categoryId": 5,
+                "script": "\u0ba8\u0bbe\u0baa\u0bcd\u0baa\u0ba4\u0bc1"
+            },
+            {
+                "id": 91,
+                "original": "50",
+                "translation": "Ambadhu",
+                "categoryId": 5,
+                "script": "\u0b85\u0bae\u0bcd\u0baa\u0ba4\u0bc1"
+            },
+            {
+                "id": 92,
+                "original": "60",
+                "translation": "Aruvadhu",
+                "categoryId": 5,
+                "script": "\u0b85\u0bb1\u0bc1\u0bb5\u0ba4\u0bc1"
+            },
+            {
+                "id": 93,
+                "original": "70",
+                "translation": "Ezhuvadhu",
+                "categoryId": 5,
+                "script": "\u0b8e\u0bb4\u0bc1\u0bb5\u0ba4\u0bc1"
+            },
+            {
+                "id": 94,
+                "original": "80",
+                "translation": "ENbadhu",
+                "categoryId": 5,
+                "script": "\u0b8e\u0ba9\u0bcd\u0baa\u0ba4\u0bc1"
+            },
+            {
+                "id": 95,
+                "original": "90",
+                "translation": "ThoNooru",
+                "categoryId": 5,
+                "script": "\u0ba4\u0bca\u0ba3\u0bcd\u0ba3\u0bc2\u0bb1\u0bc1"
+            },
+            {
+                "id": 96,
+                "original": "100",
+                "translation": "Nooru",
+                "categoryId": 5,
+                "script": "\u0ba8\u0bc2\u0bb1\u0bc1"
+            },
+            {
+                "id": 97,
+                "original": "1000",
+                "translation": "Aayiram",
+                "categoryId": 5,
+                "script": "\u0b86\u0baf\u0bbf\u0bb0\u0bae\u0bcd"
+            },
+            {
+                "id": 100,
+                "original": "Half",
+                "translation": "Arai",
+                "categoryId": 5,
+                "script": "\u0b85\u0bb0\u0bc8"
+            },
+            {
+                "id": 99,
+                "original": "Quarter",
+                "translation": "Kaal",
+                "categoryId": 5,
+                "script": "\u0b95\u0bbe\u0bb2\u0bcd"
+            },
+            {
+                "id": 101,
+                "original": "Three-quarters",
+                "translation": "Mukkaal",
+                "categoryId": 5,
+                "script": "\u0bae\u0bc1\u0b95\u0bcd\u0b95\u0bbe\u0bb2\u0bcd"
+            }
+        ],
+        "6": [
+            {
+                "id": 311,
+                "original": "Clothes are dry",
+                "translation": "Thuni kaanchi pochu",
+                "categoryId": 6,
+                "script": "\u0ba4\u0bc1\u0ba3\u0bbf \u0b95\u0bbe\u0b9e\u0bcd\u0b9e\u0bc1 \u0baa\u0bcb\u0b9a\u0bcd\u0b9a\u0bc1"
+            },
+            {
+                "id": 445,
+                "original": "Don't go outside [f]",
+                "translation": "Velile pOgAtheenga",
+                "categoryId": 6,
+                "script": "\u0bb5\u0bc6\u0bb3\u0bbf\u0baf\u0bc7 \u0baa\u0bcb\u0b95\u0bbe\u0ba4\u0bc0\u0b99\u0bcd\u0b95"
+            },
+            {
+                "id": 444,
+                "original": "Don't go outside [i]",
+                "translation": "Velile pOgAthey",
+                "categoryId": 6,
+                "script": "\u0bb5\u0bc6\u0bb3\u0bbf\u0baf\u0bc7 \u0baa\u0bcb\u0b95\u0bbe\u0ba4\u0bc6"
+            },
+            {
+                "id": 116,
+                "original": "I am going to shower",
+                "translation": "Naan kulikka poren",
+                "categoryId": 6,
+                "script": "\u0ba8\u0bbe\u0ba9\u0bcd \u0b95\u0bc1\u0bb3\u0bbf\u0b95\u0bcd\u0b95 \u0baa\u0bcb\u0bb1\u0bc7\u0ba9\u0bcd"
+            },
+            {
+                "id": 111,
+                "original": "I am hungry",
+                "translation": "Ennakku pasikkaradhu",
+                "categoryId": 6,
+                "script": "\u0b8e\u0ba9\u0b95\u0bcd\u0b95\u0bc1 \u0baa\u0b9a\u0bbf\u0b95\u0bcd\u0b95\u0bc1\u0ba4\u0bc1"
+            },
+            {
+                "id": 112,
+                "original": "I am thirsty",
+                "translation": "Ennakku dhaagama irrukku",
+                "categoryId": 6,
+                "script": "\u0b8e\u0ba9\u0b95\u0bcd\u0b95\u0bc1 \u0ba4\u0bbe\u0b95\u0bae\u0bbe\u0b95 \u0b87\u0bb0\u0bc1\u0b95\u0bcd\u0b95\u0bc1"
+            },
+            {
+                "id": 431,
+                "original": "I like this place a lot",
+                "translation": "Enakku indha edam romba pidichirukku",
+                "categoryId": 6,
+                "script": "\u0b8e\u0ba9\u0b95\u0bcd\u0b95\u0bc1 \u0b87\u0ba8\u0bcd\u0ba4 \u0b87\u0b9f\u0bae\u0bcd \u0bb0\u0bca\u0bae\u0bcd\u0baa \u0baa\u0bbf\u0b9f\u0bbf\u0b9a\u0bcd\u0b9a\u0bbf\u0bb0\u0bc1\u0b95\u0bcd\u0b95\u0bc1"
+            },
+            {
+                "id": 113,
+                "original": "I want some food",
+                "translation": "Konchum saapaadu veNum",
+                "categoryId": 6,
+                "script": "\u0b95\u0bca\u0b9e\u0bcd\u0b9a\u0bae\u0bcd \u0b9a\u0bbe\u0baa\u0bcd\u0baa\u0bbe\u0b9f\u0bc1 \u0bb5\u0bc7\u0ba3\u0bc1\u0bae\u0bcd"
+            },
+            {
+                "id": 114,
+                "original": "I want some water",
+                "translation": "Konchum thanni veNum",
+                "categoryId": 6,
+                "script": "\u0b95\u0bca\u0b9e\u0bcd\u0b9a\u0bae\u0bcd \u0ba4\u0ba3\u0bcd\u0ba3\u0bc0 \u0bb5\u0bc7\u0ba3\u0bc1\u0bae\u0bcd"
+            },
+            {
+                "id": 118,
+                "original": "I want to go home",
+                "translation": "Enakku veetukku poNum",
+                "categoryId": 6,
+                "script": "\u0b8e\u0ba9\u0b95\u0bcd\u0b95\u0bc1 \u0bb5\u0bc0\u0b9f\u0bcd\u0b9f\u0bc1\u0b95\u0bcd\u0b95\u0bc1 \u0baa\u0bcb\u0b95\u0ba3\u0bc1\u0bae\u0bcd"
+            },
+            {
+                "id": 117,
+                "original": "I want to go out",
+                "translation": "Enakku velile poNum",
+                "categoryId": 6,
+                "script": "\u0b8e\u0ba9\u0b95\u0bcd\u0b95\u0bc1 \u0bb5\u0bc6\u0bb2\u0bbf\u0bb2 \u0baa\u0bcb\u0b95\u0ba3\u0bc1\u0bae\u0bcd"
+            },
+            {
+                "id": 115,
+                "original": "I want to shower",
+                "translation": "Enakku kuLikaNum",
+                "categoryId": 6,
+                "script": "\u0b8e\u0ba9\u0b95\u0bcd\u0b95\u0bc1 \u0b95\u0bc1\u0bb3\u0bbf\u0b95\u0bcd\u0b95\u0ba3\u0bc1\u0bae\u0bcd"
+            },
+            {
+                "id": 122,
+                "original": "I'm going out",
+                "translation": "Naan velile poren",
+                "categoryId": 6,
+                "script": "\u0ba8\u0bbe\u0ba9\u0bcd \u0bb5\u0bc6\u0bb2\u0bbf\u0bb2 \u0baa\u0bcb\u0bb1\u0bc7\u0ba9\u0bcd"
+            },
+            {
+                "id": 123,
+                "original": "I'm going to school",
+                "translation": "Naan school-ukku poren",
+                "categoryId": 6,
+                "script": "\u0ba8\u0bbe\u0ba9\u0bcd school-\u0b89\u0b95\u0bcd\u0b95\u0bc1 \u0baa\u0bcb\u0bb1\u0bc7\u0ba9\u0bcd"
+            },
+            {
+                "id": 124,
+                "original": "I'm going to work",
+                "translation": "Naan velaikku poren",
+                "categoryId": 6,
+                "script": "\u0ba8\u0bbe\u0ba9\u0bcd \u0bb5\u0bc7\u0bb2\u0bc8\u0b95\u0bcd\u0b95\u0bc1 \u0baa\u0bcb\u0bb1\u0bc7\u0ba9\u0bcd"
+            },
+            {
+                "id": 121,
+                "original": "Let's go home",
+                "translation": "Veetuku polaam",
+                "categoryId": 6,
+                "script": "\u0bb5\u0bc0\u0b9f\u0bcd\u0b9f\u0bc1\u0b95\u0bcd\u0b95\u0bc1 \u0baa\u0bcb\u0bb2\u0bbe\u0bae\u0bcd"
+            },
+            {
+                "id": 119,
+                "original": "Let's go to the beach",
+                "translation": "Beach-ikku polaam",
+                "categoryId": 6,
+                "script": "beach-\u0b89\u0b95\u0bcd\u0b95\u0bc1 \u0baa\u0bcb\u0bb2\u0bbe\u0bae\u0bcd"
+            },
+            {
+                "id": 120,
+                "original": "Let's go to the mall",
+                "translation": "Mall-ikku polaam",
+                "categoryId": 6,
+                "script": "mall-\u0b89\u0b95\u0bcd\u0b95\u0bc1 \u0baa\u0bcb\u0bb2\u0bbe\u0bae\u0bcd"
+            },
+            {
+                "id": 450,
+                "original": "Shall I get you some food?",
+                "translation": "Saapaadu iduthitu varatta?",
+                "categoryId": 6,
+                "script": "\u0b9a\u0bbe\u0baa\u0bcd\u0baa\u0bbe\u0b9f\u0bc1 \u0b8e\u0b9f\u0bc1\u0ba4\u0bcd\u0ba4\u0bc1\u0b9f\u0bcd\u0b9f\u0bc1 \u0bb5\u0bb0\u0b9f\u0bcd\u0b9f\u0bc1\u0bae\u0bbe"
+            },
+            {
+                "id": 449,
+                "original": "Shall I get you some water?",
+                "translation": "Thanni iduthitu varatta?",
+                "categoryId": 6,
+                "script": "\u0ba4\u0ba3\u0bcd\u0ba3\u0bc0 \u0b8e\u0b9f\u0bc1\u0ba4\u0bcd\u0ba4\u0bc1\u0b9f\u0bcd\u0b9f\u0bc1 \u0bb5\u0bb0\u0b9f\u0bcd\u0b9f\u0bc1\u0bae\u0bbe"
+            }
+        ],
+        "7": [
+            {
+                "id": 216,
+                "original": "Add coffee powder and leave it for 10 minutes",
+                "translation": "Coffee thool pOttu, paTHu nimisham vekkanum",
+                "categoryId": 7,
+                "script": "coffee \u0ba4\u0bc2\u0bb3\u0bcd \u0baa\u0bcb\u0b9f\u0bcd\u0b9f\u0bc1, \u0baa\u0ba4\u0bcd\u0ba4\u0bc1 \u0ba8\u0bbf\u0bae\u0bbf\u0bb7\u0bae\u0bcd \u0bb5\u0bc6\u0b95\u0bcd\u0b95\u0ba3\u0bc1\u0bae\u0bcd"
+            },
+            {
+                "id": 217,
+                "original": "Add some milk and sugar in a cup",
+                "translation": "Oru cup-le paal-um sakkarai-um podanum",
+                "categoryId": 7,
+                "script": "\u0b92\u0bb0\u0bc1 cup-\u0bb2\u0bc6 \u0baa\u0bbe\u0bb2\u0bc1\u0bae\u0bcd \u0b9a\u0b95\u0bcd\u0b95\u0bb0\u0bc8\u0baf\u0bc1\u0bae\u0bcd \u0baa\u0bcb\u0b9f\u0ba9\u0bc1\u0bae\u0bcd"
+            },
+            {
+                "id": 183,
+                "original": "Apple",
+                "translation": "AapiL",
+                "categoryId": 7,
+                "script": "\u0b86\u0baa\u0bcd\u0baa\u0bbf\u0bb3\u0bcd"
+            },
+            {
+                "id": 207,
+                "original": "Aubergine",
+                "translation": "Kathrikaai",
+                "categoryId": 7,
+                "script": "\u0b95\u0ba4\u0bcd\u0ba4\u0bbf\u0bb0\u0bbf\u0b95\u0bcd\u0b95\u0bbe\u0baf\u0bcd"
+            },
+            {
+                "id": 164,
+                "original": "Banana",
+                "translation": "Vaazhai pazham",
+                "categoryId": 7,
+                "script": "\u0bb5\u0bbe\u0bb4\u0bc8 \u0baa\u0bb4\u0bae\u0bcd"
+            },
+            {
+                "id": 174,
+                "original": "Big cooking bowl",
+                "translation": "Kadaai",
+                "categoryId": 7,
+                "script": "\u0b95\u0b9f\u0bbe\u0baf\u0bcd"
+            },
+            {
+                "id": 196,
+                "original": "Bitter",
+                "translation": "Kasappu",
+                "categoryId": 7,
+                "script": "\u0b95\u0b9a\u0baa\u0bcd\u0baa\u0bc1"
+            },
+            {
+                "id": 214,
+                "original": "Boil water and pour it into the filter",
+                "translation": "Thanni kodhikkavechu, filter-le oothanum",
+                "categoryId": 7,
+                "script": "\u0ba4\u0ba3\u0bcd\u0ba3\u0bc0 \u0b95\u0bca\u0ba4\u0bbf\u0b95\u0bcd\u0b95\u0bb5\u0bc6\u0b9a\u0bcd\u0b9a\u0bc1 filter-\u0bb2\u0bc6 \u0b8a\u0ba4\u0bcd\u0ba4\u0ba3\u0bc1\u0bae\u0bcd"
+            },
+            {
+                "id": 202,
+                "original": "Careful, it's hot",
+                "translation": "Paathu, sooda irukku",
+                "categoryId": 7,
+                "script": "\u0baa\u0bbe\u0ba4\u0bcd\u0ba4\u0bc1 \u0b9a\u0bc2\u0b9f\u0bbe\u0b95 \u0b87\u0bb0\u0bc1\u0b95\u0bcd\u0b95\u0bc1"
+            },
+            {
+                "id": 167,
+                "original": "Coconut",
+                "translation": "Thengaa",
+                "categoryId": 7,
+                "script": "\u0ba4\u0bc7\u0b99\u0bcd\u0b95\u0bbe\u0baf\u0bcd"
+            },
+            {
+                "id": 171,
+                "original": "Cook",
+                "translation": "Samayal",
+                "categoryId": 7,
+                "script": "\u0b9a\u0bae\u0bc8\u0baf\u0bb2\u0bcd"
+            },
+            {
+                "id": 180,
+                "original": "Curd",
+                "translation": "Thayir",
+                "categoryId": 7,
+                "script": "\u0ba4\u0baf\u0bbf\u0bb0\u0bcd"
+            },
+            {
+                "id": 205,
+                "original": "Curry",
+                "translation": "Kozhambu",
+                "categoryId": 7,
+                "script": "\u0b95\u0bc1\u0bb4\u0bae\u0bcd\u0baa\u0bc1"
+            },
+            {
+                "id": 208,
+                "original": "Drumstick",
+                "translation": "Murungakaai",
+                "categoryId": 7,
+                "script": "\u0bae\u0bc1\u0bb0\u0bc1\u0b99\u0bcd\u0b95\u0b95\u0bcd\u0b95\u0bbe\u0baf\u0bcd"
+            },
+            {
+                "id": 198,
+                "original": "Fenugreek taste",
+                "translation": "Thuvarpu",
+                "categoryId": 7,
+                "script": "\u0ba4\u0bc1\u0bb5\u0bb0\u0bcd\u0baa\u0bcd\u0baa\u0bc1"
+            },
+            {
+                "id": 21,
+                "original": "Food",
+                "translation": "Saapaadu",
+                "categoryId": 7,
+                "script": "\u0b9a\u0bbe\u0baa\u0bcd\u0baa\u0bbe\u0b9f\u0bc1"
+            },
+            {
+                "id": 310,
+                "original": "Food's gone cold",
+                "translation": "Saapadu aari pochu",
+                "categoryId": 7,
+                "script": "\u0b9a\u0bbe\u0baa\u0bcd\u0baa\u0bbe\u0b9f\u0bc1 \u0b86\u0bb0\u0bbf \u0baa\u0bcb\u0b9a\u0bcd\u0b9a\u0bc1"
+            },
+            {
+                "id": 163,
+                "original": "Fruit",
+                "translation": "Pazham",
+                "categoryId": 7,
+                "script": "\u0baa\u0bb4\u0bae\u0bcd"
+            },
+            {
+                "id": 176,
+                "original": "Glass",
+                "translation": "Sombu",
+                "categoryId": 7,
+                "script": "\u0b9a\u0bca\u0bae\u0bcd\u0baa\u0bc1"
+            },
+            {
+                "id": 185,
+                "original": "Grapes",
+                "translation": "Drakshai",
+                "categoryId": 7,
+                "script": "\u0ba4\u0bbf\u0bb0\u0bbe\u0b9f\u0bcd\u0b9a\u0bc8"
+            },
+            {
+                "id": 190,
+                "original": "Greens",
+                "translation": "Keerai",
+                "categoryId": 7,
+                "script": "\u0b95\u0bc0\u0bb0\u0bc8"
+            },
+            {
+                "id": 213,
+                "original": "How do I make filter coffee?",
+                "translation": "Filter coffee yeppidi panradhu?",
+                "categoryId": 7,
+                "script": "\u0b83\u0baa\u0bbf\u0bb2\u0bcd\u0b9f\u0bb0\u0bcd \u0b95\u0bbe\u0baa\u0bcd\u0baa\u0bbf \u0b8e\u0baa\u0bcd\u0b9f\u0bbf \u0baa\u0ba3\u0bcd\u0ba3\u0bb0\u0bcd\u0ba4\u0bc1"
+            },
+            {
+                "id": 212,
+                "original": "I'm making dosa with coconut chutney",
+                "translation": "Naan dosayum thenga chutney-um pannaren",
+                "categoryId": 7,
+                "script": "\u0ba8\u0bbe\u0ba9\u0bcd \u0ba4\u0bcb\u0b9a\u0bc8\u0baf\u0bc1\u0bae\u0bcd \u0ba4\u0bc7\u0b99\u0bcd\u0b95\u0bbe \u0b9a\u0b9f\u0bcd\u0ba9\u0bbf\u0baf\u0bc1\u0bae\u0bcd \u0baa\u0ba3\u0bcd\u0ba3\u0bb1\u0bc7\u0ba9\u0bcd"
+            },
+            {
+                "id": 201,
+                "original": "It isn't spicy enough",
+                "translation": "Kaaram pathala",
+                "categoryId": 7,
+                "script": "\u0b95\u0bbe\u0bb0\u0bae\u0bcd \u0baa\u0ba4\u0bcd\u0ba4\u0bb2"
+            },
+            {
+                "id": 200,
+                "original": "It's salty",
+                "translation": "Uppaa irukku",
+                "categoryId": 7,
+                "script": "\u0b89\u0baa\u0bcd\u0baa\u0bbe \u0b87\u0bb0\u0bc1\u0b95\u0bcd\u0b95\u0bc1"
+            },
+            {
+                "id": 199,
+                "original": "It's too sweet",
+                "translation": "Romba inippaa irukku",
+                "categoryId": 7,
+                "script": "\u0bb0\u0bca\u0bae\u0bcd\u0baa \u0b87\u0ba9\u0bbf\u0baa\u0bcd\u0baa\u0bbe \u0b87\u0bb0\u0bc1\u0b95\u0bcd\u0b95\u0bc1"
+            },
+            {
+                "id": 181,
+                "original": "Lemon",
+                "translation": "Elimitcham-bazham",
+                "categoryId": 7,
+                "script": "\u0b8e\u0bb2\u0bc1\u0bae\u0bbf\u0b9a\u0bcd\u0b9a\u0bae\u0bcd\u0baa\u0bb4\u0bae\u0bcd"
+            },
+            {
+                "id": 186,
+                "original": "Mango",
+                "translation": "Mambazham",
+                "categoryId": 7,
+                "script": "\u0bae\u0bbe\u0bae\u0bcd\u0baa\u0bb4\u0bae\u0bcd"
+            },
+            {
+                "id": 179,
+                "original": "Milk",
+                "translation": "Paal",
+                "categoryId": 7,
+                "script": "\u0baa\u0bbe\u0bb2\u0bcd"
+            },
+            {
+                "id": 206,
+                "original": "Okra",
+                "translation": "Vendakkaai",
+                "categoryId": 7,
+                "script": "\u0bb5\u0bc6\u0ba3\u0bcd\u0b9f\u0bc6\u0b95\u0bcd\u0b95\u0bbe"
+            },
+            {
+                "id": 188,
+                "original": "Onion",
+                "translation": "Vengaayam",
+                "categoryId": 7,
+                "script": "\u0bb5\u0bc6\u0b99\u0bcd\u0b95\u0bbe\u0baf\u0bae\u0bcd"
+            },
+            {
+                "id": 184,
+                "original": "Orange",
+                "translation": "Aaranju",
+                "categoryId": 7,
+                "script": "\u0b86\u0bb0\u0b9e\u0bcd\u0b9a\u0bc1"
+            },
+            {
+                "id": 178,
+                "original": "Paste",
+                "translation": "Thokku",
+                "categoryId": 7,
+                "script": "\u0ba4\u0bca\u0b95\u0bcd\u0b95\u0bc1"
+            },
+            {
+                "id": 191,
+                "original": "Peas",
+                "translation": "PattaaNi",
+                "categoryId": 7,
+                "script": "\u0baa\u0b9f\u0bcd\u0b9f\u0bbe\u0ba3\u0bbf"
+            },
+            {
+                "id": 203,
+                "original": "Pickle",
+                "translation": "Oorgai",
+                "categoryId": 7,
+                "script": "\u0b8a\u0bb0\u0bcd\u0b95\u0bbe"
+            },
+            {
+                "id": 175,
+                "original": "Plate",
+                "translation": "Thattu",
+                "categoryId": 7,
+                "script": "\u0ba4\u0b9f\u0bcd\u0b9f\u0bc1"
+            },
+            {
+                "id": 189,
+                "original": "Potato",
+                "translation": "Urula Kezhangu",
+                "categoryId": 7,
+                "script": "\u0b89\u0bb0\u0bc1\u0bb2\u0b95\u0bb4\u0b99\u0bcd\u0b95\u0bc1"
+            },
+            {
+                "id": 177,
+                "original": "Powder",
+                "translation": "Podi",
+                "categoryId": 7,
+                "script": "\u0baa\u0bca\u0b9f\u0bbf"
+            },
+            {
+                "id": 209,
+                "original": "Radish",
+                "translation": "MuLLangi",
+                "categoryId": 7,
+                "script": "\u0bae\u0bc1\u0bb3\u0bcd\u0bb3\u0b99\u0bcd\u0b95\u0bbf"
+            },
+            {
+                "id": 132,
+                "original": "Rice",
+                "translation": "Saadham",
+                "categoryId": 7,
+                "script": "\u0b9a\u0bbe\u0ba4\u0bae\u0bcd"
+            },
+            {
+                "id": 169,
+                "original": "Salt",
+                "translation": "Uppu",
+                "categoryId": 7,
+                "script": "\u0b89\u0baa\u0bcd\u0baa\u0bc1"
+            },
+            {
+                "id": 197,
+                "original": "Sour",
+                "translation": "PuLippu",
+                "categoryId": 7,
+                "script": "\u0baa\u0bc1\u0bb3\u0bbf\u0baa\u0bcd\u0baa\u0bc1"
+            },
+            {
+                "id": 173,
+                "original": "Spatula",
+                "translation": "KaraNdi",
+                "categoryId": 7,
+                "script": "\u0b95\u0bb0\u0ba3\u0bcd\u0b9f\u0bbf"
+            },
+            {
+                "id": 195,
+                "original": "Spicy",
+                "translation": "Kaaram",
+                "categoryId": 7,
+                "script": "\u0b95\u0bbe\u0bb0\u0bae\u0bcd"
+            },
+            {
+                "id": 170,
+                "original": "Sugar",
+                "translation": "Sakkarai",
+                "categoryId": 7,
+                "script": "\u0b9a\u0b95\u0bcd\u0b95\u0bb0\u0bc8"
+            },
+            {
+                "id": 193,
+                "original": "Sweet",
+                "translation": "Inippu",
+                "categoryId": 7,
+                "script": "\u0b87\u0ba9\u0bbf\u0baa\u0bcd\u0baa\u0bc1"
+            },
+            {
+                "id": 182,
+                "original": "Tamarind",
+                "translation": "PuLi",
+                "categoryId": 7,
+                "script": "\u0baa\u0bc1\u0bb3\u0bbf"
+            },
+            {
+                "id": 192,
+                "original": "Taste",
+                "translation": "Suvai",
+                "categoryId": 7,
+                "script": "\u0b9a\u0bc1\u0bb5\u0bc8"
+            },
+            {
+                "id": 454,
+                "original": "To boil",
+                "translation": "Kodhikka vechu",
+                "categoryId": 7,
+                "script": "\u0b95\u0bca\u0ba4\u0bbf\u0b95\u0bcd\u0b95\u0bb5\u0bc6\u0b9a\u0bcd\u0b9a\u0bc1"
+            },
+            {
+                "id": 215,
+                "original": "To steam",
+                "translation": "Vegavechu",
+                "categoryId": 7,
+                "script": "\u0bb5\u0bc7\u0b95\u0bb5\u0bc6\u0b9a\u0bcd\u0b9a\u0bc1"
+            },
+            {
+                "id": 187,
+                "original": "Tomato",
+                "translation": "ThakkaaLi",
+                "categoryId": 7,
+                "script": "\u0ba4\u0b95\u0bcd\u0b95\u0bbe\u0bb3\u0bbf"
+            },
+            {
+                "id": 166,
+                "original": "Vegetable",
+                "translation": "Kaai",
+                "categoryId": 7,
+                "script": "\u0b95\u0bbe\u0baf\u0bcd"
+            },
+            {
+                "id": 204,
+                "original": "Vegetable curry",
+                "translation": "Poriyal",
+                "categoryId": 7,
+                "script": "\u0baa\u0bca\u0bb0\u0bbf\u0baf\u0bb2\u0bcd"
+            },
+            {
+                "id": 172,
+                "original": "Vessel",
+                "translation": "Paathram",
+                "categoryId": 7,
+                "script": "\u0baa\u0bbe\u0ba4\u0bcd\u0ba4\u0bbf\u0bb0\u0bae\u0bcd"
+            },
+            {
+                "id": 22,
+                "original": "Water",
+                "translation": "ThaNNi",
+                "categoryId": 7,
+                "script": "\u0ba4\u0ba3\u0bcd\u0ba3\u0bbf"
+            },
+            {
+                "id": 211,
+                "original": "What are you cooking? [f]",
+                "translation": "Yenna samaikareenga",
+                "categoryId": 7,
+                "script": "\u0b8e\u0ba9\u0bcd\u0ba9 \u0b9a\u0bae\u0bc8\u0b95\u0bcd\u0b95\u0bb0\u0bc0\u0b99\u0bcd\u0b95"
+            },
+            {
+                "id": 210,
+                "original": "What are you cooking? [i]",
+                "translation": "Yenna samaikkara",
+                "categoryId": 7,
+                "script": "\u0b8e\u0ba9\u0bcd\u0ba9 \u0b9a\u0bae\u0bc8\u0b95\u0bcd\u0b95\u0bb0"
+            }
+        ],
+        "8": [
+            {
+                "id": 224,
+                "original": "Adjacent",
+                "translation": "Pakkam",
+                "categoryId": 8,
+                "script": "\u0baa\u0b95\u0bcd\u0b95\u0bae\u0bcd"
+            },
+            {
+                "id": 228,
+                "original": "Be careful",
+                "translation": "Paathu",
+                "categoryId": 8,
+                "script": "\u0baa\u0bbe\u0ba4\u0bcd\u0ba4\u0bc1"
+            },
+            {
+                "id": 222,
+                "original": "Close by",
+                "translation": "Kitta",
+                "categoryId": 8,
+                "script": "\u0b95\u0bbf\u0b9f\u0bcd\u0b9f"
+            },
+            {
+                "id": 226,
+                "original": "Down slope",
+                "translation": "PaLLam",
+                "categoryId": 8,
+                "script": "\u0baa\u0bb3\u0bcd\u0bb3\u0bae\u0bcd"
+            },
+            {
+                "id": 223,
+                "original": "Far away",
+                "translation": "Dhooram",
+                "categoryId": 8,
+                "script": "\u0ba4\u0bc2\u0bb0\u0bae\u0bcd"
+            },
+            {
+                "id": 247,
+                "original": "Get down at the beach stop [f]",
+                "translation": "Beach stop-le yerangunga",
+                "categoryId": 8,
+                "script": "\u0baa\u0bc0\u0b9a\u0bcd \u0bb8\u0bcd\u0b9f\u0bbe\u0baa\u0bcd \u0bb2 \u0b87\u0bb1\u0b99\u0bcd\u0b95\u0bc1\u0b99\u0bcd\u0b95"
+            },
+            {
+                "id": 248,
+                "original": "Get down at the beach stop [i]",
+                "translation": "Beach stop-le yerangu",
+                "categoryId": 8,
+                "script": "\u0baa\u0bc0\u0b9a\u0bcd \u0bb8\u0bcd\u0b9f\u0bbe\u0baa\u0bcd \u0bb2 \u0b87\u0bb1\u0b99\u0bcd\u0b95\u0bc1"
+            },
+            {
+                "id": 244,
+                "original": "Go left at the bus stop [i]",
+                "translation": "Bus stop la left thirumbu",
+                "categoryId": 8,
+                "script": "\u0baa\u0bb8\u0bcd \u0bb8\u0bcd\u0b9f\u0bbe\u0baa\u0bcd \u0bb2 \u0bb2\u0bc6\u0b83\u0baa\u0bcd\u0b9f\u0bcd \u0ba4\u0bbf\u0bb0\u0bc1\u0bae\u0bcd\u0baa\u0bc1"
+            },
+            {
+                "id": 238,
+                "original": "Go straight [f]",
+                "translation": "Nera ponga",
+                "categoryId": 8,
+                "script": "\u0ba8\u0bc7\u0bb0 \u0baa\u0bcb\u0b99\u0bcd\u0b95"
+            },
+            {
+                "id": 239,
+                "original": "Go straight [i]",
+                "translation": "Nera po",
+                "categoryId": 8,
+                "script": "\u0ba8\u0bc7\u0bb0 \u0baa\u0bcb"
+            },
+            {
+                "id": 293,
+                "original": "Go to the main road [f]",
+                "translation": "Main road ku ponga",
+                "categoryId": 8,
+                "script": "\u0bae\u0bc6\u0baf\u0bbf\u0ba9\u0bcd \u0bb0\u0bcb\u0b9f\u0bc1 \u0b95\u0bc1 \u0baa\u0bcb\u0b99\u0bcd\u0b95"
+            },
+            {
+                "id": 292,
+                "original": "Go to the main road [i]",
+                "translation": "Main road po",
+                "categoryId": 8,
+                "script": "\u0bae\u0bc6\u0baf\u0bbf\u0ba9\u0bcd \u0bb0\u0bcb\u0b9f\u0bc1 \u0b95\u0bc1 \u0baa\u0bcb"
+            },
+            {
+                "id": 237,
+                "original": "How do I get to the airport?",
+                "translation": "Airport-ku eppadi poradhu?",
+                "categoryId": 8,
+                "script": "\u0b8f\u0bb0\u0bcd\u0baa\u0bcb\u0b9f\u0bcd \u0b95\u0bc1 \u0b8e\u0baa\u0bcd\u0b9f\u0bbf \u0baa\u0bcb\u0bb1\u0ba4\u0bc1"
+            },
+            {
+                "id": 243,
+                "original": "How do I get to the beach?",
+                "translation": "Beach-ku eppadi poradhu?",
+                "categoryId": 8,
+                "script": "\u0baa\u0bc0\u0b9a\u0bcd \u0b95\u0bc1 \u0b8e\u0baa\u0bcd\u0b9f\u0bbf \u0baa\u0bcb\u0bb1\u0ba4\u0bc1"
+            },
+            {
+                "id": 241,
+                "original": "How far is the beach?",
+                "translation": "Beach evolu dhooram?",
+                "categoryId": 8,
+                "script": "\u0baa\u0bc0\u0b9a\u0bcd \u0b8e\u0bb5\u0bcd\u0bb3\u0bcb \u0ba4\u0bc2\u0bb0\u0bae\u0bcd"
+            },
+            {
+                "id": 236,
+                "original": "How to get there?",
+                "translation": "Yeppidi poradhu?",
+                "categoryId": 8,
+                "script": "\u0b8e\u0baa\u0bcd\u0b9f\u0bbf \u0baa\u0bcb\u0bb1\u0ba4\u0bc1"
+            },
+            {
+                "id": 235,
+                "original": "I don't know the way",
+                "translation": "Yenakku vazhi theriyaadhu",
+                "categoryId": 8,
+                "script": "\u0b8e\u0ba9\u0b95\u0bcd\u0b95\u0bc1 \u0bb5\u0bb4\u0bbf \u0ba4\u0bc6\u0bb0\u0bbf\u0baf\u0bbe\u0ba4\u0bc1"
+            },
+            {
+                "id": 290,
+                "original": "It's far away",
+                "translation": "Romba dhooram poNum",
+                "categoryId": 8,
+                "script": "\u0bb0\u0bca\u0bae\u0bcd\u0baa \u0ba4\u0bc2\u0bb0\u0bae\u0bcd \u0baa\u0bcb\u0ba3\u0bc1\u0bae\u0bcd"
+            },
+            {
+                "id": 263,
+                "original": "It's in Bangalore",
+                "translation": "Bangalore-le irukku",
+                "categoryId": 8,
+                "script": "\u0baa\u0bc6\u0b99\u0bcd\u0b95\u0bb3\u0bc2\u0bb0\u0bcd \u0bb2 \u0b87\u0bb0\u0bc1\u0b95\u0bcd\u0b95\u0bc1"
+            },
+            {
+                "id": 291,
+                "original": "It's near",
+                "translation": "Kittaka irukku",
+                "categoryId": 8,
+                "script": "\u0b95\u0bbf\u0b9f\u0bcd\u0b9f\u200c\u0b95\u0bcd\u0b95 \u0b87\u0bb0\u0bc1\u0b95\u0bcd\u0b95\u0bc1"
+            },
+            {
+                "id": 264,
+                "original": "It's near the airport",
+                "translation": "Airport pakkathile irukku",
+                "categoryId": 8,
+                "script": "\u0b8f\u0bb0\u0bcd\u0baa\u0bcb\u0b9f\u0bcd \u0baa\u0b95\u0bcd\u0b95\u0ba4\u0bcd\u0ba4\u0bbf\u0bb2 \u0b87\u0bb0\u0bc1\u0b95\u0bcd\u0b95\u0bc1"
+            },
+            {
+                "id": 296,
+                "original": "It's near the subway",
+                "translation": "Subway pakkathile irruku",
+                "categoryId": 8,
+                "script": "\u0b9a\u0baa\u0bcd\u0bb5\u0bc7 \u0baa\u0b95\u0bcd\u0b95\u0ba4\u0bcd\u0ba4\u0bbf\u0bb2 \u0b87\u0bb0\u0bc1\u0b95\u0bcd\u0b95\u0bc1"
+            },
+            {
+                "id": 242,
+                "original": "It's quite far",
+                "translation": "Romba dhooramaa irukku",
+                "categoryId": 8,
+                "script": "\u0bb0\u0bca\u0bae\u0bcd\u0baa \u0ba4\u0bc2\u0bb0\u0bae\u0bbe \u0b87\u0bb0\u0bc1\u0b95\u0bcd\u0b95\u0bc1"
+            },
+            {
+                "id": 220,
+                "original": "Left",
+                "translation": "Yedadhu",
+                "categoryId": 8,
+                "script": "\u0b8e\u0b9f\u0ba4\u0bc1"
+            },
+            {
+                "id": 231,
+                "original": "Let's go",
+                "translation": "Polaam",
+                "categoryId": 8,
+                "script": "\u0baa\u0bcb\u0bb2\u0bbe\u0bae\u0bcd"
+            },
+            {
+                "id": 234,
+                "original": "Let's go home",
+                "translation": "Veetukku polaam",
+                "categoryId": 8,
+                "script": "\u0bb5\u0bc0\u0b9f\u0bcd\u0b9f\u0bc1\u0b95\u0bcd\u0b95\u0bc1 \u0baa\u0bcb\u0bb2\u0bbe\u0bae\u0bcd"
+            },
+            {
+                "id": 219,
+                "original": "Right",
+                "translation": "Valadhu",
+                "categoryId": 8,
+                "script": "\u0bb5\u0bb2\u0ba4\u0bc1"
+            },
+            {
+                "id": 227,
+                "original": "See",
+                "translation": "Paaru",
+                "categoryId": 8,
+                "script": "\u0baa\u0bbe\u0bb0\u0bc1"
+            },
+            {
+                "id": 232,
+                "original": "Shall we leave?",
+                "translation": "Polaama?",
+                "categoryId": 8,
+                "script": "\u0baa\u0bcb\u0bb2\u0bbe\u0bae\u0bbe"
+            },
+            {
+                "id": 230,
+                "original": "Stop [f]",
+                "translation": "Nillunga",
+                "categoryId": 8,
+                "script": "\u0ba8\u0bbf\u0bb2\u0bcd\u0bb2\u0bc1\u0b99\u0bcd\u0b95"
+            },
+            {
+                "id": 229,
+                "original": "Stop [i]",
+                "translation": "Nillu",
+                "categoryId": 8,
+                "script": "\u0ba8\u0bbf\u0bb2\u0bcd\u0bb2\u0bc1"
+            },
+            {
+                "id": 218,
+                "original": "Straight",
+                "translation": "Nera",
+                "categoryId": 8,
+                "script": "\u0ba8\u0bc7\u0bb0"
+            },
+            {
+                "id": 245,
+                "original": "Take the number 21 bus",
+                "translation": "Bus number iruvathi oNNu la ponga",
+                "categoryId": 8,
+                "script": "\u0baa\u0bb8\u0bcd \u0ba8\u0bae\u0bcd\u0baa\u0bb0\u0bcd \u0b87\u0bb0\u0bc1\u0bb5\u0bb1\u0bcd\u0bb1\u0bbf \u0b92\u0ba3\u0bcd\u0ba3\u0bc1 \u0bb2 \u0baa\u0bcb\u0b99\u0bcd\u0b95"
+            },
+            {
+                "id": 246,
+                "original": "The ticket will be about \u20b910",
+                "translation": "Ticket pathu rooba irukum",
+                "categoryId": 8,
+                "script": "\u0b9f\u0bbf\u0b95\u0bcd\u0b95\u0bc6\u0b9f\u0bcd \u0baa\u0ba4\u0bcd\u0ba4\u0bc1 \u0bb0\u0bc2\u0baa\u0bbe \u0b87\u0bb0\u0bc1\u0b95\u0bcd\u0b95\u0bc1\u0bae\u0bcd"
+            },
+            {
+                "id": 221,
+                "original": "Turn [i]",
+                "translation": "Thirrumbu",
+                "categoryId": 8,
+                "script": "\u0ba4\u0bbf\u0bb0\u0bc1\u0bae\u0bcd\u0baa\u0bc1"
+            },
+            {
+                "id": 240,
+                "original": "Turn right and go straight [f]",
+                "translation": "Valadhu pakkam thirumbi nera ponga",
+                "categoryId": 8,
+                "script": "\u0bb5\u0bb2\u0ba4\u0bc1 \u0baa\u0b95\u0bcd\u0b95\u0bae\u0bcd \u0ba4\u0bbf\u0bb0\u0bc1\u0bae\u0bcd\u0baa\u0bbf \u0ba8\u0bc7\u0bb0 \u0baa\u0bcb\u0b99\u0bcd\u0b95"
+            },
+            {
+                "id": 295,
+                "original": "Turn right at the signal. [f]",
+                "translation": "Signal-le right thirumbunga",
+                "categoryId": 8,
+                "script": "\u0b9a\u0bbf\u0b95\u0bcd\u0ba9\u0bb2\u0bcd \u0bb2 \u0bb0\u0bc8\u0b9f\u0bcd \u0ba4\u0bbf\u0bb0\u0bc1\u0bae\u0bcd\u0baa\u0bc1\u0b99\u0bcd\u0b95"
+            },
+            {
+                "id": 294,
+                "original": "Turn right at the signal. [i]",
+                "translation": "Signal-le right thirumbu",
+                "categoryId": 8,
+                "script": "\u0b9a\u0bbf\u0b95\u0bcd\u0ba9\u0bb2\u0bcd \u0bb2 \u0bb0\u0bc8\u0b9f\u0bcd \u0ba4\u0bbf\u0bb0\u0bc1\u0bae\u0bcd\u0baa\u0bc1"
+            },
+            {
+                "id": 225,
+                "original": "Up slope",
+                "translation": "Mel saayvu",
+                "categoryId": 8,
+                "script": "\u0bae\u0bc7\u0bb2\u0bcd \u0b9a\u0bbe\u0baf\u0bcd\u0bb5\u0bc1"
+            },
+            {
+                "id": 233,
+                "original": "Where shall we go?",
+                "translation": "Enga polaam?",
+                "categoryId": 8,
+                "script": "\u0b8e\u0b99\u0bcd\u0b95 \u0baa\u0bcb\u0bb2\u0bbe\u0bae\u0bcd"
+            },
+            {
+                "id": 249,
+                "original": "You can ask the conductor for help",
+                "translation": "Conductorai kaytaa solluvaanga",
+                "categoryId": 8,
+                "script": "\u0b95\u0ba3\u0bcd\u0b9f\u0b95\u0bcd\u0b9f\u0bb0\u0bc8 \u0b95\u0bc7\u0b9f\u0bcd\u0b9f\u0bbe \u0b9a\u0bca\u0bb2\u0bcd\u0bb2\u0bc1\u0bb5\u0bbe\u0b99\u0bcd\u0b95"
+            }
+        ],
+        "9": [
+            {
+                "id": 253,
+                "original": "Exam/test",
+                "translation": "Parikshai",
+                "categoryId": 9,
+                "script": "\u0baa\u0bb0\u0bbf\u0b95\u0bcd\u0bb7\u0bc8"
+            },
+            {
+                "id": 284,
+                "original": "From 9 to 5",
+                "translation": "Ombodhu maNi lerundhu, anchu mani varaikkum",
+                "categoryId": 9,
+                "script": "\u0b92\u0bae\u0bcd\u0baa\u0bcb\u0ba4\u0bc1 \u0bae\u0ba3\u0bbf \u0bb2\u0bc6\u0bb0\u0bc1\u0ba8\u0bcd\u0ba4\u0bc1 \u0b85\u0b9e\u0bcd\u0b9a\u0bc1 \u0bae\u0ba3\u0bbf \u0bb5\u0bb0\u0bc8\u0b95\u0bcd\u0b95\u0bc1\u0bae\u0bcd"
+            },
+            {
+                "id": 289,
+                "original": "How far is work from here?",
+                "translation": "Ingirundhu yevlo dhooram?",
+                "categoryId": 9,
+                "script": "\u0b87\u0b99\u0bcd\u0b95\u0bbf\u0bb0\u0bc1\u0ba8\u0bcd\u0ba4\u0bc1 \u0b8e\u0bb5\u0bcd\u0bb3\u0bcb \u0ba4\u0bc2\u0bb0\u0bae\u0bcd"
+            },
+            {
+                "id": 288,
+                "original": "How far is work from home?",
+                "translation": "Veetulerundhu velai-ku yevlo dhooram?",
+                "categoryId": 9,
+                "script": "\u0bb5\u0bc0\u0b9f\u0bcd\u0b9f\u0bbf\u0bb2\u0bbf\u0bb0\u0bc1\u0ba8\u0bcd\u0ba4\u0bc1 \u0bb5\u0bc7\u0bb2\u0bc8\u0b95\u0bcd\u0b95\u0bc1 \u0b8e\u0bb5\u0bcd\u0bb3\u0bcb \u0ba4\u0bc2\u0bb0\u0bae\u0bcd"
+            },
+            {
+                "id": 283,
+                "original": "How much is your salary? [f]",
+                "translation": "Unga sambaLam yevlo?",
+                "categoryId": 9,
+                "script": "\u0b89\u0b99\u0bcd\u0b95 \u0b9a\u0bae\u0bcd\u0baa\u0bb3\u0bae\u0bcd \u0b8e\u0bb5\u0bcd\u0bb3\u0bcb"
+            },
+            {
+                "id": 282,
+                "original": "How much is your salary? [i]",
+                "translation": "Un sambaLam yevlo?",
+                "categoryId": 9,
+                "script": "\u0b89\u0ba9\u0bcd \u0b9a\u0bae\u0bcd\u0baa\u0bb3\u0bae\u0bcd \u0b8e\u0bb5\u0bcd\u0bb3\u0bcb"
+            },
+            {
+                "id": 262,
+                "original": "I study at Bethany school",
+                "translation": "Naan Bethany school la padichitu irukken",
+                "categoryId": 9,
+                "script": "\u0ba8\u0bbe\u0ba9\u0bcd \u0baa\u0bc6\u0ba4\u0bcd\u0ba4\u0ba9\u0bbf \u0bb8\u0bcd\u0b95\u0bc2\u0bb2\u0bcd \u0bb2 \u0baa\u0b9f\u0bbf\u0b9a\u0bbf\u0b9f\u0bcd\u0b9f\u0bbf\u0bb0\u0bc1\u0b95\u0bcd\u0b95\u0bc7\u0ba9\u0bcd"
+            },
+            {
+                "id": 278,
+                "original": "I teach maths",
+                "translation": "Naan maths solli tharen",
+                "categoryId": 9,
+                "script": "\u0ba8\u0bbe\u0ba9\u0bcd \u0bae\u0bc7\u0ba4\u0bcd\u0bb8\u0bcd \u0b9a\u0bca\u0bb2\u0bcd\u0bb2\u0bbf \u0ba4\u0bb0\u0bc7\u0ba9\u0bcd"
+            },
+            {
+                "id": 279,
+                "original": "I work in manufacturing",
+                "translation": "Naan manufacturing-le velai panren",
+                "categoryId": 9,
+                "script": "\u0ba8\u0bbe\u0ba9\u0bcd \u0bae\u0bc6\u0ba9\u0bc1\u0b83\u0baa\u0bbe\u0b95\u0bcd\u0b9a\u0bc6\u0bb1\u0bbf\u0b99\u0bcd\u0b95\u0bcd \u0bb2 \u0bb5\u0bc7\u0bb2\u0bc8 \u0baa\u0bbe\u0b95\u0bcd\u0b95\u0bb0\u0bc7\u0ba9\u0bcd "
+            },
+            {
+                "id": 271,
+                "original": "I'm a teacher",
+                "translation": "Naan teacher aa irukken",
+                "categoryId": 9,
+                "script": "\u0ba8\u0bbe\u0ba9\u0bcd \u0b9f\u0bc0\u0b9a\u0bcd\u0b9a\u0bb0\u0bbe \u0b87\u0bb0\u0bc1\u0b95\u0bcd\u0b95\u0bc7\u0ba9\u0bcd"
+            },
+            {
+                "id": 254,
+                "original": "Marks/score",
+                "translation": "YeN",
+                "categoryId": 9,
+                "script": "\u0b8e\u0ba3\u0bcd"
+            },
+            {
+                "id": 259,
+                "original": "Salary/income",
+                "translation": "SambaLam",
+                "categoryId": 9,
+                "script": "\u0b9a\u0bae\u0bcd\u0baa\u0bb3\u0bae\u0bcd"
+            },
+            {
+                "id": 251,
+                "original": "School",
+                "translation": "PaLLikudam",
+                "categoryId": 9,
+                "script": "\u0baa\u0bb3\u0bcd\u0bb3\u0bbf\u0b95\u0bcd\u0b95\u0bc1\u0b9f\u0bae\u0bcd"
+            },
+            {
+                "id": 252,
+                "original": "Studies",
+                "translation": "Padippu",
+                "categoryId": 9,
+                "script": "\u0baa\u0b9f\u0bbf\u0baa\u0bcd\u0baa\u0bc1"
+            },
+            {
+                "id": 250,
+                "original": "Teacher",
+                "translation": "Vaadhiyaar",
+                "categoryId": 9,
+                "script": "\u0bb5\u0bbe\u0ba4\u0bbf\u0baf\u0bbe\u0bb0\u0bcd"
+            },
+            {
+                "id": 267,
+                "original": "What are the tuition fees?",
+                "translation": "Tuition Fees yevlo?",
+                "categoryId": 9,
+                "script": "\u0b9f\u0bbf\u0baf\u0bc2\u0bb7\u0ba9\u0bcd \u0b83\u0baa\u0bc0\u0bb8\u0bcd \u0b8e\u0bb5\u0bcd\u0bb3\u0bcb"
+            },
+            {
+                "id": 270,
+                "original": "What do you do? [f]",
+                "translation": "Neenga yenna paNNareenga?",
+                "categoryId": 9,
+                "script": "\u0ba8\u0bc0\u0b99\u0bcd\u0b95 \u0b8e\u0ba9\u0bcd\u0ba9 \u0baa\u0ba3\u0bcd\u0ba3\u0bb1\u0bc0\u0b99\u0bcd\u0b95"
+            },
+            {
+                "id": 269,
+                "original": "What do you do? [i]",
+                "translation": "Nee yenna paNNara?",
+                "categoryId": 9,
+                "script": "\u0ba8\u0bc0 \u0b8e\u0ba9\u0bcd\u0ba9 \u0baa\u0ba3\u0bcd\u0ba3\u0bb1"
+            },
+            {
+                "id": 275,
+                "original": "What do you teach? [f]",
+                "translation": "Neenga yenna solli thareenga?",
+                "categoryId": 9,
+                "script": "\u0ba8\u0bc0\u0b99\u0bcd\u0b95 \u0b8e\u0ba9\u0bcd\u0ba9 \u0b9a\u0bca\u0bb2\u0bcd\u0bb2\u0bbf \u0ba4\u0bb0\u0bc0\u0b99\u0bcd\u0b95"
+            },
+            {
+                "id": 274,
+                "original": "What do you teach? [i]",
+                "translation": "Nee yenna solli thara?",
+                "categoryId": 9,
+                "script": "\u0ba8\u0bc0 \u0b8e\u0ba9\u0bcd\u0ba9 \u0b9a\u0bca\u0bb2\u0bcd\u0bb2\u0bbf \u0ba4\u0bb0"
+            },
+            {
+                "id": 277,
+                "original": "What field do you work in? [f]",
+                "translation": "Yedhula velai paakareenga?",
+                "categoryId": 9,
+                "script": "\u0b8e\u0ba4\u0bc1\u0bb2 \u0bb5\u0bc7\u0bb2\u0bc8 \u0baa\u0bbe\u0b95\u0bcd\u0b95\u0bb0\u0bc0\u0b99\u0bcd\u0b95"
+            },
+            {
+                "id": 276,
+                "original": "What field do you work in? [i]",
+                "translation": "Yedhula velai paakara?",
+                "categoryId": 9,
+                "script": "\u0b8e\u0ba4\u0bc1\u0bb2 \u0bb5\u0bc7\u0bb2\u0bc8 \u0baa\u0bbe\u0b95\u0bcd\u0b95\u0bb0"
+            },
+            {
+                "id": 281,
+                "original": "What have you studied? [f]",
+                "translation": "Neenga yenna padichirukkeenga?",
+                "categoryId": 9,
+                "script": "\u0ba8\u0bc0\u0b99\u0bcd\u0b95 \u0b8e\u0ba9\u0bcd\u0ba9 \u0baa\u0b9f\u0bbf\u0b9a\u0bcd\u0b9a\u0bbf\u0bb0\u0bc1\u0b95\u0bcd\u0b95\u0bc0\u0b99\u0bcd\u0b95"
+            },
+            {
+                "id": 280,
+                "original": "What have you studied? [i]",
+                "translation": "Nee enna padichirukka?",
+                "categoryId": 9,
+                "script": "\u0ba8\u0bc0 \u0b8e\u0ba9\u0bcd\u0ba9 \u0baa\u0b9f\u0bbf\u0b9a\u0bbf\u0bb0\u0bc1\u0b95\u0bcd\u0b95"
+            },
+            {
+                "id": 268,
+                "original": "What's your favourite subject? [f]",
+                "translation": "Ungalukku pudicha subject yedhu?",
+                "categoryId": 9,
+                "script": "\u0b89\u0b99\u0bcd\u0b95\u0bb3\u0bc1\u0b95\u0bcd\u0b95\u0bc1 \u0baa\u0bbf\u0b9f\u0bbf\u0b9a\u0bcd\u0b9a \u0b9a\u0baa\u0bcd\u0b9c\u0bc6\u0b95\u0bcd\u0b9f\u0bcd \u0b8e\u0ba4\u0bc1"
+            },
+            {
+                "id": 287,
+                "original": "When do you work? [f]",
+                "translation": "Eppo velai seiveenga",
+                "categoryId": 9,
+                "script": "\u0b8e\u0baa\u0bcd\u0baa\u0bcb \u0bb5\u0bc7\u0bb2\u0bc8 \u0b9a\u0bc6\u0baf\u0bcd\u0bb5\u0bc0\u0b99\u0bcd\u0b95"
+            },
+            {
+                "id": 286,
+                "original": "When do you work? [i]",
+                "translation": "Eeppo velai seiva",
+                "categoryId": 9,
+                "script": "\u0b8e\u0baa\u0bcd\u0baa\u0bcb \u0bb5\u0bc7\u0bb2\u0bc8 \u0b9a\u0bc6\u0baf\u0bcd\u0bb5"
+            },
+            {
+                "id": 273,
+                "original": "Where do you work? [f]",
+                "translation": "Enga velai panreenga",
+                "categoryId": 9,
+                "script": "\u0b8e\u0b99\u0bcd\u0b95 \u0bb5\u0bc7\u0bb2\u0bc8 \u0baa\u0ba3\u0bcd\u0ba3\u0bb1\u0bc0\u0b99\u0bcd\u0b95"
+            },
+            {
+                "id": 272,
+                "original": "Where do you work? [i]",
+                "translation": "Enga velai panra",
+                "categoryId": 9,
+                "script": "\u0b8e\u0b99\u0bcd\u0b95 \u0bb5\u0bc7\u0bb2\u0bc8 \u0baa\u0ba3\u0bcd\u0ba3\u0bb0"
+            },
+            {
+                "id": 266,
+                "original": "Which class are you studying? [f]",
+                "translation": "Endha class-le padikareenga",
+                "categoryId": 9,
+                "script": "\u0b8e\u0ba8\u0bcd\u0ba4 \u0b95\u0bbf\u0bb3\u0bbe\u0bb8\u0bcd \u0bb2 \u0baa\u0b9f\u0bbf\u0b95\u0bcd\u0b95\u0bb0\u0bc0\u0b99\u0bcd\u0b95"
+            },
+            {
+                "id": 265,
+                "original": "Which class are you studying? [i]",
+                "translation": "Endha class-le padikira",
+                "categoryId": 9,
+                "script": "\u0b8e\u0ba8\u0bcd\u0ba4 \u0b95\u0bbf\u0bb3\u0bbe\u0bb8\u0bcd \u0bb2 \u0baa\u0b9f\u0bbf\u0b95\u0bcd\u0b95\u0bb0"
+            },
+            {
+                "id": 261,
+                "original": "Which college do you go to? [f]",
+                "translation": "Endha college poreenga",
+                "categoryId": 9,
+                "script": "\u0b8e\u0ba8\u0bcd\u0ba4 \u0b95\u0bbe\u0bb2\u0bc7\u0b9c\u0bcd \u0baa\u0bcb\u0bb1\u0bc0\u0b99\u0bcd\u0b95"
+            },
+            {
+                "id": 260,
+                "original": "Which school do you go to? [i]",
+                "translation": "Endha school pora",
+                "categoryId": 9,
+                "script": "\u0b8e\u0ba8\u0bcd\u0ba4 \u0bb8\u0bcd\u0b95\u0bc2\u0bb2\u0bcd \u0baa\u0bcb\u0bb1"
+            }
+        ],
+        "10": [
+            {
+                "id": 443,
+                "original": "Are you taking medicine? [f]",
+                "translation": "Marundhu saapteengala?",
+                "categoryId": 10,
+                "script": "\u0bae\u0bb0\u0bc1\u0ba8\u0bcd\u0ba4\u0bc1 \u0b9a\u0bbe\u0baa\u0bcd\u0baa\u0bbf\u0b9f\u0bcd\u0b9f\u0bc0\u0b99\u0bcd\u0b95\u0bb3\u0bbe"
+            },
+            {
+                "id": 442,
+                "original": "Are you taking medicine? [i]",
+                "translation": "Marundhu saaptiya?",
+                "categoryId": 10,
+                "script": "\u0bae\u0bb0\u0bc1\u0ba8\u0bcd\u0ba4\u0bc1 \u0b9a\u0bbe\u0baa\u0bcd\u0baa\u0bbf\u0b9f\u0bcd\u0b9f\u0bbf\u0baf\u0bbe"
+            },
+            {
+                "id": 357,
+                "original": "Back",
+                "translation": "Mudhugu",
+                "categoryId": 10,
+                "script": "\u0bae\u0bc1\u0ba4\u0bc1\u0b95\u0bc1"
+            },
+            {
+                "id": 360,
+                "original": "Brain",
+                "translation": "MooLai",
+                "categoryId": 10,
+                "script": "\u0bae\u0bc2\u0bb3\u0bc8"
+            },
+            {
+                "id": 439,
+                "original": "Did you fall sick?",
+                "translation": "Odambu sariya illaiya?",
+                "categoryId": 10,
+                "script": "\u0b92\u0b9f\u0bae\u0bcd\u0baa\u0bc1 \u0b9a\u0bb0\u0bbf\u0baf\u0bbe \u0b87\u0bb2\u0bcd\u0bb2\u0bc8\u0baf\u0bbe"
+            },
+            {
+                "id": 338,
+                "original": "Ears",
+                "translation": "Kaadhu",
+                "categoryId": 10,
+                "script": "\u0b95\u0bbe\u0ba4\u0bc1"
+            },
+            {
+                "id": 346,
+                "original": "Eye lid",
+                "translation": "KaNimai",
+                "categoryId": 10,
+                "script": "\u0b95\u0ba3\u0bbf\u0bae\u0bc8"
+            },
+            {
+                "id": 347,
+                "original": "Eyebrow",
+                "translation": "Puruvam",
+                "categoryId": 10,
+                "script": "\u0baa\u0bc1\u0bb0\u0bc1\u0bb5\u0bae\u0bcd"
+            },
+            {
+                "id": 345,
+                "original": "Eyes",
+                "translation": "KaNgaL",
+                "categoryId": 10,
+                "script": "\u0b95\u0ba3\u0bcd\u0b95\u0bb3\u0bcd"
+            },
+            {
+                "id": 348,
+                "original": "Face",
+                "translation": "Mugam",
+                "categoryId": 10,
+                "script": "\u0bae\u0bc1\u0b95\u0bae\u0bcd"
+            },
+            {
+                "id": 353,
+                "original": "Fingers",
+                "translation": "ViralgaL",
+                "categoryId": 10,
+                "script": "\u0bb5\u0bbf\u0bb0\u0bb2\u0bcd\u0b95\u0bb3\u0bcd"
+            },
+            {
+                "id": 351,
+                "original": "Hair",
+                "translation": "Mudi",
+                "categoryId": 10,
+                "script": "\u0bae\u0bc1\u0b9f\u0bbf"
+            },
+            {
+                "id": 352,
+                "original": "Hand",
+                "translation": "Kai",
+                "categoryId": 10,
+                "script": "\u0b95\u0bc8"
+            },
+            {
+                "id": 349,
+                "original": "Head",
+                "translation": "Thala",
+                "categoryId": 10,
+                "script": "\u0ba4\u0bb2"
+            },
+            {
+                "id": 361,
+                "original": "Heart",
+                "translation": "Nenju",
+                "categoryId": 10,
+                "script": "\u0ba8\u0bc6\u0b9e\u0bcd\u0b9a\u0bc1"
+            },
+            {
+                "id": 441,
+                "original": "I have a cold",
+                "translation": "Enakku jaladhosham irrukku",
+                "categoryId": 10,
+                "script": "\u0b8e\u0ba9\u0b95\u0bcd\u0b95\u0bc1 \u0b9c\u0bb2\u0ba4\u0bcb\u0bb7\u0bae\u0bcd \u0b87\u0bb0\u0bc1\u0b95\u0bcd\u0b95\u0bc1"
+            },
+            {
+                "id": 440,
+                "original": "I have a fever",
+                "translation": "Enakku joram irrukku",
+                "categoryId": 10,
+                "script": "\u0b8e\u0ba9\u0b95\u0bcd\u0b95\u0bc1 \u0b9c\u0bca\u0bb0\u0bae\u0bcd \u0b87\u0bb0\u0bc1\u0b95\u0bcd\u0b95\u0bc1"
+            },
+            {
+                "id": 363,
+                "original": "Intestines",
+                "translation": "Kodal",
+                "categoryId": 10,
+                "script": "\u0b95\u0bca\u0b9f\u0bb2\u0bcd"
+            },
+            {
+                "id": 356,
+                "original": "Knee",
+                "translation": "Mutti",
+                "categoryId": 10,
+                "script": "\u0bae\u0bc1\u0b9f\u0bcd\u0b9f\u0bbf"
+            },
+            {
+                "id": 354,
+                "original": "Leg",
+                "translation": "Kaal",
+                "categoryId": 10,
+                "script": "\u0b95\u0bbe\u0bb2\u0bcd"
+            },
+            {
+                "id": 341,
+                "original": "Lips",
+                "translation": "UthadugaL",
+                "categoryId": 10,
+                "script": "\u0b89\u0ba4\u0b9f\u0bc1\u0b95\u0bb3\u0bcd"
+            },
+            {
+                "id": 340,
+                "original": "Mouth",
+                "translation": "Vaai",
+                "categoryId": 10,
+                "script": "\u0bb5\u0bbe\u0baf\u0bcd"
+            },
+            {
+                "id": 366,
+                "original": "My hand hurts",
+                "translation": "Yen kai valikidhu",
+                "categoryId": 10,
+                "script": "\u0b8e\u0ba9\u0bcd \u0b95\u0bc8 \u0bb5\u0bb2\u0bbf\u0b95\u0bcd\u0b95\u0bc1\u0ba4\u0bc1"
+            },
+            {
+                "id": 365,
+                "original": "My head hurts",
+                "translation": "Yen thala valikidhu",
+                "categoryId": 10,
+                "script": "\u0b8e\u0ba9\u0bcd \u0ba4\u0bb2\u0bc8 \u0bb5\u0bb2\u0bbf\u0b95\u0bcd\u0b95\u0bc1\u0ba4\u0bc1"
+            },
+            {
+                "id": 367,
+                "original": "My leg needs an operation",
+                "translation": "Yen kaal-le operation paNNanum",
+                "categoryId": 10,
+                "script": "\u0b8e\u0ba9\u0bcd \u0b95\u0bbe\u0bb2\u0bcd \u0bb2 \u0b86\u0baa\u0bb0\u0bc7\u0bb7\u0ba9\u0bcd \u0baa\u0ba3\u0bcd\u0ba3\u0ba9\u0bc1\u0bae\u0bcd"
+            },
+            {
+                "id": 350,
+                "original": "Nail",
+                "translation": "Nagam",
+                "categoryId": 10,
+                "script": "\u0ba8\u0b95\u0bae\u0bcd"
+            },
+            {
+                "id": 358,
+                "original": "Neck",
+                "translation": "Kazhuthu",
+                "categoryId": 10,
+                "script": "\u0b95\u0bb4\u0bc1\u0ba4\u0bcd\u0ba4\u0bc1"
+            },
+            {
+                "id": 339,
+                "original": "Nose",
+                "translation": "Mooku",
+                "categoryId": 10,
+                "script": "\u0bae\u0bc2\u0b95\u0bcd\u0b95\u0bc1"
+            },
+            {
+                "id": 344,
+                "original": "Skin",
+                "translation": "ThOl",
+                "categoryId": 10,
+                "script": "\u0ba4\u0bcb\u0bb2\u0bcd"
+            },
+            {
+                "id": 362,
+                "original": "Stomach",
+                "translation": "Vairu",
+                "categoryId": 10,
+                "script": "\u0bb5\u0baf\u0bb0\u0bc1"
+            },
+            {
+                "id": 448,
+                "original": "Take plenty of rest [f]",
+                "translation": "Nalla thoongunga",
+                "categoryId": 10,
+                "script": "\u0ba8\u0bb2\u0bcd\u0bb2\u0bbe \u0ba4\u0bc2\u0b99\u0bcd\u0b95\u0bc1\u0b99\u0bcd\u0b95"
+            },
+            {
+                "id": 446,
+                "original": "Take plenty of rest [i]",
+                "translation": "Nalla thoongu",
+                "categoryId": 10,
+                "script": "\u0ba8\u0bb2\u0bcd\u0bb2\u0bbe \u0ba4\u0bc2\u0b99\u0bcd\u0b95\u0bc1"
+            },
+            {
+                "id": 342,
+                "original": "Teeth",
+                "translation": "Pallu",
+                "categoryId": 10,
+                "script": "\u0baa\u0bb2\u0bcd\u0bb2\u0bc1 "
+            },
+            {
+                "id": 359,
+                "original": "Throat",
+                "translation": "ThoNdai",
+                "categoryId": 10,
+                "script": "\u0ba4\u0bca\u0ba3\u0bcd\u0b9f\u0bc8"
+            },
+            {
+                "id": 355,
+                "original": "Toes",
+                "translation": "Kaal viral",
+                "categoryId": 10,
+                "script": "\u0b95\u0bbe\u0bb2\u0bcd \u0bb5\u0bbf\u0bb0\u0bb2\u0bcd"
+            },
+            {
+                "id": 343,
+                "original": "Tongue",
+                "translation": "Naaku",
+                "categoryId": 10,
+                "script": "\u0ba8\u0bbe\u0b95\u0bcd\u0b95\u0bc1"
+            },
+            {
+                "id": 364,
+                "original": "Veins",
+                "translation": "NarambugaL",
+                "categoryId": 10,
+                "script": "\u0ba8\u0bb0\u0bae\u0bcd\u0baa\u0bc1\u0b95\u0bb3\u0bcd"
+            }
+        ],
+        "11": [
+            {
+                "id": 368,
+                "original": "Animal",
+                "translation": "Mirugam",
+                "categoryId": 11,
+                "script": "\u0bae\u0bbf\u0bb0\u0bc1\u0b95\u0bae\u0bcd"
+            },
+            {
+                "id": 385,
+                "original": "Bat",
+                "translation": "Vavvaal",
+                "categoryId": 11,
+                "script": "\u0bb5\u0bc6\u0bb3\u200c\u0bb5\u0bcd\u0bb5\u0bbe\u0bb2\u0bcd"
+            },
+            {
+                "id": 378,
+                "original": "Bear",
+                "translation": "Karadi",
+                "categoryId": 11,
+                "script": "\u0b95\u0bb0\u0b9f\u0bbf"
+            },
+            {
+                "id": 401,
+                "original": "Bee",
+                "translation": "Theyn VaNdu",
+                "categoryId": 11,
+                "script": "\u0ba4\u0bc7\u0ba9\u0bcd \u0bb5\u0ba3\u0bcd\u0b9f\u0bc1"
+            },
+            {
+                "id": 400,
+                "original": "Beetle",
+                "translation": "VaNdu",
+                "categoryId": 11,
+                "script": "\u0bb5\u0ba3\u0bcd\u0b9f\u0bc1"
+            },
+            {
+                "id": 415,
+                "original": "Bird",
+                "translation": "Paravai",
+                "categoryId": 11,
+                "script": "\u0baa\u0bb1\u0bb5\u0bc8"
+            },
+            {
+                "id": 397,
+                "original": "Butterfly",
+                "translation": "VaNNathu poochi",
+                "categoryId": 11,
+                "script": "\u0bb5\u0ba3\u0bcd\u0ba3\u0ba4\u0bcd\u0ba4\u0bc1 \u0baa\u0bc2\u0b9a\u0bcd\u0b9a\u0bbf"
+            },
+            {
+                "id": 389,
+                "original": "Camel",
+                "translation": "Ottagam",
+                "categoryId": 11,
+                "script": "\u0b92\u0b9f\u0bcd\u0b9f\u0b95\u0bae\u0bcd"
+            },
+            {
+                "id": 370,
+                "original": "Cat",
+                "translation": "Poonai",
+                "categoryId": 11,
+                "script": "\u0baa\u0bc2\u0ba9\u0bc8"
+            },
+            {
+                "id": 406,
+                "original": "Chameleon",
+                "translation": "Pacchondhi",
+                "categoryId": 11,
+                "script": "\u0baa\u0b9a\u0bcd\u0b9a\u0bcb\u0ba8\u0bcd\u0ba4\u0bbf"
+            },
+            {
+                "id": 417,
+                "original": "Chicken",
+                "translation": "Kozhi",
+                "categoryId": 11,
+                "script": "\u0b95\u0bcb\u0bb4\u0bbf"
+            },
+            {
+                "id": 419,
+                "original": "Cock",
+                "translation": "Seyval",
+                "categoryId": 11,
+                "script": "\u0b9a\u0bc7\u0bb5\u0bb2\u0bcd"
+            },
+            {
+                "id": 405,
+                "original": "Cockroach",
+                "translation": "Karapaamboochi",
+                "categoryId": 11,
+                "script": "\u0b95\u0bb0\u0baa\u0bcd\u0baa\u0bbe\u0bae\u0bcd\u0baa\u0bc2\u0b9a\u0bcd\u0b9a\u0bbf"
+            },
+            {
+                "id": 372,
+                "original": "Cow",
+                "translation": "Maadu",
+                "categoryId": 11,
+                "script": "\u0bae\u0bbe\u0b9f\u0bc1"
+            },
+            {
+                "id": 407,
+                "original": "Crab",
+                "translation": "NaNdu",
+                "categoryId": 11,
+                "script": "\u0ba8\u0ba3\u0bcd\u0b9f\u0bc1"
+            },
+            {
+                "id": 420,
+                "original": "Crow",
+                "translation": "Kaakaa",
+                "categoryId": 11,
+                "script": "\u0b95\u0bbe\u0b95\u0bcd\u0b95\u0bbe"
+            },
+            {
+                "id": 386,
+                "original": "Deer",
+                "translation": "Maan",
+                "categoryId": 11,
+                "script": "\u0bae\u0bbe\u0ba9\u0bcd"
+            },
+            {
+                "id": 371,
+                "original": "Dog",
+                "translation": "Naai",
+                "categoryId": 11,
+                "script": "\u0ba8\u0bbe\u0baf\u0bcd"
+            },
+            {
+                "id": 402,
+                "original": "Dragonfly",
+                "translation": "Thattaan poochi",
+                "categoryId": 11,
+                "script": "\u0ba4\u0b9f\u0bcd\u0b9f\u0bbe\u0ba9\u0bcd \u0baa\u0bc2\u0b9a\u0bcd\u0b9a\u0bbf"
+            },
+            {
+                "id": 377,
+                "original": "Duck",
+                "translation": "Vaathu",
+                "categoryId": 11,
+                "script": "\u0bb5\u0bbe\u0ba4\u0bcd\u0ba4\u0bc1"
+            },
+            {
+                "id": 379,
+                "original": "Elephant",
+                "translation": "Yaanai",
+                "categoryId": 11,
+                "script": "\u0baf\u0bbe\u0ba9\u0bc8"
+            },
+            {
+                "id": 398,
+                "original": "Firefly",
+                "translation": "Minmini poochi",
+                "categoryId": 11,
+                "script": "\u0bae\u0bbf\u0ba9\u0bcd\u0bae\u0bbf\u0ba9\u0bbf\u0baa\u0bcd\u0baa\u0bc2\u0b9a\u0bbf"
+            },
+            {
+                "id": 408,
+                "original": "Fish",
+                "translation": "Meen",
+                "categoryId": 11,
+                "script": "\u0bae\u0bc0\u0ba9\u0bcd"
+            },
+            {
+                "id": 413,
+                "original": "Fisherman",
+                "translation": "Meenkaran",
+                "categoryId": 11,
+                "script": "\u0bae\u0bc0\u0ba9\u0bcd \u0b95\u0bbe\u0bb0\u0ba9\u0bcd"
+            },
+            {
+                "id": 384,
+                "original": "Fox",
+                "translation": "Nari",
+                "categoryId": 11,
+                "script": "\u0ba8\u0bb0\u0bbf"
+            },
+            {
+                "id": 374,
+                "original": "Goat",
+                "translation": "Aadu",
+                "categoryId": 11,
+                "script": "\u0b86\u0b9f\u0bc1"
+            },
+            {
+                "id": 391,
+                "original": "Hippo",
+                "translation": "Neer yaanai",
+                "categoryId": 11,
+                "script": "\u0ba8\u0bc0\u0bb0\u0bcd \u0baf\u0bbe\u0ba9\u0bc8"
+            },
+            {
+                "id": 394,
+                "original": "Horns",
+                "translation": "Kombu",
+                "categoryId": 11,
+                "script": "\u0b95\u0bca\u0bae\u0bcd\u0baa\u0bc1"
+            },
+            {
+                "id": 411,
+                "original": "Hunt",
+                "translation": "Vettai",
+                "categoryId": 11,
+                "script": "\u0bb5\u0bc7\u0b9f\u0bcd\u0b9f\u0bc8"
+            },
+            {
+                "id": 412,
+                "original": "Hunter",
+                "translation": "Vettaikaran",
+                "categoryId": 11,
+                "script": "\u0bb5\u0bc7\u0b9f\u0bcd\u0b9f\u0bc8\u0b95\u0bcd\u0b95\u0bbe\u0bb0\u0ba9\u0bcd"
+            },
+            {
+                "id": 396,
+                "original": "Insect",
+                "translation": "Poochi",
+                "categoryId": 11,
+                "script": "\u0baa\u0bc2\u0b9a\u0bcd\u0b9a\u0bbf"
+            },
+            {
+                "id": 422,
+                "original": "Koel",
+                "translation": "Kuyil",
+                "categoryId": 11,
+                "script": "\u0b95\u0bc1\u0baf\u0bbf\u0bb2\u0bcd"
+            },
+            {
+                "id": 382,
+                "original": "Leopard",
+                "translation": "Sirutthai",
+                "categoryId": 11,
+                "script": "\u0b9a\u0bbf\u0bb1\u0bc1\u0ba4\u0bcd\u0ba4\u0bc8"
+            },
+            {
+                "id": 380,
+                "original": "Lion",
+                "translation": "Singam",
+                "categoryId": 11,
+                "script": "\u0b9a\u0bbf\u0b99\u0bcd\u0b95\u0bae\u0bcd"
+            },
+            {
+                "id": 404,
+                "original": "Lizard",
+                "translation": "Palli",
+                "categoryId": 11,
+                "script": "\u0baa\u0bb2\u0bcd\u0bb2\u0bbf"
+            },
+            {
+                "id": 392,
+                "original": "Monkey",
+                "translation": "Korangu",
+                "categoryId": 11,
+                "script": "\u0b95\u0bca\u0bb0\u0b99\u0bcd\u0b95\u0bc1"
+            },
+            {
+                "id": 369,
+                "original": "Mouse",
+                "translation": "Yeli",
+                "categoryId": 11,
+                "script": "\u0b8e\u0bb2\u0bbf"
+            },
+            {
+                "id": 373,
+                "original": "Ox",
+                "translation": "KaaLai",
+                "categoryId": 11,
+                "script": "\u0b95\u0bbe\u0bb3\u0bc8"
+            },
+            {
+                "id": 421,
+                "original": "Peaock",
+                "translation": "Mayil",
+                "categoryId": 11,
+                "script": "\u0bae\u0baf\u0bbf\u0bb2\u0bcd"
+            },
+            {
+                "id": 376,
+                "original": "Pig",
+                "translation": "Panni",
+                "categoryId": 11,
+                "script": "\u0baa\u0ba9\u0bcd\u0ba9\u0bbf"
+            },
+            {
+                "id": 416,
+                "original": "Pigeon",
+                "translation": "Pura",
+                "categoryId": 11,
+                "script": "\u0baa\u0bc1\u0bb1\u0bbe"
+            },
+            {
+                "id": 410,
+                "original": "Prawn",
+                "translation": "Iraal",
+                "categoryId": 11,
+                "script": "\u0b87\u0bb1\u0bbe\u0bb2\u0bcd"
+            },
+            {
+                "id": 390,
+                "original": "Rhino",
+                "translation": "GaNdaa Mirugam",
+                "categoryId": 11,
+                "script": "\u0b95\u0bbe\u0ba3\u0bcd\u0b9f\u0bbe \u0bae\u0bbf\u0bb0\u0bc1\u0b95\u0bae\u0bcd"
+            },
+            {
+                "id": 403,
+                "original": "Scorpion",
+                "translation": "TheL",
+                "categoryId": 11,
+                "script": "\u0ba4\u0bc7\u0bb3\u0bcd"
+            },
+            {
+                "id": 409,
+                "original": "Shark",
+                "translation": "Suraa",
+                "categoryId": 11,
+                "script": "\u0b9a\u0bc1\u0bb1\u0bbe"
+            },
+            {
+                "id": 375,
+                "original": "Sheep",
+                "translation": "Semmari aadu",
+                "categoryId": 11,
+                "script": "\u0b9a\u0bc6\u0bae\u0bcd\u0bae\u0bb1\u0bbf\u0baf\u0bbe\u0b9f\u0bc1"
+            },
+            {
+                "id": 395,
+                "original": "Snake",
+                "translation": "Paambu",
+                "categoryId": 11,
+                "script": "\u0baa\u0bbe\u0bae\u0bcd\u0baa\u0bc1"
+            },
+            {
+                "id": 423,
+                "original": "Sparrow",
+                "translation": "Kuruvi",
+                "categoryId": 11,
+                "script": "\u0b95\u0bc1\u0bb0\u0bc1\u0bb5\u0bbf"
+            },
+            {
+                "id": 399,
+                "original": "Spider",
+                "translation": "Ettukaal poochi",
+                "categoryId": 11,
+                "script": "\u0b8e\u0b9f\u0bcd\u0b9f\u0bc1\u0b95\u0bcd\u0b95\u0bbe\u0bb2\u0bcd \u0baa\u0bc2\u0b9a\u0bcd\u0b9a\u0bbf"
+            },
+            {
+                "id": 387,
+                "original": "Spotted Deer",
+                "translation": "PuLLi Maan",
+                "categoryId": 11,
+                "script": "\u0baa\u0bc1\u0bb3\u0bcd\u0bb3\u0bbf \u0bae\u0bbe\u0ba9\u0bcd"
+            },
+            {
+                "id": 388,
+                "original": "Squirrel",
+                "translation": "ANil",
+                "categoryId": 11,
+                "script": "\u0b85\u0ba3\u0bbf\u0bb2\u0bcd"
+            },
+            {
+                "id": 393,
+                "original": "Tail",
+                "translation": "Vaal",
+                "categoryId": 11,
+                "script": "\u0bb5\u0bbe\u0bb2\u0bcd"
+            },
+            {
+                "id": 381,
+                "original": "Tiger",
+                "translation": "Puli",
+                "categoryId": 11,
+                "script": "\u0baa\u0bc1\u0bb2\u0bbf"
+            },
+            {
+                "id": 418,
+                "original": "Turkey",
+                "translation": "Vaan Kozhi",
+                "categoryId": 11,
+                "script": "\u0bb5\u0bbe\u0ba9\u0bcd\u0b95\u0bcb\u0bb4\u0bbf"
+            },
+            {
+                "id": 424,
+                "original": "Wings",
+                "translation": "Siragu",
+                "categoryId": 11,
+                "script": "\u0b9a\u0bbf\u0bb1\u0b95\u0bc1"
+            },
+            {
+                "id": 383,
+                "original": "Wolf",
+                "translation": "Onaai",
+                "categoryId": 11,
+                "script": "\u0b93\u0ba8\u0bbe\u0baf\u0bcd"
+            },
+            {
+                "id": 414,
+                "original": "Young one",
+                "translation": "Kutti",
+                "categoryId": 11,
+                "script": "\u0b95\u0bc1\u0b9f\u0bcd\u0b9f\u0bbf"
+            }
+        ],
+        "12": [
+            {
+                "id": 427,
+                "original": "Affection",
+                "translation": "Anbu",
+                "categoryId": 12,
+                "script": "\u0b85\u0ba9\u0bcd\u0baa\u0bc1"
+            },
+            {
+                "id": 425,
+                "original": "Dear one",
+                "translation": "Chellam",
+                "categoryId": 12,
+                "script": "\u0b9a\u0bc6\u0bb2\u0bcd\u0bb2\u0bae\u0bcd"
+            },
+            {
+                "id": 438,
+                "original": "Don't cry [f]",
+                "translation": "Azhadheenga",
+                "categoryId": 12,
+                "script": "\u0b85\u0bb4\u0bbe\u0ba4\u0bc0\u0b99\u0bcd\u0b95"
+            },
+            {
+                "id": 437,
+                "original": "Don't cry [i]",
+                "translation": "Azhadha",
+                "categoryId": 12,
+                "script": "\u0b85\u0bb4\u0bbe\u0ba4"
+            },
+            {
+                "id": 256,
+                "original": "Don't worry [f]",
+                "translation": "Kavala padadheenga",
+                "categoryId": 12,
+                "script": "\u0b95\u0bb5\u0bb2\u0bc8 \u0baa\u0b9f\u0bbe\u0ba4\u0bc0\u0b99\u0bcd\u0b95"
+            },
+            {
+                "id": 40,
+                "original": "Don't worry [i]",
+                "translation": "Kavala padatha",
+                "categoryId": 12,
+                "script": "\u0b95\u0bb5\u0bb2\u0bc8 \u0baa\u0b9f\u0bbe\u0ba4"
+            },
+            {
+                "id": 309,
+                "original": "Everything will be all right",
+                "translation": "Ellaam sari aayidum",
+                "categoryId": 12,
+                "script": "\u0b8e\u0bb2\u0bcd\u0bb2\u0bbe\u0bae\u0bcd \u0b9a\u0bb0\u0bbf \u0b86\u0baf\u0bbf\u0b9f\u0bc1\u0bae\u0bcd"
+            },
+            {
+                "id": 451,
+                "original": "I'm feeling cold",
+                "translation": "Yenakku kuLurudhu",
+                "categoryId": 12,
+                "script": "\u0b8e\u0ba9\u0b95\u0bcd\u0b95\u0bc1 \u0b95\u0bc1\u0bb3\u0bc1\u0bb0\u0bc1\u0ba4\u0bc1"
+            },
+            {
+                "id": 452,
+                "original": "I'm feeling hot",
+                "translation": "Yenakku verkudhu",
+                "categoryId": 12,
+                "script": "\u0b8e\u0ba9\u0b95\u0bcd\u0b95\u0bc1 \u0bb5\u0bc7\u0bb0\u0bcd\u0b95\u0bcd\u0b95\u0bc1\u0ba4\u0bc1"
+            },
+            {
+                "id": 141,
+                "original": "I'm not in a good mood",
+                "translation": "Enakku manasu sari illai",
+                "categoryId": 12,
+                "script": "\u0b8e\u0ba9\u0b95\u0bcd\u0b95\u0bc1 \u0bae\u0ba9\u0b9a\u0bc1 \u0b9a\u0bb0\u0bbf \u0b87\u0bb2\u0bcd\u0bb2"
+            },
+            {
+                "id": 434,
+                "original": "I'm worried",
+                "translation": "Yennaku kavalai-ya irukku",
+                "categoryId": 12,
+                "script": "\u0b8e\u0ba9\u0b95\u0bcd\u0b95\u0bc1 \u0b95\u0bb5\u0bb2\u0bc8\u0baf\u0bbe \u0b87\u0bb0\u0bc1\u0b95\u0bcd\u0b95\u0bc1"
+            },
+            {
+                "id": 428,
+                "original": "Love",
+                "translation": "KAdhal",
+                "categoryId": 12,
+                "script": "\u0b95\u0bbe\u0ba4\u0bb2\u0bcd"
+            },
+            {
+                "id": 426,
+                "original": "Loved one",
+                "translation": "KaNNa",
+                "categoryId": 12,
+                "script": "\u0b95\u0ba3\u0bcd\u0ba3\u0bbe"
+            },
+            {
+                "id": 433,
+                "original": "Please forgive me [f]",
+                "translation": "Yenna mannichudunga",
+                "categoryId": 12,
+                "script": "\u0b8e\u0ba9\u0bcd\u0ba9 \u0bae\u0ba9\u0bcd\u0ba9\u0bbf\u0b9a\u0bcd\u0b9a\u0bbf\u0b9f\u0bc1\u0b99\u0bcd\u0b95"
+            },
+            {
+                "id": 432,
+                "original": "Please forgive me [i]",
+                "translation": "Yenna mannichidu",
+                "categoryId": 12,
+                "script": "\u0b8e\u0ba9\u0bcd\u0ba9 \u0bae\u0ba9\u0bcd\u0ba9\u0bbf\u0b9a\u0bcd\u0b9a\u0bbf\u0b9f\u0bc1"
+            },
+            {
+                "id": 430,
+                "original": "Sorry [f]",
+                "translation": "MannichikOnga",
+                "categoryId": 12,
+                "script": "\u0bae\u0ba9\u0bcd\u0ba9\u0bbf\u0b9a\u0bcd\u0b9a\u0bbf\u0b95\u0bcd\u0b95\u0bcb\u0b99\u0bcd\u0b95"
+            },
+            {
+                "id": 429,
+                "original": "Sorry [i]",
+                "translation": "Mannichiko",
+                "categoryId": 12,
+                "script": "\u0bae\u0ba9\u0bcd\u0ba9\u0bbf\u0b9a\u0bcd\u0b9a\u0bbf\u0b95\u0bcd\u0b95\u0bcb"
+            },
+            {
+                "id": 436,
+                "original": "Why are you crying? [f]",
+                "translation": "Yen azhareenga?",
+                "categoryId": 12,
+                "script": "\u0b8f\u0ba9\u0bcd \u0b85\u0bb4\u0bb0\u0bc0\u0b99\u0bcd\u0b95"
+            },
+            {
+                "id": 435,
+                "original": "Why are you crying? [i]",
+                "translation": "Yen azhara?",
+                "categoryId": 12,
+                "script": "\u0b8f\u0ba9\u0bcd \u0b85\u0bb4\u0bb0 "
+            },
+            {
+                "id": 194,
+                "original": "Why are you feeling down? [f]",
+                "translation": "Neenga yEn sOgama irukkeenga?",
+                "categoryId": 12,
+                "script": "\u0ba8\u0bc0\u0b99\u0bcd\u0b95 \u0b8f\u0ba9\u0bcd \u0b9a\u0bcb\u0b95\u0bae\u0bbe \u0b87\u0bb0\u0bc1\u0b95\u0bcd\u0b95\u0bc0\u0b99\u0bcd\u0b95"
+            },
+            {
+                "id": 453,
+                "original": "Why are you feeling down? [i]",
+                "translation": "Nee yEn sOgama irukka?",
+                "categoryId": 12,
+                "script": "\u0ba8\u0bc0 \u0b8f\u0ba9\u0bcd \u0b9a\u0bcb\u0b95\u0bae\u0bbe \u0b87\u0bb0\u0bc1\u0b95\u0bcd\u0b95"
+            }
+        ]
+    }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "cerebral-cereal-common",
+  "version": "1.0.0",
+  "description": "Common components for Cerebral Cereal applications.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {},
+  "peerDependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.30",
+    "@fortawesome/free-solid-svg-icons": "^5.14.0",
+    "@fortawesome/react-native-fontawesome": "^0.2.5",
+    "@react-native-community/async-storage": "^1.12.0",
+    "lodash.isequal": "^4.5.0",
+    "react": "16.13.1",
+    "react-native": "0.63.2",
+    "react-redux": "^7.2.1",
+    "redux": "^4.0.5"
+  },
+  "author": "Nesh Patel",
+  "license": "MIT"
+}

@@ -1,0 +1,63 @@
+import { StyleSheet } from 'react-native';
+import { StyleConstants } from './StyleConstants';
+
+export const Layout = StyleSheet.create({
+  f1: { flex: 1 },
+  f2: { flex: 2 },
+  f3: { flex: 3 },
+  mt0: {marginTop: 0},
+  mb1: { marginBottom: StyleConstants.size1 },
+  mt1: { marginTop: StyleConstants.size1 },
+  ml1: { marginLeft: StyleConstants.size1 },
+  mr1: { marginRight: StyleConstants.size1 },
+  mx2: { marginRight: StyleConstants.size2, marginLeft: StyleConstants.size2 },
+  mb2: { marginBottom: StyleConstants.size2 },
+  mt2: { marginTop: StyleConstants.size2 },
+  ml2: { marginLeft: StyleConstants.size2 },
+  mr2: { marginRight: StyleConstants.size2 },
+  mt3: { marginTop: StyleConstants.size3 },
+  pdx0: { paddingLeft: 0, paddingRight: 0},
+  pd1: { padding: StyleConstants.size1 },
+  pdx1: {
+    paddingRight: StyleConstants.size1,
+    paddingLeft: StyleConstants.size1,
+  },
+  pdy1: {
+    paddingTop: StyleConstants.size1,
+    paddingBottom: StyleConstants.size1,
+  },
+  pdr1: { paddingRight: StyleConstants.size1 },
+  pdb1: { paddingBottom: StyleConstants.size1 },
+  pdt1: { paddingTop: StyleConstants.size1 },
+  pd2: { padding: StyleConstants.size2 },
+  pdx2: {
+    paddingLeft: StyleConstants.size2,
+    paddingRight: StyleConstants.size2,
+  },
+  pdy2: {
+    paddingTop: StyleConstants.size2,
+    paddingBottom: StyleConstants.size2,
+  },
+  pdb2: { paddingBottom: StyleConstants.size2 },
+  pdt2: { paddingTop: StyleConstants.size2 },
+  pdl2: { paddingLeft: StyleConstants.size2 },
+  pdr2: { paddingRight: StyleConstants.size2 },
+  row: { flexDirection: 'row' },
+  col: { flexDirection: 'column' },
+  aCenter: { alignItems: 'center' },
+  aStart: { alignItems: 'flex-start' },
+  aEnd: { alignItems: 'flex-end' },
+  jCenter: { justifyContent: 'center' },
+  jStart: { justifyContent: 'flex-start'},
+  jEnd: { justifyContent: 'flex-end'},
+  iconHeight: { height: StyleConstants.iconWidth },
+  center: {
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  container: {
+    flex: 1,
+    margin: StyleConstants.size2,
+    flexDirection: 'column',
+  },
+});

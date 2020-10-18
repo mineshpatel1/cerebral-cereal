@@ -1,0 +1,73 @@
+{
+  "cuisines": [
+    {
+      "id": 1,
+      "name": "North Indian"
+    }
+  ],
+  "recipes": [
+    {
+      "id": 1,
+      "name": "Vegetable Jalfrezi",
+      "cuisine_id": 1,
+      "serving_size": 4,
+      "ingredients": [
+        {
+          "ingredient_id": 1,
+          "quantity": 260
+        },
+        {
+          "ingredient_id": 2,
+          "quantity": 300
+        },
+        {
+          "ingredient_id": 3,
+          "quantity": 1
+        },
+        {
+          "ingredient_id": 4,
+          "quantity": 200
+        },
+        {
+          "ingredient_id": 5,
+          "quantity": 1
+        },
+        {
+          "ingredient_id": 6,
+          "quantity": 1.5
+        },
+        {
+          "ingredient_id": 7,
+          "quantity": 1
+        },
+        {
+          "ingredient_id": 8,
+          "quantity": 0.75
+        },
+        {
+          "ingredient_id": 9,
+          "quantity": 300
+        },
+        {
+          "ingredient_id": 10,
+          "quantity": 0.75
+        },
+        {
+          "ingredient_id": 11,
+          "quantity": 100
+        },
+        {
+          "ingredient_id": 12,
+          "quantity": 40
+        }
+      ],
+      "method": [
+        "Roast all the veg in a bit of oil until crispy. Set aside for 1 minute.",
+        "Fry onions, ginger, chillies and jeera in some oil until onions become translucent (should still be crunchy, not totally soft).",
+        "Add tomato puree, garam masala and red pesto, let it roast for 3 minutes.",
+        "Add rest of the vegetables and cover cook for 10 minutes.",
+        "Mix in salt, top with coriander leaves."
+      ]
+    }
+  ]
+}
