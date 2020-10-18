@@ -1,8 +1,8 @@
 import React from 'react';
-import { Pressable, View } from 'react-native';
+import { Pressable as ReactPressable, View } from 'react-native';
 
 import {
-  Button, Component, ScreenContainer, Switch, Text, TextInput,
+  Button, Component, Pressable, ScreenContainer, Switch, Text, TextInput,
   Layout, StyleConstants
 } from 'cerebral-cereal-common';
 
@@ -67,13 +67,12 @@ export default class PractiseMenu extends Component {
                 style={[
                   margin,
                   Layout.row,
-                  Layout.ml1,
+                  Layout.mx1,
                   {backgroundColor: Colours.background, borderRadius: 5},
                 ]}>
                 <Pressable
                   style={[Layout.f1, Layout.pd1, {borderRadius: 5}]}
                   containerStyle={[Layout.f1]}
-                  borderlessRipple={true}
                   backgroundColour={Colours.background}
                   onPress={() => this.navigate(category, phrase)}
                 >
@@ -125,10 +124,18 @@ export default class PractiseMenu extends Component {
 
     return (
       <ScreenContainer>
-        <View style={[Layout.row, Layout.mt2, {justifyContent: 'space-between' }]}>
-          <Pressable onPress={() => this.toggleTranslation(!state.tamilToEnglish)}>
+        <View style={[
+          Layout.row, Layout.aCenter,
+          Layout.mt2, Layout.mb1, Layout.pdb1,
+          {
+            justifyContent: 'space-between',
+            borderBottomWidth: 1,
+            borderColor: Colours.disabled,
+          }
+        ]}>
+          <ReactPressable onPress={() => this.toggleTranslation(!state.tamilToEnglish)}>
             <Text>{translationText}</Text>
-          </Pressable>
+          </ReactPressable>
           <Switch
             onValueChange={this.toggleTranslation}
             value={state.tamilToEnglish}

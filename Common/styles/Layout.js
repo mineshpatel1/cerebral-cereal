@@ -5,6 +5,7 @@ export const Layout = StyleSheet.create({
   f1: { flex: 1 },
   f2: { flex: 2 },
   f3: { flex: 3 },
+  mx1: { marginRight: StyleConstants.size1, marginLeft: StyleConstants.size1 },
   mt0: {marginTop: 0},
   mb1: { marginBottom: StyleConstants.size1 },
   mt1: { marginTop: StyleConstants.size1 },
