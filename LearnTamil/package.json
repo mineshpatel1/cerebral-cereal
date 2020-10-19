@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "build-android": "cd android && ./gradlew assembleRelease",
+    "bundle-android": "cd android && ./gradlew bundleRelease",
     "android": "npx react-native run-android",
     "ios": "npx react-native run-ios",
     "start": "npx react-native start",
@@ -28,6 +29,7 @@
     "react-native-safe-area-context": "^3.1.4",
     "react-native-screens": "^2.10.1",
     "react-native-sound": "^0.11.0",
+    "react-native-splash-screen": "^3.2.0",
     "react-native-svg": "^12.1.0",
     "react-redux": "^7.2.1",
     "redux": "^4.0.5"

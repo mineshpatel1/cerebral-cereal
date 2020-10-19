@@ -299,3 +299,161 @@ class MyComponent extends Component {
   }
 ```
 
+## Splash Screen
+
+[Guide](https://medium.com/@appstud/add-a-splash-screen-to-a-react-native-app-810492e773f9)
+
+* Install [`react-native-splash-screen`](https://github.com/crazycodeboy/react-native-splash-screen):
+* `npm i react-native-splash-screen --save`
+* `cd ios && pod install && cd ..`
+* Create a splash screen image in 3 sizes (~900px, ~600px, ~300px).
+* Update `App.js` to hide the splash screen:
+
+```js
+import React, { useEffect } from 'react';
+import SplashScreen from 'react-native-splash-screen';
+// ...
+
+const App = () => {
+  useEffect(() => SplashScreen.hide(), []);
+  // ...
+}
+```
+
+### iOS
+
+* Open XCode and add an image set in **Imagex.xcassets** and name it **SplashIcon**.
+* Drag the three images into the window.
+* Select **LaunchScreen.storyboard** on the left-most pane.
+* Remove the default React Native titles.
+* Change the background using the right-most pane.
+* Click the plus icon at the top right and add an **ImageView** as a child to the View element.
+* Select the ImageView and set it to the SplashIcon.
+* At the bottom of the panel, click the **Align** icon (two horizontal bars) and add horizontal
+  and vertical constraints. This will ensure that the image is centred on all devices.
+* Open `AppDelegate.m`:
+  * Add: `#import "RNSplashScreen.h"`
+  * Add `[RNSplashScreen show];` just above return `YES;` in the `didFinishLaunchingWithOptions` method:
+
+```obj-c
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+  ...
+  return YES;
+}
+```
+
+### Android
+
+* Add images into `android/app/src/main/res`, renaming all to `splash_icon.png`:
+  * `mipmap-mdpi -> splash_icon.png`
+  * `mipmap-hdpi -> splash_icon@2x.png`
+  * `mipmap-xhdpi -> splash_icon@3x.png`
+  * `mipmap-xxhdpi -> splash_icon@3x.png`
+  * `mipmap-xxxhdpi -> splash_icon@3x.png`
+* Create `background_splash.xml` in `android/app/src/main/res/drawable`.
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:drawable="@color/splashscreen_bg"/>
+    <item
+        android:width="300dp"
+        android:height="300dp"
+        android:drawable="@mipmap/splash_icon"
+        android:gravity="center" />
+</layer-list>
+```
+
+* Create `colors.xml` in `android/app/src/main/res`:
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="splashscreen_bg">#22222E</color>
+    <color name="app_bg">#22222E</color>
+</resources>
+```
+
+* Update `styles.xml` to include the following splash screen parameters:
+
+```xml
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:textColor">#000000</item>
+        <!-- Add the following line to set the default background color for all the app. -->
+        <item name="android:windowBackground">@color/app_bg</item>
+    </style>
+    
+    <!-- Adds the splash screen definition -->
+    <style name="SplashTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:statusBarColor">@color/splashscreen_bg</item>
+        <item name="android:background">@drawable/background_splash</item>
+    </style>
+</resources>
+```
+
+* Update `android/app/src/main/AndroidManifest.xml`:
+
+```xml
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  package="com.your_package_name">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+      android:name=".MainApplication"
+      android:label="@string/app_name"
+      android:icon="@mipmap/ic_launcher"
+      android:roundIcon="@mipmap/ic_launcher_round"
+      android:allowBackup="false"
+      android:theme="@style/AppTheme">
+
+        <!-- Add this SplashActivity -->
+        <activity
+          android:name=".SplashActivity"
+          android:theme="@style/SplashTheme"
+          android:label="@string/app_name">
+          <intent-filter>
+              <action android:name="android.intent.action.MAIN" />
+              <category android:name="android.intent.category.LAUNCHER" />
+          </intent-filter>
+        </activity>
+
+        <!-- Remove the intent-filter of the MainActivity and add a param android:exported="true" -->
+        <activity
+          android:name=".MainActivity"
+          android:label="@string/app_name"
+          android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+          android:windowSoftInputMode="adjustResize"
+          android:exported="true"/>
+
+      <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
+    </application>
+
+</manifest>
+```
+
+* Create a file `android/app/src/main/java/[your_package_name]/SplashActivity.java` with the contents:
+
+```java
+package com.rn_splashscreen_tutorial; // Change this to your package name.
+
+import android.content.Intent;
+import android.os.Bundle;
+import androidx.appcompat.app.AppCompatActivity;
+
+public class SplashActivity extends AppCompatActivity {
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+        finish();
+    }
+}
+```

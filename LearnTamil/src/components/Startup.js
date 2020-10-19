@@ -43,7 +43,7 @@ class Startup extends Component {
       return this.props.children;
     } else {
       return (
-        <View style={[Layout.f1, Layout.center]}>
+        <View style={[Layout.f1, Layout.center, {backgroundColor: '#22222E'}]}>
           <Text>Loading...</Text>
         </View>
       )
