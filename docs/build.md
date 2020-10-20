@@ -92,7 +92,6 @@ android {
 ```
 
 * Finally setting the following to variable to `true` will significantly reduce APK size upon build:
-
   * `def enableSeparateBuildPerCPUArchitecture = true`
 
 * Build the application on your Mac:
@@ -124,3 +123,13 @@ This builds the old APK format directly
 cd android
 ./gradlew assembleRelease
 ```
+
+
+## iOS
+
+[Guide](https://reactnative.dev/docs/next/publishing-to-app-store)
+
+* Edit `ios/Info.plist`:
+  * Remove `localhost` from `NSExceptionDomains`
+  * Set `NSAllowsArbitraryLoads` to `false`
+* Run `npx react-native run-ios --configuration Release`
