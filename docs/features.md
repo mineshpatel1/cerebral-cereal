@@ -307,7 +307,7 @@ class MyComponent extends Component {
 * `npm i react-native-splash-screen --save`
 * `cd ios && pod install && cd ..`
 * Create a splash screen image in 3 sizes (~900px, ~600px, ~300px).
-* Update `App.js` to hide the splash screen:
+* Update your React Native app to hide the splash screen, for example:
 
 ```js
 import React, { useEffect } from 'react';
@@ -400,7 +400,7 @@ const App = () => {
 
 ```xml
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-  package="com.your_package_name">
+  package="com.<package_name>">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -437,10 +437,10 @@ const App = () => {
 </manifest>
 ```
 
-* Create a file `android/app/src/main/java/[your_package_name]/SplashActivity.java` with the contents:
+* Create a file `android/app/src/main/java/<package_name>/SplashActivity.java` with the contents:
 
 ```java
-package com.rn_splashscreen_tutorial; // Change this to your package name.
+package com.<package_name>; // Change this to your package name.
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -456,4 +456,37 @@ public class SplashActivity extends AppCompatActivity {
         finish();
     }
 }
+```
+
+* In `android/app/src/main/java/<package_name>/MainActivity.java`, make these modifications:
+
+```java
+package com.<package_name>; // This should be your package name.
+
+import com.facebook.react.ReactActivity;
+import org.devio.rn.splashscreen.SplashScreen; // Import this.
+import android.os.Bundle; // Import this.
+
+public class MainActivity extends ReactActivity {
+    // Add this method.
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        SplashScreen.show(this);
+        super.onCreate(savedInstanceState);
+    }
+
+    // ...
+}
+```
+
+* Create a file `android/app/src/main/res/layout/launch_screen.xml` (the name is important) with the contents:
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_splash"
+    android:orientation="vertical">
+</LinearLayout>
 ```

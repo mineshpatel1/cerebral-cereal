@@ -1,5 +1,5 @@
 import 'react-native-gesture-handler';
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import {
@@ -10,7 +10,6 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { NavigationContainer } from '@react-navigation/native';
-import SplashScreen from 'react-native-splash-screen';
 
 import { ThemeProvider } from 'cerebral-cereal-common';
 import Startup from './src/components/Startup';
@@ -27,8 +26,6 @@ library.add(
 const store = createStore(reducers);
 
 const App = () => {
-  useEffect(() => SplashScreen.hide(), []);
-
   return (
     <Provider store={store}>
       <ThemeProvider>
