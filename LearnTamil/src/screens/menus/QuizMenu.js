@@ -1,11 +1,12 @@
 import React from 'react';
-import { Pressable as ReactPressable, ScrollView, View } from 'react-native';
+import { ScrollView } from 'react-native';
 
 import {
-    Button, Component, ChecklistItem, ScreenContainer, Switch, Text,
+    Button, Component, ChecklistItem, ScreenContainer, Text,
     Layout,
 } from 'cerebral-cereal-common';
 import { categories } from '../../data';
+import TranslationToggle from '../../components/TranslationToggle';
 
 export default class QuizMenu extends Component {
   static defaultProps = {
@@ -15,7 +16,7 @@ export default class QuizMenu extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      checkStates: categories.map(c => false),
+      checkStates: categories.map(() => false),
       tamilToEnglish: true,
     }
   }
@@ -57,31 +58,12 @@ export default class QuizMenu extends Component {
 
     const quizDisabled = state.checkStates.filter(c => c).length == 0;
     const allSelected = state.checkStates.filter(c => c).length == categories.length;
-    const translationText = (
-      state.tamilToEnglish ?
-      'Tamil to English' :
-      'English to Tamil'
-    );
-
     return (
       <ScreenContainer style={Layout.pdb2}>
-        <View style={[
-          Layout.row, Layout.aCenter,
-          Layout.pd1, Layout.mb1, Layout.mt2,
-          {
-            justifyContent: 'space-between',
-            borderBottomWidth: 1,
-            borderColor: Colours.disabled,
-          },
-        ]}>
-          <ReactPressable onPress={() => this.toggleTranslation(!state.tamilToEnglish)}>
-            <Text>{translationText}</Text>
-          </ReactPressable>
-          <Switch
-            onValueChange={this.toggleTranslation}
-            value={state.tamilToEnglish}
-          />
-        </View>
+        <TranslationToggle
+          value={state.tamilToEnglish}
+          onChange={() => this.toggleTranslation(!state.tamilToEnglish)}
+        />
         <Text style={[Layout.mt2, Layout.mb1]}>Choose categories:</Text>
         <ChecklistItem
           text={'Select ' + (allSelected ? 'None' : 'All')}

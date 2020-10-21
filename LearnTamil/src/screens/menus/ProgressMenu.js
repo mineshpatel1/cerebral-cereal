@@ -102,6 +102,7 @@ class ProgressMenu extends Component {
           <View style={[Layout.col, Layout.f1]}>
             <Pressable
               highlight={false}
+              accessibilityLabel={category.name + ' ' + numAttempts}
               backgroundColour={Colours.background}
               onPress={() => {if (catProgress) this.showText(category.id, 1)}}
             >

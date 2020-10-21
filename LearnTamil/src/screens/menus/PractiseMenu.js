@@ -1,13 +1,13 @@
 import React from 'react';
-import { Pressable as ReactPressable, View } from 'react-native';
+import { ScrollView, View } from 'react-native';
 
 import {
-  Button, Component, Pressable, ScreenContainer, Switch, Text, TextInput,
+  Button, Component, Pressable, ScreenContainer, Text, TextInput,
   Layout, StyleConstants
 } from 'cerebral-cereal-common';
 
 import { categories, phrases } from '../../data';
-import { ScrollView } from 'react-native-gesture-handler';
+import TranslationToggle from '../../components/TranslationToggle';
 
 export default class PractiseMenu extends Component {
   static defaultProps = {
@@ -116,31 +116,12 @@ export default class PractiseMenu extends Component {
       )
     });
 
-    const translationText = (
-      state.tamilToEnglish ?
-      'Tamil to English' :
-      'English to Tamil'
-    );
-
     return (
       <ScreenContainer>
-        <View style={[
-          Layout.row, Layout.aCenter,
-          Layout.mt2, Layout.mb1, Layout.pdb1,
-          {
-            justifyContent: 'space-between',
-            borderBottomWidth: 1,
-            borderColor: Colours.disabled,
-          }
-        ]}>
-          <ReactPressable onPress={() => this.toggleTranslation(!state.tamilToEnglish)}>
-            <Text>{translationText}</Text>
-          </ReactPressable>
-          <Switch
-            onValueChange={this.toggleTranslation}
-            value={state.tamilToEnglish}
-          />
-        </View>
+        <TranslationToggle
+          value={state.tamilToEnglish}
+          onChange={() => this.toggleTranslation(!state.tamilToEnglish)}
+        />
         <View style={{height: StyleConstants.iconWidth}}>
           <TextInput
             icon="search"

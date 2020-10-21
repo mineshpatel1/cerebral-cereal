@@ -126,7 +126,10 @@ class Practise extends Component {
           title={this.categoryName}
           showBack={true}
           nav={props.navigation}
-          link={{icon: 'bars', onPress: () => this.setState({showDrawer: true})}}
+          link={{
+            icon: 'bars', label: 'Settings Menu',
+            onPress: () => this.setState({showDrawer: true})
+          }}
         />
         <Container>
           <PhraseController ref={x => this.phraseController = x} />
@@ -150,6 +153,7 @@ class Practise extends Component {
               colour={Colours.primaryContrast}
               rippleColour={Colours.primary}
               fontColour={Colours.primary}
+              accessibilityLabel={state.shuffle ? "Sort Alphabetically" : "Shuffle"}
             />
           </View>
           <View style={[

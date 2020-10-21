@@ -60,7 +60,10 @@ export class HorizontalMenu extends Component {
     const _menuButtons = [];
     const _screens = [];
     screens.forEach((screen, i) => {
-      let buttonProps = {onPress: () => { this.selectMenu(i); }};
+      let buttonProps = {
+        label: screen.title,
+        onPress: () => { this.selectMenu(i); }
+      };
       if (icons) buttonProps.icon = icons[i];
       if (tabs) buttonProps.text = tabs[i];
 

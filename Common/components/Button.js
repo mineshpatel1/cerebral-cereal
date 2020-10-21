@@ -24,6 +24,7 @@ export class Button extends Component {
     disabled: false,
     disabledColour: null,
     textStyle: null,
+    accessibilityLabel: null,
   }
 
   constructor(props) {
@@ -56,17 +57,19 @@ export class Button extends Component {
     );
 
     return (
-      <View style={[
-        Layout.row,
-        Layout.aCenter,
-        {
-          backgroundColor: backgroundColour,
-          height: height,
-          width: width,
-          borderRadius: Styles.button['borderRadius'],
-        },
-        this.props.style,
-      ]}>
+      <View
+        style={[
+          Layout.row,
+          Layout.aCenter,
+          {
+            backgroundColor: backgroundColour,
+            height: height,
+            width: width,
+            borderRadius: Styles.button['borderRadius'],
+          },
+          this.props.style,
+        ]}
+      >
         <Pressable
           onPress={onPress}
           onPressIn={onPressIn}
@@ -76,6 +79,7 @@ export class Button extends Component {
           borderlessRipple={true}
           disabled={disabled}
           containerStyle={Layout.f1}
+          accessibilityLabel={props.accessibilityLabel}
           style={[
             Layout.f1,
             Layout.row,

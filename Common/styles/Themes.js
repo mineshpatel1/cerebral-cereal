@@ -11,7 +11,7 @@ const lightTheme = Utils.update(
     foreground: BaseColours.raisinBlack,
     disabled: BaseColours.silver,
     offGrey: BaseColours.gainsboro,
-    iconHighlight: BaseColours.blueCrayola,
+    iconHighlight: BaseColours.bluetiful,
   }
 );
 

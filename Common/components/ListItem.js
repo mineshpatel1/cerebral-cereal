@@ -15,6 +15,7 @@ export class ListItem extends Component {
     borderColour: null,
     onPress: null,
     style: null,
+    pressableProps: null,
   }
 
   constructor(props) {
@@ -30,7 +31,7 @@ export class ListItem extends Component {
     const rippleColour = props.rippleColour || Colours.primary;
     const borderColour = props.borderColour || Colours.offGrey;
 
-    const { disabled, onPress, style } = this.props;
+    const { disabled, pressableProps, onPress, style } = this.props;
 
     return (
       <Pressable
@@ -46,6 +47,7 @@ export class ListItem extends Component {
           style,
         ]}
         disabled={disabled}
+        {...pressableProps}
       >
         <View style={[Layout.pd2, Layout.row, {backgroundColor: disabled ? disabledColour : null}]}>
           {props.children}

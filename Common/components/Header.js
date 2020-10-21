@@ -32,6 +32,7 @@ export class Header extends Component {
         textSize={ICON_SIZE}
         onPress={backFn}
         style={buttonStyle}
+        accessibilityLabel="Go Back"
       />
     );
 
@@ -47,6 +48,7 @@ export class Header extends Component {
             size={BUTTON_SIZE}
             textSize={ICON_SIZE}
             style={buttonStyle}
+            accessibilityLabel={link.label}
             onPress={() => {
               if (link.onPress) {
                 link.onPress();

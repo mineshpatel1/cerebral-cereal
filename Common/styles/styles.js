@@ -8,7 +8,6 @@ export const genStyles = Colours => {
     },
     link: {
       textDecorationLine: 'underline',
-      color: Colours.primary,
     },
     paragraph: {
       lineHeight: 28,

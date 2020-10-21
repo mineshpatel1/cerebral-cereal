@@ -60,7 +60,6 @@ export class Pressable extends Component {
     }
 
     const viewBg = isAndroid ? {} : {backgroundColor: fadeColour};
-
     return (
       <ReactPressable
         android_ripple={androidRipple}

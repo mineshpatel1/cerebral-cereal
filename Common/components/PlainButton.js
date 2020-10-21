@@ -9,7 +9,7 @@ import { Layout } from '../styles/Layout';
 
 export class PlainButton extends Component {
   static defaultProps = {
-    size: 50,
+    size: 75,
     textSize: 24,
     borderRadius: null,
     text: null,
@@ -18,6 +18,7 @@ export class PlainButton extends Component {
     backgroundColour: null,
     onPress: null,
     style: null,
+    accessibilityLabel: null,
   }
 
   constructor(props) {
@@ -48,6 +49,7 @@ export class PlainButton extends Component {
           backgroundColour={backgroundColour}
           borderlessRipple={true}
           onPress={props.onPress}
+          accessibilityLabel={props.accessibilityLabel}
         >
           {
             props.text &&

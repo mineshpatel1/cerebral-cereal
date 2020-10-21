@@ -51,6 +51,7 @@ export default class Phrase extends Component {
                 fontColour={iconColour}
                 disabled={!props.phrase}
                 disabledColour={disabledColour}
+                accessibilityLabel="Play Phrase"
               />
             }
           </View>

@@ -9,22 +9,25 @@ export const BaseColours = {
   white: '#FFFFFF',
 
   fireEngineRed: '#CF2B2B',
+  seaGreen: '#288541',
   greenPigment: '#2E9E4C',
+  bluetiful: '#315FEA',
   blueCrayola: '#4772F3',
   periwinkle: '#BFCBF0',
+  wildBlueYonder: '#ADBDEC',
   burntSienna: '#F36E49',
 }
 
 export const Colours = {
   background: BaseColours.raisinBlack,
   foreground: BaseColours.white,
-  primary: BaseColours.blueCrayola,
+  primary: BaseColours.bluetiful,
   primaryContrast: BaseColours.white,
-  primaryLight: BaseColours.periwinkle,
+  primaryLight: BaseColours.wildBlueYonder,
   offGrey: BaseColours.charcoal,  // Close to background colour
   disabled: BaseColours.coral,
   error: BaseColours.fireEngineRed,
-  success: BaseColours.greenPigment,
+  success: BaseColours.seaGreen,
 
   // For specfic differences between themes
   iconHighlight: BaseColours.white,

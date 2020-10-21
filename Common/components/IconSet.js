@@ -42,7 +42,10 @@ export class IconSet extends Component {
       ) : null;
 
       buttonElements.push(
-        <Pressable key={i} onPress={button.onPress}>
+        <Pressable
+          key={i} accessibilityLabel={button.label}
+          onPress={button.onPress}
+        >
            <View style={[Layout.row, Layout.center]}>
               {divider}
               <Icon

@@ -37,7 +37,11 @@ export class ChecklistItem extends Component {
     const selectedTextProps = props.checked ? props.selectedTextProps : {};
 
     return (
-      <Pressable onPress={onPress} style={[Layout.row, Layout.aCenter, style]}>
+      <Pressable
+        onPress={onPress}
+        accessibilityState={{checked}}
+        style={[Layout.row, Layout.aCenter, style]}
+      >
         <Checkbox
           checked={checked}
           onPress={onPress}

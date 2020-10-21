@@ -64,7 +64,10 @@ export default class Home extends Component {
       >
         <Header
           title={screens[state.index].title}
-          link={{icon: 'bars', onPress: () => this.setState({showDrawer: true})}}
+          link={{
+            icon: 'bars', label: 'Settings Menu',
+            onPress: () => this.setState({showDrawer: true})
+          }}
         />
         {/*
           Using dark background colour and light foreground so

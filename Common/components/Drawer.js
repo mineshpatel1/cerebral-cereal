@@ -138,16 +138,25 @@ export class Drawer extends Component {
   renderOverlay() {
     const { Colours } = this.getTheme();
     const { state, props } = this;
+    const overlay = {
+      position: 'absolute',
+      height: state.viewport.height,
+      width: state.viewport.width,
+      left: 0, top: 0,
+    };
+    const pointer = props.isOpen ? 'auto': 'none';
+    const accessibilityLabel = (
+      props.isOpen ?
+      "Exit settings menu." :
+      "No action as the settings menu is closed."
+    );
+
     return (
       <Pressable
+        accessibilityLabel={accessibilityLabel}
         onPress={this.onRequestClose}
-        pointerEvents={props.isOpen ? 'auto': 'none'}
-        style={{
-          position: 'absolute',
-          height: state.viewport.height,
-          width: state.viewport.width,
-          left: 0, top: 0,
-        }}
+        pointerEvents={pointer}
+        style={overlay}
       >
         <Animated.View
           style={[Layout.f1, {
@@ -169,7 +178,7 @@ export class Drawer extends Component {
         onLayout={this.setViewport}
       >
         {this.renderMain()}
-        {this.renderOverlay()}
+        {(this.state.animating || this.props.isOpen) && this.renderOverlay()}
         {this.renderDrawer()}
       </View>
     )

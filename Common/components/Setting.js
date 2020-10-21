@@ -59,6 +59,8 @@ export class Setting extends Component {
 
     const { choices, disabled, label, onChange, onPress, style, type, value } = this.props;
     const description = type == 'bool' ? props.description : value;
+    const pressableProps = type == 'bool' ? {accessibilityState: {checked: value}} : null;
+
     return (
       <>
         <PickerModal
@@ -73,6 +75,7 @@ export class Setting extends Component {
           borderColour={borderColour}
           backgroundColour={backgroundColour}
           rippleColour={rippleColour}
+          pressableProps={pressableProps}
           style={style}
           onPress={() => {
             if (type == 'bool') {

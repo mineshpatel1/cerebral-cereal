@@ -109,6 +109,7 @@ export default class QuizOption extends Component {
           !props.original &&
           <Button
             square icon="volume-up"
+            accessibilityLabel="Play Option"
             onPress={props.onPlay}
             colour={Colours.primary}
             fontColour={Colours.primaryContrast}
