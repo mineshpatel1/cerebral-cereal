@@ -11,6 +11,7 @@ import { StyleConstants } from '../styles/StyleConstants';
 export class Collapsible extends Component {
   static defaultProps = {
     colour: null,
+    textColour: null,
     collapsed: false,
     title: null,
     onPress: null,
@@ -61,6 +62,7 @@ export class Collapsible extends Component {
     const { props, state } = this;
     const icon = props.collapsed ? 'chevron-right' : 'chevron-down';
     const colour = props.colour ? props.colour : Colours.primary;
+    const textColour = props.textColour ? props.textColour : Colours.primaryContrast;
 
     const dividerStyle = [
       Layout.row,
@@ -77,8 +79,8 @@ export class Collapsible extends Component {
       <View style={props.style}>
         <Pressable onPress={props.onPress}>
           <View style={dividerStyle}>
-            <Text>{props.title}</Text>
-            <Icon icon={icon} />
+            <Text colour={textColour}>{props.title}</Text>
+            <Icon colour={textColour} icon={icon} />
           </View>
         </Pressable>
         <Animated.ScrollView
