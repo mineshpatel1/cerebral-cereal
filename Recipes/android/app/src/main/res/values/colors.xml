@@ -1,3 +1,5 @@
 <resources>
-    <color name="blueCrayola">#4772F3</color>
+    <color name="primary">#315FEA</color>
+    <color name="splashscreen_bg">#22222E</color>
+    <color name="app_bg">#22222E</color>
 </resources>

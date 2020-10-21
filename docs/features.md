@@ -339,6 +339,7 @@ const App = () => {
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
   ...
+  [RNSplashScreen show];
   return YES;
 }
 ```
@@ -366,7 +367,7 @@ const App = () => {
 </layer-list>
 ```
 
-* Create `colors.xml` in `android/app/src/main/res`:
+* Create `colors.xml` in `android/app/src/main/res/values`:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
