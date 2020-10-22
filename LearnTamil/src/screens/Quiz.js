@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { View, Animated } from 'react-native';
+import { AccessibilityInfo, View, Animated } from 'react-native';
 
 import {
     Button, Component, Container, Text,
@@ -97,7 +97,16 @@ class Quiz extends Component {
       if (answer.id == state.currentPhrase.id) {
         isCorrect = true;
         score++;
+        AccessibilityInfo.announceForAccessibility("Correct");
       } else {
+        const correctAnswer = (
+          state.tamilToEnglish ?
+          state.currentPhrase.original :
+          state.currentPhrase.translation
+        );
+        AccessibilityInfo.announceForAccessibility(
+          "Incorrect. Correct answer is " + correctAnswer
+        );
         this.optionRefs[state.currentPhrase.id].highlight();
       }
 

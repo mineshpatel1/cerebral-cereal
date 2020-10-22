@@ -18,7 +18,10 @@ export default class TranslationToggle extends Component {
       'Tamil to English' :
       'English to Tamil'
     );
-    const accessibilityLabel = translationText + ' Swaps translation direction';
+    const accessibilityLabel = (
+      translationText + ' selected.'
+      + ' Will swap translation direction.'
+    );
 
     return (
       <View style={[
