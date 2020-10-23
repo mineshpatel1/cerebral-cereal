@@ -3,10 +3,11 @@ import { connect } from 'react-redux';
 import { Animated, Dimensions, ScrollView, View } from 'react-native';
 
 import {
-  Component, Icon, Pressable, ScreenContainer, Text,
+  Component, Icon, PlainButton, Pressable, ScreenContainer, Text,
   Layout, StyleConstants, Utils,
 } from 'cerebral-cereal-common';
 
+import ProgressBar from '../../components/ProgressBar';
 import { categories } from '../../data';
 const maxWidth = Dimensions.get('window').width;
 
@@ -18,115 +19,80 @@ class ProgressMenu extends Component {
 
   constructor(props) {
     super(props);
-    const textWidths = {}
+    const textWidths = {};
+    const showStates = {};
     categories.forEach(category => {
       textWidths[category.id] = new Animated.Value(0);
+      showStates[category.id] = false;
     });
+    
     this.state = {
-      textWidths: textWidths,
+      textWidths,
+      showStates,
     }
   }
 
   showText = (categoryId, value) => {
-    Utils.animate(
-      this.state.textWidths[categoryId], value,
-      {
-        duration: this.props.animationDuration,
-        native: false,
-      },
-    )
+    let showStates = this.state.showStates;
+    showStates[categoryId] = value;
+    this.setState({showStates});
+  }
+
+  toggleAll = show => {
+    const { props, state } = this;
+    let showStates = state.showStates;
+    categories.forEach(category => {
+      const catProgress = props.progress[category.id];
+      if (catProgress) showStates[category.id] = show;
+    });
+    this.setState({showStates});
   }
 
   render() {
-    const { Colours } = this.getTheme();
-    const { props } = this;
-    const rowStyle = [Layout.row, Layout.mt2, Layout.aCenter];
+    const { props, state } = this;
 
     let categoryElements = [];
     let overallAttemped = 0;
     let overallCorrect = 0;
 
+    let allHidden = true;
     categories.forEach(category => {
       const catProgress = props.progress[category.id];
-
       if (catProgress) {
         overallAttemped += catProgress.attempted;
         overallCorrect += catProgress.correct;
+        if (state.showStates[category.id]) allHidden = false;
       }
 
-      const catSuccess = catProgress ? catProgress.correct / catProgress.attempted : 0;
-      const width1 = Math.round(catSuccess * 100);
-      const width2 = Math.round((1 - catSuccess) * 100);
-      const pctText = catProgress ? width1 + '%' : '';
-
-      const numAttempts = catProgress ? catProgress.correct + '/' + catProgress.attempted : null
-      const progressColour = catProgress ? Colours.primary : Colours.background;
-      const barColour = catProgress ? Colours.offGrey : Colours.background;
-      const maxLabelWidth = maxWidth - ((StyleConstants.iconWidth * 2) + 32);
-      const labelWidth = catProgress
-      ? this.state.textWidths[category.id].interpolate({
-        inputRange: [0, 1],
-        outputRange: [0, maxLabelWidth],  // Should be exactly the distance
-      })
-      : maxLabelWidth;
-
       categoryElements.push(
-        <View key={category.id} style={[Layout.row, Layout.center, {height: StyleConstants.iconWidth}]}>
-          <View style={[Layout.col]}>
-            <View style={rowStyle}>
-              <Icon size={20} icon={category.icon} style={Layout.mr2} />
-              <Pressable
-                highlight={false}
-                backgroundColour={Colours.background}
-                onPress={() => this.showText(category.id, 0)}
-              >
-                <Animated.View style={[
-                  Layout.row,
-                  Layout.aCenter,
-                  {
-                    height: 24,
-                    width: labelWidth,
-                  }
-                ]}>
-                  <View style={[Layout.row, {width: maxLabelWidth}]}>
-                    <Text style={Layout.mr1}>{category.name}</Text>
-                    <Text style={[Layout.f1, Layout.mr1]} align="right">{numAttempts}</Text>
-                  </View>
-                </Animated.View>
-              </Pressable>
-            </View>
-          </View>
-          <View style={[Layout.col, Layout.f1]}>
-            <Pressable
-              highlight={false}
-              accessibilityLabel={category.name + ' ' + numAttempts}
-              backgroundColour={Colours.background}
-              onPress={() => {if (catProgress) this.showText(category.id, 1)}}
-            >
-              <View style={rowStyle}>
-                <View style={[{width: width1 + '%', height: 24, backgroundColor: progressColour} ]}/>
-                <View style={[{width: width2 + '%', height: 24, backgroundColor: barColour} ]}/>
-              </View>              
-            </Pressable>
-          </View>
-          <View style={[Layout.col, {width: 48, alignItems: 'flex-end'}]}>
-            <View style={rowStyle}>
-              <Text align="right" style={{width: 48}}>{pctText}</Text>
-            </View>
-          </View>
-        </View>
-      )
+        <ProgressBar
+          key={category.id}
+          maxWidth={maxWidth}
+          category={category}
+          categoryProgress={catProgress}
+          showText={state.showStates[category.id]}
+          onPress={this.showText}
+        />
+      );
     });
 
     const overallPct = overallAttemped > 0 ? Math.round((overallCorrect / overallAttemped) * 100) + '%' : '0%';
     return (
       <ScreenContainer>
-        <View style={[{alignItems: 'flex-end', paddingBottom: 8, borderBottomColor: Colours.background, borderBottomWidth: 1}]}>
-          <View style={Layout.row}>
-            <Text bold style={Layout.mr2}>Overall: </Text>
-            <Text bold align="right" style={Layout.mr1}>{overallCorrect + '/' + overallAttemped}</Text>
-            <Text bold align="right" style={{width: 48}}>{overallPct}</Text>
-          </View>          
+        <View style={[Layout.row, {justifyContent: 'space-between'}]}>
+          <PlainButton
+            size={40} textSize={20}
+            accessibilityLabel={allHidden ? 'Show all' : 'Hide all'}
+            icon={allHidden ? 'eye' : 'eye-slash'}
+            onPress={() => this.toggleAll(allHidden)}
+          />
+          <View style={[Layout.jCenter]}>
+            <View style={Layout.row}>
+              <Text bold style={Layout.mr2}>Overall: </Text>
+              <Text bold align="right" style={Layout.mr1}>{overallCorrect + '/' + overallAttemped}</Text>
+              <Text bold align="right" style={{width: 48}}>{overallPct}</Text>
+            </View>          
+          </View>
         </View>
         <ScrollView>
           <View style={[Layout.row, Layout.f1, {paddingBottom: 16}]}>
