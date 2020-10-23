@@ -9,6 +9,7 @@ import { animationDuration } from '../config';
 
 export default class QuizOption extends Component {
   static defaultProps = {
+    index: null,
     phrase: null,
     onPress: null,
     colour: null,
@@ -109,7 +110,7 @@ export default class QuizOption extends Component {
           !props.original &&
           <Button
             square icon="volume-up"
-            accessibilityLabel="Play Option"
+            accessibilityLabel={"Play Option " + (props.index + 1)}
             onPress={props.onPlay}
             colour={Colours.primary}
             fontColour={Colours.primaryContrast}

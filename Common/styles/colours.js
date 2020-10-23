@@ -3,7 +3,8 @@ export const BaseColours = {
   raisinBlack: '#22222E',
   charcoal: '#313B50',
   independence: '#4A5160',
-  coral: '#62666F',
+  sonicSilver: '#6E727B',
+  romanSilver: '#8A8F9A',
   silver: '#ADB0B6',
   gainsboro: '#E0E2E6',
   white: '#FFFFFF',
@@ -25,7 +26,7 @@ export const Colours = {
   primaryContrast: BaseColours.white,
   primaryLight: BaseColours.wildBlueYonder,
   offGrey: BaseColours.charcoal,  // Close to background colour
-  disabled: BaseColours.coral,
+  disabled: BaseColours.romanSilver,
   error: BaseColours.fireEngineRed,
   success: BaseColours.seaGreen,
 

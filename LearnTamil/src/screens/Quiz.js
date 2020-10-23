@@ -187,7 +187,7 @@ class Quiz extends Component {
 
       optionButtons.push(
         <QuizOption
-          key={i}
+          key={i} index={i}
           phrase={opt}
           highlight={highlight}
           onPress={() => { this.answerQuestion(opt); }}

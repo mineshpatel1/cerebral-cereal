@@ -41,8 +41,9 @@ export class Button extends Component {
 
     // Default colour values
     const colour = props.colour || Colours.primary;
-    const fontColour = props.fontColour || Colours.primaryContrast;
     const disabledColour = props.disabledColour || Colours.disabled;
+    let fontColour = props.fontColour || Colours.primaryContrast;
+    fontColour = disabled ? Colours.background : fontColour;
 
     const iconMargin = (icon && label) ? 8 : 0;
     const width = square ? StyleConstants.iconWidth : null;

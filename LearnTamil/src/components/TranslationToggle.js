@@ -19,7 +19,7 @@ export default class TranslationToggle extends Component {
       'English to Tamil'
     );
     const accessibilityLabel = (
-      translationText + ' selected.'
+      translationText + '.'
       + ' Will swap translation direction.'
     );
 
@@ -40,7 +40,6 @@ export default class TranslationToggle extends Component {
           <Text>{translationText}</Text>
         </ReactPressable>
         <Switch
-          accessibilityLabel={accessibilityLabel}
           onValueChange={props.onChange}
           value={props.value}
         />

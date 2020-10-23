@@ -189,6 +189,7 @@ export default class Alphabet extends Component {
           />
           <Button
             square icon='question'
+            accessibilityLabel="Help"
             onPress={this.toggleHelp}
             disabledColour={Colours.offGrey}
             colour={Colours.primaryContrast}

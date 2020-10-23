@@ -3,7 +3,8 @@ import { connect } from 'react-redux';
 import { FlatList, View } from 'react-native';
 
 import { 
-  Button, Component, Container, DrawerMenu, Header, SelectableItem, TextInput,
+  Button, Component, Container, DrawerMenu, Header,
+  SelectableItem, Text, TextInput,
   Layout, StyleConstants, Utils,
 } from 'cerebral-cereal-common';
 
@@ -196,17 +197,25 @@ class Practise extends Component {
               isTranslation={!this.tamilToEnglish}
             />
           </View>
-          <FlatList
-            ref={(ref) => this.scroller = ref}
-            data={phraseData}
-            renderItem={phraseFn}
-            keyExtractor={item => item.id.toString()}
-            maxToRenderPerBatch={50}
-            scrollEventThrottle={100}
-            getItemLayout={(_data, index) => {
-              return {length: _data.length, offset: phraseOffsets[index], index};
-            }}
-          />
+          {
+            <FlatList
+              ref={(ref) => this.scroller = ref}
+              data={phraseData}
+              renderItem={phraseFn}
+              keyExtractor={item => item.id.toString()}
+              maxToRenderPerBatch={50}
+              scrollEventThrottle={100}
+              getItemLayout={(_data, index) => {
+                return {length: _data.length, offset: phraseOffsets[index], index};
+              }}
+            />
+          }
+          {
+            phraseData.length == 0 &&
+            <View style={Layout.f1}>
+              <Text align="center">No results found</Text>
+            </View>
+          }
         </Container>
       </DrawerMenu>
     )

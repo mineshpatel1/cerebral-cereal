@@ -1,7 +1,7 @@
 import React from 'react';
 import { Animated, View } from 'react-native';
 
-import { Button, Component, Text, Layout } from 'cerebral-cereal-common';
+import { Button, Component, Text, Layout, StyleConstants } from 'cerebral-cereal-common';
 
 export default class Phrase extends Component {
   static defaultProps = {
@@ -31,7 +31,7 @@ export default class Phrase extends Component {
     return (
       <Animated.View style={Layout.f1}>
         <View style={[
-          Layout.row, Layout.center,
+          Layout.row, Layout.center, {minHeight: StyleConstants.iconWidth},
         ]}>
           <View style={[Layout.col, Layout.f3]}>
             <Text colour={colour} style={Layout.aCenter} bold>{phraseText}</Text>
@@ -42,7 +42,7 @@ export default class Phrase extends Component {
           </View>
           <View style={[Layout.col, Styles.iconWidth]}>
             {
-              props.isTranslation &&
+              props.phrase && props.isTranslation &&
               <Button
                 square icon="volume-up"
                 onPress={props.onPress}

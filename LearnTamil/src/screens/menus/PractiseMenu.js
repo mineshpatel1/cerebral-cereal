@@ -131,9 +131,16 @@ export default class PractiseMenu extends Component {
             onChange={val => this.setState({search: val})}
           />
         </View>
-        <ScrollView>
-          { practiseButtons }
-        </ScrollView>
+        {
+          practiseButtons.length > 0 && 
+          <ScrollView>{practiseButtons}</ScrollView>
+        }
+        {
+            practiseButtons.length == 0 &&
+            <View style={[Layout.f1, Layout.center]}>
+              <Text>No results found</Text>
+            </View>
+          }
       </ScreenContainer>
     )
   }

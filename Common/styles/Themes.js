@@ -12,6 +12,7 @@ const lightTheme = Utils.update(
     disabled: BaseColours.silver,
     offGrey: BaseColours.gainsboro,
     iconHighlight: BaseColours.bluetiful,
+    disabled: BaseColours.sonicSilver,
   }
 );
 

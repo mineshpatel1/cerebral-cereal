@@ -43,9 +43,6 @@ class ProgressMenu extends Component {
     const rowStyle = [Layout.row, Layout.mt2, Layout.aCenter];
 
     let categoryElements = [];
-    let progressElements = [];
-    let pctElements = [];
-
     let overallAttemped = 0;
     let overallCorrect = 0;
 

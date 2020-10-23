@@ -50,6 +50,7 @@ export class Checkbox extends Component {
     return (
       <ReactPressable
         onPress={onPress}
+        accessibilityState={{checked}}
         style={[
           Styles.checkbox,
           {
