@@ -1,11 +1,10 @@
 import React from 'react';
-import { Animated, Pressable, View } from 'react-native';
+import { Animated, Pressable as ReactPressable, View } from 'react-native';
 
 import {
-  Button, Component, Text, Layout, StyleConstants, Utils,
+  Button, Component, Pressable, Text,
+  Layout, StyleConstants, Utils,
 } from 'cerebral-cereal-common';
-
-import { animationDuration } from '../config';
 
 export default class QuizOption extends Component {
   static defaultProps = {
@@ -18,7 +17,7 @@ export default class QuizOption extends Component {
     borderColour: null,
     textColour: null,
     textHighlight: null,
-    duration: animationDuration,
+    duration: 300,
     onPlay: null,
     original: true,
     style: null,
@@ -73,39 +72,50 @@ export default class QuizOption extends Component {
 
     return (
       <View style={[Layout.row, Layout.aCenter]}>
-        <Pressable
-          onPress={props.onPress}
-          style={Layout.f1}
+        <Animated.View
+          style={[
+            Layout.mt2, Layout.f1,
+            {
+              backgroundColor: state.colour.interpolate({
+                inputRange: [0, 1],
+                outputRange: [colour, this.getHighlight()]
+              }),
+              minHeight: props.height,
+              borderWidth: 1,
+              borderColor: borderColour,
+              borderRadius: 25,
+            },
+          ]}
         >
-          <Animated.View
-            style={[
-              Layout.mt2,
-              Styles.button,
-              {
-                backgroundColor: state.colour.interpolate({
-                  inputRange: [0, 1],
-                  outputRange: [colour, this.getHighlight()]
-                }),
-                minHeight: props.height,
-                borderWidth: 1,
-                borderColor: borderColour,
-              },
-              props.style,
-            ]}
+          <Pressable
+            onPress={props.onPress}
+            borderlessRipple={true}
+            style={Layout.f1}
           >
-            <View style={[Layout.col, Layout.center]}>
-              <Text align="center" bold animated colour={textColour}>
-                {text}
-              </Text>
-              {
-                !props.original &&
-                <Text align="center" bold animated colour={textColour} style={Layout.mt1}>
-                  {script}
+            <View
+              style={[
+                Layout.f1,
+                Styles.button,
+                {
+                  minHeight: props.height,
+                },
+                props.style,
+              ]}
+            >
+              <View style={[Layout.col, Layout.center]}>
+                <Text align="center" bold animated colour={textColour}>
+                  {text}
                 </Text>
-              }
+                {
+                  !props.original &&
+                  <Text align="center" bold animated colour={textColour} style={Layout.mt1}>
+                    {script}
+                  </Text>
+                }
+              </View>
             </View>
-          </Animated.View>
-        </Pressable>
+          </Pressable>
+        </Animated.View>
         {
           !props.original &&
           <Button
@@ -114,7 +124,7 @@ export default class QuizOption extends Component {
             onPress={props.onPlay}
             colour={Colours.primary}
             fontColour={Colours.primaryContrast}
-            style={[Layout.ml1, Layout.mt1]}
+            style={[Layout.ml1, Layout.mt2]}
           />
         }
       </View>

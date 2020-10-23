@@ -195,7 +195,6 @@ class Quiz extends Component {
           ref={x => this.optionRefs[opt.id] = x}
           original={state.tamilToEnglish}
           height={StyleConstants.iconWidth * scaleFactor}
-          style={margin}
         />
       )
     });

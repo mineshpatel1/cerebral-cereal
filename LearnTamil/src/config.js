@@ -1,7 +1,6 @@
 const packageJson = require('../package.json');
 
 export const version = packageJson.version;
-export const animationDuration = 300;
 export const questionWaitTime = 1.5;
 
 export const defaultSettings = {

@@ -3,8 +3,8 @@ import { connect } from 'react-redux';
 import { Animated, Dimensions, ScrollView, View } from 'react-native';
 
 import {
-  Component, Icon, PlainButton, Pressable, ScreenContainer, Text,
-  Layout, StyleConstants, Utils,
+  Component, PlainButton, ScreenContainer, Text,
+  Layout,
 } from 'cerebral-cereal-common';
 
 import ProgressBar from '../../components/ProgressBar';
