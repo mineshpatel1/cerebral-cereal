@@ -25,6 +25,17 @@ class Practise extends Component {
     }
   }
 
+  // Dynamically get height of the selectable buttons
+  getHeight = datum => {
+    const lineHeight = 18;
+    const wrapLength = 35;
+    const text = this.tamilToEnglish ? datum.translation : datum.original;
+    const lines = Math.ceil(text.length / wrapLength) * (this.tamilToEnglish ? 2 : 1);
+    const height = (lineHeight * lines) + (StyleConstants.size2 * 2);
+
+    return lines == 1 ? 60 : height;
+  }
+
   itemSelect = phrase => {
     this.phraseController.playPhrase(phrase);
     this.setState({currentPhrase: phrase});
@@ -82,23 +93,39 @@ class Practise extends Component {
     const { props, state } = this;
     const search = state.search;
 
+    const phraseOffsets = [];
     const phraseData = [];
+
+    // Filter based on search term
     state.phrases.forEach((_phrase) => {
       if (search) {
-        if (_phrase.original.toLowerCase().indexOf(search.toLowerCase()) == -1)
-          return;
+        if (!this.tamilToEnglish) {
+          if (_phrase.original.toLowerCase().indexOf(search.toLowerCase()) == -1) return;
+        } else {
+          if (  // Search by English translation or Tamil script
+            _phrase.translation.toLowerCase().indexOf(search.toLowerCase()) == -1 &&
+            _phrase.script.toLowerCase().indexOf(search.toLowerCase()) == -1
+          ) return;
+        }
       }
-      phraseData.push(_phrase)
+      phraseData.push(_phrase);
+    });
+
+    // Calculate offsets for dynamic height
+    phraseData.forEach((_phrase, i) => {
+      if (i == 0) phraseOffsets.push(0);
+      if (i < (phraseData.length - 1)) {
+        phraseOffsets.push(this.getHeight(_phrase) + phraseOffsets[i]);
+      }
     });
 
     const phraseFn = ({ item }) => {
       const currentId = state.currentPhrase ? state.currentPhrase.id : -1;
       const text = !this.tamilToEnglish ? item.original : item.translation + '\n' + (item.script ? item.script : '');
 
-
       return (
         <SelectableItem
-          text={text}
+          text={text} height={this.getHeight(item)}
           selected={item.id == currentId}
           onSelect={() => { this.itemSelect(item); }}
         />
@@ -177,7 +204,7 @@ class Practise extends Component {
             maxToRenderPerBatch={50}
             scrollEventThrottle={100}
             getItemLayout={(_data, index) => {
-              return {length: _data.length, offset: 60 * index, index};
+              return {length: _data.length, offset: phraseOffsets[index], index};
             }}
           />
         </Container>
