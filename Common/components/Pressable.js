@@ -15,6 +15,8 @@ export class Pressable extends Component {
     borderlessRipple: false,
     animationDuration: 100,
     containerStyle: null,
+    fadeColour: null,
+    customOption: null,
   }
 
   constructor(props) {
@@ -37,6 +39,15 @@ export class Pressable extends Component {
     }
   }
 
+  componentDidUpdate = prevProps => {
+    if (!isAndroid) {  // Reset button press state if overriding
+      const { props } = this;
+      if (props.fadeColour != prevProps.fadeColour) {
+        this.setState({pressableColour: new Animated.Value(0)})
+      }
+    }
+  }
+
   render() {
     const { Colours } = this.getTheme();
     const { props, state } = this;
@@ -44,19 +55,23 @@ export class Pressable extends Component {
       animationDuration, backgroundColour, borderlessRipple, containerStyle,
       rippleColour, style, children, onPressIn, onPressOut, ...pressableProps
     } = props;
-    backgroundColour = backgroundColour || Colours.foreground;
+    backgroundColour = backgroundColour || Colours.background;
     rippleColour = rippleColour || Colours.offGrey;
 
     const ViewElement = isAndroid ? View : Animated.View;
     const androidRipple = props.highlight ? {color: rippleColour, borderless: borderlessRipple} : null;
     
     let fadeColour = isAndroid ? null : backgroundColour;
-    if (!isAndroid && rippleColour) {
-      const opacityColour = ColourUtils.genOpacityColour(rippleColour, backgroundColour, 0.7);
-      fadeColour = state.pressableColour.interpolate({
-          inputRange: [0, 1],
-          outputRange: [backgroundColour, opacityColour],
-      });
+    if (!isAndroid && rippleColour) {  // iOS only
+      if (props.fadeColour) {  // Override button colour
+        fadeColour = props.fadeColour;
+      } else {
+        const opacityColour = ColourUtils.genOpacityColour(rippleColour, backgroundColour, 0.7);
+        fadeColour = state.pressableColour.interpolate({
+            inputRange: [0, 1],
+            outputRange: [backgroundColour, opacityColour],
+        });
+      }
     }
 
     const viewBg = isAndroid ? {} : {backgroundColor: fadeColour};

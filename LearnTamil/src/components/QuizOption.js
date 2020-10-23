@@ -65,21 +65,24 @@ export default class QuizOption extends Component {
     const textHighlight = props.textHighlight || Colours.primaryContrast;
     const borderColour = state.borderColour || Colours.offGrey;
     
+    const highlightColour = this.getHighlight();
     const textColour = state.colour.interpolate({
       inputRange: [0, 1],
       outputRange: [_textColour, textHighlight]
     });
 
+    const buttonColour = state.colour.interpolate({
+      inputRange: [0, 1],
+      outputRange: [colour, highlightColour]
+    });
+
     return (
-      <View style={[Layout.row, Layout.aCenter]}>
+      <View style={[Layout.row, Layout.aCenter, props.style]}>
         <Animated.View
           style={[
             Layout.mt2, Layout.f1,
             {
-              backgroundColor: state.colour.interpolate({
-                inputRange: [0, 1],
-                outputRange: [colour, this.getHighlight()]
-              }),
+              backgroundColor: buttonColour,
               minHeight: props.height,
               borderWidth: 1,
               borderColor: borderColour,
@@ -90,16 +93,18 @@ export default class QuizOption extends Component {
           <Pressable
             onPress={props.onPress}
             borderlessRipple={true}
-            style={Layout.f1}
+            backgroundColour={Colours.background}
+            fadeColour={
+              state.borderColour == highlightColour ? 
+              buttonColour : null
+            }
+            style={[Layout.f1, {borderRadius: 25}]}
           >
             <View
               style={[
                 Layout.f1,
                 Styles.button,
-                {
-                  minHeight: props.height,
-                },
-                props.style,
+                {minHeight: props.height},
               ]}
             >
               <View style={[Layout.col, Layout.center]}>
