@@ -40,6 +40,10 @@ export default class PractiseMenu extends Component {
     this.setState({tamilToEnglish: !this.state.tamilToEnglish});
   }
 
+  checkSearch = text => {
+    return text.toLowerCase().indexOf(this.state.search.toLowerCase()) > -1;
+  }
+
   render() {
     const { Colours, Styles } = this.getTheme();
     const { state } = this;
@@ -49,7 +53,7 @@ export default class PractiseMenu extends Component {
     
     if (search && search.length >= 3) {
       categories.forEach(category => {
-        if (category.name.toLowerCase().indexOf(search.toLowerCase()) > -1) {
+        if (this.checkSearch(category.name)) {
           filteredCategories.push(category);
         }
 
@@ -57,7 +61,18 @@ export default class PractiseMenu extends Component {
           let i = 0;
           const phraseText = state.tamilToEnglish ? phrase.translation : phrase.original;
           
-          if (phraseText.toLowerCase().indexOf(search.toLowerCase()) > -1) {
+          let foundMatch = false;
+          if (state.tamilToEnglish) {
+            foundMatch = (
+              // Searches script and translation if in Tamil to English mode
+              this.checkSearch(phrase.translation) ||
+              this.checkSearch(phrase.script)
+            );
+          } else {
+            foundMatch = this.checkSearch(phrase.original);
+          }
+
+          if (foundMatch) {
             if (!phraseLinks[category.id]) phraseLinks[category.id] = [];
             const margin = i == 0 ? Layout.mt1 : null;
 

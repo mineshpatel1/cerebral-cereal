@@ -67,6 +67,10 @@ class Practise extends Component {
     this.phraseController.playPhrase(this.state.currentPhrase);
   }
 
+  checkSearch = text => {
+    return text.toLowerCase().indexOf(this.state.search.toLowerCase()) == -1;
+  }
+
   componentDidMount() {
     this.sortPhrases(
       this.props.settings.randomisePractise,
@@ -101,11 +105,11 @@ class Practise extends Component {
     state.phrases.forEach((_phrase) => {
       if (search) {
         if (!this.tamilToEnglish) {
-          if (_phrase.original.toLowerCase().indexOf(search.toLowerCase()) == -1) return;
+          if (this.checkSearch(_phrase.original)) return;
         } else {
           if (  // Search by English translation or Tamil script
-            _phrase.translation.toLowerCase().indexOf(search.toLowerCase()) == -1 &&
-            _phrase.script.toLowerCase().indexOf(search.toLowerCase()) == -1
+            this.checkSearch(_phrase.translation) &&
+            this.checkSearch(_phrase.script)
           ) return;
         }
       }
