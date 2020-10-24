@@ -94,6 +94,18 @@ export const genStyles = Colours => {
       paddingLeft: StyleConstants.size1 / 2,
       paddingBottom: StyleConstants.size1,
     },
+    switchRow: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      paddingBottom: StyleConstants.size1,
+      justifyContent: 'space-between',
+    },
+    switchList: {
+      marginTop: StyleConstants.size2,
+      marginBottom: StyleConstants.size1,
+      borderBottomWidth: 1,
+      borderColor: Colours.disabled,
+    },
   });
 };
 

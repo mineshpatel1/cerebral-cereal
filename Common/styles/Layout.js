@@ -48,6 +48,7 @@ export const Layout = StyleSheet.create({
   aCenter: { alignItems: 'center' },
   aStart: { alignItems: 'flex-start' },
   aEnd: { alignItems: 'flex-end' },
+  jSpace: { justifyContent: 'space-between' },
   jCenter: { justifyContent: 'center' },
   jStart: { justifyContent: 'flex-start'},
   jEnd: { justifyContent: 'flex-end'},

@@ -25,6 +25,7 @@ import { Setting } from './Setting';
 import { SettingsList } from './SettingsList';
 import { Spinner } from './Spinner';
 import { Switch } from './Switch';
+import { SwitchInput } from './SwitchInput';
 import { TabSet } from './TabSet';
 import { Text } from './Text';
 import { TextInput } from './TextInput';
@@ -59,6 +60,7 @@ module.exports = {
   SettingsList,
   Spinner,
   Switch,
+  SwitchInput,
   TabSet,
   Text,
   TextInput,

@@ -171,7 +171,9 @@ export default class Alphabet extends Component {
           {help}
         </Modal>
         <View style={[
-          Layout.row, Layout.pd1, Layout.pdx2, Layout.aCenter, controller,
+          Layout.row, Layout.aCenter,
+          Layout.pd1, Layout.pdx2, Layout.pdb2,
+          controller,
           {
             borderBottomWidth: 2,
             borderColor: Colours.primaryContrast,

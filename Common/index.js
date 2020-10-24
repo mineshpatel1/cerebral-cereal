@@ -31,6 +31,7 @@ import { Setting } from './components/Setting';
 import { SettingsList } from './components/SettingsList';
 import { Spinner } from './components/Spinner';
 import { Switch } from './components/Switch';
+import { SwitchInput } from './components/SwitchInput';
 import { TabSet } from './components/TabSet';
 import { Text } from './components/Text';
 import { TextInput } from './components/TextInput';
@@ -79,6 +80,7 @@ module.exports = {
   SettingsList,
   Spinner,
   Switch,
+  SwitchInput,
   TabSet,
   Text,
   TextInput,

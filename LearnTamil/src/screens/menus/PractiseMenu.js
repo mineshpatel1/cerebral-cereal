@@ -36,12 +36,12 @@ export default class PractiseMenu extends Component {
     )
   }
 
-  toggleTranslation = tamilToEnglish => {
-    this.setState({tamilToEnglish});
+  toggleTranslation = () => {
+    this.setState({tamilToEnglish: !this.state.tamilToEnglish});
   }
 
   render() {
-    const { Colours } = this.getTheme();
+    const { Colours, Styles } = this.getTheme();
     const { state } = this;
     const search = state.search;
     const phraseLinks = {};
@@ -118,10 +118,12 @@ export default class PractiseMenu extends Component {
 
     return (
       <ScreenContainer>
-        <TranslationToggle
-          value={state.tamilToEnglish}
-          onChange={() => this.toggleTranslation(!state.tamilToEnglish)}
-        />
+        <View style={Styles.switchList}>
+          <TranslationToggle
+            value={state.tamilToEnglish}
+            onChange={this.toggleTranslation}
+          />
+        </View>
         <View style={{height: StyleConstants.iconWidth}}>
           <TextInput
             icon="search"

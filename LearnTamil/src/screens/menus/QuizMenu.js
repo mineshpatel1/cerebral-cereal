@@ -1,8 +1,8 @@
 import React from 'react';
-import { ScrollView } from 'react-native';
+import { Pressable as ReactPressable, ScrollView, View } from 'react-native';
 
 import {
-    Button, Component, ChecklistItem, ScreenContainer, Text,
+    Button, Component, ChecklistItem, ScreenContainer, Switch, SwitchInput, Text,
     Layout,
 } from 'cerebral-cereal-common';
 import { categories } from '../../data';
@@ -18,6 +18,7 @@ export default class QuizMenu extends Component {
     this.state = {
       checkStates: categories.map(() => false),
       tamilToEnglish: true,
+      quizMode: true,
     }
   }
 
@@ -29,8 +30,12 @@ export default class QuizMenu extends Component {
     });
   }
 
-  toggleTranslation = val => {
-    this.setState({tamilToEnglish: val});
+  toggleTranslation = () => {
+    this.setState({tamilToEnglish: !this.state.tamilToEnglish});
+  }
+
+  toggleMode = () => {
+    this.setState({quizMode: !this.state.quizMode});
   }
 
   selectAll = (all) => {
@@ -40,7 +45,7 @@ export default class QuizMenu extends Component {
   }
 
   render() {
-    const { Colours } = this.getTheme();
+    const { Colours, Styles } = this.getTheme();
     const { state } = this;
     let categoryList = [];
     categories.forEach((category, i) => {
@@ -58,12 +63,23 @@ export default class QuizMenu extends Component {
 
     const quizDisabled = state.checkStates.filter(c => c).length == 0;
     const allSelected = state.checkStates.filter(c => c).length == categories.length;
+    const modeName = state.quizMode ? 'Multiple Choice' : 'Flashcards';
+    const modeLabel = modeName + ' mode. Will switch game mode.';
     return (
       <ScreenContainer style={Layout.pdb2}>
-        <TranslationToggle
-          value={state.tamilToEnglish}
-          onChange={() => this.toggleTranslation(!state.tamilToEnglish)}
-        />
+        <View style={Styles.switchList}>
+          <SwitchInput
+            labelTrue={'Multiple Choice'}
+            labelFalse={'Flashcards'}
+            accessibilityLabel={'Will switch game mode.'}
+            onToggle={this.toggleMode}
+            value={state.quizMode}
+          />
+          <TranslationToggle
+            value={state.tamilToEnglish}
+            onChange={this.toggleTranslation}
+          />
+        </View>
         <Text style={[Layout.mt2, Layout.mb1]}>Choose categories:</Text>
         <ChecklistItem
           text={'Select ' + (allSelected ? 'None' : 'All')}
