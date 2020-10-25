@@ -29,11 +29,12 @@ export default class IngredientsTab extends Component {
     const ratio = props.servingSize / props.baseServingSize;
 
     props.ingredients.forEach((ingredient, i) => {
-      let _ingredient = ingredient.ingredient;
+      const _ingredient = ingredient.ingredient;
 
       const _quantity = Utils.round(ratio * ingredient.quantity);
-      const unit = units.filter(u => u.id == _ingredient.unit_id)[0];
-      const quantity = _quantity + unit.display;
+      const unitId = ingredient.unit_id || _ingredient.unit_id;
+      const unit = units.filter(u => u.id == unitId)[0];
+      const quantity = _quantity + unit.formatPlural(_quantity);
       const name = _ingredient.formatPlural(_quantity);
       
       ingredientElements.push(

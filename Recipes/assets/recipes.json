@@ -3,6 +3,10 @@
     {
       "id": 1,
       "name": "North Indian"
+    },
+    {
+      "id": 2,
+      "name": "Cakes"
     }
   ],
   "recipes": [
@@ -42,7 +46,8 @@
         },
         {
           "ingredient_id": 8,
-          "quantity": 0.75
+          "quantity": 0.75,
+          "unit_id": 4
         },
         {
           "ingredient_id": 9,
@@ -50,7 +55,8 @@
         },
         {
           "ingredient_id": 10,
-          "quantity": 0.75
+          "quantity": 0.75,
+          "unit_id": 4
         },
         {
           "ingredient_id": 11,
@@ -67,6 +73,26 @@
         "Add tomato puree, garam masala and red pesto, let it roast for 3 minutes.",
         "Add rest of the vegetables and cover cook for 10 minutes.",
         "Mix in salt, top with coriander leaves."
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Vegan Chocolate Cake",
+      "cuisine_id": 2,
+      "serving_size": 6,
+      "ingredients": [
+        {
+          "ingredient_id": 21,
+          "quantity": 1.5,
+          "unit_id": 6
+        }
+      ],
+      "method": [
+        "Preheat oven to 375 degrees and grease and flour a cake pan.",
+        "In a large mixing bowl, combine flour, sugar, salt, cocoa powder, baking soda, and ginger, stirring to mix well.",
+        "Add melted and cooled coconut oil, vanilla, and lukewarm water. Stir well to combine.",
+        "Add coffee and apple cider vinegar, stirring well to make sure there are no lumps in the batter. The batter will foam up a bit as the baking soda reacts with the acid in the vinegar and the coffee.",
+        "Pour batter into cake pan and bake at 190 degrees for about 25 minutes or until a toothpick inserted in the center comes out clean."
       ]
     }
   ]

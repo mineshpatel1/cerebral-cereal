@@ -3,8 +3,8 @@ import { View } from 'react-native';
 
 import { Component, Pressable, Text, TextInput, Layout, Utils } from 'cerebral-cereal-common';
 import { ingredients } from '../data';
-import { parseQuantity } from '../utils';
 import { Overlay } from './Overlay';
+import LocalUtils from '../utils';
 
 export default class IngredientTypeahead extends Component {
   static defaultProps = {
@@ -48,7 +48,7 @@ export default class IngredientTypeahead extends Component {
 
   getShortlist = searchTerm => {
     let shortlist = [];
-    const {name, quantity} = parseQuantity(searchTerm);
+    const {name, quantity} = LocalUtils.parseQuantity(searchTerm);
 
     if (name && name.length >= 2) {
       ingredients.forEach(ingredient => {
@@ -90,7 +90,7 @@ export default class IngredientTypeahead extends Component {
             onChange={this.itemSearch}
             onEndEditing={this.clearSearch}
             onSubmitEditing={({ nativeEvent }) => {
-              const {name, quantity} = parseQuantity(nativeEvent.text);
+              const {name, quantity} = LocalUtils.parseQuantity(nativeEvent.text);
               this.onSelect(name, quantity)
             }}
           />

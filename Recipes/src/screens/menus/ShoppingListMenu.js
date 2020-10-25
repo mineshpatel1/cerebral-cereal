@@ -10,7 +10,7 @@ import {
 
 import { addItem, removeItem, toggleItem } from '../../actions/ShoppingListActions';
 import { locations } from '../../data';
-import { mapItemsToLocations } from '../../utils';
+import LocalUtils from '../../utils';
 import IngredientTypeahead from '../../components/IngredientTypeahead';
 import EditItemModal from '../../components/EditItemModal';
 
@@ -70,7 +70,7 @@ class ShoppingListMenu extends Component {
     const { props } = this;
 
     const sectionList = [];
-    const locationMap = mapItemsToLocations(props.shoppingList, locations);
+    const locationMap = LocalUtils.mapItemsToLocations(props.shoppingList, locations);
     locationMap.forEach(lm => {
       let location = {id: -1, name: 'Unknown'};
       if (lm.locationId > -1) {

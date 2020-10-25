@@ -68,10 +68,6 @@ export default class Recipe extends Component {
     this.setState({showTimers: !this.state.showTimers});
   }
 
-  parseMinutes = string => {
-    return 60 * parseInt(string.match(/(\d.*?)\s/)[1]);
-  }
-
   getTimers = method => {
     const timers = [];
     method.forEach((step, i) => {

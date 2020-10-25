@@ -56,11 +56,12 @@ class Unit {
     this.display = display;
     this.plural = plural;
   }
-  formatPlural = quantity => this.plural && quantity > 1 ? this.plural : this.unit;
+  formatPlural = quantity => this.plural && quantity > 1 ? this.plural : this.display;
 }
 
 // May want to instantiate these into JS class objects.
 export const units = rawUnits.units.map(u => new Unit(u));
+export const conversions = rawUnits.conversions;
 export const ingredients = rawIngredients.ingredients.map(i => new Ingredient(i));
 export const ingredientCategories = rawIngredients.categories;
 export const recipes = rawRecipes.recipes;

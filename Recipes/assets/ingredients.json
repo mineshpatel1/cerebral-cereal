@@ -54,6 +54,16 @@
             "location_id": 5
         },
         {
+            "id": 31,
+            "name": "Baking Soda",
+            "unit_size": 200,
+            "unit_id": 1,
+            "category_id": 9,
+            "image_url": "https://digitalcontent.api.tesco.com/v2/media/ghs/4add1810-7882-4c26-9ffb-908ca2cba918/snapshotimagehandler_237448348.jpeg?h=500&w=500",
+            "api_id": 18372,
+            "location_id": 15
+        },
+        {
             "id": 19,
             "name": "Beef Tomato",
             "plural": "Beef Tomatoes",
@@ -141,8 +151,8 @@
         {
             "id": 8,
             "name": "Cumin Seeds/Jeera",
-            "unit_size": 9,
-            "unit_id": 4,
+            "unit_size": 37,
+            "unit_id": 1,
             "category_id": 2,
             "image_url": "https://spoonacular.com/cdn/ingredients_500x500/ground-cumin.jpg",
             "api_id": 2014,
@@ -162,8 +172,8 @@
         {
             "id": 10,
             "name": "Garam Masala",
-            "unit_size": 7,
-            "unit_id": 4,
+            "unit_size": 38,
+            "unit_id": 1,
             "category_id": 2,
             "image_url": "https://spoonacular.com/cdn/ingredients_500x500/garam-masala.jpg",
             "api_id": 93663,

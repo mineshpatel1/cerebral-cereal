@@ -10,6 +10,7 @@ import {
 
 import { addItems } from '../actions/ShoppingListActions';
 import { ingredients } from '../data';
+import LocalUtils from '../utils';
 
 const maxWidth = Dimensions.get('window').width - StyleConstants.size4;
 
@@ -31,6 +32,7 @@ class IngredientChecklist extends Component {
         {
           ingredient: ingredients.filter(i => _i.ingredient_id == i.id)[0],
           quantity: _i.quantity,
+          unit_id: _i.unit_id,
         }
       );
     });
@@ -135,7 +137,16 @@ class IngredientChecklist extends Component {
         <ViewElement style={[{width: maxWidth}]}>
           {this.ingredients.map((ingredientObj, i) => {
             const ingredient = ingredientObj.ingredient;
-            const numItems = this.getNumItems(ingredientObj.quantity, ingredient.unit_size);
+            let quantity = ingredientObj.quantity;
+            if (ingredientObj.unit_id && ingredientObj.unit_id != ingredient.unit_id) {
+              quantity = LocalUtils.convertQuantity(
+                ingredientObj.unit_id,
+                ingredient.unit_id,
+                ingredientObj.quantity,
+              );
+            }
+            
+            const numItems = this.getNumItems(quantity, ingredient.unit_size);
             const checkStyle = i == (this.ingredients.length - 1) ? Layout.mb1 : null;
             const currentNum = this.getCurrentQuantity(ingredient, props.shoppingList);
             
@@ -145,9 +156,7 @@ class IngredientChecklist extends Component {
                 style={[
                   Layout.px2, Layout.mt1, Layout.row,
                   Layout.aCenter, Layout.jSpace, checkStyle,
-                  {
-                    marginRight: 4,
-                  }
+                  { marginRight: 4 },
                 ]}
               >
                 <ChecklistItem
