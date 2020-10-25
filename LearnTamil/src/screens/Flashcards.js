@@ -73,11 +73,7 @@ class Flashcards extends Component {
     if (state.numQuestions == state.questionNum) {
       this.props.navigation.goBack();
     } else {
-      this.fadeOut(() => {
-        for (const opt of Object.values(this.optionRefs)) {
-          if (opt) opt.reset();
-        }
-    
+      this.fadeOut(() => {    
         const {
           currentPhrase, allPhrases,
         } = LocalUtils.shufflePhrases(state.allPhrases);
