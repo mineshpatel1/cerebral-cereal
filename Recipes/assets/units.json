@@ -5,7 +5,8 @@
     { "from": 6, "to": 1, "ratio": 250 },
     { "from": 4, "to": 7, "ratio": 5.9 },
     { "from": 5, "to": 7, "ratio": 17.8 },
-    { "from": 6, "to": 7, "ratio": 237 }
+    { "from": 6, "to": 7, "ratio": 237 },
+    { "from": 6, "to": 5, "ratio": 13.3 }
   ],
   "units": [
     {

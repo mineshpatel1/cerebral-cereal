@@ -85,6 +85,56 @@
           "ingredient_id": 21,
           "quantity": 1.5,
           "unit_id": 6
+        },
+        {
+          "ingredient_id": 22,
+          "quantity": 1,
+          "unit_id": 6
+        },
+        {
+          "ingredient_id": 23,
+          "quantity": 0.5,
+          "unit_id": 4
+        },
+        {
+          "ingredient_id": 24,
+          "quantity": 3,
+          "unit_id": 5
+        },
+        {
+          "ingredient_id": 31,
+          "quantity": 1,
+          "unit_id": 4
+        },
+        {
+          "ingredient_id": 25,
+          "quantity": 0.25,
+          "unit_id": 4
+        },
+        {
+          "ingredient_id": 26,
+          "quantity": 6,
+          "unit_id": 5
+        },
+        {
+          "ingredient_id": 27,
+          "quantity": 1,
+          "unit_id": 4
+        },
+        {
+          "ingredient_id": 29,
+          "quantity": 0.5,
+          "unit_id": 5
+        },
+        {
+          "ingredient_id": 30,
+          "quantity": 1,
+          "unit_id": 6
+        },
+        {
+          "ingredient_id": 28,
+          "quantity": 1,
+          "unit_id": 5
         }
       ],
       "method": [
