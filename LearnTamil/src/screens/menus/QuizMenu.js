@@ -57,7 +57,6 @@ export default class QuizMenu extends Component {
           checked={state.checkStates[i]}
           icon={category.icon}
           text={category.name}
-          animationDuration={0}
         />
       );
     });
@@ -84,7 +83,6 @@ export default class QuizMenu extends Component {
           text={'Select ' + (allSelected ? 'None' : 'All')}
           onPress={() => {this.selectAll(!allSelected)}}
           checked={allSelected}
-          animationDuration={0}
           style={[
             Layout.mt1, Layout.pdb1,
             {borderColor: Colours.disabled, borderBottomWidth: 1},

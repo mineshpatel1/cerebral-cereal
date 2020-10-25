@@ -18,6 +18,7 @@ class IngredientChecklist extends Component {
     visible: false,
     ingredients: [],
     servingRatio: 1,
+    animationDuration: 150,
   }
 
   constructor(props) {
@@ -48,6 +49,12 @@ class IngredientChecklist extends Component {
     this.setState({checked});
   }
 
+  toggleAll = value => {
+    this.setState({
+      checked: this.ingredients.map(() => value),
+    })
+  }
+
   addToList = () => {
     const toAdd = [];
     this.ingredients.forEach((ingredientObj, i) => {
@@ -71,6 +78,7 @@ class IngredientChecklist extends Component {
     const { props, state } = this;
 
     const ViewElement = this.ingredients.length > 17 ? ScrollView : View;
+    const allSelected = state.checked.every(c => c);
 
     return (
       <Modal
@@ -78,6 +86,14 @@ class IngredientChecklist extends Component {
         onRequestClose={props.onRequestClose}
       >
         <ViewElement style={[Layout.pd2, {width: 300}]}>
+          <View style={[Layout.pdb1, Layout.mb1, {borderBottomColor: Colours.disabled, borderBottomWidth: 1}]}>
+            <ChecklistItem
+              checked={allSelected}
+              onPress={() => this.toggleAll(!allSelected)}
+              text={allSelected ? 'Select None' : 'Select All'}
+              selectedTextProps={{}}
+            />
+          </View>
           {this.ingredients.map((ingredientObj, i) => {
             const ingredient = ingredientObj.ingredient;
             const numItems = this.getNumItems(ingredientObj.quantity, ingredient.unit_size);
@@ -90,7 +106,6 @@ class IngredientChecklist extends Component {
                 onPress={() => this.toggleItem(i)}
                 text={ingredient.formatQuantity(numItems)}
                 style={checkStyle}
-                animationDuration={200}
                 selectedTextProps={{}}
               />
             );
