@@ -193,6 +193,7 @@ class Flashcards extends Component {
             >
               <Text
                 animated bold align="center"
+                colour={Colours.primaryContrast}
                 style={{opacity: state.textOpacity}}
               >
                 {state.showPhrase ? text : '?'}
