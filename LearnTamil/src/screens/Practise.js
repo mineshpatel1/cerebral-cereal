@@ -166,7 +166,7 @@ class Practise extends Component {
         <Container>
           <PhraseController ref={x => this.phraseController = x} />
           <View style={[
-            Layout.row, Layout.pd1, Layout.pdx2, Layout.aCenter, controller,
+            Layout.row, Layout.p1, Layout.px2, Layout.aCenter, controller,
           ]}>
             <TextInput
               icon="search"
@@ -189,7 +189,7 @@ class Practise extends Component {
             />
           </View>
           <View style={[
-            Layout.row, Layout.aCenter, Layout.pd1, Layout.pdx2, controller,
+            Layout.row, Layout.aCenter, Layout.p1, Layout.px2, controller,
             {
               borderBottomWidth: 2,
               borderColor: Colours.primaryContrast,

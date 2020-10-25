@@ -45,7 +45,7 @@ export class PlainButton extends Component {
       ]}
       >
         <Pressable
-          style={[Layout.pd1, {borderRadius: borderRadius}]}
+          style={[Layout.p1, {borderRadius: borderRadius}]}
           backgroundColour={backgroundColour}
           borderlessRipple={true}
           onPress={props.onPress}

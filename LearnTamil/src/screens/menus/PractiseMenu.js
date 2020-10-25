@@ -86,7 +86,7 @@ export default class PractiseMenu extends Component {
                   {backgroundColor: Colours.background, borderRadius: 5},
                 ]}>
                 <Pressable
-                  style={[Layout.f1, Layout.pd1, {borderRadius: 5}]}
+                  style={[Layout.f1, Layout.p1, {borderRadius: 5}]}
                   containerStyle={[Layout.f1]}
                   backgroundColour={Colours.background}
                   onPress={() => this.navigate(category, phrase)}

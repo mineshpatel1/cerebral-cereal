@@ -136,7 +136,7 @@ export default class Alphabet extends Component {
 
     const help = (
       <ScrollView>
-        <View style={Layout.pd2}>
+        <View style={Layout.p2}>
           <P>
             You can search for vowels and consonants in the grid by typing
             in the search bar. Separate terms using a space to search for
@@ -172,7 +172,7 @@ export default class Alphabet extends Component {
         </Modal>
         <View style={[
           Layout.row, Layout.aCenter,
-          Layout.pd1, Layout.pdx2, Layout.pdb2,
+          Layout.p1, Layout.px2, Layout.pb2,
           controller,
           {
             borderBottomWidth: 2,

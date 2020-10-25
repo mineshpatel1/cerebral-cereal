@@ -54,7 +54,7 @@ export class IconSet extends Component {
                 size={26}
                 buttonProps={{activeOpacity: 1}}
                 style={[
-                  Layout.pd2,
+                  Layout.p2,
                   {
                     paddingLeft: StyleConstants.size2,
                     paddingRight: StyleConstants.size2,

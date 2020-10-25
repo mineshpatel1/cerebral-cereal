@@ -4,7 +4,7 @@ import { bindActionCreators } from 'redux';
 import { ScrollView, View } from 'react-native';
 
 import {
-    Button, ChecklistItem, Component, Modal,
+    Button, ChecklistItem, Component, Icon, Modal,
     Layout, Utils,
 } from 'cerebral-cereal-common';
 
@@ -85,14 +85,22 @@ class IngredientChecklist extends Component {
         visible={props.visible}
         onRequestClose={props.onRequestClose}
       >
-        <ViewElement style={[Layout.pd2, {width: 300}]}>
-          <View style={[Layout.pdb1, Layout.mb1, {borderBottomColor: Colours.disabled, borderBottomWidth: 1}]}>
+        <ViewElement style={[Layout.p2, {width: 300}]}>
+          <View
+            style={[
+              Layout.pb1, Layout.pr1, Layout.mb1, Layout.row, Layout.aCenter, Layout.jSpace,
+              {
+                borderBottomColor: Colours.disabled,
+                borderBottomWidth: 1,
+              },
+            ]}
+          >
             <ChecklistItem
               checked={allSelected}
               onPress={() => this.toggleAll(!allSelected)}
               text={allSelected ? 'Select None' : 'Select All'}
-              selectedTextProps={{}}
             />
+            {/* <Icon icon="shopping-cart" /> */}
           </View>
           {this.ingredients.map((ingredientObj, i) => {
             const ingredient = ingredientObj.ingredient;

@@ -18,7 +18,7 @@ export default class MethodTab extends Component {
     const { props } = this;
     const methodElements = []
     props.method.forEach((step, i) => {
-      const padding = i == 0 ? Layout.pdy2 : Layout.pdb2;
+      const padding = i == 0 ? Layout.py2 : Layout.pb2;
       const stepElements = [<Text key={'-1'}>{(i + 1) + '. '}</Text>];
       step.split(timeRegex).forEach((part, j) => {
         stepElements.push(
@@ -30,7 +30,7 @@ export default class MethodTab extends Component {
       })
 
       methodElements.push(
-        <View key={i} style={[Layout.row, Layout.pdx2, padding]}>
+        <View key={i} style={[Layout.row, Layout.px2, padding]}>
           <Text>
             {stepElements}
           </Text>

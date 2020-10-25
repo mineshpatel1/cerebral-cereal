@@ -49,7 +49,7 @@ export class ListItem extends Component {
         disabled={disabled}
         {...pressableProps}
       >
-        <View style={[Layout.pd2, Layout.row, {backgroundColor: disabled ? disabledColour : null}]}>
+        <View style={[Layout.p2, Layout.row, {backgroundColor: disabled ? disabledColour : null}]}>
           {props.children}
         </View>
       </Pressable>

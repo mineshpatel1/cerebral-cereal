@@ -35,7 +35,7 @@ export class SelectableItem extends Component {
           backgroundColour={backgroundColour}
           rippleColour={Colours.primary}
           style={[
-            Layout.row, Layout.aCenter, Layout.pd2,
+            Layout.row, Layout.aCenter, Layout.p2,
             {
               height: props.height,
               borderBottomWidth: 1,

@@ -98,7 +98,7 @@ export default class IngredientTypeahead extends Component {
         <Overlay
           visible={state.showTypeahead}
           style={[
-            Layout.pdx2,
+            Layout.px2,
             {
               position: 'absolute',
               width: '100%',
@@ -114,7 +114,7 @@ export default class IngredientTypeahead extends Component {
                 backgroundColour={overlayBackground}
                 rippleColour={rippleColour}
                 onPress={() => this.onSelect(item.name, item.quantity, item.ingredientId)}
-                style={Layout.pd1}
+                style={Layout.p1}
               >
                 <Text text={item.name} />
               </Pressable>

@@ -37,7 +37,7 @@ export default class IngredientsTab extends Component {
       const name = _ingredient.formatPlural(_quantity);
       
       ingredientElements.push(
-        <View key={i} style={[Layout.row, Layout.pd1]}>
+        <View key={i} style={[Layout.row, Layout.p1]}>
           <Text>{quantity + ' x ' + name}</Text>
         </View>
       );

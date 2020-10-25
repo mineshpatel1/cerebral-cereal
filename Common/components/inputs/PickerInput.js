@@ -61,7 +61,7 @@ export class PickerInput extends Component {
             text={value}
             onPress={this.openPicker}
             style={[
-              Layout.f1, Layout.mt1, Layout.pdl1,
+              Layout.f1, Layout.mt1, Layout.pl1,
               Styles.textInput,
             ]}
           />

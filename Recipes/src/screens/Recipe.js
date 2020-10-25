@@ -148,7 +148,7 @@ export default class Recipe extends Component {
     const colStyle = [Layout.f1, Layout.row, Layout.center, this.props.style];
     return (
       <Container>
-        <View style={[Layout.pd2, Layout.mb2, {backgroundColor: Colours.primary}]}>
+        <View style={[Layout.p2, Layout.mb2, {backgroundColor: Colours.primary}]}>
           <Text bold colour={Colours.primaryContrast}>Timers</Text>
         </View>
         <View>
@@ -158,7 +158,7 @@ export default class Recipe extends Component {
             const control = isPlaying ? 'pause' : 'play';
 
             return (
-              <View key={t.step} style={[Layout.pdx2, Layout.row, Layout.mb1]}>
+              <View key={t.step} style={[Layout.px2, Layout.row, Layout.mb1]}>
                 <View style={[colStyle, {justifyContent: 'flex-start'}]}>
                   <Text>{"Step " + (t.step + 1)}</Text>
                 </View>
@@ -228,7 +228,7 @@ export default class Recipe extends Component {
             onRequestClose={() => this.setState({showChecklist: false})}
           />
           <View style={[
-            Layout.row, Layout.pdx2, Layout.pdt2,
+            Layout.row, Layout.px2, Layout.pt2,
             {
               justifyContent: 'space-between',
             }
@@ -250,13 +250,13 @@ export default class Recipe extends Component {
             </View>
           </View>
           <View style={[
-            Layout.row, Layout.pd2, Layout.aCenter,
+            Layout.row, Layout.p2, Layout.aCenter,
             {
               borderBottomWidth: 2,
               borderColor: Colours.primary,
             }
           ]}>
-            <Text style={Layout.pdr2}>{"Serves " + state.servingSize}</Text>
+            <Text style={Layout.pr2}>{"Serves " + state.servingSize}</Text>
             <Slider
               thumbTintColor={Colours.primary}
               minimumTrackTintColor={Colours.primary}
@@ -283,7 +283,7 @@ export default class Recipe extends Component {
             ]}
           >
             <Pressable
-              style={[Layout.pd1, Layout.row]}
+              style={[Layout.p1, Layout.row]}
               onPress={() => this.setState({showTimers: true})}
               backgroundColour={Colours.background}
             >

@@ -67,7 +67,7 @@ export class Collapsible extends Component {
     const dividerStyle = [
       Layout.row,
       Layout.aCenter,
-      Layout.pdx2,
+      Layout.px2,
       {
         height: StyleConstants.headerSize,
         backgroundColor: colour,

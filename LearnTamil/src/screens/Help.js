@@ -20,7 +20,7 @@ export default class Help extends Component {
     }}>{props.children}</Text>;
 
     return (
-      <Container style={Layout.pd2}>
+      <Container style={Layout.p2}>
         <ScrollView>
           <Text display>Formality</Text>
           <P style={[Layout.mt1]}>

@@ -17,32 +17,32 @@ export const Layout = StyleSheet.create({
   ml2: { marginLeft: StyleConstants.size2 },
   mr2: { marginRight: StyleConstants.size2 },
   mt3: { marginTop: StyleConstants.size3 },
-  pdx0: { paddingLeft: 0, paddingRight: 0},
-  pd1: { padding: StyleConstants.size1 },
-  pdx1: {
+  px0: { paddingLeft: 0, paddingRight: 0},
+  p1: { padding: StyleConstants.size1 },
+  px1: {
     paddingRight: StyleConstants.size1,
     paddingLeft: StyleConstants.size1,
   },
-  pdy1: {
+  py1: {
     paddingTop: StyleConstants.size1,
     paddingBottom: StyleConstants.size1,
   },
-  pdr1: { paddingRight: StyleConstants.size1 },
-  pdb1: { paddingBottom: StyleConstants.size1 },
-  pdt1: { paddingTop: StyleConstants.size1 },
-  pd2: { padding: StyleConstants.size2 },
-  pdx2: {
+  pr1: { paddingRight: StyleConstants.size1 },
+  pb1: { paddingBottom: StyleConstants.size1 },
+  pt1: { paddingTop: StyleConstants.size1 },
+  p2: { padding: StyleConstants.size2 },
+  px2: {
     paddingLeft: StyleConstants.size2,
     paddingRight: StyleConstants.size2,
   },
-  pdy2: {
+  py2: {
     paddingTop: StyleConstants.size2,
     paddingBottom: StyleConstants.size2,
   },
-  pdb2: { paddingBottom: StyleConstants.size2 },
-  pdt2: { paddingTop: StyleConstants.size2 },
-  pdl2: { paddingLeft: StyleConstants.size2 },
-  pdr2: { paddingRight: StyleConstants.size2 },
+  pb2: { paddingBottom: StyleConstants.size2 },
+  pt2: { paddingTop: StyleConstants.size2 },
+  pl2: { paddingLeft: StyleConstants.size2 },
+  pr2: { paddingRight: StyleConstants.size2 },
   row: { flexDirection: 'row' },
   col: { flexDirection: 'column' },
   aCenter: { alignItems: 'center' },

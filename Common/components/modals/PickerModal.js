@@ -48,7 +48,7 @@ export class PickerModal extends Component {
           backgroundColour={Colours.background}
           rippleColour={rippleColour}
           onPress={() => {onSelect(_choiceKeys[i])}}
-          style={[Layout.row, Layout.pd1]}
+          style={[Layout.row, Layout.p1]}
         >
           <RadioButton
             selected={_choiceKeys[i] == selected}
@@ -69,11 +69,11 @@ export class PickerModal extends Component {
         onRequestClose={() => {onSelect(selected)}}
       >
         <View style={[
-          Layout.pd1,
+          Layout.p1,
           {minWidth: 200},
         ]}>
           <View style={[
-            Layout.pd1,
+            Layout.p1,
             {
               borderBottomWidth: 1,
               borderColor: Colours.foreground,

@@ -12,7 +12,7 @@ export default class Acknowledgements extends Component {
     const L = props => <Text link onPress={() => Linking.openURL(props.url)}>{props.children}</Text>;
 
     return (
-      <Container style={Layout.pd2}>
+      <Container style={Layout.p2}>
         <ScrollView>
           <Text display text={"My Partner"} />
           <P style={Layout.mt1}>

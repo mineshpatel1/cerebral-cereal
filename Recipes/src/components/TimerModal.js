@@ -80,9 +80,9 @@ export default class TimerModal extends Component {
         visible={visible}
         onRequestClose={onCancel}
       >
-        <View style={[Layout.center, Layout.pdy2, {width: width}]}>
+        <View style={[Layout.center, Layout.py2, {width: width}]}>
           <View style={[
-            Layout.row, Layout.pdb1, Layout.pdx2, Layout.mb2, Layout.center,
+            Layout.row, Layout.pb1, Layout.px2, Layout.mb2, Layout.center,
             {
               borderBottomWidth: 1,
               borderColor: Colours.offGrey,

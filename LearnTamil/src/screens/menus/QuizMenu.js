@@ -64,7 +64,7 @@ export default class QuizMenu extends Component {
     const quizDisabled = state.checkStates.filter(c => c).length == 0;
     const allSelected = state.checkStates.filter(c => c).length == categories.length;
     return (
-      <ScreenContainer style={Layout.pdb2}>
+      <ScreenContainer style={Layout.pb2}>
         <View style={Styles.switchList}>
           <SwitchInput
             labelTrue={'Multiple Choice'}
@@ -84,7 +84,7 @@ export default class QuizMenu extends Component {
           onPress={() => {this.selectAll(!allSelected)}}
           checked={allSelected}
           style={[
-            Layout.mt1, Layout.pdb1,
+            Layout.mt1, Layout.pb1,
             {borderColor: Colours.disabled, borderBottomWidth: 1},
           ]}
         />

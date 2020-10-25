@@ -139,7 +139,7 @@ class Flashcards extends Component {
       <Container>
         <PhraseController ref={x => this.phraseController = x} />
         <Animated.View
-          style={[Layout.pd2, {
+          style={[Layout.p2, {
             backgroundColor: Colours.primary,
           }]}
         >
@@ -148,7 +148,7 @@ class Flashcards extends Component {
           </View>
         </Animated.View>
         <Animated.View style={[
-          Layout.row, Layout.aCenter, Layout.pd2,
+          Layout.row, Layout.aCenter, Layout.p2,
           {
             backgroundColor: Colours.primary,
           }
@@ -161,7 +161,7 @@ class Flashcards extends Component {
         </Animated.View>
         <View
           style={[
-            Layout.f1, Layout.pdx2,
+            Layout.f1, Layout.px2,
             Layout.aCenter,
             {
               justifyContent: 'space-evenly',

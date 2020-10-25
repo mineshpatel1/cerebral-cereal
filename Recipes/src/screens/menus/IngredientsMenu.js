@@ -31,7 +31,7 @@ export default class IngredientsMenu extends Component {
     const { Colours } = this.getTheme();
     return (
       <ScreenContainer style={[
-        Layout.mt0, Layout.pdx0,
+        Layout.mt0, Layout.px0,
         {
           borderRightWidth: 1,
           borderLeftWidth: 1,

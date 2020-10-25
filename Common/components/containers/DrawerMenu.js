@@ -43,7 +43,7 @@ export class DrawerMenu extends Component {
 
     const drawer = (
       <Container>
-        <View style={[Layout.pd2, Layout.jCenter, {height: props.headerSize, backgroundColor: headerColour}]}>
+        <View style={[Layout.p2, Layout.jCenter, {height: props.headerSize, backgroundColor: headerColour}]}>
           <Text bold display colour={headerTextColour}>{props.title}</Text>
         </View>
         {props.menu.map(item => (

@@ -32,7 +32,7 @@ class RecipesMenu extends Component {
 
     return (
       <ScreenContainer style={[
-        Layout.mt0, Layout.pdx0,
+        Layout.mt0, Layout.px0,
         {
           borderRightWidth: 1,
           borderLeftWidth: 1,

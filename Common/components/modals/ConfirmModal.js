@@ -34,7 +34,7 @@ export class ConfirmModal extends Component {
         onRequestClose={onCancel}
       >
         <View style={[
-          Layout.center, Layout.pd2,
+          Layout.center, Layout.p2,
           {minWidth: 200},
         ]}>
           <Text align="center" colour={Colours.foreground}>{message}</Text>

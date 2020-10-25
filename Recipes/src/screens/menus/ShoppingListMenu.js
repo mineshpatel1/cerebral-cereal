@@ -91,7 +91,7 @@ class ShoppingListMenu extends Component {
           <View
             key={item.index + item.name}
             style={[
-              Layout.row, Layout.aCenter, Layout.pdx1,
+              Layout.row, Layout.aCenter, Layout.px1,
               {justifyContent: 'space-between'},
             ]}
           >
@@ -128,7 +128,7 @@ class ShoppingListMenu extends Component {
             this.setState({collapsibles});
           }}
         >
-          <View style={Layout.pdy1}>
+          <View style={Layout.py1}>
             {itemList}
           </View>
         </Collapsible>
@@ -140,7 +140,7 @@ class ShoppingListMenu extends Component {
   render() {
     const { props, state } = this;
     return (
-      <ScreenContainer style={Layout.pdx0}>
+      <ScreenContainer style={Layout.px0}>
         <EditItemModal
           visible={state.editItem !== null}
           onRequestClose={this.closeModal}
@@ -152,7 +152,7 @@ class ShoppingListMenu extends Component {
             onSelect={this.addItem}
             placeholder="Add Item"
             overlayTop={50}
-            style={[Layout.pdx2, Layout.mb2]}
+            style={[Layout.px2, Layout.mb2]}
             shoppingList={props.shoppingList}
             ref={x => this.typeahead = x}
           />

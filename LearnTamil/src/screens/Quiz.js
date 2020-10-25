@@ -203,7 +203,7 @@ class Quiz extends Component {
           !state.gameIsOver && 
           <>
             <Animated.View
-              style={[Layout.pd2, {
+              style={[Layout.p2, {
                 backgroundColor: Colours.primary,
                 opacity: state.allOpacity,
               }]}
@@ -214,7 +214,7 @@ class Quiz extends Component {
               </View>
             </Animated.View>
             <Animated.View style={[
-              Layout.row, Layout.aCenter, Layout.pd2,
+              Layout.row, Layout.aCenter, Layout.p2,
               {
                 backgroundColor: Colours.primary,
                 opacity: state.allOpacity,
@@ -226,7 +226,7 @@ class Quiz extends Component {
                 isTranslation={state.tamilToEnglish}
               />
             </Animated.View>
-            <Animated.ScrollView style={[Layout.pdx2, {paddingTop: 0, opacity: state.opacity}]}>
+            <Animated.ScrollView style={[Layout.px2, {paddingTop: 0, opacity: state.opacity}]}>
               {optionButtons}
             </Animated.ScrollView>
           </>
@@ -235,7 +235,7 @@ class Quiz extends Component {
           state.gameIsOver &&
           <Animated.View
             style={[
-              Layout.center, Layout.f1, Layout.pd2,
+              Layout.center, Layout.f1, Layout.p2,
               {
                 opacity: state.allOpacity.interpolate({
                   inputRange: [0, 1], outputRange: [1, 0]

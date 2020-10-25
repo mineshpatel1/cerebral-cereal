@@ -64,7 +64,7 @@ export default class IngredientTypeahead extends Component {
         visible={props.visible}
         onRequestClose={props.onRequestClose}
       >
-        <View style={[Layout.pd2, {width: 300}]}>
+        <View style={[Layout.p2, {width: 300}]}>
           <View style={[Layout.col]}>
             <View style={[Layout.row]}>
               <TextInput

@@ -14,7 +14,7 @@ export class ScreenContainer extends Component {
   render() {
     return (
       <View style={[
-        Layout.pdx2, Layout.f1, Layout.mt1, {width: maxWidth},
+        Layout.px2, Layout.f1, Layout.mt1, {width: maxWidth},
         this.props.style,
       ]}>
         {this.props.children}

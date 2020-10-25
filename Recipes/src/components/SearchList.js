@@ -48,7 +48,7 @@ export default class SearchList extends Component {
     return (
       <View>
         <View style={[
-          Layout.row, Layout.pd1, Layout.pdx2, Layout.aCenter,
+          Layout.row, Layout.p1, Layout.px2, Layout.aCenter,
           {
             backgroundColor: Colours.primary,
           }

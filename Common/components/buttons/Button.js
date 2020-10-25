@@ -84,7 +84,7 @@ export class Button extends Component {
           style={[
             Layout.f1,
             Layout.row,
-            Layout.pdx2,
+            Layout.px2,
             Layout.aCenter,
             Styles.roundCorner,
             {

@@ -23,7 +23,7 @@ export default class Home extends Component {
     const T = props => <Text style={[Layout.mt2, props.style]} {...props}>{props.children}</Text>
 
     return (
-      <Container style={Layout.pd2}>
+      <Container style={Layout.p2}>
         <View style={[Layout.f1]}>
           {
             this.ingredient.image_url &&

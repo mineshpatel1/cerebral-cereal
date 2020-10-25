@@ -61,7 +61,7 @@ export class Header extends Component {
       )
     }
 
-    const textIndent = showBack ? null : Layout.pdl2;
+    const textIndent = showBack ? null : Layout.pl2;
     const background = {backgroundColor: Colours.background};
 
     return (
