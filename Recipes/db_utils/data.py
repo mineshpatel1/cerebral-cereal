@@ -306,7 +306,20 @@ def add_ingredients_from_api(new_ingredients):
 
 
 def main():
-    pass
+    items = [
+        'Plain Flour',
+        'Cane Sugar',
+        'Salt',
+        'Cocoa Powder',
+        'Ground Ginger',
+        'Coconut Oil',
+        'Vanilla Extract',
+        'Cider Vinegar',
+        'Coffee',
+        'Water',
+    ]
+
+    add_ingredients_from_api(items)
 
 
 if __name__ == '__main__':

@@ -49,12 +49,18 @@ export default class Home extends Component {
             <View style={{width: 150}}>
               <T bold>Category:</T>
               <T bold>Standard Size:</T>
-              <T bold>Store Location:</T>
+              {
+                this.location &&
+                <T bold>Store Location:</T>
+              }
             </View>
             <View style={Layout.f1}>
               <T>{this.category.name}</T>
               <T>{this.ingredient.unit_size + this.unit.display}</T>
-              <T style={[Layout.mt2, {lineHeight: 24}]}>{this.location.formatName()}</T>
+              {
+                this.location &&
+                <T style={[Layout.mt2, {lineHeight: 24}]}>{this.location.formatName()}</T>
+              }
             </View>
           </View>
         </View>        
