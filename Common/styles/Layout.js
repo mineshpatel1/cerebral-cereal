@@ -11,6 +11,7 @@ export const Layout = StyleSheet.create({
   mt1: { marginTop: StyleConstants.size1 },
   ml1: { marginLeft: StyleConstants.size1 },
   mr1: { marginRight: StyleConstants.size1 },
+  m2:  { margin: StyleConstants.size2 },
   mx2: { marginRight: StyleConstants.size2, marginLeft: StyleConstants.size2 },
   mb2: { marginBottom: StyleConstants.size2 },
   mt2: { marginTop: StyleConstants.size2 },
