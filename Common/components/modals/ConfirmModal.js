@@ -1,11 +1,11 @@
 import React from 'react';
 import { View } from 'react-native';
 
-import { Component } from './Component';
-import { Button } from './Button';
+import { Component } from '../Component';
+import { Button } from '../buttons/Button';
 import { Modal } from './Modal';
-import { Text } from './Text';
-import { Layout } from '../styles';
+import { Text } from '../Text';
+import { Layout } from '../../styles';
 
 export class ConfirmModal extends Component {
   static defaultProps = {

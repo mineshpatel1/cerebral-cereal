@@ -1,12 +1,12 @@
 import React from 'react';
 import { View } from 'react-native';
 
-import { Button } from './Button';
-import { Component } from './Component';
+import { Button } from '../buttons/Button';
+import { Component } from '../Component';
 import { Modal } from './Modal';
-import { PlainButton } from './PlainButton';
-import { Text } from './Text';
-import { Layout } from '../styles/Layout';
+import { PlainButton } from '../buttons/PlainButton';
+import { Text } from '../Text';
+import { Layout } from '../../styles/Layout';
 
 const TIMER_MATCH = /(\d\d)(\d\d)(\d\d)/;
 

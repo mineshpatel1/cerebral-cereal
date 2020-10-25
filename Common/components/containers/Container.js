@@ -1,9 +1,9 @@
 import React from 'react';
 import { SafeAreaView, StatusBar, View } from 'react-native';
 
-import { Component } from './Component';
-import { Layout } from '../styles';
-import { ColourUtils } from '../utils/ColourUtils';
+import { Component } from '../Component';
+import { Layout } from '../../styles';
+import { ColourUtils } from '../../utils/ColourUtils';
 
 export class Container extends Component {
   static defaultProps = {

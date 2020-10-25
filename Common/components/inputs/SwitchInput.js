@@ -2,9 +2,9 @@ import React from 'react';
 import { Pressable as ReactPressable, View } from 'react-native';
 
 import { Switch } from './Switch';
-import { Text } from './Text';
-import { Component } from './Component';
-import { Layout } from '../styles/Layout';
+import { Text } from '../Text';
+import { Component } from '../Component';
+import { Layout } from '../../styles/Layout';
 
 export class SwitchInput extends Component {
   static defaultProps = {

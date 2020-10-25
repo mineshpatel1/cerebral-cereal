@@ -1,11 +1,11 @@
 import React from 'react';
 import { View, TextInput as ReactTextInput } from 'react-native';
 
-import { Component } from './Component';
-import { Icon } from './Icon';
-import { Text } from './Text';
-import { Layout, StyleConstants } from '../styles';
-import { Validators } from '../utils/Validators';
+import { Component } from '../Component';
+import { Icon } from '../Icon';
+import { Text } from '../Text';
+import { Layout, StyleConstants } from '../../styles';
+import { Validators } from '../../utils/Validators';
 
 export class TextInput extends Component {
   static defaultProps = {

@@ -1,9 +1,9 @@
 import React from 'react';
 import { Animated, Platform, Pressable as ReactPressable, View } from 'react-native';
 
-import { Component } from './Component';
-import { ColourUtils } from '../utils/ColourUtils';
-import { Utils } from '../utils/Utils';
+import { Component } from '../Component';
+import { ColourUtils } from '../../utils/ColourUtils';
+import { Utils } from '../../utils/Utils';
 
 const isAndroid = Platform.OS === 'android';
 

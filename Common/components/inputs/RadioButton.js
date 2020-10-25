@@ -1,7 +1,7 @@
 import React from 'react';
 import { View } from 'react-native';
 
-import { Component } from './Component';
+import { Component } from '../Component';
 
 export class RadioButton extends Component {
   static defaultProps = {

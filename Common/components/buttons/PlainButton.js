@@ -1,11 +1,11 @@
 import React from 'react';
 import { View } from 'react-native';
 
-import { Component } from './Component';
-import { Icon } from './Icon';
+import { Component } from '../Component';
+import { Icon } from '../Icon';
 import { Pressable } from './Pressable';
-import { Text } from './Text';
-import { Layout } from '../styles/Layout';
+import { Text } from '../Text';
+import { Layout } from '../../styles/Layout';
 
 export class PlainButton extends Component {
   static defaultProps = {

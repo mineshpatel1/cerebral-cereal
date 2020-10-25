@@ -1,36 +1,42 @@
-import { Button } from './Button';
-import { Checkbox } from './Checkbox';
-import { ChecklistItem } from './ChecklistItem';
-import { Collapsible } from './Collapsible';
+import { Button } from './buttons/Button';
+import { PlainButton } from './buttons/PlainButton';
+import { Pressable } from './buttons/Pressable';
+
+import { Collapsible } from './containers/Collapsible';
+import { Container } from './containers/Container';
+import { Drawer } from './containers/Drawer';
+import { DrawerMenu } from './containers/DrawerMenu';
+import { Grid } from './containers/Grid';
+import { HorizontalMenu } from './containers/HorizontalMenu';
+import { ScreenContainer } from './containers/ScreenContainer';
+import { TabSet } from './containers/TabSet';
+
+import { Checkbox } from './inputs/Checkbox';
+import { ChecklistItem } from './inputs/ChecklistItem';
+import { PickerInput } from './inputs/PickerInput';
+import { RadioButton } from './inputs/RadioButton';
+import { Switch } from './inputs/Switch';
+import { SwitchInput } from './inputs/SwitchInput';
+import { TextInput } from './inputs/TextInput';
+
+import { ListItem } from './lists/ListItem';
+import { SelectableItem } from './lists/SelectableItem';
+import { SettingsList } from './lists/SettingsList';
+
+import { ConfirmModal } from './modals/ConfirmModal';
+import { Modal } from './modals/Modal';
+import { PickerModal } from './modals/PickerModal';
+import { TimerModal } from './modals/TimerModal';
+
+
 import { Component } from './Component';
-import { ConfirmModal } from './ConfirmModal';
-import { Container } from './Container';
-import { Drawer } from './Drawer';
-import { DrawerMenu } from './DrawerMenu';
-import { Grid } from './Grid';
 import { Header } from './Header';
-import { HorizontalMenu } from './HorizontalMenu';
 import { Icon } from './Icon';
-import { IconSet } from './IconSet';
-import { ListItem } from './ListItem';
-import { Modal } from './Modal';
-import { PickerInput } from './PickerInput';
-import { PickerModal } from './PickerModal';
-import { PlainButton } from './PlainButton';
-import { Pressable } from './Pressable';
-import { RadioButton } from './RadioButton';
-import { ScreenContainer } from './ScreenContainer';
-import { SelectableItem } from './SelectableItem';
+import { IconSet } from './containers/IconSet';
 import { Setting } from './Setting';
-import { SettingsList } from './SettingsList';
 import { Spinner } from './Spinner';
-import { Switch } from './Switch';
-import { SwitchInput } from './SwitchInput';
-import { TabSet } from './TabSet';
 import { Text } from './Text';
-import { TextInput } from './TextInput';
 import { Timer } from './Timer';
-import { TimerModal } from './TimerModal';
 
 module.exports = {
   Button,

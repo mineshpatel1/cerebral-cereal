@@ -2,10 +2,9 @@ import React from 'react';
 import { View } from 'react-native';
 
 import { Component } from './Component';
-import { Checkbox } from './Checkbox';
-import { ListItem } from './ListItem';
-import { PickerModal } from './PickerModal';
-import { Pressable } from './Pressable';
+import { Checkbox } from './inputs/Checkbox';
+import { ListItem } from './lists/ListItem';
+import { PickerModal } from './modals/PickerModal';
 import { Text } from './Text';
 import { Layout } from '../styles';
 

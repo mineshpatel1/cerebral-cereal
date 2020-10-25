@@ -1,10 +1,10 @@
 import React from 'react';
 import { View } from 'react-native';
 
-import { Component } from './Component';
-import { Pressable } from './Pressable';
-import { Text } from './Text';
-import { Layout } from '../styles';
+import { Component } from '../Component';
+import { Pressable } from '../buttons/Pressable';
+import { Text } from '../Text';
+import { Layout } from '../../styles';
 
 export class TabSet extends Component {
   static defaultProps = {

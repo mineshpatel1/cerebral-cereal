@@ -1,7 +1,7 @@
 import React, {  } from 'react';
-import { Modal as ReactModal, Pressable as ReactPressable, View } from 'react-native';
+import { Modal as ReactModal, Pressable as ReactPressable } from 'react-native';
 
-import { Component } from './Component';
+import { Component } from '../Component';
 
 export class Modal extends Component {
   static defaultProps = {

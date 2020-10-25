@@ -1,9 +1,9 @@
 import React from 'react';
 import { Animated, Pressable as ReactPressable } from 'react-native';
 
-import { Component } from './Component';
-import { Icon } from './Icon';
-import { Utils } from '../utils/Utils';
+import { Component } from '../Component';
+import { Icon } from '../Icon';
+import { Utils } from '../../utils/Utils';
 
 export class Checkbox extends Component {
   static defaultProps = {

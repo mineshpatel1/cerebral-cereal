@@ -1,12 +1,12 @@
 import React from 'react';
 import { Animated, ScrollView, View } from 'react-native';
 
-import { Component } from './Component';
-import { RadioButton } from './RadioButton';
+import { Component } from '../Component';
+import { RadioButton } from '../inputs/RadioButton';
 import { Modal } from './Modal';
-import { Pressable } from './Pressable';
-import { Text } from './Text';
-import { Layout } from '../styles';
+import { Pressable } from '../buttons/Pressable';
+import { Text } from '../Text';
+import { Layout } from '../../styles';
 
 export class PickerModal extends Component {
   static defaultProps = {

@@ -1,10 +1,10 @@
 import React from 'react';
 import { View } from 'react-native';
 
-import { Component } from './Component';
-import { PickerModal } from './PickerModal';
-import { Text } from './Text';
-import { Layout } from '../styles/Layout';
+import { Component } from '../Component';
+import { PickerModal } from '../modals/PickerModal';
+import { Text } from '../Text';
+import { Layout } from '../../styles/Layout';
 
 export class PickerInput extends Component {
   static defaultProps = {

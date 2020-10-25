@@ -1,10 +1,10 @@
 import React from 'react';
 import { View } from 'react-native';
 
-import { Component } from './Component';
-import { Setting } from './Setting';
-import { Layout } from '../styles/Layout'
-import { Utils } from '../utils/Utils';
+import { Component } from '../Component';
+import { Setting } from '../Setting';
+import { Layout } from '../../styles/Layout'
+import { Utils } from '../../utils/Utils';
 
 export class SettingsList extends Component {
   static defaultProps = {

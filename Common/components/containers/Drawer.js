@@ -1,9 +1,9 @@
 import React from 'react';
 import { Animated, Dimensions, PanResponder, Pressable, View } from 'react-native';
 
-import { Component } from './Component';
-import { Layout } from '../styles/Layout';
-import { Utils } from '../utils/Utils';
+import { Component } from '../Component';
+import { Layout } from '../../styles/Layout';
+import { Utils } from '../../utils/Utils';
 
 const deviceScreen = Dimensions.get('window');
 

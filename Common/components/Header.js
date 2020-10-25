@@ -2,7 +2,7 @@ import React from 'react';
 import { SafeAreaView, View } from 'react-native';
 
 import { Component } from './Component';
-import { PlainButton } from './PlainButton';
+import { PlainButton } from './buttons/PlainButton';
 import { Text } from './Text';
 import { Layout, StyleConstants } from '../styles';
 

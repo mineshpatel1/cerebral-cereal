@@ -1,9 +1,9 @@
 import React from 'react';
 import { View } from 'react-native';
 
-import { Component } from './Component';
-import { Pressable } from './Pressable';
-import { Layout } from '../styles';
+import { Component } from '../Component';
+import { Pressable } from '../buttons/Pressable';
+import { Layout } from '../../styles';
 
 export class ListItem extends Component {
   static defaultProps = {

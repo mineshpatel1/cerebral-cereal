@@ -1,9 +1,9 @@
 import React from 'react';
 import { Animated, Pressable, View } from 'react-native';
 
-import { Component } from './Component';
-import { Icon } from './Icon';
-import { Layout, StyleConstants } from '../styles';
+import { Component } from '../Component';
+import { Icon } from '../Icon';
+import { Layout, StyleConstants } from '../../styles';
 
 export class IconSet extends Component {
   static defaultProps = {

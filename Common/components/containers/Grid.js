@@ -1,9 +1,9 @@
 import React from 'react';
 import { Animated, FlatList, ScrollView, View } from "react-native";
 
-import { Component } from './Component';
-import { Text } from './Text';
-import { Layout } from '../styles';
+import { Component } from '../Component';
+import { Text } from '../Text';
+import { Layout } from '../../styles';
 
 
 export class Grid extends Component {

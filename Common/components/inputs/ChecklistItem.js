@@ -1,11 +1,11 @@
 import React from 'react';
 import { Pressable } from 'react-native';
 
-import { Component } from './Component';
+import { Component } from '../Component';
 import { Checkbox } from './Checkbox';
-import { Icon } from './Icon';
-import { Text } from './Text';
-import { Layout } from '../styles';
+import { Icon } from '../Icon';
+import { Text } from '../Text';
+import { Layout } from '../../styles';
 
 export class ChecklistItem extends Component {
   static defaultProps = {

@@ -3,7 +3,7 @@ import { Dimensions, ScrollView, View } from 'react-native';
 
 import { IconSet } from './IconSet';
 import { TabSet } from './TabSet';
-import { Layout, StyleConstants } from '../styles';
+import { Layout, StyleConstants } from '../../styles';
 
 const maxWidth = Dimensions.get('window').width;
 

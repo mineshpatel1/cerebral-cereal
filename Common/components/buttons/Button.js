@@ -1,12 +1,12 @@
 import React from 'react';
 import { View } from 'react-native';
 
-import { Component } from './Component';
-import { Icon } from './Icon';
+import { Component } from '../Component';
+import { Icon } from '../Icon';
 import { Pressable } from './Pressable';
-import { Text } from './Text';
-import { ColourUtils } from '../utils/ColourUtils';
-import { Layout, StyleConstants } from '../styles';
+import { Text } from '../Text';
+import { ColourUtils } from '../../utils/ColourUtils';
+import { Layout, StyleConstants } from '../../styles';
 
 export class Button extends Component {
   static defaultProps = {

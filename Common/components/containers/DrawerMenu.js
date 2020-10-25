@@ -1,13 +1,13 @@
 import React from 'react';
 import { View } from 'react-native';
 
-import { Component } from './Component';
+import { Component } from '../Component';
 import { Container } from './Container';
 import { Drawer } from './Drawer';
-import { Icon } from './Icon';
-import { ListItem } from './ListItem';
-import { Text } from './Text';
-import { Layout } from '../styles';
+import { Icon } from '../Icon';
+import { ListItem } from '../lists/ListItem';
+import { Text } from '../Text';
+import { Layout } from '../../styles';
 
 export class DrawerMenu extends Component {
   static defaultProps = {

@@ -4,39 +4,45 @@ import { StyleConstants } from './styles/StyleConstants';
 import { Themes } from './styles/Themes';
 
 // Components
-import { Button } from './components/Button';
-import { Checkbox } from './components/Checkbox';
-import { ChecklistItem } from './components/ChecklistItem';
-import { Collapsible } from './components/Collapsible';
+import { Button } from './components/buttons/Button';
+import { PlainButton } from './components/buttons/PlainButton';
+import { Pressable } from './components/buttons/Pressable';
+
+import { Collapsible } from './components/containers/Collapsible';
+import { Container } from './components/containers/Container';
+import { Drawer } from './components/containers/Drawer';
+import { DrawerMenu } from './components/containers/DrawerMenu';
+import { Grid } from './components/containers/Grid';
+import { HorizontalMenu } from './components/containers/HorizontalMenu';
+import { IconSet } from './components/containers/IconSet';
+import { ScreenContainer } from './components/containers/ScreenContainer';
+import { TabSet } from './components/containers/TabSet';
+
+import { Checkbox } from './components/inputs/Checkbox';
+import { ChecklistItem } from './components/inputs/ChecklistItem';
+import { PickerInput } from './components/inputs/PickerInput';
+import { RadioButton } from './components/inputs/RadioButton';
+import { Switch } from './components/inputs/Switch';
+import { SwitchInput } from './components/inputs/SwitchInput';
+import { TextInput } from './components/inputs/TextInput';
+
+import { ListItem } from './components/lists/ListItem';
+import { SelectableItem } from './components/lists/SelectableItem';
+import { SettingsList } from './components/lists/SettingsList';
+
+import { ConfirmModal } from './components/modals/ConfirmModal';
+import { Modal } from './components/modals/Modal';
+import { PickerModal } from './components/modals/PickerModal';
+import { TimerModal } from './components/modals/TimerModal';
+
 import { Component } from './components/Component';
-import { ConfirmModal } from './components/ConfirmModal';
-import { Container } from './components/Container';
-import { Drawer } from './components/Drawer';
-import { DrawerMenu } from './components/DrawerMenu';
-import { Grid } from './components/Grid';
 import { Header } from './components/Header';
-import { HorizontalMenu } from './components/HorizontalMenu';
 import { Icon } from './components/Icon';
-import { IconSet } from './components/IconSet';
-import { ListItem } from './components/ListItem';
-import { Modal } from './components/Modal';
-import { PickerInput } from './components/PickerInput';
-import { PickerModal } from './components/PickerModal';
-import { PlainButton } from './components/PlainButton';
-import { Pressable } from './components/Pressable';
-import { RadioButton } from './components/RadioButton';
-import { ScreenContainer } from './components/ScreenContainer';
-import { SelectableItem } from './components/SelectableItem';
 import { Setting } from './components/Setting';
-import { SettingsList } from './components/SettingsList';
 import { Spinner } from './components/Spinner';
-import { Switch } from './components/Switch';
-import { SwitchInput } from './components/SwitchInput';
-import { TabSet } from './components/TabSet';
 import { Text } from './components/Text';
-import { TextInput } from './components/TextInput';
 import { Timer } from './components/Timer';
-import { TimerModal } from './components/TimerModal';
+
 
 // Utils
 import { ColourUtils } from './utils/ColourUtils';

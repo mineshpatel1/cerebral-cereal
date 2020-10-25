@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Dimensions, View } from 'react-native';
 
-import { Layout } from '../styles';
+import { Layout } from '../../styles';
 
 const maxWidth = Dimensions.get('window').width;
 

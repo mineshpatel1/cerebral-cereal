@@ -1,12 +1,12 @@
 import React from 'react';
 import { Animated, Pressable, View } from 'react-native';
 
-import { Component } from './Component';
-import { Text } from './Text';
-import { Icon } from './Icon';
-import { Utils } from '../utils/Utils';
-import { Layout } from '../styles/Layout';
-import { StyleConstants } from '../styles/StyleConstants';
+import { Component } from '../Component';
+import { Text } from '../Text';
+import { Icon } from '../Icon';
+import { Utils } from '../../utils/Utils';
+import { Layout } from '../../styles/Layout';
+import { StyleConstants } from '../../styles/StyleConstants';
 
 export class Collapsible extends Component {
   static defaultProps = {

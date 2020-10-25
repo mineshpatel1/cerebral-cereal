@@ -1,10 +1,10 @@
 import React from 'react';
 import { View } from 'react-native';
 
-import { Component } from './Component';
-import { Pressable } from './Pressable';
-import { Text } from './Text';
-import { Layout, StyleConstants } from '../styles';
+import { Component } from '../Component';
+import { Pressable } from '../buttons/Pressable';
+import { Text } from '../Text';
+import { Layout, StyleConstants } from '../../styles';
 
 export class SelectableItem extends Component {
   static defaultProps = {
