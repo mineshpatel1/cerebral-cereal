@@ -1,5 +1,5 @@
 import { BaseColours, Colours } from './colours';
-import { Fonts } from './fonts';
+import { Fonts, genFonts } from './fonts';
 import { genStyles } from './styles';
 import { Utils } from '../utils/Utils';
 
@@ -19,12 +19,12 @@ const lightTheme = Utils.update(
 export const Themes = {
   dark: {
     Colours: darkTheme,
-    Fonts: Fonts,
+    Fonts: genFonts(Fonts),
     Styles: genStyles(darkTheme),
   },
   light: {
     Colours: lightTheme,
-    Fonts: Fonts,
+    Fonts: genFonts(Fonts),
     Styles: genStyles(lightTheme),
   },
 }
