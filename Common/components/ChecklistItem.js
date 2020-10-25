@@ -16,7 +16,7 @@ export class ChecklistItem extends Component {
     selectedTextColour: null,
     selectedTextProps: {bold: true},
     onPress: null,
-    animationDuration: 0,
+    animationDuration: 150,
     text: null,
     icon: null,
     style: null,

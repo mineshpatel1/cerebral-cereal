@@ -5,6 +5,7 @@ import { NavUtils } from 'cerebral-cereal-common';
 
 import Acknowledgements from './screens/Acknowledgements';
 import Alphabet from './screens/Alphabet';
+import Flashcards from './screens/Flashcards';
 import Help from './screens/Help';
 import Home from './screens/Home';
 import Practise from './screens/Practise';
@@ -28,6 +29,7 @@ export default class NavStack extends Component {
         <Stack.Screen name="Home" component={Home} options={{headerShown: false}} />
         <Stack.Screen name="Practise" component={Practise} options={{headerShown: false}} />
         <Stack.Screen name="Quiz" component={Quiz} />
+        <Stack.Screen name="Flashcards" component={Flashcards} />
         <Stack.Screen name="Alphabet" component={Alphabet} options={{headerTitle: 'Alphabet'}} />
         <Stack.Screen name="Help" component={Help} />
         <Stack.Screen name="Settings" component={Settings} />

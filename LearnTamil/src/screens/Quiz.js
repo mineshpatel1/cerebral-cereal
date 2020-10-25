@@ -11,23 +11,12 @@ import {
 import { phrases } from '../data';
 import { questionWaitTime } from '../config';
 import { answerQuestion } from '../actions/ProgressActions';
+import LocalUtils from '../utils';
 import PhraseController from '../components/PhraseController';
 import Phrase from '../components/Phrase';
 import QuizOption from '../components/QuizOption';
 
 const numOptions = 4;
-
-function shufflePhrases(allPhrases) {
-  allPhrases = Utils.shuffle(allPhrases.slice());
-  let currentPhrase = allPhrases.shift();
-  
-  let options = [currentPhrase];
-  for (let i = 0; i < numOptions - 1; i++) {
-    options.push(allPhrases[i]);
-  }
-  options = Utils.shuffle(options);
-  return {currentPhrase, allPhrases, options};
-}
 
 class Quiz extends Component {
   static defaultProps = {
@@ -36,17 +25,23 @@ class Quiz extends Component {
 
   constructor(props) {
     let _allPhrases = [];
-    props.route.params.categories.forEach(categoryId => {
+    const params = props.route.params;
+    params.categories.forEach(categoryId => {
       _allPhrases = _allPhrases.concat(phrases[categoryId]);
-    })
-    const {currentPhrase, allPhrases, options} = shufflePhrases(_allPhrases);
+    });
+    const {
+      currentPhrase, allPhrases, options
+    } = LocalUtils.shufflePhrases(_allPhrases, numOptions);
 
     super(props);
     this.state = {
-      tamilToEnglish: props.route.params.tamilToEnglish,
+      tamilToEnglish: params.tamilToEnglish,
       allPhrases: allPhrases,
       currentPhrase: currentPhrase,
-      numQuestions: Math.min(props.settings.numQuestions,  _allPhrases.length - (numOptions - 1)),
+      numQuestions: Math.min(
+        props.settings.numQuestions,
+        _allPhrases.length - (numOptions - 1)
+      ),
       options: options,
       opacity: new Animated.Value(0),
       allOpacity: new Animated.Value(1),
@@ -142,7 +137,7 @@ class Quiz extends Component {
   
       const {
         currentPhrase, allPhrases, options
-      } = shufflePhrases(state.allPhrases);
+      } = LocalUtils.shufflePhrases(state.allPhrases, numOptions);
   
       this.setState({
         allPhrases, currentPhrase, options,

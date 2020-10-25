@@ -3,23 +3,10 @@ import { StyleConstants } from './StyleConstants';
 
 export const genStyles = Colours => {
   return StyleSheet.create({
-    iconWidth: {
-      width: StyleConstants.iconWidth,
-    },
-    link: {
-      textDecorationLine: 'underline',
-    },
-    paragraph: {
-      lineHeight: 28,
-    },
-    button: {
-      flexDirection: 'row',
-      alignItems: 'center',
-      justifyContent: 'center',
-      paddingLeft: StyleConstants.size2,
-      paddingRight: StyleConstants.size2,
-      borderRadius: 25,
-    },
+    iconWidth: { width: StyleConstants.iconWidth },
+    link: { textDecorationLine: 'underline' },
+    paragraph: { lineHeight: 28 },
+    roundCorner: { borderRadius: 25 },
     badge: {
       minWidth: 15,
       height: 15,

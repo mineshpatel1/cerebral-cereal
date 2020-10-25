@@ -1,8 +1,8 @@
 import React from 'react';
-import { Pressable as ReactPressable, ScrollView, View } from 'react-native';
+import { ScrollView, View } from 'react-native';
 
 import {
-    Button, Component, ChecklistItem, ScreenContainer, Switch, SwitchInput, Text,
+    Button, Component, ChecklistItem, ScreenContainer, SwitchInput, Text,
     Layout,
 } from 'cerebral-cereal-common';
 import { categories } from '../../data';
@@ -46,7 +46,7 @@ export default class QuizMenu extends Component {
 
   render() {
     const { Colours, Styles } = this.getTheme();
-    const { state } = this;
+    const { props, state } = this;
     let categoryList = [];
     categories.forEach((category, i) => {
       categoryList.push(
@@ -57,14 +57,13 @@ export default class QuizMenu extends Component {
           checked={state.checkStates[i]}
           icon={category.icon}
           text={category.name}
+          animationDuration={0}
         />
       );
     });
 
     const quizDisabled = state.checkStates.filter(c => c).length == 0;
     const allSelected = state.checkStates.filter(c => c).length == categories.length;
-    const modeName = state.quizMode ? 'Multiple Choice' : 'Flashcards';
-    const modeLabel = modeName + ' mode. Will switch game mode.';
     return (
       <ScreenContainer style={Layout.pdb2}>
         <View style={Styles.switchList}>
@@ -85,6 +84,7 @@ export default class QuizMenu extends Component {
           text={'Select ' + (allSelected ? 'None' : 'All')}
           onPress={() => {this.selectAll(!allSelected)}}
           checked={allSelected}
+          animationDuration={0}
           style={[
             Layout.mt1, Layout.pdb1,
             {borderColor: Colours.disabled, borderBottomWidth: 1},
@@ -97,8 +97,8 @@ export default class QuizMenu extends Component {
           style={Layout.mt1} label="Start Quiz"
           disabled={quizDisabled}
           onPress={() => {
-            this.props.navigation.navigate(
-              'Quiz',
+            props.navigation.navigate(
+              state.quizMode ? 'Quiz' : 'Flashcards',
               {
                 tamilToEnglish: state.tamilToEnglish,
                 categories: state.checkStates.map(

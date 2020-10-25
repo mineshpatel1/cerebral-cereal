@@ -62,11 +62,11 @@ export class Button extends Component {
         style={[
           Layout.row,
           Layout.aCenter,
+          Styles.roundCorner,
           {
             backgroundColor: backgroundColour,
             height: height,
             width: width,
-            borderRadius: Styles.button['borderRadius'],
           },
           this.props.style,
         ]}
@@ -86,8 +86,8 @@ export class Button extends Component {
             Layout.row,
             Layout.pdx2,
             Layout.aCenter,
+            Styles.roundCorner,
             {
-              borderRadius: Styles.button['borderRadius'],
               justifyContent: justify,
               height: height,
             },

@@ -80,13 +80,12 @@ export default class QuizOption extends Component {
       <View style={[Layout.row, Layout.aCenter, props.style]}>
         <Animated.View
           style={[
-            Layout.mt2, Layout.f1,
+            Layout.mt2, Layout.f1, Styles.roundCorner,
             {
               backgroundColor: buttonColour,
               minHeight: props.height,
               borderWidth: 1,
               borderColor: borderColour,
-              borderRadius: 25,
             },
           ]}
         >
@@ -98,12 +97,11 @@ export default class QuizOption extends Component {
               state.borderColour == highlightColour ? 
               buttonColour : null
             }
-            style={[Layout.f1, {borderRadius: 25}]}
+            style={[Layout.f1, Styles.roundCorner]}
           >
             <View
               style={[
-                Layout.f1,
-                Styles.button,
+                Layout.f1, Layout.center,
                 {minHeight: props.height},
               ]}
             >

@@ -2,11 +2,11 @@ import React from 'react';
 import { Linking, ScrollView, View } from 'react-native';
 
 import { Component, Container, Text, Layout } from 'cerebral-cereal-common';
-import AudioUtils from '../utils/AudioUtils';
+import LocalUtils from '../utils';
 
 export default class Help extends Component {
   play = word => {
-    AudioUtils.playSound('pronunciation_' + word);
+    LocalUtils.playSound('pronunciation_' + word);
   }
 
   render() {

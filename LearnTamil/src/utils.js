@@ -1,6 +1,7 @@
 import Sound from 'react-native-sound';
+import { Utils } from 'cerebral-cereal-common';
 
-class AudioUtils {
+class LocalUtils {
   constructor() {}
   static playPhrase = (id, callback=null) => {
     const soundAsset = 'phrase_' + id;
@@ -21,6 +22,18 @@ class AudioUtils {
     });
     return sound;
   }
+
+  static shufflePhrases(allPhrases, numOptions) {
+    allPhrases = Utils.shuffle(allPhrases.slice());
+    let currentPhrase = allPhrases.shift();
+    
+    let options = [currentPhrase];
+    for (let i = 0; i < numOptions - 1; i++) {
+      options.push(allPhrases[i]);
+    }
+    options = Utils.shuffle(options);
+    return {currentPhrase, allPhrases, options};
+  }
 }
 
-export default AudioUtils;
+export default LocalUtils;

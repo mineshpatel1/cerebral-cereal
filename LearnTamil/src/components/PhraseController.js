@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 import { View } from 'react-native';
 
-import AudioUtils from '../utils/AudioUtils';
+import LocalUtils from '../utils';
 
 /**
  * Only one of these should exist in any given component.
@@ -20,7 +20,7 @@ export default class PhraseController extends Component {
   }
 
   _playSound = asset => {
-    const phraseSound = AudioUtils.playSound(asset, () => {
+    const phraseSound = LocalUtils.playSound(asset, () => {
       if (this.props.onPlayEnd) this.props.onPlayEnd();
       this.setState({isPlaying: null, playingSound: null});
     });
