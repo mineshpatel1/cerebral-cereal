@@ -25,6 +25,7 @@
     "lodash.isequal": "^4.5.0",
     "react": "16.13.1",
     "react-native": "0.63.2",
+    "react-native-device-info": "^7.0.2",
     "react-native-gesture-handler": "^1.8.0",
     "react-native-push-notification": "^6.1.2",
     "react-native-reanimated": "^1.13.1",

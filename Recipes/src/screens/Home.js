@@ -1,5 +1,6 @@
 import React from 'react';
 import { Dimensions } from 'react-native';
+import { getUniqueId } from 'react-native-device-info';
 
 import {
   Component, Container, DrawerMenu, Header, HorizontalMenu, TimerModal
@@ -36,7 +37,7 @@ export default class Home extends Component {
     ];
 
     const menuItems = [
-      // {label: 'Ingredients', icon: 'carrot', route: 'Ingredients'},
+      {label: 'Device ID', icon: 'carrot', onPress: () => console.log(getUniqueId())},
       {label: 'Settings', icon: 'cog', route: 'Settings'},
     ];
 
