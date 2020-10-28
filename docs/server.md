@@ -2,6 +2,17 @@
 
 Setting up the server using an AWS Amazon Linux instance.
 
+## Set up `//private/server.json`
+
+```json
+{
+    "server": {
+        "port": 3000,
+        "cert_path": "/path/to/certs"
+    }
+}
+```
+
 ## User Accounts
 
 * `sudo visudo`
@@ -42,6 +53,14 @@ chmod 600 .ssh/authorized_keys
 ssh -i "cerebral-cereal.pem" chinnu@ec2-x-x-x-x.eu-west-2.compute.amazonaws.com
 ```
 
+* Edit startup file, `.bashrc`, to setup environment variables:
+
+```
+export APP=/opt/cerebral-cereal/server
+```
+
+* Bootstrap variables: `source .bashrc`.
+
 ## NodeJS
 
 [Guide](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/setting-up-node-on-ec2-instance.html)
@@ -63,6 +82,8 @@ python3 get-pip.py --user
 
 ## Git
 
+* Clone repository:
+
 ```bash
 sudo yum install git
 cd /opt
@@ -74,6 +95,13 @@ git config credential.helper store
 git push
 # Enter username
 # Enter personal access token
+```
+
+* Install node modules:
+
+```bash
+cd $APP
+npm install
 ```
 
 ## PostgreSQL 12
@@ -127,3 +155,63 @@ sudo systemctl restart postgresql-12
 sudo systemctl status postgresql-12
 ```
 
+## Configure IP routing
+
+* Routes HTTP/HTTPS web traffic directly to custom port:
+
+```bash
+sudo iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 80 -j REDIRECT --to-port 3000
+sudo iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 443 -j REDIRECT --to-port 3001
+```
+
+### Deleting Routes
+
+```bash
+sudo iptables -t nat -v -L PREROUTING -n --line-number  # View routes
+sudo iptables -t nat -D PREROUTING <line_number>        # Delete specific route
+```
+
+## Web Server Management
+
+* Install [`pm2`](https://www.npmjs.com/package/pm2): `npm install pm2 -g`
+
+```bash
+pm2 start $APP/app.js
+pm2 log     # View live logs
+pm2 status  # Status
+pm2 monit   # Health monitoring
+pm2 stop app
+```
+
+## Configure HTTPS with Let's Encrypt
+
+* [Guide for AWS](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/SSL-on-an-instance.html#letsencrypt)
+* [Guide for NodeJS](https://itnext.io/node-express-letsencrypt-generate-a-free-ssl-certificate-and-run-an-https-server-in-5-minutes-a730fbe528ca).
+
+* Install Let's Encrypt:
+
+```bash
+cd $HOME
+sudo wget -r --no-parent -A 'epel-release-*.rpm' http://dl.fedoraproject.org/pub/epel/7/x86_64/Packages/e/
+sudo rpm -Uvh dl.fedoraproject.org/pub/epel/7/x86_64/Packages/e/epel-release-*.rpm
+sudo yum-config-manager --enable epel*
+sudo yum repolist all
+
+sudo yum install -y certbot
+```
+
+* Make sure the web server is running and HTTP traffic is publicly accessible.
+* Run `certbot` with automatic webroot installation, optionally using `--dry-run` to test.
+
+```bash
+sudo certbot certonly --webroot -w $APP -d cerebral-cereal.com
+```
+
+* Set group permissions on certificates:
+
+```bash
+sudo chown root:wheel -R /etc/letsencrypt/archive
+sudo chmod 770 -R /etc/letsencrypt/archive
+sudo chown root:wheel -R /etc/letsencrypt/live
+sudo chmod 770 -R /etc/letsencrypt/live
+```
