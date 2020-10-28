@@ -183,6 +183,15 @@ pm2 monit   # Health monitoring
 pm2 stop app
 ```
 
+* Set up `pm2` to run as part of `systemd`, adding the parameter `--service-name web-server` to name the service:
+
+```bash
+pm2 startup systemd
+# This will generate a command to run to set this up, add --service-name web-server to the end
+
+sudo systemctl status web-server
+```
+
 ## Configure HTTPS with Let's Encrypt
 
 * [Guide for AWS](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/SSL-on-an-instance.html#letsencrypt)

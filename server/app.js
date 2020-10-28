@@ -15,6 +15,7 @@ httpApp.use(challenge, express.static(__dirname + challenge));
 
 const httpServer = http.createServer(httpApp);
 httpServer.listen(global.config.server.httpPort);
+console.log('Cerebral Cereal HTTP server started on port ' + global.config.server.httpPort + '...');
 
 // Certificate
 let credentials;
@@ -42,6 +43,6 @@ if (global.secure) {
   const httpsServer = https.createServer(credentials, app);
   httpsServer.listen(global.config.server.port);
 
-  console.log('Cerebral Cereal server started on port ' + global.config.server.port + '...');
+  console.log('Cerebral Cereal HTTPS server started on port ' + global.config.server.port + '...');
 }
 
