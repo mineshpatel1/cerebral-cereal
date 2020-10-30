@@ -1,8 +1,6 @@
 import sys
 import operator
 import requests
-import psycopg2
-import psycopg2.extras
 from PIL import Image
 from os import path
 from io import BytesIO
