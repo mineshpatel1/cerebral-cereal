@@ -141,9 +141,11 @@ def load_json(file_path):
   with open(file_path, 'r') as f:
     return json.load(f)
 
+
 def save_json(output, file_path):
   with open(file_path, 'w') as f:
     json.dump(output, f, indent=4)
+
 
 def get_config(param):
   with open(KEY_FILE, 'r') as f:
@@ -154,6 +156,7 @@ def get_config(param):
 
       name, value = tuple(line.split('='))
       if name.upper() == param:
-        return value
+        return value.strip()
+
 
 log = create_logger('Cerebral-Cereal')

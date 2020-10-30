@@ -16,6 +16,8 @@
 
 [Official Documentation](https://reactnative.dev/docs/environment-setup)
 
+* Environment specific configuration should go in `private/private.ini`, set variables from `private.ini.sample`.
+
 ### NVM
 
 Recommended to use [NVM](https://github.com/nvm-sh/nvm) to avoid [permission errors](https://docs.npmjs.com/resolving-eacces-permissions-errors-when-installing-packages-globally) on Mac OSX.

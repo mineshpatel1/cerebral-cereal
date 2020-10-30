@@ -1,5 +1,6 @@
 const rawUnits = require('../assets/units.json');
 const rawIngredients = require('../assets/ingredients.json');
+const rawIngredientCategories = require('../assets/ingredientCategories.json');
 const rawRecipes = require('../assets/recipes.json');
 const rawLocations = require('../assets/locations.json');
 
@@ -62,8 +63,8 @@ class Unit {
 // May want to instantiate these into JS class objects.
 export const units = rawUnits.units.map(u => new Unit(u));
 export const conversions = rawUnits.conversions;
-export const ingredients = rawIngredients.ingredients.map(i => new Ingredient(i));
-export const ingredientCategories = rawIngredients.categories;
+export const ingredients = rawIngredients.map(i => new Ingredient(i));
+export const ingredientCategories = rawIngredientCategories;
 export const recipes = rawRecipes.recipes;
 export const cuisines = rawRecipes.cuisines;
 export const locations = rawLocations.map(l => new Location(l));

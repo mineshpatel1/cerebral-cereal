@@ -1,0 +1,42 @@
+[
+  {
+      "id": 1,
+      "name": "Vegetables"
+  },
+  {
+      "id": 2,
+      "name": "Herbs & Spices"
+  },
+  {
+      "id": 3,
+      "name": "Sauces & Pastes"
+  },
+  {
+      "id": 4,
+      "name": "Fruit"
+  },
+  {
+      "id": 5,
+      "name": "Dairy"
+  },
+  {
+      "id": 6,
+      "name": "Cheese"
+  },
+  {
+      "id": 7,
+      "name": "Drinks"
+  },
+  {
+      "id": 8,
+      "name": "Vegan Proteins"
+  },
+  {
+      "id": 9,
+      "name": "Baking"
+  },
+  {
+      "id": 10,
+      "name": "Condiments"
+  }
+]

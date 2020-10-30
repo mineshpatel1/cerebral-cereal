@@ -1,14 +1,18 @@
 import sys
 import operator
 import requests
+import psycopg2
+import psycopg2.extras
 from PIL import Image
 from os import path
 from io import BytesIO
 
 sys.path.append(path.abspath(path.join(path.dirname(__file__), '..', '..')))
 from py_utils.utils import log, load_json, save_json, get_config
+from py_utils.db import DBClient
 
 CURRENT_DIR = path.dirname(__file__)
+DB = 'recipes'
 ASSETS_DIR = path.abspath(path.join(CURRENT_DIR, '..', 'assets'))
 INGREDIENTS_FILE = path.join(ASSETS_DIR, 'ingredients.json')
 RECIPES_FILE = path.join(ASSETS_DIR, 'recipes.json')
@@ -40,7 +44,7 @@ class Unit:
     def from_dict(unit_dict):
         return Unit(unit_dict['id'], **unit_dict)
 
-    def __init__(self, unit_id, unit, display, *args, **kwargs):
+    def __init__(self, unit_id, unit, display):
         self.id = unit_id
         self.unit = unit
         self.display = display
@@ -76,7 +80,7 @@ class Ingredient:
         api_id = None,
         api_image_name = None,
         image_aspect_ratio = None,
-        *args, **kwargs
+        **kwargs
     ):
         self.id = ingredient_id
         self.name = name
@@ -128,7 +132,7 @@ class Ingredient:
         return out
 
     def __str__(self):
-        return self.name
+        return f'{self.id}: {self.name}'
 
 
 class Location:
@@ -154,7 +158,6 @@ class Location:
         description,
         aisle_number=None,
         associated_categories=None,
-        *args,
         **kwargs
     ):
         self.id = location_id
@@ -305,12 +308,22 @@ def add_ingredients_from_api(new_ingredients):
     update_ingredients(ingredients)
 
 
-def main():
-    items = [
-        'Baking Soda',
-    ]
+def backup_ingredients():
+    """Reads ingredients from the database and writes to JSON."""
 
-    add_ingredients_from_api(items)
+    ingredients = []
+    client = DBClient(DB)
+    rows = client.query("SELECT * FROM ingredients")
+    client.disconnect()
+
+    for row in rows:
+        ingredients.append(Ingredient.from_dict(row).dict)
+
+    save_json(ingredients, INGREDIENTS_FILE)
+
+
+def main():
+    pass
 
 
 if __name__ == '__main__':
