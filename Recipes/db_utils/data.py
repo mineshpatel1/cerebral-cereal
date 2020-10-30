@@ -256,8 +256,8 @@ def get_api_key():
 
 def update_ingredients(ingredients=(), data_file=INGREDIENTS_FILE):
     data = load_json(data_file)
-    _update_items(ingredients, data['ingredients'])
-    data['ingredients'] = sorted(data['ingredients'], key=lambda i: i['name'])
+    _update_items(ingredients, data)
+    data = sorted(data, key=lambda i: i['name'])
     save_json(data, data_file)
 
 

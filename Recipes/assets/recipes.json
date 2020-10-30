@@ -1,149 +1,137 @@
-{
-  "cuisines": [
+[
     {
-      "id": 1,
-      "name": "North Indian"
+        "id": 1,
+        "name": "Vegetable Jalfrezi",
+        "cuisine_id": 1,
+        "serving_size": 4,
+        "ingredients": [
+            {
+                "ingredient_id": 1,
+                "quantity": 260
+            },
+            {
+                "ingredient_id": 20,
+                "quantity": 300
+            },
+            {
+                "ingredient_id": 17,
+                "quantity": 1
+            },
+            {
+                "ingredient_id": 12,
+                "quantity": 200
+            },
+            {
+                "ingredient_id": 21,
+                "quantity": 1
+            },
+            {
+                "ingredient_id": 15,
+                "quantity": 1.5
+            },
+            {
+                "ingredient_id": 14,
+                "quantity": 1
+            },
+            {
+                "ingredient_id": 11,
+                "quantity": 0.75,
+                "unit_id": 4
+            },
+            {
+                "ingredient_id": 29,
+                "quantity": 300
+            },
+            {
+                "ingredient_id": 13,
+                "quantity": 0.75,
+                "unit_id": 4
+            },
+            {
+                "ingredient_id": 23,
+                "quantity": 100
+            },
+            {
+                "ingredient_id": 10,
+                "quantity": 40
+            }
+        ],
+        "method": [
+            "Roast all the veg in a bit of oil until crispy. Set aside for 1 minute.",
+            "Fry onions, ginger, chillies and jeera in some oil until onions become translucent (should still be crunchy, not totally soft).",
+            "Add tomato puree, garam masala and red pesto, let it roast for 3 minutes.",
+            "Add rest of the vegetables and cover cook for 10 minutes.",
+            "Mix in salt, top with coriander leaves."
+        ]
     },
     {
-      "id": 2,
-      "name": "Cakes"
+        "id": 2,
+        "name": "Vegan Chocolate Cake",
+        "cuisine_id": 2,
+        "serving_size": 6,
+        "ingredients": [
+            {
+                "ingredient_id": 22,
+                "quantity": 1.5,
+                "unit_id": 6
+            },
+            {
+                "ingredient_id": 5,
+                "quantity": 1,
+                "unit_id": 6
+            },
+            {
+                "ingredient_id": 24,
+                "quantity": 0.5,
+                "unit_id": 4
+            },
+            {
+                "ingredient_id": 7,
+                "quantity": 3,
+                "unit_id": 5
+            },
+            {
+                "ingredient_id": 2,
+                "quantity": 1,
+                "unit_id": 4
+            },
+            {
+                "ingredient_id": 19,
+                "quantity": 0.25,
+                "unit_id": 4
+            },
+            {
+                "ingredient_id": 8,
+                "quantity": 6,
+                "unit_id": 5
+            },
+            {
+                "ingredient_id": 30,
+                "quantity": 1,
+                "unit_id": 4
+            },
+            {
+                "ingredient_id": 9,
+                "quantity": 0.5,
+                "unit_id": 5
+            },
+            {
+                "ingredient_id": 31,
+                "quantity": 1,
+                "unit_id": 6
+            },
+            {
+                "ingredient_id": 6,
+                "quantity": 1,
+                "unit_id": 5
+            }
+        ],
+        "method": [
+            "Preheat oven to 190 degrees and grease and flour a cake pan.",
+            "In a large mixing bowl, combine flour, sugar, salt, cocoa powder, baking soda, and ginger, stirring to mix well.",
+            "Add melted and cooled coconut oil, vanilla, and lukewarm water. Stir well to combine.",
+            "Add coffee and apple cider vinegar, stirring well to make sure there are no lumps in the batter. The batter will foam up a bit as the baking soda reacts with the acid in the vinegar and the coffee.",
+            "Pour batter into cake pan and bake at 190 degrees for about 25 minutes or until a toothpick inserted in the center comes out clean."
+        ]
     }
-  ],
-  "recipes": [
-    {
-      "id": 1,
-      "name": "Vegetable Jalfrezi",
-      "cuisine_id": 1,
-      "serving_size": 4,
-      "ingredients": [
-        {
-          "ingredient_id": 1,
-          "quantity": 260
-        },
-        {
-          "ingredient_id": 2,
-          "quantity": 300
-        },
-        {
-          "ingredient_id": 3,
-          "quantity": 1
-        },
-        {
-          "ingredient_id": 4,
-          "quantity": 200
-        },
-        {
-          "ingredient_id": 5,
-          "quantity": 1
-        },
-        {
-          "ingredient_id": 6,
-          "quantity": 1.5
-        },
-        {
-          "ingredient_id": 7,
-          "quantity": 1
-        },
-        {
-          "ingredient_id": 8,
-          "quantity": 0.75,
-          "unit_id": 4
-        },
-        {
-          "ingredient_id": 9,
-          "quantity": 300
-        },
-        {
-          "ingredient_id": 10,
-          "quantity": 0.75,
-          "unit_id": 4
-        },
-        {
-          "ingredient_id": 11,
-          "quantity": 100
-        },
-        {
-          "ingredient_id": 12,
-          "quantity": 40
-        }
-      ],
-      "method": [
-        "Roast all the veg in a bit of oil until crispy. Set aside for 1 minute.",
-        "Fry onions, ginger, chillies and jeera in some oil until onions become translucent (should still be crunchy, not totally soft).",
-        "Add tomato puree, garam masala and red pesto, let it roast for 3 minutes.",
-        "Add rest of the vegetables and cover cook for 10 minutes.",
-        "Mix in salt, top with coriander leaves."
-      ]
-    },
-    {
-      "id": 2,
-      "name": "Vegan Chocolate Cake",
-      "cuisine_id": 2,
-      "serving_size": 6,
-      "ingredients": [
-        {
-          "ingredient_id": 21,
-          "quantity": 1.5,
-          "unit_id": 6
-        },
-        {
-          "ingredient_id": 22,
-          "quantity": 1,
-          "unit_id": 6
-        },
-        {
-          "ingredient_id": 23,
-          "quantity": 0.5,
-          "unit_id": 4
-        },
-        {
-          "ingredient_id": 24,
-          "quantity": 3,
-          "unit_id": 5
-        },
-        {
-          "ingredient_id": 31,
-          "quantity": 1,
-          "unit_id": 4
-        },
-        {
-          "ingredient_id": 25,
-          "quantity": 0.25,
-          "unit_id": 4
-        },
-        {
-          "ingredient_id": 26,
-          "quantity": 6,
-          "unit_id": 5
-        },
-        {
-          "ingredient_id": 27,
-          "quantity": 1,
-          "unit_id": 4
-        },
-        {
-          "ingredient_id": 29,
-          "quantity": 0.5,
-          "unit_id": 5
-        },
-        {
-          "ingredient_id": 30,
-          "quantity": 1,
-          "unit_id": 6
-        },
-        {
-          "ingredient_id": 28,
-          "quantity": 1,
-          "unit_id": 5
-        }
-      ],
-      "method": [
-        "Preheat oven to 190 degrees and grease and flour a cake pan.",
-        "In a large mixing bowl, combine flour, sugar, salt, cocoa powder, baking soda, and ginger, stirring to mix well.",
-        "Add melted and cooled coconut oil, vanilla, and lukewarm water. Stir well to combine.",
-        "Add coffee and apple cider vinegar, stirring well to make sure there are no lumps in the batter. The batter will foam up a bit as the baking soda reacts with the acid in the vinegar and the coffee.",
-        "Pour batter into cake pan and bake at 190 degrees for about 25 minutes or until a toothpick inserted in the center comes out clean."
-      ]
-    }
-  ]
-}
+]
