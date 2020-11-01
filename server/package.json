@@ -4,7 +4,9 @@
   "description": "Server for Cerebral Cereal applications",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "scripts/start.sh",
+    "stop": "scripts/stop.sh"
   },
   "repository": {
     "type": "git",

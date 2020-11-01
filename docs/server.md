@@ -55,7 +55,7 @@ ssh -i "cerebral-cereal.pem" chinnu@ec2-x-x-x-x.eu-west-2.compute.amazonaws.com
 
 * Edit startup file, `.bashrc`, to setup environment variables:
 
-```
+```bash
 export APP=/opt/cerebral-cereal/server
 ```
 
@@ -183,11 +183,41 @@ pm2 monit   # Health monitoring
 pm2 stop app
 ```
 
-* Set up `pm2` to run as part of `systemd`, adding the parameter `--service-name web-server` to name the service:
+* Set up `systemd` to automatically start/stop the web server:
 
 ```bash
-pm2 startup systemd
-# This will generate a command to run to set this up, add --service-name web-server to the end
+
+chmod u+x $APP/scripts/start.sh
+chmod u+x $APP/scripts/stop.sh
+
+sudo tee /etc/systemd/system/web-server.service<<EOF
+[Unit]
+Description=Web Server Manager
+After=network.target
+
+[Service]
+Type=forking
+User=$USER
+LimitNOFILE=infinity
+LimitNPROC=infinity
+LimitCORE=infinity
+Environment=PATH=$HOME/.vscode-server/bin/d2e414d9e4239a252d1ab117bd7067f125afd80a/bin:$HOME/.nvm/versions/node/$(node --version)/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:$HOME/.local/bin:$HOME/bin:$HOME/.nvm/versions/node/$(node --version)/bin:/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
+Environment=APP=$APP
+Environment=PM2_HOME=$HOME/.pm2
+Environment=PM2=$(whereis pm2 | awk '{print $2}')
+PIDFile=$HOME/.pm2/pm2.pid
+Restart=on-failure
+
+ExecStart=$APP/scripts/start.sh
+ExecReload=$HOME/.nvm/versions/node/$(node --version)/bin/pm2 reload all
+ExecStop=$APP/scripts/stop.sh
+
+[Install]
+WantedBy=multi-user.target
+EOF
+
+sudo systemctl daemon-reload
+sudo systemctl enable web-server
 
 sudo systemctl status web-server
 ```

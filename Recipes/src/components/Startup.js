@@ -22,7 +22,7 @@ class Startup extends Component {
   componentDidMount() {
     AsyncStorage.multiGet(['settings'])
       .then(result => {
-        const settings = JSON.parse(result[0][1]);
+        const settings = JSON.parse(result[0][1]);  // Settings Value
         const colourTheme = settings ? settings.colourTheme : null;
         const theme = Utils.appearanceMode(colourTheme);
 

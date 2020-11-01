@@ -23,7 +23,7 @@ class Startup extends Component {
   componentDidMount() {
     AsyncStorage.multiGet(['settings', 'progress'])
       .then(result => {
-        const settings = JSON.parse(result[0][1]);
+        const settings = JSON.parse(result[0][1]);  // Settings Value
         const colourTheme = settings ? settings.colourTheme : null;
         const theme = Utils.appearanceMode(colourTheme);
 
@@ -32,7 +32,7 @@ class Startup extends Component {
         });
 
         this.props.initSettings(settings, defaultSettings);
-        this.props.initProgress(JSON.parse(result[1][1]));
+        this.props.initProgress(JSON.parse(result[1][1]));  // Progress Value
       })
       .catch(err => {
         console.error(err);
