@@ -24,6 +24,6 @@ CREATE TABLE IF NOT EXISTS recipes (
     cuisine_id          INTEGER,
     serving_size        INTEGER,
     method              VARCHAR[],
-    ingredients         recipe_ingredient[]
+    ingredients         JSON
 );
 CREATE INDEX recipes_id_idx ON recipes (id);

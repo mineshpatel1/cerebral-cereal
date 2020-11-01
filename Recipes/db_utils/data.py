@@ -259,7 +259,7 @@ class Recipe:
                 'quantity': ing['quantity'],
             }
 
-            if ing['unit_id']:
+            if ing.get('unit_id'):
                 _ingredient['unit_id'] = ing['unit_id']
 
             _ingredients.append(_ingredient)

@@ -1,5 +1,6 @@
+import json
 import psycopg2
-from psycopg2.extras import DictCursor, CompositeCaster
+from psycopg2.extras import DictCursor, CompositeCaster, Json
 
 # Converts decimal types to floats automatically in queries
 DEC2FLOAT = psycopg2.extensions.new_type(
@@ -109,7 +110,7 @@ class DBClient:
                 udt_attrs = self.get_type_attributes(udt_name)
                 placeholder = f'%s::{udt_name + "[]"}'
             else:
-                data_type = None
+                data_type = column['data_type']
                 udt_name = None
                 udt_attrs = None
                 placeholder = '%s'
@@ -146,6 +147,8 @@ class DBClient:
                             _value = _values
                         else:
                             _value = _udt(_value, col['udt_attrs'])
+                    elif col['data_type'] == 'json':
+                        _value = Json(_value)
                 _row.append(_value)
             _rows.append(tuple(_row))
 
