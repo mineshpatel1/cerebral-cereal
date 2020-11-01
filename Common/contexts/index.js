@@ -1,7 +1,7 @@
-import { CurrentTheme, ThemeContext, ThemeProvider } from './themeContext';
+import { CurrentTheme, CommonContext, CommonProvider } from './commonContext';
 
 module.exports = {
   CurrentTheme,
-  ThemeContext,
-  ThemeProvider,
+  CommonContext,
+  CommonProvider,
 }

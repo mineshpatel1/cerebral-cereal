@@ -139,9 +139,9 @@ the relevant iOS icon sizes. To configure in your iOS app:
 
 ## Theming Components
 
-To use theming in a Cerebral Cereal app, you need to wrap your `App` in the `ThemeProvider` and then refer to the theme
+To use theming in a Cerebral Cereal app, you need to wrap your `App` in the `CommonProvider` and then refer to the theme
 context to dynamically access colours. If you do not wrap your app in the theme provider, the components will still render,
-using the default theme defined in `Common/src/contexts/themeContext.js`. The theme styles themselves are defined in
+using the default theme defined in `Common/src/contexts/commonContext.js`. The theme styles themselves are defined in
 `Common/src/styles/Themes.js`.
 
 You can use the Common Component class which has a method, `getTheme`, defined that will fetch the current theme at any
@@ -151,18 +151,18 @@ E.g.
 
 ```js
 // In App.js
-import { ThemeProvider } from 'cerebral-cereal-common';
+import { CommonProvider } from 'cerebral-cereal-common';
 
 // ...
 
 const App = () => {
   return (
     <Provider store={store}>
-      <ThemeProvider>
+      <CommonProvider>
         <NavigationContainer>
           <NavStack />
         </NavigationContainer>
-      </ThemeProvider>
+      </CommonProvider>
     </Provider>
   )
 };
@@ -179,6 +179,7 @@ export default class Button extends Component {
 
   render() {
     const { Colours, Fonts, Styles } = this.getTheme();
+    this.context.isConnected;  // Identifies if the device is connected to the internet
   
     // Default prop values
     const colour = props.colour || Colours.primary;

@@ -12,7 +12,7 @@ import {
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { NavigationContainer } from '@react-navigation/native';
 
-import { ThemeProvider } from 'cerebral-cereal-common';
+import { CommonProvider } from 'cerebral-cereal-common';
 import Startup from './src/components/Startup';
 import reducers from './src/reducers';
 import NavStack from './src/NavStack';
@@ -30,13 +30,13 @@ const store = createStore(reducers);
 const App = () => {
   return (
     <Provider store={store}>
-      <ThemeProvider>
+      <CommonProvider>
         <Startup>
           <NavigationContainer>
             <NavStack />
           </NavigationContainer>
         </Startup>
-      </ThemeProvider>
+      </CommonProvider>
     </Provider>
   )
 };

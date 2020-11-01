@@ -58,6 +58,7 @@
 		23E70AAA47B3B6E44943F109 /* Pods-Recipes-RecipesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Recipes-RecipesTests.release.xcconfig"; path = "Target Support Files/Pods-Recipes-RecipesTests/Pods-Recipes-RecipesTests.release.xcconfig"; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* Recipes-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Recipes-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* Recipes-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Recipes-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		37CF31ED277A474B9E78D8F1 /* alarm.mp3 */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = alarm.mp3; path = ../assets/audio/alarm.mp3; sourceTree = "<group>"; };
 		41B00BA6765A4AEDAA957D8C /* JosefinSans-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "JosefinSans-Regular.ttf"; path = "../assets/fonts/JosefinSans-Regular.ttf"; sourceTree = "<group>"; };
 		4E1DB18BB6579FAF137286BB /* Pods-Recipes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Recipes.release.xcconfig"; path = "Target Support Files/Pods-Recipes/Pods-Recipes.release.xcconfig"; sourceTree = "<group>"; };
 		52E6609B3FA416B2A8A29C7E /* Pods-Recipes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Recipes.debug.xcconfig"; path = "Target Support Files/Pods-Recipes/Pods-Recipes.debug.xcconfig"; sourceTree = "<group>"; };
@@ -68,13 +69,12 @@
 		95F75767A0217E866F67CBAD /* Pods-Recipes-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Recipes-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-Recipes-tvOSTests/Pods-Recipes-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9FA9944E0CEEE8DC3AE4164D /* Pods-Recipes-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Recipes-tvOS.release.xcconfig"; path = "Target Support Files/Pods-Recipes-tvOS/Pods-Recipes-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		D312A30B1202166D189F64FC /* libPods-Recipes-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Recipes-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4F7E4E990734C50AACEC36D /* LobsterTwo-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "LobsterTwo-Bold.ttf"; path = "../assets/fonts/LobsterTwo-Bold.ttf"; sourceTree = "<group>"; };
 		D8A5BF3576A2EAE713EFBF53 /* Pods-Recipes-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Recipes-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-Recipes-tvOSTests/Pods-Recipes-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		DABCC205BA78E5E4648452BB /* Pods-Recipes-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Recipes-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-Recipes-tvOS/Pods-Recipes-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		DC7846F6406FE3C849331C79 /* libPods-Recipes.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Recipes.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
-		D4F7E4E990734C50AACEC36D /* LobsterTwo-Bold.ttf */ = {isa = PBXFileReference; name = "LobsterTwo-Bold.ttf"; path = "../assets/fonts/LobsterTwo-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		37CF31ED277A474B9E78D8F1 /* alarm.mp3 */ = {isa = PBXFileReference; name = "alarm.mp3"; path = "../assets/audio/alarm.mp3"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -682,6 +682,7 @@
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = Recipes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 0.0.1;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -704,6 +705,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				INFOPLIST_FILE = Recipes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 0.0.1;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",

@@ -1,8 +1,8 @@
 import { Component as ReactComponent } from 'react';
-import { CurrentTheme, ThemeContext } from '../contexts';
+import { CurrentTheme, CommonContext } from '../contexts';
 
 export class Component extends ReactComponent {
-  static contextType = ThemeContext;
+  static contextType = CommonContext;
 
   getTheme = () => {
     return CurrentTheme(this.context);

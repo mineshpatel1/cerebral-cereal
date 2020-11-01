@@ -91,6 +91,19 @@ android {
 }
 ```
 
+* Enable multidex:
+
+```groovy
+android {
+  ...
+  defaultConfig {
+    ...
+    multiDexEnabled true
+  }
+  ...
+}
+```
+
 * Finally setting the following to variable to `true` will significantly reduce APK size upon build:
   * `def enableSeparateBuildPerCPUArchitecture = true`
 

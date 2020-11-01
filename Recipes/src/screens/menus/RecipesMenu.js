@@ -1,6 +1,5 @@
 import React from 'react';
-
-import { Component, ScreenContainer, Layout } from 'cerebral-cereal-common';
+import { Button, Component, ScreenContainer, Layout } from 'cerebral-cereal-common';
 
 import SearchList from '../../components/SearchList';
 import { recipes } from '../../data';

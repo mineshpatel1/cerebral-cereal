@@ -52,7 +52,7 @@ import { Utils } from './utils/Utils';
 import { Validators } from './utils/Validators';
 
 // Contexts
-import { ThemeProvider } from './contexts/themeContext';
+import { CommonProvider } from './contexts/commonContext';
 
 
 module.exports = {
@@ -100,5 +100,5 @@ module.exports = {
   Utils,
   Validators,
 
-  ThemeProvider,
+  CommonProvider,
 }
