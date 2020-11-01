@@ -33,6 +33,7 @@ import { Component } from './Component';
 import { Header } from './Header';
 import { Icon } from './Icon';
 import { IconSet } from './containers/IconSet';
+import { RefreshControl } from './RefreshControl';
 import { Setting } from './Setting';
 import { Spinner } from './Spinner';
 import { Text } from './Text';
@@ -60,6 +61,7 @@ module.exports = {
   PlainButton,
   Pressable,
   RadioButton,
+  RefreshControl,
   ScreenContainer,
   SelectableItem,
   Setting,

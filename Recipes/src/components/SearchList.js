@@ -1,7 +1,9 @@
 import React from 'react';
 import { FlatList, View } from 'react-native';
 
-import { Component, SelectableItem, TextInput, Layout } from 'cerebral-cereal-common';
+import {
+  Component, RefreshControl, SelectableItem, TextInput, Layout,
+} from 'cerebral-cereal-common';
 
 export default class SearchList extends Component {
   static defaultProps = {
@@ -69,10 +71,10 @@ export default class SearchList extends Component {
           keyExtractor={item => item.id.toString()}
           maxToRenderPerBatch={props.maxToRenderPerBatch}
           scrollEventThrottle={props.scrollEventThrottle}
+          style={{marginBottom: 58}}  // Required to avoid chopping off the last item
           getItemLayout={(_data, index) => {
             return {length: _data.length, offset: 60 * index, index};
           }}
-          style={{marginBottom: 58}}  // Required to avoid chopping off the last item
         />
       </View>
     )

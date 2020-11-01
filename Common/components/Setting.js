@@ -50,7 +50,6 @@ export class Setting extends Component {
     const { state, props } = this;
 
     const backgroundColour = props.backgroudColour || Colours.background;
-    const disabledColour = props.disabledColour || Colours.disabled;
     const rippleColour = props.rippleColour || Colours.primary;
     const borderColour = props.borderColour || Colours.offGrey;
     const textColour = props.textColour || Colours.foreground;

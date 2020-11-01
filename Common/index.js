@@ -38,6 +38,7 @@ import { TimerModal } from './components/modals/TimerModal';
 import { Component } from './components/Component';
 import { Header } from './components/Header';
 import { Icon } from './components/Icon';
+import { RefreshControl } from './components/RefreshControl';
 import { Setting } from './components/Setting';
 import { Spinner } from './components/Spinner';
 import { Text } from './components/Text';
@@ -80,6 +81,7 @@ module.exports = {
   PlainButton,
   Pressable,
   RadioButton,
+  RefreshControl,
   ScreenContainer,
   SelectableItem,
   Setting,
