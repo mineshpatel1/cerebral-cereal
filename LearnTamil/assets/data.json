@@ -222,7 +222,7 @@
             {
                 "id": 18,
                 "original": "Son",
-                "translation": "MagaN",
+                "translation": "Magan",
                 "categoryId": 2,
                 "script": "\u0bae\u0b95\u0ba9\u0bcd"
             },
@@ -236,7 +236,7 @@
             {
                 "id": 19,
                 "original": "Young girl",
-                "translation": "Ponnu",
+                "translation": "PoNNu",
                 "categoryId": 2,
                 "script": "\u0baa\u0bca\u0ba3\u0bcd\u0ba3\u0bc1"
             },
@@ -1106,18 +1106,18 @@
                 "script": "\u0b89\u0b99\u0bcd\u0b95 \u0baa\u0bc6\u0baf\u0bb0\u0bcd \u0b8e\u0ba9\u0bcd\u0ba9"
             },
             {
+                "id": 61,
+                "original": "What is your name? [i]",
+                "translation": "Un peyar enna?",
+                "categoryId": 4,
+                "script": "\u0b89\u0ba9\u0bcd \u0baa\u0bc6\u0baf\u0bb0\u0bcd \u0b8e\u0ba9\u0bcd\u0ba9"
+            },
+            {
                 "id": 98,
                 "original": "What's the time?",
                 "translation": "MaNi yenna?",
                 "categoryId": 4,
                 "script": "\u0bae\u0ba3\u0bbf \u0b8e\u0ba9\u0bcd\u0ba9"
-            },
-            {
-                "id": 61,
-                "original": "What's your name? [i]",
-                "translation": "Un peyar enna",
-                "categoryId": 4,
-                "script": "\u0b89\u0ba9\u0bcd \u0baa\u0bc6\u0baf\u0bb0\u0bcd \u0b8e\u0ba9\u0bcd\u0ba9"
             },
             {
                 "id": 47,
@@ -1155,18 +1155,18 @@
                 "script": "\u0b8e\u0b99\u0bcd\u0b95\u0bc7 \u0b87\u0bb0\u0bc1\u0b95\u0bcd\u0b95"
             },
             {
-                "id": 76,
-                "original": "Where do you stay [i]",
-                "translation": "Nee enge thangara?",
-                "categoryId": 4,
-                "script": "\u0ba8\u0bc0 \u0b8e\u0b99\u0bcd\u0b95\u0bc7 \u0ba4\u0b99\u0bcd\u0b95\u0bb1"
-            },
-            {
                 "id": 75,
                 "original": "Where do you stay? [f]",
                 "translation": "Neenga enga thangareenga?",
                 "categoryId": 4,
                 "script": "\u0ba8\u0bc0\u0b99\u0bcd\u0b95 \u0b8e\u0b99\u0bcd\u0b95\u0bc7 \u0ba4\u0b99\u0bcd\u0b95\u0bb1\u0bc0\u0b99\u0bcd\u0b95"
+            },
+            {
+                "id": 76,
+                "original": "Where do you stay? [i]",
+                "translation": "Nee enge thangara?",
+                "categoryId": 4,
+                "script": "\u0ba8\u0bc0 \u0b8e\u0b99\u0bcd\u0b95\u0bc7 \u0ba4\u0b99\u0bcd\u0b95\u0bb1"
             },
             {
                 "id": 46,

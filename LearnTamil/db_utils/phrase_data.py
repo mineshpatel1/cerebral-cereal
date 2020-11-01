@@ -531,7 +531,30 @@ def get_next_phrases(n=50):
 
 
 def main():
-    pass
+
+    phrases = []
+
+    phrase = get_phrase_by_key(61)
+    phrase.original = 'What is your name? [i]'
+    phrase.translation = 'Un peyar enna?'
+    phrases.append(phrase)
+    
+    phrase = get_phrase_by_key(76)
+    phrase.original = 'Where do you stay? [i]'
+    phrases.append(phrase)
+
+    phrase = get_phrase_by_key(18)
+    phrase.translation = 'Magan'
+    phrases.append(phrase)
+
+    phrase = get_phrase_by_key(19)
+    phrase.translation = 'PoNNu'
+    phrases.append(phrase)
+
+    update_data(phrases)
+
+    for p in phrases:
+        p.save_mp3()
 
 
 if __name__ == '__main__':
