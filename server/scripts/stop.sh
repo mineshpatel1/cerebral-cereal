@@ -10,7 +10,6 @@ do
   # after deletion, which would mean after the first one you're deleting the
   # wrong line. Instead put them in a reverse ordered list.
   LINES="$line_num $LINES"
-  echo $line_num
 done
 
 # Delete the lines, last to first.

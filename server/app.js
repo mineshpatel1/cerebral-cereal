@@ -8,6 +8,9 @@ const https = require('https');
 const express = require('express');
 const bodyParser = require('body-parser');
 
+const { log } = require(__dirname + '/utils/utils');
+const { query } = require(__dirname + '/utils/pg');
+
 // Serve Challenge for Let's Encrypt over HTTP only
 const httpApp = express();
 const challenge = '/.well-known/acme-challenge/';
@@ -15,7 +18,7 @@ httpApp.use(challenge, express.static(__dirname + challenge));
 
 const httpServer = http.createServer(httpApp);
 httpServer.listen(global.config.server.httpPort);
-console.log('Cerebral Cereal HTTP server started on port ' + global.config.server.httpPort + '...');
+log.info('Cerebral Cereal HTTP server started on port ' + global.config.server.httpPort + '...');
 
 // Certificate
 let credentials;
@@ -27,7 +30,7 @@ try {
   };
   global.secure = true;
 } catch {
-  console.warn('Did not find security certificates.');
+  log.warning('Did not find security certificates.');
   global.secure = false;
 }
 
@@ -36,13 +39,27 @@ if (global.secure) {
   const app = express();
   app.use(bodyParser.json());
 
-  app.get('/', (_req, res) => {
+  app.get('/', (req, res) => {
+    log.info(req.connection.remoteAddress);
     res.send('Hello World');
+  });
+
+  app.get('/query', (_req, res, next) => {
+    const sql = "SELECT 1";
+    query(sql).then(results => {
+      console.log(results);
+      res.send(results);
+    }).catch(next);
+  });
+
+  app.use((err, _req, res, _next) => {
+    log.error(err.toString());
+    res.status(500).send({error: err.toString()});
   });
 
   const httpsServer = https.createServer(credentials, app);
   httpsServer.listen(global.config.server.port);
 
-  console.log('Cerebral Cereal HTTPS server started on port ' + global.config.server.port + '...');
+  log.info('Cerebral Cereal HTTPS server started on port ' + global.config.server.port + '...');
 }
 

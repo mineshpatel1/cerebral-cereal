@@ -5,6 +5,7 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "start-dev": "scripts/start.sh --watch",
     "start": "scripts/start.sh",
     "stop": "scripts/stop.sh"
   },
@@ -20,6 +21,10 @@
   "homepage": "https://github.com/mineshpatel1/cerebral-cereal#readme",
   "dependencies": {
     "body-parser": "^1.19.0",
-    "express": "^4.17.1"
+    "colors": "^1.4.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "pg": "^8.4.2",
+    "pg-format": "^1.0.4"
   }
 }

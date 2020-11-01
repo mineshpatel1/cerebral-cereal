@@ -9,6 +9,12 @@ Setting up the server using an AWS Amazon Linux instance.
     "server": {
         "port": 3000,
         "cert_path": "/path/to/certs"
+    },
+    "pg": {
+        "host": "cerebral-cereal.com",
+        "port": 5432,
+        "user": "postgres",
+        "password": "postgres_password"
     }
 }
 ```
@@ -144,8 +150,10 @@ psql -c "ALTER USER postgres WITH PASSWORD '<password>'"
   and remote authentication rules:
 
 ```
-local    all    all               md5  # Optional to make local authentication password based
-host     all    all   0.0.0.0/0   md5  # Allows remote connections to the database
+local    all    all                     md5  # Optional to make local authentication password based
+host     all    all     0.0.0.0/0       md5  # Allows remote connections to the database
+host     all    all     127.0.0.1/32    md5  # Localhost connections should use password
+host     all    all     ::1/128         md5  # Localhost connections should use password
 ```
 
 * Restart the server:
@@ -186,7 +194,6 @@ pm2 stop app
 * Set up `systemd` to automatically start/stop the web server:
 
 ```bash
-
 chmod u+x $APP/scripts/start.sh
 chmod u+x $APP/scripts/stop.sh
 
