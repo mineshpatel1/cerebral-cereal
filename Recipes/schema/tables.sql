@@ -14,7 +14,7 @@ CREATE INDEX ingredients_id_idx ON ingredients (id);
 
 CREATE TYPE recipe_ingredient AS (
     ingredient_id       INTEGER,
-    quantity            INTEGER,
+    quantity            NUMERIC(10, 5),
     unit_id             INTEGER
 );
 

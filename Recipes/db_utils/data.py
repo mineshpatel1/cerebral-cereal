@@ -225,6 +225,52 @@ class Location:
         return self._compare(other, 'eq')
 
 
+class Recipe:
+    @staticmethod
+    def from_dict(recipe_dict):
+        return Recipe(recipe_dict['id'], **recipe_dict)
+
+
+    def __init__(
+        self, recipe_id, name, cuisine_id, serving_size,
+        method, ingredients, **kwargs
+    ):
+        self.id = recipe_id
+        self.name = name
+        self.cuisine_id = cuisine_id
+        self.serving_size = serving_size
+        self.method = method
+        self.ingredients = ingredients
+
+    @property
+    def dict(self):
+        out = {
+            "id": self.id,
+            "name": self.name,
+            "cuisine_id": self.cuisine_id,
+            "serving_size": self.serving_size,
+            "method": self.method,
+        }
+
+        _ingredients = []
+        for ing in self.ingredients:
+            _ingredient = {
+                'ingredient_id': ing['ingredient_id'],
+                'quantity': ing['quantity'],
+            }
+
+            if ing['unit_id']:
+                _ingredient['unit_id'] = ing['unit_id']
+
+            _ingredients.append(_ingredient)
+
+        out['ingredients'] = _ingredients
+        return out
+
+    def __str__(self):
+        return f'{self.id}: {self.name}'
+
+
 def _update_items(new_items, old_items):
     for new_item in new_items:
         found = False
@@ -318,6 +364,18 @@ def backup_ingredients():
         ingredients.append(Ingredient.from_dict(row).dict)
 
     save_json(ingredients, INGREDIENTS_FILE)
+
+
+def backup_recipes():
+    """Reads recipes from the database and writes to JSON."""
+    client = DBClient(DB)
+    rows = client.query("SELECT * FROM recipes", composites=['recipe_ingredient'])
+    client.disconnect()
+
+    recipes = []
+    for row in rows:
+        recipes.append(Recipe.from_dict(row).dict)
+    save_json(recipes, RECIPES_FILE)
 
 
 def main():
