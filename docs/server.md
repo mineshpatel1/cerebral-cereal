@@ -15,7 +15,8 @@ Setting up the server using an AWS Amazon Linux instance.
         "port": 5432,
         "user": "postgres",
         "password": "postgres_password"
-    }
+    },
+    "session_secret": "session_secret"
 }
 ```
 

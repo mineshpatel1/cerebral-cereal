@@ -1,13 +1,14 @@
--- Express cookie sessionisation
-DROP TABLE IF EXISTS sessions;
-CREATE TABLE "sessions" (
-    "sid" VARCHAR NOT NULL COLLATE "default",
-    "sess" JSON NOT NULL,
-    "expire" TIMESTAMP(6) NOT NULL
+-- Express cookie sessionisation (https://github.com/voxpelli/node-connect-pg-simple/blob/HEAD/table.sql)
+CREATE TABLE "session" (
+  "sid" varchar NOT NULL COLLATE "default",
+	"sess" json NOT NULL,
+	"expire" timestamp(6) NOT NULL
 )
 WITH (OIDS=FALSE);
-ALTER TABLE "sessions" ADD CONSTRAINT "session_pkey" PRIMARY KEY ("sid") NOT DEFERRABLE INITIALLY IMMEDIATE;
+ALTER TABLE "session" ADD CONSTRAINT "session_pkey" PRIMARY KEY ("sid") NOT DEFERRABLE INITIALLY IMMEDIATE;
+CREATE INDEX "IDX_session_expire" ON "session" ("expire");
 
+-- Users table
 CREATE TABLE IF NOT EXISTS users (
     id              SERIAL PRIMARY KEY,
     email           VARCHAR NOT NULL UNIQUE,

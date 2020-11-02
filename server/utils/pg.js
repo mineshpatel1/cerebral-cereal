@@ -1,7 +1,7 @@
 const pg = require('pg');
 const utils = require(__dirname + '/utils');
 
-const DEFAULT_DB = 'postgres';
+exports.DEFAULT_DB = 'postgres';
 const DATABASES = ['postgres', 'recipes'];
 const config = {
   user: global.config.pg.user,
@@ -29,7 +29,7 @@ createAllPools = () => {
 
 exports.pool = createAllPools();
 
-exports.query = (sql, db=DEFAULT_DB, params=null) => {
+exports.query = (sql, db=exports.DEFAULT_DB, params=null) => {
   return new Promise((resolve, reject) => {
     exports.pool[db].connect()
     .then(client => {

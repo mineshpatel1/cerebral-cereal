@@ -38,20 +38,29 @@ try {
 if (global.secure) {
   const app = express();
   app.use(bodyParser.json());
+  app.use(require(__dirname + '/routes/session'));
 
   app.get('/', (req, res) => {
-    log.info(req.connection.remoteAddress);
     res.send('Hello World');
   });
 
-  app.get('/query', (_req, res, next) => {
-    const sql = "SELECT 1";
-    query(sql).then(results => {
-      console.log(results);
-      res.send(results);
-    }).catch(next);
+  app.get('/login', (req, res) => {
+    req.session.userId = 1;
+    return res.send('Login');
   });
 
+  app.get('/logout', (req, res, next) => {
+    req.session.destroy(err => {
+      if (err) return next(err);
+      return res.send('Logged Out');
+    });
+  });
+
+  app.get('/session', (req, res) => {
+    res.send(req.session);
+  });
+
+  // Error handler
   app.use((err, _req, res, _next) => {
     log.error(err.toString());
     res.status(500).send({error: err.toString()});
