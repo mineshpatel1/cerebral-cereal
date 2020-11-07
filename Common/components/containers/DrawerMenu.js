@@ -13,7 +13,7 @@ export class DrawerMenu extends Component {
   static defaultProps = {
     title: null,
     navigation: null,
-    menu: null,  // {label, icon, route, onPress}
+    menu: null,  // {label, icon, route, onPress, disabled}
     isOpen: false,
     onRequestClose: false,
     headerColour: null,
@@ -47,7 +47,7 @@ export class DrawerMenu extends Component {
           <Text bold display colour={headerTextColour}>{props.title}</Text>
         </View>
         {props.menu.map(item => (
-          <ListItem key={item.label} onPress={this.onPress(item.route, item.onPress)}>
+          <ListItem key={item.label} onPress={this.onPress(item.route, item.onPress)} disabled={item.disabled}>
             <View style={[Layout.row, Layout.f1, Layout.aCenter, {justifyContent: 'space-between'}]}>
               <Text colour={Colours.foreground}>{item.label}</Text>
               {item.icon && <Icon icon={item.icon} />}

@@ -2,12 +2,15 @@ import React from 'react';
 import { View } from 'react-native';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
+import { GoogleSignin } from '@react-native-community/google-signin';
 import AsyncStorage from '@react-native-community/async-storage';
 import SplashScreen from 'react-native-splash-screen';
 
 import { Component, Text, Layout, Utils} from 'cerebral-cereal-common';
 import { initSettings } from 'cerebral-cereal-common/actions';
 import { defaultSettings } from '../config';
+import { alterUser } from '../actions/UserActions';
+const googleCreds = require('../../private/google-services.json');
 
 class Startup extends Component {
   static defaultProps = {}
@@ -19,21 +22,40 @@ class Startup extends Component {
     };
   }
 
+  loadSettings = () => {
+    return new Promise((resolve, reject) => {
+      AsyncStorage.multiGet(['settings'])
+        .then(result => {
+          const settings = JSON.parse(result[0][1]);  // Settings Value
+          const colourTheme = settings ? settings.colourTheme : null;
+          const theme = Utils.appearanceMode(colourTheme);
+          this.props.initSettings(settings, defaultSettings);
+          this.context.changeTheme(theme, resolve);
+        })
+        .catch(reject);
+    });
+  }
+
+  checkUser = () => {
+    return new Promise((resolve) => {
+      GoogleSignin.configure({
+        webClientId: googleCreds.web.client_id,
+        iosClientId: googleCreds.ios.client_id,
+      });
+      GoogleSignin.getCurrentUser()
+        .then(resolve)
+        .catch(err => resolve(null));
+    });
+  }
+
   componentDidMount() {
-    AsyncStorage.multiGet(['settings'])
-      .then(result => {
-        const settings = JSON.parse(result[0][1]);  // Settings Value
-        const colourTheme = settings ? settings.colourTheme : null;
-        const theme = Utils.appearanceMode(colourTheme);
+    const waitSettings = this.loadSettings();
+    const waitUser = this.checkUser();
 
-        this.context.changeTheme(theme, () => {
-          this.setState({init: true}, () => SplashScreen.hide());
-        });
-
-        this.props.initSettings(settings, defaultSettings);
-      })
-      .catch(err => {
-        console.error(err);
+    Promise.all([waitSettings, waitUser])
+      .then(values => {
+        this.props.alterUser(values[1]);
+        this.setState({init: true}, () => SplashScreen.hide());
       });
   }
 
@@ -57,7 +79,7 @@ const mapStateToProps = (state) => {
 };
 
 const mapDispatchToProps = dispatch => (
-  bindActionCreators({ initSettings }, dispatch)
+  bindActionCreators({ initSettings, alterUser }, dispatch)
 );
 
 export default connect(mapStateToProps, mapDispatchToProps)(Startup);

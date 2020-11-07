@@ -5,3 +5,5 @@ export const TOGGLE_ITEM = 'TOGGLE_ITEM';
 export const UNCHECK_ITEM = 'UNCHECK_ITEM';
 
 export const FETCH_RECIPES = 'FETCH_RECIPES';
+
+export const ALTER_USER = 'ALTER_USER';

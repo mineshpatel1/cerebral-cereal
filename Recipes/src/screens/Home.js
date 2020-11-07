@@ -1,10 +1,10 @@
 import React from 'react';
 import { Dimensions } from 'react-native';
-import { getUniqueId } from 'react-native-device-info';
 
 import {
-  Component, Container, DrawerMenu, Header, HorizontalMenu, TimerModal
+  Component, Container, Header, HorizontalMenu,
 } from 'cerebral-cereal-common';
+import RecipeDrawerMenu from '../components/RecipeDrawerMenu';
 import RecipesMenu from './menus/RecipesMenu';
 import IngredientsMenu from './menus/IngredientsMenu';
 import ShoppingListMenu from './menus/ShoppingListMenu';
@@ -36,17 +36,11 @@ export default class Home extends Component {
       )},
     ];
 
-    const menuItems = [
-      {label: 'Device ID', icon: 'carrot', onPress: () => console.log(getUniqueId())},
-      {label: 'Settings', icon: 'cog', route: 'Settings'},
-    ];
-
     return (
-      <DrawerMenu
+      <RecipeDrawerMenu
         title={"Info & Settings"}
-        menu={menuItems}
-        isOpen={state.showDrawer}
         navigation={props.navigation}
+        isOpen={state.showDrawer}
         onRequestClose={() => this.setState({showDrawer: false})}
       >
         <Header
@@ -66,7 +60,7 @@ export default class Home extends Component {
             keyboardShouldPersistTaps="handled"
           />
         </Container>
-      </DrawerMenu>
+      </RecipeDrawerMenu>
     )
   }
 }
