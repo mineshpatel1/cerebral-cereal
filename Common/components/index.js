@@ -38,6 +38,7 @@ import { Setting } from './Setting';
 import { Spinner } from './Spinner';
 import { Text } from './Text';
 import { Timer } from './Timer';
+import { Toast } from './Toast';
 
 module.exports = {
   Button,
@@ -74,4 +75,5 @@ module.exports = {
   TextInput,
   Timer,
   TimerModal,
+  Toast,
 }

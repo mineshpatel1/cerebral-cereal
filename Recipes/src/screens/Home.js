@@ -30,7 +30,7 @@ class Home extends Component {
   signIn = () => {
     this.toggleLoading();
     this.props.signIn()
-      .catch(err => {console.error(err)})
+      .catch(err => this.container.showToast(err.toString(), 'error'))
       .finally(this.toggleLoading);
   }
 
@@ -52,44 +52,47 @@ class Home extends Component {
     const isConnected = this.context.isConnected;
 
     return (
-      <RecipeDrawerMenu
-        title={"Info & Settings"}
-        navigation={props.navigation}
-        isOpen={state.showDrawer}
-        onRequestClose={() => this.setState({showDrawer: false})}
+      /*
+        Using dark background colour and light foreground so
+        that the bottom of the iOS app matches the menu bar
+      */
+      <Container
+        colour={Colours.background}
         loading={state.loading}
+        ref={x => this.container = x}
       >
-        <Header
-          title={screens[this.state.index].title}
-          link={{icon: 'bars', onPress: () => this.setState({showDrawer: true})}}
-        />
-        {/*
-          Using dark background colour and light foreground so
-          that the bottom of the iOS app matches the menu bar
-        */}
-        <Container colour={Colours.background}>
-          {
-            this.props.user &&
-            <HorizontalMenu
-              screens={screens} icons={screens.map(s => s.icon)}
-              width={maxWidth}
-              style={{backgroundColor: Colours.background}}
-              onSelect={i => this.setState({index: i})}
-              keyboardShouldPersistTaps="handled"
-            />
-          }
-          {
-            !this.props.user &&
-            <View style={[Layout.center, Layout.f1, Layout.p2]}>
-              {
-                !isConnected &&
-                <Text style={Layout.mb2}>No Internet connection detected</Text>
-              }
-              <Button label="Sign In" icon="sign-in-alt" onPress={this.signIn} disabled={!isConnected} />
-            </View>
-          }
-        </Container>
-      </RecipeDrawerMenu>
+        <RecipeDrawerMenu
+          title={"Info & Settings"}
+          navigation={props.navigation}
+          isOpen={state.showDrawer}
+          onRequestClose={() => this.setState({showDrawer: false})}
+        >
+          <Header
+            title={screens[this.state.index].title}
+            link={{icon: 'bars', onPress: () => this.setState({showDrawer: true})}}
+          />
+            {
+              this.props.user &&
+              <HorizontalMenu
+                screens={screens} icons={screens.map(s => s.icon)}
+                width={maxWidth}
+                style={{backgroundColor: Colours.background}}
+                onSelect={i => this.setState({index: i})}
+                keyboardShouldPersistTaps="handled"
+              />
+            }
+            {
+              !this.props.user &&
+              <View style={[Layout.center, Layout.f1, Layout.p2]}>
+                {
+                  !isConnected &&
+                  <Text style={Layout.mb2}>No Internet connection detected</Text>
+                }
+                <Button label="Sign In" icon="sign-in-alt" onPress={this.signIn} disabled={!isConnected} />
+              </View>
+            }
+        </RecipeDrawerMenu>
+      </Container>
     )
   }
 }

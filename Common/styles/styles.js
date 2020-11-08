@@ -67,6 +67,8 @@ export const genStyles = Colours => {
       top: 0,
       left: 0,
       position: 'absolute',
+      justifyContent: 'center',
+      alignItems: 'center',
     },
     overlay: {
       padding: StyleConstants.size1,

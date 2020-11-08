@@ -38,7 +38,6 @@ class Startup extends Component {
 
   checkUser = () => {
     return new Promise((resolve) => {
-      console.log(this.context.isConnected);
       if (!this.context.isConnected) return resolve();
       GoogleSignin.configure({
         webClientId: googleCreds.web.client_id,

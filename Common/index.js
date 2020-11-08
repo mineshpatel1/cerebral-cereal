@@ -43,6 +43,7 @@ import { Setting } from './components/Setting';
 import { Spinner } from './components/Spinner';
 import { Text } from './components/Text';
 import { Timer } from './components/Timer';
+import { Toast } from './components/Toast';
 
 
 // Utils
@@ -94,6 +95,7 @@ module.exports = {
   TextInput,
   Timer,
   TimerModal,
+  Toast,
 
   ColourUtils,
   NavUtils,

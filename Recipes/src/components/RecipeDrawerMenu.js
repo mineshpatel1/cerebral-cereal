@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { signIn, signOut } from '../actions/UserActions';
 
-import { Component, DrawerMenu, Spinner } from 'cerebral-cereal-common';
+import { Component, DrawerMenu, Spinner, Toast } from 'cerebral-cereal-common';
 
 class RecipeDrawerMenu extends Component {
   static defaultProps = {
@@ -21,18 +21,19 @@ class RecipeDrawerMenu extends Component {
   }
 
   toggleLoading = () => this.setState({ loading: !this.state.loading });
+  showError = err => this.toast.show(err.toString(), 'error');
 
   signIn = async () => {
     this.toggleLoading();
     this.props.signIn()
-      .catch(() => {})
+      .catch(this.showError)
       .finally(this.toggleLoading);
   }
 
   signOut = async () => {
     this.toggleLoading();
     this.props.signOut()
-      .catch(() => {})
+      .catch(this.showError)
       .finally(this.toggleLoading);
   }
 
@@ -66,6 +67,7 @@ class RecipeDrawerMenu extends Component {
         >
           {props.children}
         </DrawerMenu>
+        <Toast ref={x => this.toast = x} />
         <Spinner loading={state.loading || props.loading} />
       </>
     )
