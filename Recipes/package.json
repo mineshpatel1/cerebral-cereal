@@ -5,6 +5,7 @@
   "scripts": {
     "build-android": "cd android && ./gradlew assembleRelease",
     "android": "npx react-native run-android",
+    "emulator": "cd ~/Library/Android/sdk/tools && emulator -avd $ANDROID_AVD -dns-server 8.8.8.8",
     "ios": "npx react-native run-ios",
     "start": "npx react-native start",
     "asset": "npx react-native-asset",

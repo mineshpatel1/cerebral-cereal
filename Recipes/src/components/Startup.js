@@ -9,7 +9,7 @@ import SplashScreen from 'react-native-splash-screen';
 import { Component, Text, Layout, Utils} from 'cerebral-cereal-common';
 import { initSettings } from 'cerebral-cereal-common/actions';
 import { defaultSettings } from '../config';
-import { alterUser } from '../actions/UserActions';
+import { checkUser } from '../actions/UserActions';
 const googleCreds = require('../../private/google-services.json');
 
 class Startup extends Component {
@@ -38,13 +38,16 @@ class Startup extends Component {
 
   checkUser = () => {
     return new Promise((resolve) => {
+      console.log(this.context.isConnected);
+      if (!this.context.isConnected) return resolve();
       GoogleSignin.configure({
         webClientId: googleCreds.web.client_id,
         iosClientId: googleCreds.ios.client_id,
       });
-      GoogleSignin.getCurrentUser()
+
+      this.props.checkUser()
         .then(resolve)
-        .catch(err => resolve(null));
+        .catch(() => resolve());       
     });
   }
 
@@ -53,8 +56,7 @@ class Startup extends Component {
     const waitUser = this.checkUser();
 
     Promise.all([waitSettings, waitUser])
-      .then(values => {
-        this.props.alterUser(values[1]);
+      .then(() => {
         this.setState({init: true}, () => SplashScreen.hide());
       });
   }
@@ -79,7 +81,7 @@ const mapStateToProps = (state) => {
 };
 
 const mapDispatchToProps = dispatch => (
-  bindActionCreators({ initSettings, alterUser }, dispatch)
+  bindActionCreators({ initSettings, checkUser }, dispatch)
 );
 
 export default connect(mapStateToProps, mapDispatchToProps)(Startup);

@@ -46,14 +46,17 @@ export class DrawerMenu extends Component {
         <View style={[Layout.p2, Layout.jCenter, {height: props.headerSize, backgroundColor: headerColour}]}>
           <Text bold display colour={headerTextColour}>{props.title}</Text>
         </View>
-        {props.menu.map(item => (
-          <ListItem key={item.label} onPress={this.onPress(item.route, item.onPress)} disabled={item.disabled}>
-            <View style={[Layout.row, Layout.f1, Layout.aCenter, {justifyContent: 'space-between'}]}>
-              <Text colour={Colours.foreground}>{item.label}</Text>
-              {item.icon && <Icon icon={item.icon} />}
-            </View>
-          </ListItem>
-        ))}
+        {props.menu.map(item => {
+          const textColour = item.disabled ? Colours.background: Colours.foreground;
+          return (
+            <ListItem key={item.label} onPress={this.onPress(item.route, item.onPress)} disabled={item.disabled}>
+              <View style={[Layout.row, Layout.f1, Layout.aCenter, {justifyContent: 'space-between'}]}>
+                <Text colour={textColour}>{item.label}</Text>
+                {item.icon && <Icon colour={textColour} icon={item.icon} />}
+              </View>
+            </ListItem>
+          )
+        })}
       </Container>
     );
 

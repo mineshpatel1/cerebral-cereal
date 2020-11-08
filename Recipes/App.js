@@ -6,7 +6,7 @@ import { createStore, applyMiddleware } from 'redux';
 import {
   faArrowLeft, faBackspace, faBars, faCarrot, faCartPlus, faCheck, faChevronDown, faChevronRight,
   faCog, faPepperHot, faPause, faPlay, faPlus, faPen, faRedo, faSearch, faShoppingCart, faTimes,
-  faSignOutAlt, faStopwatch, faUtensils,
+  faSignInAlt, faSignOutAlt, faStopwatch, faUtensils,
 } from '@fortawesome/free-solid-svg-icons';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { NavigationContainer } from '@react-navigation/native';
@@ -19,7 +19,7 @@ import NavStack from './src/NavStack';
 library.add(
   faArrowLeft, faBackspace, faBars, faCarrot, faCartPlus, faCheck, faChevronDown, faChevronRight,
   faCog, faPepperHot, faPause, faPlay, faPlus, faPen, faRedo, faSearch, faShoppingCart, faTimes,
-  faSignOutAlt, faStopwatch, faUtensils,
+  faSignInAlt, faSignOutAlt, faStopwatch, faUtensils,
 );
 const store = createStore(reducers, applyMiddleware(thunkMiddleware));
 

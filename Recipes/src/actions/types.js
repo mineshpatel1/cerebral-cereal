@@ -7,3 +7,6 @@ export const UNCHECK_ITEM = 'UNCHECK_ITEM';
 export const FETCH_RECIPES = 'FETCH_RECIPES';
 
 export const ALTER_USER = 'ALTER_USER';
+export const CHECK_USER = 'CHECK_USER';
+export const SIGN_IN = 'SIGN_IN';
+export const SIGN_OUT = 'SIGN_OUT';

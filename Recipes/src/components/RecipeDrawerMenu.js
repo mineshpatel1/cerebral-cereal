@@ -1,51 +1,47 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { GoogleSignin } from '@react-native-community/google-signin';
-import { alterUser } from '../actions/UserActions';
+import { signIn, signOut } from '../actions/UserActions';
 
-import { Component, DrawerMenu } from 'cerebral-cereal-common';
+import { Component, DrawerMenu, Spinner } from 'cerebral-cereal-common';
 
 class RecipeDrawerMenu extends Component {
   static defaultProps = {
     title: null,
     navigation: null,
     isOpen: false,
+    loading: false,
   }
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      loading: false,
+    }
+  }
+
+  toggleLoading = () => this.setState({ loading: !this.state.loading });
 
   signIn = async () => {
-    console.log('Attempting Sign In');
-    let userInfo = null;
-    try {
-      await GoogleSignin.hasPlayServices();
-      userInfo = await GoogleSignin.signIn();
-    } catch (err) {  // Failed Sign In for whatever reason
-      console.log(err);
-    }
-    this.props.alterUser(userInfo);
+    this.toggleLoading();
+    this.props.signIn()
+      .catch(() => {})
+      .finally(this.toggleLoading);
   }
 
-  checkSignIn = async () => {
-    const isSignedIn = await GoogleSignin.getCurrentUser();
-    console.log(isSignedIn, this.props.user);
+  signOut = async () => {
+    this.toggleLoading();
+    this.props.signOut()
+      .catch(() => {})
+      .finally(this.toggleLoading);
   }
 
   checkUser = () => {
     console.log(this.props.user);
   }
 
-  signOut = async () => {
-    try {
-      await GoogleSignin.revokeAccess();
-      await GoogleSignin.signOut();
-    } catch (err) {
-      console.log(err);
-    }
-    this.props.alterUser(null);  // Clear local state regardless
-  }
-
   render() {
-    const { props } = this;
+    const { props, state } = this;
     const isConnected = this.context.isConnected;
 
     const signIn = (
@@ -56,20 +52,22 @@ class RecipeDrawerMenu extends Component {
 
     const menuItems = [
       {label: 'Settings', icon: 'cog', route: 'Settings'},
-      {label: 'Check user', icon: 'carrot', onPress: this.checkUser, disabled: !isConnected},
       signIn,
     ];
 
     return (
-      <DrawerMenu
-        title={props.title}
-        menu={menuItems}
-        isOpen={props.isOpen}
-        navigation={props.navigation}
-        onRequestClose={props.onRequestClose}
-      >
-        {props.children}
-      </DrawerMenu>
+      <>
+        <DrawerMenu
+          title={props.title}
+          menu={menuItems}
+          isOpen={props.isOpen}
+          navigation={props.navigation}
+          onRequestClose={props.onRequestClose}
+        >
+          {props.children}
+        </DrawerMenu>
+        <Spinner loading={state.loading || props.loading} />
+      </>
     )
   }
 }
@@ -81,7 +79,7 @@ const mapStateToProps = (state) => {
 };
 
 const mapDispatchToProps = dispatch => (
-  bindActionCreators({ alterUser }, dispatch)
+  bindActionCreators({ signIn, signOut }, dispatch)
 );
 
 export default connect(mapStateToProps, mapDispatchToProps)(RecipeDrawerMenu);

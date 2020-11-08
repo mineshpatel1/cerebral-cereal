@@ -16,7 +16,7 @@ export class CommonProvider extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      isConnected: false,
+      isConnected: true,  // Assume people have their internet turned on
       themeName: this.props.themeName,
       theme: Themes[this.props.themeName],
     }
