@@ -275,4 +275,40 @@ export class Utils {
   
     return matrix[b.length][a.length];
   };
+
+  /** Standard GET method for contacting the server. */
+  static genGet = serverUrl => {
+    return async (path) => {
+      const url = serverUrl + '/' + path;
+      return fetch(url, { method: 'GET', credentials: 'include' })
+        .then(res => res.json());
+    }
+  }
+
+  /** Standard POST method for contacting the server. */
+  static genPost = serverUrl => {
+    return async (path, data) => {
+      const url = serverUrl + '/' + path;
+      return fetch(url, {
+        method: 'POST',
+        credentials: 'include',
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      }).then(res => res.json())
+    }
+  }
+
+  /** Standard DELETE method for contacting the server. */
+  static genDelete = serverUrl => {
+    return async (path) => {
+      const url = serverUrl + '/' + path;
+      return fetch(url, {
+        method: 'DELETE',
+        credentials: 'include',
+      }).then(res => res.json());
+    }
+  }
 }
