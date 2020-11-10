@@ -492,3 +492,65 @@ public class MainActivity extends ReactActivity {
     android:orientation="vertical">
 </LinearLayout>
 ```
+
+
+## Google Sign In
+
+[Guide](https://github.com/react-native-google-signin/google-signin)
+
+* Install [`@react-native-community/google-signin`](https://github.com/react-native-google-signin/google-signin):
+* `npm install @react-native-community/google-signin --save`
+* Add pod `pod 'GoogleSignIn', '~> 5.0.2'` to your Podfile. [Guide](https://github.com/react-native-google-signin/google-signin/blob/master/docs/how-cocoapods.md).
+* `cd ios && pod install`
+
+### iOS
+
+* Create Google OAuth client ID [here](https://developers.google.com/identity/sign-in/ios/start-integrating#get_an_oauth_client_id).
+* Add the URL scheme to your project. Copy `REVERSED_CLIENT_ID` from the downloaded credentials to **XCode > Info > URL Types**.
+
+### Android
+
+* Configure your Google sign-in project [here](https://developers.google.com/identity/sign-in/android/start?authuser=1).
+* Copy the client id and paste it in `android/app/src/main/res/values/strings.xml` with `<string name=”server_client_id”>YOUR_SERVER_CLIENT_ID</string>`
+* Update `android/build.gradle` with:
+
+```groovy
+buildscript {
+    ext {
+        buildToolsVersion = "27.0.3"
+        minSdkVersion = 16
+        compileSdkVersion = 27
+        targetSdkVersion = 26
+        supportLibVersion = "27.1.1"
+        googlePlayServicesAuthVersion = "16.0.1" // <--- use this version or newer
+    }
+...
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.1.2' // <--- use this version or newer
+        classpath 'com.google.gms:google-services:4.1.0' // <--- use this version or newer
+    }
+...
+allprojects {
+    repositories {
+        mavenLocal()
+        google() // <--- make sure this is included
+        jcenter()
+        ...
+    }
+}
+```
+
+* Update `android/app/build.gradle` with the following:
+
+```
+...
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation "com.android.support:appcompat-v7:23.0.1"
+    implementation "com.facebook.react:react-native:+"
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.0.0' // <-- add this; newer versions should work too
+}
+
+apply plugin: 'com.google.gms.google-services' // <--- this should be the last line
+```
+
