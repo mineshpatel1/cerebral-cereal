@@ -27,21 +27,16 @@ createAllPools = () => {
   return pools;
 }
 
-exports.pool = createAllPools();
+exports.pools = createAllPools();
 
 exports.query = (sql, db=exports.DEFAULT_DB, params=null) => {
   return new Promise((resolve, reject) => {
-    exports.pool[db].connect()
-    .then(client => {
-      client.query(sql, params)
-        .then(result => {
-          client.release();
-          return resolve(result.rows);
-        })
-        .catch(err => {
-          client.release();
-          return reject(err);
-        })
-    });
+    exports.pools[db].connect()
+      .then(client => {
+        client.query(sql, params)
+          .then(result => resolve(result.rows))
+          .catch(err => reject(err))
+          .finally(() => client.release());
+      });
   });
 }

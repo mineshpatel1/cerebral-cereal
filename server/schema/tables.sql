@@ -12,8 +12,7 @@ CREATE INDEX "IDX_session_expire" ON "session" ("expire");
 CREATE TABLE IF NOT EXISTS users (
     id              SERIAL PRIMARY KEY,
     email           VARCHAR NOT NULL UNIQUE,
-    name            VARCHAR NOT NULL UNIQUE,
-    fingerprint_key VARCHAR,
+    name            VARCHAR,
     created_time    BIGINT
 );
 CREATE INDEX users_id_idx ON users (id);

@@ -9,7 +9,6 @@ const express = require('express');
 const bodyParser = require('body-parser');
 
 const { log } = require(__dirname + '/utils/utils');
-const { query } = require(__dirname + '/utils/pg');
 
 // Serve Challenge for Let's Encrypt over HTTP only
 const httpApp = express();
@@ -41,23 +40,8 @@ if (global.secure) {
   app.use(require(__dirname + '/routes/session'));
 
   app.get('/', (req, res) => {
-    res.send('Hello World');
-  });
-
-  app.get('/login', (req, res) => {
-    req.session.userId = 1;
-    return res.send('Login');
-  });
-
-  app.get('/logout', (req, res, next) => {
-    req.session.destroy(err => {
-      if (err) return next(err);
-      return res.send('Logged Out');
-    });
-  });
-
-  app.get('/session', (req, res) => {
-    res.send(req.session);
+    console.log(req.session);
+    res.send({message: 'Hello World'});
   });
 
   // Error handler

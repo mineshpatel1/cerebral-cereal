@@ -16,7 +16,11 @@ Setting up the server using an AWS Amazon Linux instance.
         "user": "postgres",
         "password": "postgres_password"
     },
-    "session_secret": "session_secret"
+    "google": {
+        "web_client_id": "google_web_client_id"
+    },
+    "session_secret": "session_secret",
+    "allowed": []
 }
 ```
 
