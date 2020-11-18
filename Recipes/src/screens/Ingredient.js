@@ -1,14 +1,15 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import { Image, View } from 'react-native'
 
 import { Component, Container, Layout, Text } from 'cerebral-cereal-common';
-import { ingredients, ingredientCategories, locations, units } from '../data';
+import { ingredientCategories, locations, units } from '../data';
 
-export default class Home extends Component {
+class Ingredient extends Component {
   constructor(props) {
     super(props);
 
-    this.ingredient = ingredients.filter(i => i.id == this.props.route.params.ingredient)[0];
+    this.ingredient = props.ingredients.filter(i => i.id == this.props.route.params.ingredient)[0];
     this.category = ingredientCategories.filter(c => c.id == this.ingredient.category_id)[0];
     this.unit = units.filter(u => u.id == this.ingredient.unit_id)[0];
 
@@ -69,3 +70,10 @@ export default class Home extends Component {
   }
 }
 
+const mapStateToProps = (state) => {
+  return {
+    ingredients: state.ingredients,
+  }
+};
+
+export default connect(mapStateToProps)(Ingredient);

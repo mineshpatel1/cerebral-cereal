@@ -1,4 +1,5 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import { Dimensions, View } from 'react-native';
 import Slider from '@react-native-community/slider';
 
@@ -16,12 +17,12 @@ import { timeRegex } from '../config';
 
 const maxWidth = Dimensions.get('window').width;
 
-export default class Recipe extends Component {
+class Recipe extends Component {
   constructor(props) {
     super(props);
 
     this.notif = new NotifService();
-    this.recipe = recipes.filter(r => r.id == props.route.params.recipe)[0];
+    this.recipe = props.recipes.filter(r => r.id == props.route.params.recipe)[0];
     this.timers = this.getTimers(this.recipe.method);
     this.timerArray = [];
     this.timerRefs = {};
@@ -298,3 +299,10 @@ export default class Recipe extends Component {
   }
 }
 
+const mapStateToProps = (state) => {
+  return {
+    recipes: state.recipes,
+  }
+};
+
+export default connect(mapStateToProps)(Recipe);

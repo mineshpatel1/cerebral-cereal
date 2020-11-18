@@ -1,24 +1,48 @@
 import React from 'react';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
 import { FlatList, View } from 'react-native';
 
 import {
-  Component, RefreshControl, SelectableItem, TextInput, Layout,
+  Component, RefreshControl, SelectableItem, TextInput, Toast, Layout,
 } from 'cerebral-cereal-common';
 
-export default class SearchList extends Component {
+import Api from '../api';
+import { setRecipes } from '../actions/RecipeActions';
+import { setIngredients } from '../actions/IngredientActions';
+
+class SearchList extends Component {
   static defaultProps = {
     items: null,
     onSelect: null,
     nameKey: 'name',
     maxToRenderPerBatch: 50,
     scrollEventThrottle: 100,
+    refreshControl: null,
   }
 
   constructor(props) {
     super(props);
     this.state = {
       search: null,
+      refreshing: false,
     }
+  }
+
+  toggleLoading = () => this.setState({ refreshing: !this.state.refreshing });
+
+  onRefresh = () => {
+    this.toggleLoading();
+    Api.getRecipes()
+      .then(results => {
+        this.props.setRecipes(results.recipes);
+        this.props.setIngredients(results.ingredients);
+      })
+      .catch(err => {
+        console.error(err);
+        this.toast.show(err.toString(), 'error');
+      })
+      .finally(this.toggleLoading);
   }
 
   renderItem = ({ item }) => {
@@ -71,13 +95,29 @@ export default class SearchList extends Component {
           keyExtractor={item => item.id.toString()}
           maxToRenderPerBatch={props.maxToRenderPerBatch}
           scrollEventThrottle={props.scrollEventThrottle}
+          refreshControl={
+            <RefreshControl onRefresh={this.onRefresh} refreshing={state.refreshing} />
+          }
           style={{marginBottom: 58}}  // Required to avoid chopping off the last item
           getItemLayout={(_data, index) => {
             return {length: _data.length, offset: 60 * index, index};
           }}
         />
+        <Toast ref={x => this.toast = x} />
       </View>
     )
   }
 }
 
+const mapStateToProps = (state) => {
+  return {
+    recipes: state.recipes,
+    ingredients: state.ingredients,
+  }
+};
+
+const mapDispatchToProps = dispatch => (
+  bindActionCreators({ setRecipes, setIngredients }, dispatch)
+);
+
+export default connect(mapStateToProps, mapDispatchToProps)(SearchList);

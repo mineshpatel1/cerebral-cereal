@@ -10,3 +10,9 @@ export const ALTER_USER = 'ALTER_USER';
 export const CHECK_USER = 'CHECK_USER';
 export const SIGN_IN = 'SIGN_IN';
 export const SIGN_OUT = 'SIGN_OUT';
+
+export const INIT_RECIPES = 'INIT_RECIPES';
+export const SET_RECIPES = 'SET_RECIPES';
+
+export const INIT_INGREDIENTS = 'INIT_INGREDIENTS';
+export const SET_INGREDIENTS = 'SET_INGREDIENTS';

@@ -1,11 +1,12 @@
 import React from 'react';
-
-import { Component, ScreenContainer, SelectableItem, Layout } from 'cerebral-cereal-common';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import { Component, ScreenContainer, Layout } from 'cerebral-cereal-common';
 
 import SearchList from '../../components/SearchList';
 import { ingredients } from '../../data';
 
-export default class IngredientsMenu extends Component {
+class IngredientsMenu extends Component {
   static defaultProps = {
     navigation: null,
   }
@@ -28,6 +29,7 @@ export default class IngredientsMenu extends Component {
   }
 
   render() {
+    const { props } = this;
     const { Colours } = this.getTheme();
     return (
       <ScreenContainer style={[
@@ -39,7 +41,7 @@ export default class IngredientsMenu extends Component {
         },
       ]}>
         <SearchList
-          items={ingredients}
+          items={props.ingredients}
           onSelect={this.onSelect}
         />
       </ScreenContainer>
@@ -47,3 +49,15 @@ export default class IngredientsMenu extends Component {
   }
 }
 
+const mapStateToProps = (state) => {
+  return {
+    recipes: state.recipes,
+    ingredients: state.ingredients,
+  }
+};
+
+const mapDispatchToProps = dispatch => (
+  bindActionCreators({}, dispatch)
+);
+
+export default connect(mapStateToProps, mapDispatchToProps)(IngredientsMenu);

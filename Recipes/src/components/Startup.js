@@ -10,6 +10,8 @@ import { Component, Text, Layout, Utils} from 'cerebral-cereal-common';
 import { initSettings } from 'cerebral-cereal-common/actions';
 import { defaultSettings } from '../config';
 import { checkUser } from '../actions/UserActions';
+import { initRecipes } from '../actions/RecipeActions';
+import { initIngredients } from '../actions/IngredientActions';
 const googleCreds = require('../../private/google-services.json');
 
 class Startup extends Component {
@@ -24,13 +26,19 @@ class Startup extends Component {
 
   loadSettings = () => {
     return new Promise((resolve, reject) => {
-      AsyncStorage.multiGet(['settings'])
+      AsyncStorage.multiGet(['settings', 'recipes', 'ingredients'])
         .then(result => {
           const settings = JSON.parse(result[0][1]);  // Settings Value
           const colourTheme = settings ? settings.colourTheme : null;
           const theme = Utils.appearanceMode(colourTheme);
           this.props.initSettings(settings, defaultSettings);
           this.context.changeTheme(theme, resolve);
+
+          const recipes = JSON.parse(result[1][1]);  // Recipes Value
+          this.props.initRecipes(recipes);
+
+          const ingredients = JSON.parse(result[2][1]);  // Ingredients Value
+          this.props.initIngredients(ingredients);
         })
         .catch(reject);
     });
@@ -80,7 +88,7 @@ const mapStateToProps = (state) => {
 };
 
 const mapDispatchToProps = dispatch => (
-  bindActionCreators({ initSettings, checkUser }, dispatch)
+  bindActionCreators({ initSettings, initRecipes, initIngredients, checkUser }, dispatch)
 );
 
 export default connect(mapStateToProps, mapDispatchToProps)(Startup);

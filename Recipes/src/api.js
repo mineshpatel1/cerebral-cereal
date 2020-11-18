@@ -10,6 +10,8 @@ class Api {
   static signIn = async idToken => { return post('login', {idToken}) }
   static signOut = async () => { return get('logout') }
   static checkUser = async () => { return get('session') }
+
+  static getRecipes = async () => { return get('recipes') }
 }
 
 export default Api;

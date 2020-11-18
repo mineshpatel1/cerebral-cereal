@@ -1,4 +1,5 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import { ScrollView, View } from 'react-native';
 
 import {
@@ -7,9 +8,9 @@ import {
 } from 'cerebral-cereal-common';
 
 
-import { ingredients, units } from '../../data';
+import { units } from '../../data';
 
-export default class IngredientsTab extends Component {
+class IngredientsTab extends Component {
   static defaultProps = {
     ingredients: [],
     servingSize: 4,
@@ -19,7 +20,7 @@ export default class IngredientsTab extends Component {
   constructor(props) {
     super(props);
     props.ingredients.forEach(_i => {
-      _i.ingredient = ingredients.filter(i => _i.ingredient_id == i.id)[0];
+      _i.ingredient = props.baseIngredients.filter(i => _i.ingredient_id == i.id)[0];
     });
   }
 
@@ -54,3 +55,10 @@ export default class IngredientsTab extends Component {
   }
 }
 
+const mapStateToProps = (state) => {
+  return {
+    baseIngredients: state.ingredients,
+  }
+};
+
+export default connect(mapStateToProps)(IngredientsTab);

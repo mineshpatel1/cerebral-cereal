@@ -12,7 +12,6 @@ import RecipesMenu from './menus/RecipesMenu';
 import IngredientsMenu from './menus/IngredientsMenu';
 import ShoppingListMenu from './menus/ShoppingListMenu';
 import { signIn } from '../actions/UserActions';
-import Api from '../api';
 
 const maxWidth = Dimensions.get('window').width;
 
