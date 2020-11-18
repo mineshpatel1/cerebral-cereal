@@ -38,6 +38,7 @@ if (global.secure) {
   const app = express();
   app.use(bodyParser.json());
   app.use(require(__dirname + '/routes/session'));
+  app.use(require(__dirname + '/routes/recipes'));
 
   app.get('/', (req, res) => {
     console.log(req.session);

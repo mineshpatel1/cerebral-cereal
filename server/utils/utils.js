@@ -1,5 +1,7 @@
 const colours = require('colors/safe');
 
+const AUTH_ERROR = 'Not logged in.';
+
 const _typeOf = value => {
   var s = typeof value;
   if (s === 'object') {
