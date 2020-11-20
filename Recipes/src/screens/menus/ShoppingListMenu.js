@@ -62,7 +62,7 @@ class ShoppingListMenu extends Component {
     this.setState({ editItem });
   }
 
-  closeModal = () => this.setState({editItem: null});
+  closeModal = () => this.setState({editItem: null, editIndex: -1});
 
   getItemList = () => {
     const { Colours } = this.getTheme();
@@ -114,7 +114,7 @@ class ShoppingListMenu extends Component {
               selectedTextProps={{strikethrough: true}}
             />
             <View style={Layout.row}>
-              <PlainButton icon="pen" size={40} onPress={() => this.setState({editItem: item})} />
+              <PlainButton icon="pen" size={40} onPress={() => this.setState({editItem: item, editIndex: item.index})} />
               <PlainButton icon="times" size={40} onPress={() => props.removeItem(item.index)} />
             </View>
           </View>
@@ -152,6 +152,7 @@ class ShoppingListMenu extends Component {
           visible={state.editItem !== null}
           onRequestClose={this.closeModal}
           item={state.editItem}
+          itemIndex={state.editIndex}
           onChange={this.onEditItem}
         />
         <View style={[Layout.f1]}>

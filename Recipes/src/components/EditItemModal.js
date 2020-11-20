@@ -1,4 +1,6 @@
 import React from 'react';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
 import { View } from 'react-native';
 
 import {
@@ -6,11 +8,13 @@ import {
     Layout, Validators,
 } from 'cerebral-cereal-common';
 
+import { updateItem } from '../actions/ShoppingListActions';
 import { locations } from '../data';
 
-export default class IngredientTypeahead extends Component {
+class EditItemModal extends Component {
   static defaultProps = {
     item: null,
+    itemIndex: -1,
     onChange: null,
     onRequestClose: null,
     visible: false,
@@ -105,6 +109,7 @@ export default class IngredientTypeahead extends Component {
                 style={[Layout.f1, Layout.mr2]}
                 onPress={() => {
                   props.onChange(state.item);
+                  props.updateItem(props.itemIndex, state.item);
                   props.onRequestClose();
                 }}
               />
@@ -121,3 +126,15 @@ export default class IngredientTypeahead extends Component {
     )
   }
 }
+
+const mapStateToProps = (state) => {
+  return {
+    shoppingList: state.shoppingList,
+  }
+};
+
+const mapDispatchToProps = dispatch => (
+  bindActionCreators({ updateItem }, dispatch)
+);
+
+export default connect(mapStateToProps, mapDispatchToProps)(EditItemModal);

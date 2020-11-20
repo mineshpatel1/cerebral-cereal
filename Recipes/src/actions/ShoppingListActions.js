@@ -1,4 +1,6 @@
-import { ADD_ITEM, ADD_ITEMS, INIT_SHOPPING_LIST, REMOVE_ITEM, TOGGLE_ITEM } from './types';
+import {
+  ADD_ITEM, ADD_ITEMS, INIT_SHOPPING_LIST, REMOVE_ITEM, TOGGLE_ITEM, UPDATE_ITEM,
+} from './types';
 
 export const initShoppingList = shoppingList => ({
   type: INIT_SHOPPING_LIST,
@@ -25,5 +27,11 @@ export const removeItem = index => ({
 export const toggleItem = index => ({
   type: TOGGLE_ITEM,
   index,
+});
+
+export const updateItem = (index, item) => ({
+  type: UPDATE_ITEM,
+  index,
+  item,
 });
 

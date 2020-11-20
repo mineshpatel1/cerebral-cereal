@@ -1,8 +1,11 @@
 import AsyncStorage from '@react-native-community/async-storage';
 import { Utils } from 'cerebral-cereal-common';
-import { ADD_ITEM, ADD_ITEMS, INIT_SHOPPING_LIST, REMOVE_ITEM, TOGGLE_ITEM } from '../actions/types';
+import {
+  ADD_ITEM, ADD_ITEMS, INIT_SHOPPING_LIST, REMOVE_ITEM, TOGGLE_ITEM, UPDATE_ITEM
+} from '../actions/types';
 
 const INITIAL_STATE = [];
+const FIELDS = ['name', 'quantity', 'locationId'];
 
 const parseItem = (name, quantity, ingredient_id) => {
   let newItem = {
@@ -69,6 +72,14 @@ const ShoppingListReducer = (state = INITIAL_STATE, action) => {
 
     case TOGGLE_ITEM:
       _shoppingList[action.index].checked = !_shoppingList[action.index].checked;
+      save(_shoppingList);
+      return _shoppingList;
+
+    case UPDATE_ITEM:
+      FIELDS.forEach(field => {
+        _shoppingList[action.index][field] = action.item[field];
+      });
+      
       save(_shoppingList);
       return _shoppingList;
 
