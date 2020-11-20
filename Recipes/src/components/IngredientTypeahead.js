@@ -1,4 +1,6 @@
 import React from 'react';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
 import { View } from 'react-native';
 
 import { Component, Pressable, Text, TextInput, Layout, Utils } from 'cerebral-cereal-common';
@@ -15,6 +17,7 @@ export default class IngredientTypeahead extends Component {
     rippleColour: null,
     placeholder: 'Ingredient',
     shoppingList: [],
+    ingredients: [],
     style: null,
   }
 
@@ -51,7 +54,7 @@ export default class IngredientTypeahead extends Component {
     const {name, quantity} = LocalUtils.parseQuantity(searchTerm);
 
     if (name && name.length >= 2) {
-      ingredients.forEach(ingredient => {
+      this.props.ingredients.forEach(ingredient => {
         const ingredientName = ingredient.name.toLowerCase();
         const search = name.toLowerCase()
         if (

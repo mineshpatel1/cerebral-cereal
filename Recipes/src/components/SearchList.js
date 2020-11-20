@@ -4,7 +4,7 @@ import { bindActionCreators } from 'redux';
 import { FlatList, View } from 'react-native';
 
 import {
-  Component, RefreshControl, SelectableItem, TextInput, Toast, Layout,
+  Component, RefreshControl, SelectableItem, TextInput, Layout,
 } from 'cerebral-cereal-common';
 
 import Api from '../api';
@@ -19,6 +19,7 @@ class SearchList extends Component {
     maxToRenderPerBatch: 50,
     scrollEventThrottle: 100,
     refreshControl: null,
+    showToast: null,
   }
 
   constructor(props) {
@@ -40,7 +41,7 @@ class SearchList extends Component {
       })
       .catch(err => {
         console.error(err);
-        this.toast.show(err.toString(), 'error');
+        this.props.showToast(err.toString(), 'error');
       })
       .finally(this.toggleLoading);
   }
@@ -103,7 +104,6 @@ class SearchList extends Component {
             return {length: _data.length, offset: 60 * index, index};
           }}
         />
-        <Toast ref={x => this.toast = x} />
       </View>
     )
   }

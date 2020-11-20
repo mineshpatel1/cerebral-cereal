@@ -4,11 +4,11 @@ import { bindActionCreators } from 'redux';
 import { Component, ScreenContainer, Layout } from 'cerebral-cereal-common';
 
 import SearchList from '../../components/SearchList';
-import { ingredients } from '../../data';
 
 class IngredientsMenu extends Component {
   static defaultProps = {
     navigation: null,
+    showToast: null,
   }
 
   constructor(props) {
@@ -43,6 +43,7 @@ class IngredientsMenu extends Component {
         <SearchList
           items={props.ingredients}
           onSelect={this.onSelect}
+          showToast={props.showToast}
         />
       </ScreenContainer>
     )

@@ -26,11 +26,12 @@ class Home extends Component {
   }
 
   toggleLoading = () => this.setState({ loading: !this.state.loading });
+  showToast = (message, mode) => this.container.showToast(message, mode)
 
   signIn = () => {
     this.toggleLoading();
     this.props.signIn()
-      .catch(err => this.container.showToast(err.toString(), 'error'))
+      .catch(err => this.showToast(err.toString(), 'error'))
       .finally(this.toggleLoading);
   }
 
@@ -39,13 +40,13 @@ class Home extends Component {
     const { state, props } = this;
     const screens = [
       {title: 'Recipes', icon: 'utensils', element: (
-        <RecipesMenu navigation={this.props.navigation} />
+        <RecipesMenu navigation={this.props.navigation} showToast={this.showToast} />
       )},
       {title: 'Shopping List', icon: 'shopping-cart', element: (
         <ShoppingListMenu navigation={this.props.navigation} />
       )},
       {title: 'Ingredients', icon: 'carrot', element: (
-        <IngredientsMenu navigation={this.props.navigation} />
+        <IngredientsMenu navigation={this.props.navigation} showToast={this.showToast} />
       )},
     ];
 
@@ -66,6 +67,8 @@ class Home extends Component {
           navigation={props.navigation}
           isOpen={state.showDrawer}
           onRequestClose={() => this.setState({showDrawer: false})}
+          toggleLoading={this.toggleLoading}
+          showToast={this.showToast}
         >
           <Header
             title={screens[this.state.index].title}

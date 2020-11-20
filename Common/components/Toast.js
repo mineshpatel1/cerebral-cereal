@@ -26,7 +26,7 @@ export class Toast extends Component {
     this.state = {
       message: null,
       colour: null,
-      position: new Animated.Value(this.getHeight()),
+      position: new Animated.Value(maxHeight),
       timeoutId: null,
     }
   }

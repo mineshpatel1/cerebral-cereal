@@ -9,7 +9,6 @@ import {
 } from 'cerebral-cereal-common';
 
 import { addItems } from '../actions/ShoppingListActions';
-import { ingredients } from '../data';
 import LocalUtils from '../utils';
 
 const maxWidth = Dimensions.get('window').width - StyleConstants.size4;
@@ -30,7 +29,7 @@ class IngredientChecklist extends Component {
     props.ingredients.forEach(_i => {
       this.ingredients.push(
         {
-          ingredient: ingredients.filter(i => _i.ingredient_id == i.id)[0],
+          ingredient: props.baseIngredients.filter(i => _i.ingredient_id == i.id)[0],
           quantity: _i.quantity,
           unit_id: _i.unit_id,
         }
@@ -185,6 +184,7 @@ class IngredientChecklist extends Component {
 const mapStateToProps = (state) => {
   return {
     shoppingList: state.shoppingList,
+    baseIngredients: state.ingredients,
   }
 };
 

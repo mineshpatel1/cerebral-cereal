@@ -5,29 +5,6 @@ const rawIngredientCategories = require('../assets/ingredientCategories.json');
 const rawRecipes = require('../assets/recipes.json');
 const rawLocations = require('../assets/locations.json');
 
-class Ingredient {
-  constructor(ingredient) {
-    const {
-      id, name, plural, unit_size, unit_id, category_id, api_id,
-      image_url, image_aspect_ratio, location_id,
-    } = ingredient;
-
-    this.id = id;
-    this.name = name;
-    this.plural = plural;
-    this.unit_size = unit_size;
-    this.unit_id = unit_id;
-    this.category_id = category_id;
-    this.api_id = api_id;
-    this.image_url = image_url;
-    this.image_aspect_ratio = image_aspect_ratio;
-    this.location_id = location_id;
-  }
-
-  formatPlural = quantity => this.plural && quantity !== 1 ? this.plural : this.name;
-  formatQuantity = quantity => quantity + ' x ' + this.formatPlural(quantity);
-}
-
 class Location {
   constructor(location) {
     const {
@@ -64,8 +41,8 @@ class Unit {
 // May want to instantiate these into JS class objects.
 export const units = rawUnits.units.map(u => new Unit(u));
 export const conversions = rawUnits.conversions;
-export const ingredients = rawIngredients.map(i => new Ingredient(i));
+// export const ingredients = rawIngredients.map(i => new Ingredient(i));
 export const ingredientCategories = rawIngredientCategories;
-export const recipes = rawRecipes;
+// export const recipes = rawRecipes;
 export const cuisines = rawCuisines;
 export const locations = rawLocations.map(l => new Location(l));

@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { signIn, signOut } from '../actions/UserActions';
 
-import { Component, DrawerMenu, Spinner, Toast } from 'cerebral-cereal-common';
+import { Component, DrawerMenu } from 'cerebral-cereal-common';
 
 class RecipeDrawerMenu extends Component {
   static defaultProps = {
@@ -11,30 +11,23 @@ class RecipeDrawerMenu extends Component {
     navigation: null,
     isOpen: false,
     loading: false,
+    toggleLoading: null,
   }
 
-  constructor(props) {
-    super(props);
-    this.state = {
-      loading: false,
-    }
-  }
-
-  toggleLoading = () => this.setState({ loading: !this.state.loading });
-  showError = err => this.toast.show(err.toString(), 'error');
+  showError = err => this.props.showToast(err.toString(), 'error');
 
   signIn = async () => {
-    this.toggleLoading();
+    this.props.toggleLoading();
     this.props.signIn()
       .catch(this.showError)
-      .finally(this.toggleLoading);
+      .finally(this.props.toggleLoading);
   }
 
   signOut = async () => {
-    this.toggleLoading();
+    this.props.toggleLoading();
     this.props.signOut()
       .catch(this.showError)
-      .finally(this.toggleLoading);
+      .finally(this.props.toggleLoading);
   }
 
   checkUser = () => {
@@ -42,7 +35,7 @@ class RecipeDrawerMenu extends Component {
   }
 
   render() {
-    const { props, state } = this;
+    const { props } = this;
     const isConnected = this.context.isConnected;
 
     const signIn = (
@@ -67,8 +60,6 @@ class RecipeDrawerMenu extends Component {
         >
           {props.children}
         </DrawerMenu>
-        <Toast ref={x => this.toast = x} />
-        <Spinner loading={state.loading || props.loading} />
       </>
     )
   }

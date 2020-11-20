@@ -1,8 +1,5 @@
-import AsyncStorage from '@react-native-community/async-storage';
-
 import { Utils } from 'cerebral-cereal-common';
 import { ADD_ITEM, ADD_ITEMS, REMOVE_ITEM, TOGGLE_ITEM } from '../actions/types';
-import { ingredients } from '../data';
 
 const INITIAL_STATE = [];
 
@@ -10,14 +7,9 @@ const parseItem = (name, quantity, ingredient_id) => {
   let newItem = {
     name: name,
     quantity: quantity,
+    ingredient_id: ingredient_id,
     checked: false,
   }
-
-  if (ingredient_id) {
-    let match = ingredients.filter(i => i.id == ingredient_id);
-    if (match.length > 0) newItem.ingredient = match[0];
-  }
-
   return newItem;
 }
 

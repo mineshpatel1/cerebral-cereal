@@ -17,7 +17,7 @@ export class Container extends Component {
     super(props);
   }
 
-  showToast = (message, mode) => this.toast.show(message, mode);
+  showToast = (message, mode='info') => this.toast.show(message, mode);
 
   render() {
     const { Colours } = this.getTheme();

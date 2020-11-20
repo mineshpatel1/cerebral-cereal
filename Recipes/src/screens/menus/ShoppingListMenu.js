@@ -38,7 +38,6 @@ class ShoppingListMenu extends Component {
   }
 
   addItem = (name, quantity=1, ingredientId) => {
-    const { state } = this;
     if (this.itemInList(name)) return;  // Don't add the same item twice
 
     // If a user enters a value that is identical to a matching ingredient
@@ -70,7 +69,15 @@ class ShoppingListMenu extends Component {
     const { props } = this;
 
     const sectionList = [];
-    const locationMap = LocalUtils.mapItemsToLocations(props.shoppingList, locations);
+
+    // Map Ingredient IDs to ingredient objects
+    const shoppingList = props.shoppingList.map(item => {
+      let match = props.ingredients.filter(i => i.id == item.ingredient_id);
+      if (match.length > 0) item.ingredient = match[0];
+      return item;
+    });
+
+    const locationMap = LocalUtils.mapItemsToLocations(shoppingList, locations);
     locationMap.forEach(lm => {
       let location = {id: -1, name: 'Unknown'};
       if (lm.locationId > -1) {
@@ -154,6 +161,7 @@ class ShoppingListMenu extends Component {
             overlayTop={50}
             style={[Layout.px2, Layout.mb2]}
             shoppingList={props.shoppingList}
+            ingredients={props.ingredients}
             ref={x => this.typeahead = x}
           />
           <ScrollView>
@@ -168,6 +176,7 @@ class ShoppingListMenu extends Component {
 const mapStateToProps = (state) => {
   return {
     shoppingList: state.shoppingList,
+    ingredients: state.ingredients,
   }
 };
 
