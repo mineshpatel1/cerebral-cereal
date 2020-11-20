@@ -18,7 +18,6 @@ class RecipesMenu extends Component {
     super(props);
     this.state = {
       search: null,
-      refreshing: false,
     }
   }
   

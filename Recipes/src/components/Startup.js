@@ -12,6 +12,7 @@ import { defaultSettings } from '../config';
 import { checkUser } from '../actions/UserActions';
 import { initRecipes } from '../actions/RecipeActions';
 import { initIngredients } from '../actions/IngredientActions';
+import { initShoppingList } from '../actions/ShoppingListActions';
 const googleCreds = require('../../private/google-services.json');
 
 class Startup extends Component {
@@ -26,7 +27,7 @@ class Startup extends Component {
 
   loadSettings = () => {
     return new Promise((resolve, reject) => {
-      AsyncStorage.multiGet(['settings', 'recipes', 'ingredients'])
+      AsyncStorage.multiGet(['settings', 'recipes', 'ingredients', 'shoppingList'])
         .then(result => {
           const settings = JSON.parse(result[0][1]);  // Settings Value
           const colourTheme = settings ? settings.colourTheme : null;
@@ -39,6 +40,9 @@ class Startup extends Component {
 
           const ingredients = JSON.parse(result[2][1]);  // Ingredients Value
           this.props.initIngredients(ingredients);
+
+          const shoppingList = JSON.parse(result[3][1]);  // Shopping List Value
+          this.props.initShoppingList(shoppingList);
         })
         .catch(reject);
     });
@@ -65,6 +69,9 @@ class Startup extends Component {
     Promise.all([waitSettings, waitUser])
       .then(() => {
         this.setState({init: true}, () => SplashScreen.hide());
+      })
+      .catch(err => {
+        console.error(err);
       });
   }
 
@@ -88,7 +95,7 @@ const mapStateToProps = (state) => {
 };
 
 const mapDispatchToProps = dispatch => (
-  bindActionCreators({ initSettings, initRecipes, initIngredients, checkUser }, dispatch)
+  bindActionCreators({ initSettings, initRecipes, initIngredients, initShoppingList, checkUser }, dispatch)
 );
 
 export default connect(mapStateToProps, mapDispatchToProps)(Startup);
