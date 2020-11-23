@@ -1,17 +1,11 @@
 import {
-  ADD_ITEM, ADD_ITEMS, INIT_SHOPPING_LIST, REMOVE_ITEM, TOGGLE_ITEM, UPDATE_ITEM,
+  ADD_ITEMS, INIT_SHOPPING_LIST, REMOVE_ITEM, TOGGLE_ITEM, UPDATE_ITEM,
 } from './types';
+
 
 export const initShoppingList = shoppingList => ({
   type: INIT_SHOPPING_LIST,
   shoppingList,
-});
-
-export const addItem = (name, quantity=1, ingredient_id=null) => ({
-  type: ADD_ITEM,
-  name,
-  quantity,
-  ingredient_id,
 });
 
 export const addItems = items => ({

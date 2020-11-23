@@ -7,10 +7,14 @@ import {
   Button, Component, Container, Header, HorizontalMenu, Text,
   Layout,
 } from 'cerebral-cereal-common';
+
+import Api from '../api';
 import RecipeDrawerMenu from '../components/RecipeDrawerMenu';
 import RecipesMenu from './menus/RecipesMenu';
 import IngredientsMenu from './menus/IngredientsMenu';
 import ShoppingListMenu from './menus/ShoppingListMenu';
+import { setRecipes } from '../actions/RecipeActions';
+import { setIngredients } from '../actions/IngredientActions';
 import { signIn } from '../actions/UserActions';
 
 const maxWidth = Dimensions.get('window').width;
@@ -25,14 +29,33 @@ class Home extends Component {
     }
   }
 
-  toggleLoading = () => this.setState({ loading: !this.state.loading });
-  showToast = (message, mode) => this.container.showToast(message, mode)
+  toggleLoading = callback => this.setState({ loading: !this.state.loading }, callback);
+  showToast = (message, mode) => this.container.showToast(message, mode);
+
+  fetchData = () => {
+    this.toggleLoading();
+    Api.getRecipes()
+      .then(results => {
+        this.props.setRecipes(results.recipes);
+        this.props.setIngredients(results.ingredients);
+        console.log('shoppingList', results.shoppingList);
+      })
+      .catch(err => {
+        console.error(err);
+        this.showToast(err.toString(), 'error');
+      })
+      .finally(this.toggleLoading);
+  }
 
   signIn = () => {
     this.toggleLoading();
     this.props.signIn()
       .catch(err => this.showToast(err.toString(), 'error'))
       .finally(this.toggleLoading);
+  }
+
+  componentDidMount = () => {
+    this.fetchData();
   }
 
   render() {
@@ -107,7 +130,7 @@ const mapStateToProps = (state) => {
 };
 
 const mapDispatchToProps = dispatch => (
-  bindActionCreators({ signIn }, dispatch)
+  bindActionCreators({ signIn, setRecipes, setIngredients }, dispatch)
 );
 
 export default connect(mapStateToProps, mapDispatchToProps)(Home);
