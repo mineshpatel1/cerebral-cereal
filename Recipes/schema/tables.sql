@@ -27,3 +27,13 @@ CREATE TABLE IF NOT EXISTS recipes (
     ingredients         JSON
 );
 CREATE INDEX recipes_id_idx ON recipes (id);
+
+CREATE TABLE IF NOT EXISTS shopping_list (
+    id                  SERIAL PRIMARY KEY,
+    name                VARCHAR,
+    quantity            INTEGER,
+    ingredient_id       INTEGER,
+    location_id         INTEGER,
+    checked             BOOLEAN DEFAULT false
+);
+CREATE INDEX shopping_list_id_idx ON shopping_list (id);

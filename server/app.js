@@ -39,6 +39,7 @@ if (global.secure) {
   app.use(bodyParser.json());
   app.use(require(__dirname + '/routes/session'));
   app.use(require(__dirname + '/routes/recipes'));
+  app.use(require(__dirname + '/routes/shoppingList'));
 
   app.get('/', (req, res) => {
     console.log(req.session);
