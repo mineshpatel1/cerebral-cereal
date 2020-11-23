@@ -4,11 +4,11 @@ import { bindActionCreators } from 'redux';
 import { ScrollView, View } from 'react-native';
 
 import {
-  ChecklistItem, Collapsible, Component, PlainButton,
+  ChecklistItem, Collapsible, Component, PlainButton, RefreshControl,
   ScreenContainer, Layout,
 } from 'cerebral-cereal-common';
 
-import { addItem, removeItem, toggleItem } from '../../actions/ShoppingListActions';
+import { addItems, removeItem, toggleItem } from '../../actions/ShoppingListActions';
 import { locations } from '../../data';
 import LocalUtils from '../../utils';
 import IngredientTypeahead from '../../components/IngredientTypeahead';
@@ -17,6 +17,7 @@ import EditItemModal from '../../components/EditItemModal';
 class ShoppingListMenu extends Component {
   static defaultProps = {
     navigation: null,
+    showToast: null,
   }
 
   constructor(props) {
@@ -29,6 +30,7 @@ class ShoppingListMenu extends Component {
       testQuantity: 1,
       editModal: false,
       editItem: null,
+      refreshing: false,
     }
   }
 
@@ -37,21 +39,29 @@ class ShoppingListMenu extends Component {
     return items.indexOf(name.toLowerCase()) > -1
   }
 
-  addItem = (name, quantity=1, ingredientId) => {
+  addItem = (name, quantity=1, ingredient_id) => {
     if (this.itemInList(name)) return;  // Don't add the same item twice
 
     // If a user enters a value that is identical to a matching ingredient
     // assume that they mean the ingredient (ignoring case)
-    if (!ingredientId && this.typeahead.state.shortlist.length > 0) {
+    if (!ingredient_id && this.typeahead.state.shortlist.length > 0) {
       const shortlistItem = this.typeahead.state.shortlist[0];
       if (shortlistItem.name.toLowerCase() == name.toLowerCase()) {
-        ingredientId = shortlistItem.ingredientId;
+        ingredient_id = shortlistItem.ingredientId;
         name = shortlistItem.name;
       }
     }
 
-    this.props.addItem(name, quantity, ingredientId);
+    this.props.addItems([{name, quantity, ingredient_id}])
+      .catch(err => {
+        console.error(err);
+        this.props.showToast(err.toString(), 'error');
+      });
     this.typeahead.clearSearch();
+  }
+
+  onRefresh = () => {
+    console.log('ShoppingList onRefresh');
   }
 
   onEditItem = item => {
@@ -165,7 +175,9 @@ class ShoppingListMenu extends Component {
             ingredients={props.ingredients}
             ref={x => this.typeahead = x}
           />
-          <ScrollView>
+          <ScrollView
+            refreshControl={<RefreshControl onRefresh={this.onRefresh} refreshing={state.refreshing} />}
+          >
             {this.getItemList()}
           </ScrollView>
         </View>
@@ -182,7 +194,7 @@ const mapStateToProps = (state) => {
 };
 
 const mapDispatchToProps = dispatch => (
-  bindActionCreators({ addItem, removeItem, toggleItem }, dispatch)
+  bindActionCreators({ addItems, removeItem, toggleItem }, dispatch)
 );
 
 export default connect(mapStateToProps, mapDispatchToProps)(ShoppingListMenu);

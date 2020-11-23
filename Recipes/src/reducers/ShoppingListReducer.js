@@ -1,25 +1,14 @@
 import AsyncStorage from '@react-native-community/async-storage';
 import { Utils } from 'cerebral-cereal-common';
 import {
-  ADD_ITEM, ADD_ITEMS, INIT_SHOPPING_LIST, REMOVE_ITEM, TOGGLE_ITEM, UPDATE_ITEM
+  ADD_ITEMS, INIT_SHOPPING_LIST, REMOVE_ITEM, TOGGLE_ITEM, UPDATE_ITEM,
 } from '../actions/types';
 
 const INITIAL_STATE = [];
 const FIELDS = ['name', 'quantity', 'locationId'];
 
-const parseItem = (name, quantity, ingredient_id) => {
-  let newItem = {
-    name: name,
-    quantity: quantity,
-    ingredient_id: ingredient_id,
-    location_id: null,
-    checked: false,
-  }
-  return newItem;
-}
-
 const updateList = (list, item) => {
-  updateItem = (oldItem, newItem) => {
+  const updateItem = (oldItem, newItem) => {
     oldItem.quantity += newItem.quantity;
     oldItem.checked = false;
   }
@@ -51,17 +40,8 @@ const ShoppingListReducer = (state = INITIAL_STATE, action) => {
     case INIT_SHOPPING_LIST:
       return action.shoppingList || [];
 
-    case ADD_ITEM:
-      const newItem = parseItem(action.name, action.quantity, action.ingredient_id);
-      updateList(_shoppingList, newItem);
-      save(_shoppingList);
-      return _shoppingList;
-
     case ADD_ITEMS:
-      action.items.forEach(item => {
-        const newItem = parseItem(item.name, item.quantity, item.ingredient_id);
-        updateList(_shoppingList, newItem);
-      });
+      action.items.forEach(item => updateList(_shoppingList, item));
       save(_shoppingList);
       return _shoppingList;
 
