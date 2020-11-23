@@ -38,7 +38,6 @@ class Home extends Component {
       .then(results => {
         this.props.setRecipes(results.recipes);
         this.props.setIngredients(results.ingredients);
-        console.log('shoppingList', results.shoppingList);
       })
       .catch(err => {
         console.error(err);
@@ -66,7 +65,7 @@ class Home extends Component {
         <RecipesMenu navigation={this.props.navigation} showToast={this.showToast} />
       )},
       {title: 'Shopping List', icon: 'shopping-cart', element: (
-        <ShoppingListMenu navigation={this.props.navigation} />
+        <ShoppingListMenu navigation={this.props.navigation} showToast={this.showToast} />
       )},
       {title: 'Ingredients', icon: 'carrot', element: (
         <IngredientsMenu navigation={this.props.navigation} showToast={this.showToast} />

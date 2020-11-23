@@ -38,7 +38,6 @@ class SearchList extends Component {
       .then(results => {
         this.props.setRecipes(results.recipes);
         this.props.setIngredients(results.ingredients);
-        console.log('shoppingList', results.shoppingList);
       })
       .catch(err => {
         console.error(err);

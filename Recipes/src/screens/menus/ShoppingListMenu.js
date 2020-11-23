@@ -17,6 +17,7 @@ import EditItemModal from '../../components/EditItemModal';
 class ShoppingListMenu extends Component {
   static defaultProps = {
     navigation: null,
+    showToast: null,
   }
 
   constructor(props) {
@@ -51,7 +52,11 @@ class ShoppingListMenu extends Component {
       }
     }
 
-    this.props.addItems([{name, quantity, ingredient_id}]);
+    this.props.addItems([{name, quantity, ingredient_id}])
+      .catch(err => {
+        console.error(err);
+        this.props.showToast(err.toString(), 'error');
+      });
     this.typeahead.clearSearch();
   }
 
