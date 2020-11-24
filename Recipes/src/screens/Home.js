@@ -15,6 +15,7 @@ import IngredientsMenu from './menus/IngredientsMenu';
 import ShoppingListMenu from './menus/ShoppingListMenu';
 import { setRecipes } from '../actions/RecipeActions';
 import { setIngredients } from '../actions/IngredientActions';
+import { setShoppingList } from '../actions/ShoppingListActions';
 import { signIn } from '../actions/UserActions';
 
 const maxWidth = Dimensions.get('window').width;
@@ -38,6 +39,7 @@ class Home extends Component {
       .then(results => {
         this.props.setRecipes(results.recipes);
         this.props.setIngredients(results.ingredients);
+        this.props.setShoppingList(results.shoppingList);
       })
       .catch(err => {
         console.error(err);
@@ -129,7 +131,7 @@ const mapStateToProps = (state) => {
 };
 
 const mapDispatchToProps = dispatch => (
-  bindActionCreators({ signIn, setRecipes, setIngredients }, dispatch)
+  bindActionCreators({ signIn, setRecipes, setIngredients, setShoppingList }, dispatch)
 );
 
 export default connect(mapStateToProps, mapDispatchToProps)(Home);

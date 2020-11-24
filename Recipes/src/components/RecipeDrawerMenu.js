@@ -30,10 +30,6 @@ class RecipeDrawerMenu extends Component {
       .finally(this.props.toggleLoading);
   }
 
-  checkUser = () => {
-    console.log(this.props.user);
-  }
-
   render() {
     const { props } = this;
     const isConnected = this.context.isConnected;

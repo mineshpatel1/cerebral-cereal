@@ -1,7 +1,7 @@
 import AsyncStorage from '@react-native-community/async-storage';
 import { Utils } from 'cerebral-cereal-common';
 import {
-  ADD_ITEMS, INIT_SHOPPING_LIST, REMOVE_ITEM, TOGGLE_ITEM, UPDATE_ITEM,
+  ADD_ITEMS, INIT_SHOPPING_LIST, REMOVE_ITEM, SET_SHOPPING_LIST, TOGGLE_ITEM, UPDATE_ITEM,
 } from '../actions/types';
 
 const INITIAL_STATE = [];
@@ -40,6 +40,10 @@ const ShoppingListReducer = (state = INITIAL_STATE, action) => {
     case INIT_SHOPPING_LIST:
       return action.shoppingList || [];
 
+    case SET_SHOPPING_LIST:
+      save(action.shoppingList);
+      return action.shoppingList || [];
+
     case ADD_ITEMS:
       action.items.forEach(item => updateList(_shoppingList, item));
       save(_shoppingList);
@@ -51,7 +55,9 @@ const ShoppingListReducer = (state = INITIAL_STATE, action) => {
       return _shoppingList;
 
     case TOGGLE_ITEM:
-      _shoppingList[action.index].checked = !_shoppingList[action.index].checked;
+      _shoppingList.forEach(i => {
+        if (i.id == action.itemId) i.checked = action.checked;
+      });
       save(_shoppingList);
       return _shoppingList;
 

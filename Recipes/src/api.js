@@ -13,6 +13,7 @@ class Api {
 
   static getRecipes = async () => { return get('recipes') }
   static addItems = async items => { return post('shoppingList/addItems', {items}) };
+  static toggleItem = async (itemId, checked) => { return post('shoppingList/toggleItem', {itemId, checked} )};
 }
 
 export default Api;

@@ -53,10 +53,7 @@ class ShoppingListMenu extends Component {
     }
 
     this.props.addItems([{name, quantity, ingredient_id}])
-      .catch(err => {
-        console.error(err);
-        this.props.showToast(err.toString(), 'error');
-      });
+      .catch(err => this.props.showToast(err.toString(), 'error'));
     this.typeahead.clearSearch();
   }
 
@@ -113,7 +110,13 @@ class ShoppingListMenu extends Component {
             ]}
           >
             <ChecklistItem
-              onPress={() => props.toggleItem(item.index)}
+              onPress={() => {
+                this.props.toggleItem(item.id, !item.checked)
+                  .catch(err => {
+                    console.error(err);
+                    this.props.showToast(err.toString(), 'error');
+                  });
+              }}
               checked={item.checked}
               text={name}
               textColour={Colours.foreground}
