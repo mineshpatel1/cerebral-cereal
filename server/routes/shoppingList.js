@@ -13,4 +13,14 @@ router.post('/shoppingList/addItems', (req, res, next) => {
     .catch(next);
 });
 
+router.post('/shoppingList/toggleItem', (req, res, next) => {
+  if (!req.session.user) return next(new Error(AUTH_ERROR));
+  if (req.body.itemId == undefined) return next(new Error("Parameter: itemId is required."));
+  if (req.body.checked == undefined) return next(new Error("Parameter: checked is required."));
+
+  shoppingList.toggleItem(req.body.itemId, req.body.checked)
+    .then(() => res.send({}))
+    .catch(next);
+});
+
 module.exports = router;

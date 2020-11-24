@@ -36,3 +36,10 @@ exports.addItems = items => {
     RECIPE_DB,
   );
 }
+
+exports.toggleItem = (itemId, checked) => {
+  return pg.query(
+    'UPDATE shopping_list SET checked = $1::boolean WHERE id = $2::integer;',
+    RECIPE_DB, [checked, itemId],
+  );
+}
