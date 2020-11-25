@@ -128,7 +128,10 @@ class ShoppingListMenu extends Component {
             />
             <View style={Layout.row}>
               <PlainButton icon="pen" size={40} onPress={() => this.setState({editItem: item, editIndex: item.index})} />
-              <PlainButton icon="times" size={40} onPress={() => props.removeItem(item.index)} />
+              <PlainButton icon="times" size={40} onPress={() => {
+                props.removeItem(item.id)
+                  .catch(err => this.props.showToast(err.toString(), 'error'));
+              }} />
             </View>
           </View>
         );

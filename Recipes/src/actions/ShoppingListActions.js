@@ -37,19 +37,23 @@ export const addItems = _items => {
 
 export const toggleItem = (itemId, checked) => {
   return _toggleItem = async dispatch => {
-    try {
-      await Api.toggleItem(itemId, checked);
-    } catch (err) {
-      console.error(err);
-    }
+    await Api.toggleItem(itemId, checked);
     dispatch({ type: TOGGLE_ITEM, itemId, checked });
   }
 }
 
-export const removeItem = index => ({
-  type: REMOVE_ITEM,
-  index,
-});
+// export const updateItem = (itemId, item) => {
+//   return _updateItem = async dispatch => {
+//     await Api.
+//   }
+// }
+
+export const removeItem = itemId => {
+  return _removeItem = async dispatch => {
+    await Api.removeItem(itemId);
+    dispatch({ type: REMOVE_ITEM, itemId });
+  }
+}
 
 export const updateItem = (index, item) => ({
   type: UPDATE_ITEM,

@@ -50,7 +50,11 @@ const ShoppingListReducer = (state = INITIAL_STATE, action) => {
       return _shoppingList;
 
     case REMOVE_ITEM:
-      _shoppingList.splice(action.index, 1);
+      let index = -1;
+      _shoppingList.forEach((item, i) => {
+        if (item.id == action.itemId) index = i;
+      });
+      _shoppingList.splice(index, 1);
       save(_shoppingList);
       return _shoppingList;
 
