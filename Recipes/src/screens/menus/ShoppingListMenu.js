@@ -65,7 +65,7 @@ class ShoppingListMenu extends Component {
     let editItem = this.state.editItem;
     editItem.name = item.name;
     editItem.quantity = item.quantity.toString();
-    editItem.locationId = item.locationId;
+    editItem.location_id = item.location_id;
     this.setState({ editItem });
   }
 
@@ -85,11 +85,12 @@ class ShoppingListMenu extends Component {
     });
 
     const locationMap = LocalUtils.mapItemsToLocations(shoppingList, locations);
+    console.log(locationMap);
     locationMap.forEach(lm => {
       let location = {id: -1, name: 'Unknown'};
-      if (lm.locationId > -1) {
-        const _location = locations.filter(l => l.id == lm.locationId)[0];
-        location.id = lm.locationId;
+      if (lm.location_id > -1) {
+        const _location = locations.filter(l => l.id == lm.location_id)[0];
+        location.id = lm.location_id;
         location.name = _location.formatName();
       }
 
@@ -99,7 +100,7 @@ class ShoppingListMenu extends Component {
         if (item.ingredient && item.name == item.ingredient.name) {
           name = item.ingredient.formatQuantity(item.quantity);
         }
-        item.locationId = location.id;
+        item.location_id = location.id;
 
         itemList.push(
           <View

@@ -5,7 +5,7 @@ import {
 } from '../actions/types';
 
 const INITIAL_STATE = [];
-const FIELDS = ['name', 'quantity', 'locationId'];
+const FIELDS = ['name', 'quantity', 'location_id'];
 
 const updateList = (list, item) => {
   const updateItem = (oldItem, newItem) => {

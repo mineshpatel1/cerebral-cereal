@@ -1,8 +1,6 @@
 const rawUnits = require('../assets/units.json');
 const rawCuisines = require('../assets/cuisines.json');
-const rawIngredients = require('../assets/ingredients.json');
 const rawIngredientCategories = require('../assets/ingredientCategories.json');
-const rawRecipes = require('../assets/recipes.json');
 const rawLocations = require('../assets/locations.json');
 
 class Location {

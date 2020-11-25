@@ -36,13 +36,13 @@ class EditItemModal extends Component {
     return item ? {
       name: item.name,
       quantity: item.quantity,
-      locationId: item.locationId,
+      location_id: item.location_id,
     } : null;
   }
 
   onChange = (newItem, isValid=true) => {
     let item = this.state.item;
-    const fields = ['name', 'quantity', 'locationId'];
+    const fields = ['name', 'quantity', 'location_id'];
     fields.forEach(field => {
       if (newItem.hasOwnProperty(field)) {
         item[field] = newItem[field];
@@ -95,10 +95,10 @@ class EditItemModal extends Component {
             <PickerInput
               textLabel="Location"
               pickerLabel="Locations"
-              value={state.item ? state.item.locationId : null}
+              value={state.item ? state.item.location_id : null}
               pickerChoiceKeys={locations.map(l => l.id).concat([-1])}
               pickerChoiceValues={locations.map(l => l.formatName('')).concat('Unknown')}
-              onChange = {locationId => this.onChange({locationId})}
+              onChange = {location_id => this.onChange({location_id})}
             />
             
             <View style={[Layout.mt2, Layout.row]}>

@@ -11,11 +11,11 @@ class LocalUtils {
     let locationMap = {};
     items.forEach((item, i) => {
       item.index = i;
-      if (item.ingredient || item.locationId > -1) {
+      if (item.ingredient || item.location_id > -1) {
         const ingredient = item.ingredient;
-        if (item.locationId > -1) {
-          if(!locationMap[item.locationId]) locationMap[item.locationId] = [];
-          locationMap[item.locationId].push(item);
+        if (item.location_id > 0) {
+          if(!locationMap[item.location_id]) locationMap[item.location_id] = [];
+          locationMap[item.location_id].push(item);
         } else if (ingredient.location_id) {
           if(!locationMap[ingredient.location_id]) locationMap[ingredient.location_id] = [];
           locationMap[ingredient.location_id].push(item);
@@ -31,7 +31,7 @@ class LocalUtils {
     locations.forEach(loc => {
       if (locationMap.hasOwnProperty(loc.id.toString())) {
         locationArr.push({
-          locationId: loc.id,
+          location_id: loc.id,
           items: locationMap[loc.id.toString()],
         });
       }
@@ -40,7 +40,7 @@ class LocalUtils {
     // Unknown locations at the end
     if (locationMap[-1] && locationMap[-1].length > 0) {
       locationArr.push({
-        locationId: -1,
+        location_id: -1,
         items: locationMap[-1],
       });
     }
