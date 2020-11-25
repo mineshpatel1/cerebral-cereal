@@ -1,4 +1,5 @@
 export const INIT_SHOPPING_LIST = 'INIT_SHOPPING_LIST';
+export const SET_SHOPPING_LIST = 'SET_SHOPPING_LIST';
 export const ADD_ITEMS = 'ADD_ITEMS';
 export const REMOVE_ITEM = 'REMOVE_ITEM';
 export const TOGGLE_ITEM = 'TOGGLE_ITEM';
