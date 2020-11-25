@@ -43,3 +43,10 @@ exports.toggleItem = (itemId, checked) => {
     RECIPE_DB, [checked, itemId],
   );
 }
+
+exports.removeItem = itemId => {
+  return pg.query(
+    'DELETE FROM shopping_list WHERE id = $1::integer;',
+    RECIPE_DB, [itemId],
+  );
+}

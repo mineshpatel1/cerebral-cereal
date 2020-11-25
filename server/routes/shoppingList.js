@@ -23,4 +23,13 @@ router.post('/shoppingList/toggleItem', (req, res, next) => {
     .catch(next);
 });
 
+router.post('/shoppingList/removeItem', (req, res, next) => {
+  if (!req.session.user) return next(new Error(AUTH_ERROR));
+  if (req.body.itemId == undefined) return next(new Error("Parameter: itemId is required."));
+
+  shoppingList.removeItem(req.body.itemId)
+    .then(() => res.send({}))
+    .catch(next);
+});
+
 module.exports = router;
